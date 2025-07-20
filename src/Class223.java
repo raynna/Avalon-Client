@@ -2,10 +2,13 @@
 /* Class223 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+import javax.imageio.ImageIO;
 import java.awt.Image;
 import java.awt.MediaTracker;
 import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
 import java.awt.image.PixelGrabber;
+import java.io.IOException;
 
 public class Class223 implements Interface24 {
     Class243 aClass243_6664;
@@ -92,37 +95,30 @@ public class Class223 implements Interface24 {
 	}
     }
 
-    static Class57 method2081(byte[] is, int i) {
-	try {
-	    if (null == is)
-		throw new RuntimeException("");
-	    Class57 class57;
-	    for (;;) {
+	static Class57 method2081(byte[] is, int i) {
 		try {
-		    Image image = Toolkit.getDefaultToolkit().createImage(is);
-		    MediaTracker mediatracker = new MediaTracker(ClientScriptMap.anApplet6044);
-		    mediatracker.addImage(image, 0);
-		    mediatracker.waitForAll();
-		    int i_2_ = image.getWidth(ClientScriptMap.anApplet6044);
-		    int i_3_ = image.getHeight(ClientScriptMap.anApplet6044);
-		    if (mediatracker.isErrorAny() || i_2_ < 0 || i_3_ < 0)
-			throw new RuntimeException("");
-		    int[] is_4_ = new int[i_3_ * i_2_];
-		    PixelGrabber pixelgrabber = new PixelGrabber(image, 0, 0, i_2_, i_3_, is_4_, 0, i_2_);
-		    pixelgrabber.grabPixels();
-		    class57 = Class373.aClass_ra4071.method5031(is_4_, 0, i_2_, i_2_, i_3_, 708696378);
-		    break;
+			if (is == null)
+				throw new RuntimeException("");
+			Class57 class57;
+			try {
+				java.io.ByteArrayInputStream bais = new java.io.ByteArrayInputStream(is);
+				BufferedImage bufferedImage = ImageIO.read(bais);
+				if (bufferedImage == null)
+					throw new RuntimeException("Failed to decode image");
+				int i_2_ = bufferedImage.getWidth();
+				int i_3_ = bufferedImage.getHeight();
+				int[] is_4_ = new int[i_3_ * i_2_];
+				bufferedImage.getRGB(0, 0, i_2_, i_3_, is_4_, 0, i_2_);
+				class57 = Class373.aClass_ra4071.method5031(is_4_, 0, i_2_, i_2_, i_3_, 708696378);
+			} catch (IOException e) {
+				throw new RuntimeException(e);
+			}
+			return class57;
+		} catch (RuntimeException runtimeexception) {
+			throw Class346.method4175(runtimeexception, new StringBuilder().append("jl.i(").append(')').toString());
 		}
-		catch (InterruptedException interruptedexception) {
-		    /* empty */
-		}
-	    }
-	    return class57;
 	}
-	catch (RuntimeException runtimeexception) {
-	    throw Class346.method4175(runtimeexception, new StringBuilder().append("jl.i(").append(')').toString());
-	}
-    }
+
 
     public static final void method2082(boolean bool, int i) {
 	try {

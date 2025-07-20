@@ -2,6 +2,7 @@
 /* Class224 - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
+import javax.imageio.ImageIO;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;
@@ -9,6 +10,7 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.MediaTracker;
 import java.awt.Toolkit;
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -527,30 +529,29 @@ public class Class224 implements Interface12 {
 	/* empty */
     }
 
-    Image method2089(String string, int i) throws IOException {
-	try {
-	    Image image;
-	    try {
-		InputStream inputstream = ClientScriptMap.anApplet6044.getClass().getClassLoader().getResourceAsStream(string);
-		byte[] is = new byte[4000];
-		int i_109_ = 0;
-		int i_110_;
-		while ((i_110_ = inputstream.read()) != -1)
-		    is[i_109_++] = (byte) i_110_;
-		Image image_111_ = Toolkit.getDefaultToolkit().createImage(is);
-		image = image_111_;
-	    }
-	    catch (Exception exception) {
-		throw new IOException();
-	    }
-	    return image;
+	Image method2089(String string, int i) throws IOException {
+		try {
+			Image image;
+			try (InputStream inputstream = ClientScriptMap.anApplet6044.getClass().getClassLoader().getResourceAsStream(string)) {
+				if (inputstream == null) {
+					throw new IOException("Resource not found: " + string);
+				}
+				BufferedImage bufferedImage = ImageIO.read(inputstream);
+				if (bufferedImage == null) {
+					throw new IOException("Failed to decode image: " + string);
+				}
+				image = bufferedImage;
+			} catch (Exception exception) {
+				throw new IOException();
+			}
+			return image;
+		} catch (RuntimeException runtimeexception) {
+			throw Class346.method4175(runtimeexception, new StringBuilder().append("jm.p(").append(')').toString());
+		}
 	}
-	catch (RuntimeException runtimeexception) {
-	    throw Class346.method4175(runtimeexception, new StringBuilder().append("jm.p(").append(')').toString());
-	}
-    }
 
-    @Override
+
+	@Override
     public int method154() {
 	return 100;
     }

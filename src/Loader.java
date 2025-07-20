@@ -20,6 +20,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
 import java.net.URL;
@@ -105,7 +106,7 @@ public class Loader extends Applet implements ActionListener {
         panel.add(loader);
         panel.setPreferredSize(new Dimension(768, 503));
         frame.setMinimumSize(new Dimension(768, 503));
-        panel.setBackground(Color.BLACK);
+        //panel.setBackground(Color.BLACK);
         JMenuBar bar = new JMenuBar();
 
         for (final Option o : Option.values()) {
@@ -191,7 +192,12 @@ public class Loader extends Applet implements ActionListener {
         //frame.addWindowListener(client);
         frame.getContentPane().add(panel, "Center");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setIconImage(Toolkit.getDefaultToolkit().getImage("src/resources/ghostBg1.png"));
+       // try {
+        //     BufferedImage icon = ImageIO.read(new File("src/resources/ghostBg1.png"));
+        //     frame.setIconImage(icon);
+        // } catch (IOException e) {
+        //     e.printStackTrace();
+        // }
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);

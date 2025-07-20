@@ -67,7 +67,7 @@ public class Class502 implements Interface26 {
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ut.ge(").append(')').toString());
-	}
+		}
     }
 
     static final void method6233(Class403 class403, int i) {

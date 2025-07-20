@@ -10,14 +10,14 @@ import java.awt.GraphicsEnvironment;
 import java.lang.reflect.Field;
 
 public class Class457 {
-    GraphicsDevice aGraphicsDevice5666;
+    GraphicsDevice graphicsDevice;
     DisplayMode aDisplayMode5667;
 
     public void method5960() {
         try {
             if (this.aDisplayMode5667 != null) {
-                this.aGraphicsDevice5666.setDisplayMode(this.aDisplayMode5667);
-                if (!this.aGraphicsDevice5666.getDisplayMode().equals(this.aDisplayMode5667))
+                this.graphicsDevice.setDisplayMode(this.aDisplayMode5667);
+                if (!this.graphicsDevice.getDisplayMode().equals(this.aDisplayMode5667))
                     throw new RuntimeException("");
                 this.aDisplayMode5667 = null;
             }
@@ -29,7 +29,7 @@ public class Class457 {
 
     public int[] method5961() {
         try {
-            DisplayMode[] displaymodes = this.aGraphicsDevice5666.getDisplayModes();
+            DisplayMode[] displaymodes = this.graphicsDevice.getDisplayModes();
             int[] is = new int[displaymodes.length << 2];
             for (int i = 0; i < displaymodes.length; i++) {
                 is[i << 2] = displaymodes[i].getWidth();
@@ -45,7 +45,7 @@ public class Class457 {
 
     public void method5962(Frame frame, int i, int i_0_, int i_1_, int i_2_) {
         try {
-            this.aDisplayMode5667 = this.aGraphicsDevice5666.getDisplayMode();
+            this.aDisplayMode5667 = this.graphicsDevice.getDisplayMode();
             if (null == this.aDisplayMode5667)
                 throw new NullPointerException();
             frame.setUndecorated(true);
@@ -53,7 +53,7 @@ public class Class457 {
             method5963(frame, -2144003881);
             if (0 == i_2_) {
                 int i_3_ = this.aDisplayMode5667.getRefreshRate();
-                DisplayMode[] displaymodes = this.aGraphicsDevice5666.getDisplayModes();
+                DisplayMode[] displaymodes = this.graphicsDevice.getDisplayModes();
                 boolean bool = false;
                 for (int i_4_ = 0; i_4_ < displaymodes.length; i_4_++) {
                     if (displaymodes[i_4_].getWidth() == i && displaymodes[i_4_].getHeight() == i_0_ && displaymodes[i_4_].getBitDepth() == i_1_) {
@@ -67,7 +67,7 @@ public class Class457 {
                 if (!bool)
                     i_2_ = i_3_;
             }
-            this.aGraphicsDevice5666.setDisplayMode(new DisplayMode(i, i_0_, i_1_, i_2_));
+            this.graphicsDevice.setDisplayMode(new DisplayMode(i, i_0_, i_1_, i_2_));
         } catch (RuntimeException runtimeexception) {
             throw Class346.method4175(runtimeexception, new StringBuilder().append("sv.enter(").append(')').toString());
         }
@@ -75,39 +75,38 @@ public class Class457 {
 
     void method5963(Frame frame, int i) {
         try {
-            boolean bool = false;
-            try {
-                Field field = sun.awt.Win32GraphicsDevice.class.getDeclaredField("valid");
-                field.setAccessible(true);
-                boolean bool_6_ = ((Boolean) field.get(this.aGraphicsDevice5666)).booleanValue();
-                if (bool_6_) {
-                    field.set(this.aGraphicsDevice5666, Boolean.FALSE);
-                    bool = true;
-                }
-            } catch (Throwable throwable) {
-                /* empty */
+        boolean changed = false;
+        try {
+            Field field = sun.awt.Win32GraphicsDevice.class.getDeclaredField("valid");
+            field.setAccessible(true);
+
+            if ((boolean) field.get(graphicsDevice)) {
+                field.set(graphicsDevice, false);
+                changed = true;
             }
-            try {
-                this.aGraphicsDevice5666.setFullScreenWindow(frame);
-            } catch (RuntimeException object) {
-                if (bool) {
-                    try {
-                        Field field = sun.awt.Win32GraphicsDevice.class.getDeclaredField("valid");
-                        field.set(this.aGraphicsDevice5666, Boolean.TRUE);
-                    } catch (Throwable throwable) {
-                        /* empty */
-                    }
-                }
-                throw object;
-            }
-            if (bool) {
+        } catch (Throwable t) {
+            // Ignore - field might not exist or not accessible
+        }
+
+        try {
+            graphicsDevice.setFullScreenWindow(frame);
+        } catch (RuntimeException e) {
+            if (changed) {
                 try {
                     Field field = sun.awt.Win32GraphicsDevice.class.getDeclaredField("valid");
-                    field.set(this.aGraphicsDevice5666, Boolean.TRUE);
-                } catch (Throwable throwable) {
-                    /* empty */
-                }
+                    field.set(graphicsDevice, true);
+                } catch (Throwable t) { /* ignore */ }
             }
+            throw e;
+        }
+
+        if (changed) {
+            try {
+                Field field = sun.awt.Win32GraphicsDevice.class.getDeclaredField("valid");
+                field.set(graphicsDevice, true);
+            } catch (Throwable t) { /* ignore */
+            }
+        }
         } catch (RuntimeException runtimeexception) {
             throw Class346.method4175(runtimeexception, new StringBuilder().append("sv.a(").append(')').toString());
         }
@@ -115,14 +114,14 @@ public class Class457 {
 
     public Class457() throws Exception {
         GraphicsEnvironment graphicsenvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        this.aGraphicsDevice5666 = graphicsenvironment.getDefaultScreenDevice();
-        if (!this.aGraphicsDevice5666.isFullScreenSupported()) {
+        this.graphicsDevice = graphicsenvironment.getDefaultScreenDevice();
+        if (!this.graphicsDevice.isFullScreenSupported()) {
             GraphicsDevice[] graphicsdevices = graphicsenvironment.getScreenDevices();
             GraphicsDevice[] graphicsdevices_7_ = graphicsdevices;
             for (int i = 0; i < graphicsdevices_7_.length; i++) {
                 GraphicsDevice graphicsdevice = graphicsdevices_7_[i];
                 if (null != graphicsdevice && graphicsdevice.isFullScreenSupported()) {
-                    this.aGraphicsDevice5666 = graphicsdevice;
+                    this.graphicsDevice = graphicsdevice;
                     return;
                 }
             }

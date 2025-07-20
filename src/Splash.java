@@ -1,6 +1,7 @@
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.image.BufferedImage;
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -11,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
+import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -64,17 +66,18 @@ public class Splash extends JFrame {
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setUndecorated(true);
-		try {
-			img = new ImageIcon(new URL(logoImageURL));
-		} catch (MalformedURLException e1) {
-			e1.printStackTrace();
-		}
-		imglabel = new JLabel(img);
-		add(imglabel);
+		/*try {
+			//BufferedImage bufferedImage = ImageIO.read(new URL(logoImageURL));
+			//img = new ImageIcon(bufferedImage);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}*/
+		//imglabel = new JLabel(img);
+		//add(imglabel);
 		setLayout(null);
 		pbar = new JProgressBar(0, 100);
 		pbar.setStringPainted(false);
-		imglabel.setBounds(0, 0, 543, 391);
+		//imglabel.setBounds(0, 0, 543, 391);
 		add(pbar);
 		pbar.setPreferredSize(new Dimension(310, 30));
 		pbar.setBounds(70, 250, 390, 20);

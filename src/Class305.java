@@ -163,50 +163,33 @@ public class Class305 implements Interface27 {
 	}
     }
 
-    boolean method3746(String string, Class var_class, int i) {
-	try {
-	    Class var_class_7_ = (Class) this.aHashtable6738.get(string);
-	    if (var_class_7_ != null) {
-		if (var_class_7_.getClassLoader() != var_class.getClassLoader())
-		    return false;
-		return true;
-	    }
-	    File file = null;
-	    if (null == file)
-		file = (File) this.aHashtable6737.get(string);
-	    do {
-		if (file != null) {
-		    boolean bool;
-		    try {
-			file = new File(file.getCanonicalPath());
-			Class var_class_8_ = java.lang.Runtime.class;
-			Class var_class_9_ = java.lang.reflect.AccessibleObject.class;
-			Method method = var_class_9_.getDeclaredMethod("setAccessible", (new Class[] { Boolean.TYPE }));
-			Method method_10_ = (var_class_8_.getDeclaredMethod("load0", (new Class[] { java.lang.Class.class, java.lang.String.class })));
-			method.invoke(method_10_, new Object[] { Boolean.TRUE });
-			method_10_.invoke(Runtime.getRuntime(), new Object[] { var_class, file.getPath() });
-			method.invoke(method_10_, new Object[] { Boolean.FALSE });
-			this.aHashtable6738.put(string, var_class);
-			bool = true;
-		    }
-		    catch (NoSuchMethodException nosuchmethodexception) {
-			System.load(file.getPath());
-			this.aHashtable6738.put(string, Class294.class);
-			return true;
-		    }
-		    catch (Throwable throwable) {
-			break;
-		    }
-		    return bool;
+	boolean method3746(String string, Class var_class, int i) {
+		try {
+			Class existingClass = (Class) this.aHashtable6738.get(string);
+			if (existingClass != null) {
+				if (existingClass.getClassLoader() != var_class.getClassLoader())
+					return false;
+				return true;
+			}
+
+			File file = (File) this.aHashtable6737.get(string);
+			if (file != null) {
+				try {
+					file = new File(file.getCanonicalPath());
+					System.load(file.getPath());
+					this.aHashtable6738.put(string, var_class);
+					return true;
+				} catch (Throwable t) {
+					t.printStackTrace(); // Optional: Log or handle error more gracefully
+				}
+			}
+
+			return false;
+		} catch (RuntimeException e) {
+			throw Class346.method4175(e, "mr.d()");
 		}
-	    }
-	    while (false);
-	    return false;
 	}
-	catch (RuntimeException runtimeexception) {
-	    throw Class346.method4175(runtimeexception, new StringBuilder().append("mr.d(").append(')').toString());
-	}
-    }
+
 
     @Override
     public boolean method264(int i) {

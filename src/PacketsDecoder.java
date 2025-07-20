@@ -1,12 +1,8 @@
 import java.awt.AWTException;
-import java.awt.Image;
 import java.awt.SystemTray;
-import java.awt.Toolkit;
 import java.awt.TrayIcon;
 import java.awt.TrayIcon.MessageType;
 import java.io.IOException;
-
-import javax.swing.JOptionPane;
 
 public class PacketsDecoder {
 
@@ -108,8 +104,8 @@ public class PacketsDecoder {
                     System.err.println("[Error] Tray icons not supported.");
                     return true;
                 }
-                Image image = Toolkit.getDefaultToolkit().getImage("src/resources/icon.png");
-                Loader.trayIcon = new TrayIcon(image, "Avalon");
+                //Image image = Toolkit.getDefaultToolkit().getImage("src/resources/icon.png");
+                //Loader.trayIcon = new TrayIcon(image, "Avalon");
                 try {
                     SystemTray tray = SystemTray.getSystemTray();
                     tray.add(Loader.trayIcon);
