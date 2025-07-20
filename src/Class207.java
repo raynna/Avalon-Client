@@ -157,9 +157,9 @@ public class Class207 {
     static final void method1935(Class403 class403, byte i) {
 	try {
 	    if (154600941 * Class12.aClass298_Sub44_9946.anInt7492 < 6)
-		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = 0;
-	    else if (6 == 154600941 * Class12.aClass298_Sub44_9946.anInt7492 && (Class12.aClass298_Sub44_9946.anInt7494 * 1324779323 < 10))
-		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = 0;
+		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = 1;//force pass java version check
+	    else if (6 == 154600941 * Class12.aClass298_Sub44_9946.anInt7492 && (Class12.aClass298_Sub44_9946.anInt7494 * 1324779323 < 13))
+		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = 1;
 	    else
 		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = 1;
 	}
