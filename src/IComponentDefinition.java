@@ -1060,16 +1060,15 @@ public class IComponentDefinition {
     }
 
     static final void method1132(Class403 class403, int i) {
-	try {
-	    int i_67_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
-	    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_2057, client.aClass25_8711.aClass449_330, (byte) 37);
-	    class298_sub36.out.writeShort(i_67_, 16711935);
-	    client.aClass25_8711.method390(class298_sub36, (byte) -67);
+		try {
+			int i_67_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
+			Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_2057, client.aClass25_8711.aClass449_330, (byte) 37);
+			class298_sub36.out.writeShort(i_67_, 16711935);
+			client.aClass25_8711.method390(class298_sub36, (byte) -67);
+		} catch (RuntimeException runtimeexception) {
+			throw Class346.method4175(runtimeexception, new StringBuilder().append("eg.su(").append(')').toString());
+		}
 	}
-	catch (RuntimeException runtimeexception) {
-	    throw Class346.method4175(runtimeexception, new StringBuilder().append("eg.su(").append(')').toString());
-	}
-    }
 
     static final void method1133(Class403 class403, short i) {
 	try {

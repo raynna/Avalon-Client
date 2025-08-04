@@ -1499,13 +1499,14 @@ public final class client extends Class291 {
                             topLvlInterface = (Interface) client.aClass437_8841.method5812(ifId << 16 | 27);
                         }
                         if (zoomDelta != -1 && topLvlInterface == null) {
-                            zoomValue += zoomDelta;
-                            int MIN_ZOOM = 125;
-                            int MAX_ZOOM = 600;
+                            zoomValue += (int) (zoomDelta * 1.5);
+                            int MIN_ZOOM = 100;
+                            int MAX_ZOOM = 500;
                             zoomValue = Math.max(MIN_ZOOM, Math.min(MAX_ZOOM, zoomValue));
                             Class305.method3752(184, client.zoomValue, 644551429);
                             zoomDelta = -1;
-                            System.out.println(class105.ihash);
+                            //System.out.println("zoomValue" + zoomValue);
+                            //System.out.println(class105.ihash);
                         }
 			        }
                     ScriptEnvironment class298_sub46 = new ScriptEnvironment();
