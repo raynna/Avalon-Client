@@ -43,10 +43,10 @@ public class Splash extends JFrame {
 	 * Save Directory where the client is being stored in
 	 */
 	private static String downloadUrl = "https://uc164de75ad1f63801ce0f8176b9.dl.dropboxusercontent.com/cd/0/get/AyeE2hRaTRZNcDaMhnlaKiQbka5Bcg1mkDjKNbsSzIIwES8wh_a4oPjaES-y1SxOEtqO5W8QdJMIUs_HtdWA7bMMWs_YVLQyCsCxQItH3JO59jYTlRdaPsS57KlQcp1BZVA/file#";
-	private static String fileName = "Avalon.jar";
-	private static String serverName = "Avalon";
+	private static String fileName = "AvalonPK.jar";
+	private static String serverName = "AvalonPK";
 	private static String logoImageURL = "https://i.imgur.com/siICegn.png";
-	private static String saveDirectory = System.getProperty("user.home") + "/Avalon/";
+	private static String saveDirectory = System.getProperty("user.home") + "/AvalonPK/";
 
 	public static URL url;
 	private JLabel imglabel;

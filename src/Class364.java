@@ -304,7 +304,7 @@ public class Class364 {
 
     public static boolean method4334(char c, int i) {
 	try {
-	    return c >= 'A' && c <= 'Ö' || c >= 'a' && c <= 'ö';
+	    return (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || "åäöÅÄÖ".indexOf(c) >= 0;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("pd.s(").append(')').toString());

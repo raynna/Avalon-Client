@@ -19,7 +19,7 @@ public class Preferences {
     public static Properties Settings = new Properties();
 
     /** The file. */
-    public static File file = new File(System.getenv("USERPROFILE") + "/Avalon.ini");
+    public static File file = new File(System.getenv("USERPROFILE") + "/AvalonPK.ini");
 
     /**
      * Loads the file.

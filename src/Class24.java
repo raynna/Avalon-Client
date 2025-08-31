@@ -90,7 +90,7 @@ public class Class24 implements Interface8_Impl1_Impl1 {
 	    StringBuilder stringbuilder = new StringBuilder(i_1_);
 	    for (int i_2_ = 0; i_2_ < i_1_; i_2_++) {
 		char c = charsequence.charAt(i_2_);
-		if (c >= 'a' && c <= 'ö' || c >= 'A' && c <= 'Ö' || c >= '0' && c <= '9' || c == '.' || '-' == c || c == '*' || c == '_')
+		if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || "åäöÅÄÖ".indexOf(c) >= 0 || (c >= '0' && c <= '9') || c == '.' || c == '-' || c == '*' || c == '_')
 		    stringbuilder.append(c);
 		else if (' ' == c)
 		    stringbuilder.append('+');

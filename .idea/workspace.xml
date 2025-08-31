@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Client:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="938aabea-4d1c-4e66-bab8-1f19747fe3a6" name="Changes" comment="">
+    <list default="true" id="938aabea-4d1c-4e66-bab8-1f19747fe3a6" name="Changes" comment="Removed unsupported java interface from loginscreen">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Class24.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Class24.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Class301_Sub1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Class301_Sub1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Class364.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Class364.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Class411.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Class411.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Class438.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Class438.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClientScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClientScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphicsToolkit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphicsToolkit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Loader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Loader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Preferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Preferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Splash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Splash.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,27 +33,44 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;raynna&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/raynna/Avalon-Client.git&quot;,
+    &quot;accountId&quot;: &quot;7bea0716-8bb9-4370-ab6e-3cadf0648499&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2pWBXKEOA6SZOBErUkpYqHMUcJD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Client.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/andre/Documents/GitHub/Avalon - client",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Client.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/Documents/Github/Client&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="Client" type="Application" factoryName="Application">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false">
       <option name="MAIN_CLASS_NAME" value="Loader" />
       <module name="Client" />
       <method v="2">
@@ -53,16 +87,48 @@
       <option name="presentableId" value="Default" />
       <updated>1732871990116</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fixed issues with color conversion, causing a crash">
+      <option name="closed" value="true" />
+      <created>1753004348529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753004348529</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Removed unsupported java interface from loginscreen">
+      <option name="closed" value="true" />
+      <created>1753054143466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753054143466</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Removed unsupported java interface from loginscreen">
+      <option name="closed" value="true" />
+      <created>1754292604754</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1754292604754</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="Fixed issues with color conversion, causing a crash" />
+    <MESSAGE value="Removed unsupported java interface from loginscreen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unsupported java interface from loginscreen" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Class457.java</url>
-          <line>81</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="sun.awt.image.ImageFormatException" package="sun.awt.image" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

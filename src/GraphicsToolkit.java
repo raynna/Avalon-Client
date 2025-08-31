@@ -858,34 +858,43 @@ public abstract class GraphicsToolkit {
 	}
     }
 
-    static long method5194(CharSequence charsequence, byte i) {
-	try {
-	    long l = 0L;
-	    int i_494_ = charsequence.length();
-	    for (int i_495_ = 0; i_495_ < i_494_; i_495_++) {
-		l *= 37L;
-		char c = charsequence.charAt(i_495_);
-		if (c >= 'A' && c <= 'Ö')
-		    l += '\001' + c - 'A';
-		else if (c >= 'a' && c <= 'ö')
-		    l += '\001' + c - 'a';
-		else if (c >= '0' && c <= '9')
-		    l += c + '\033' - '0';
-		if (l >= 177917621779460413L) {
-		    if (i == 0)
-			throw new IllegalStateException();
-		    break;
-		}
-	    }
-	    for (/**/; l % 37L == 0L && l != 0L; l /= 37L) {
-		/* empty */
-	    }
-	    return l;
-	}
-	catch (RuntimeException runtimeexception) {
-	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ra.a(").append(')').toString());
-	}
+static long method5194(CharSequence charsequence, byte i) {
+    try {
+        long l = 0L;
+        int len = charsequence.length();
+        for (int idx = 0; idx < len; idx++) {
+            l *= 40L; // <-- base 40 instead of 37
+            char c = charsequence.charAt(idx);
+
+            if (c >= 'A' && c <= 'Z')
+                l += 1 + (c - 'A');          // 1–26
+            else if (c >= 'a' && c <= 'z')
+                l += 1 + (c - 'a');          // 1–26 (case-insensitive mapping)
+            else if (c == 'Å' || c == 'å')
+                l += 27;
+            else if (c == 'Ä' || c == 'ä')
+                l += 28;
+            else if (c == 'Ö' || c == 'ö')
+                l += 29;
+            else if (c >= '0' && c <= '9')
+                l += 30 + (c - '0');         // 30–39
+
+            if (l >= 177917621779460413L) {
+                if (i == 0)
+                    throw new IllegalStateException();
+                break;
+            }
+        }
+        while (l % 40L == 0L && l != 0L) {   // <-- also 40 here
+            l /= 40L;
+        }
+        return l;
+    } catch (RuntimeException runtimeexception) {
+        throw Class346.method4175(runtimeexception, 
+            new StringBuilder().append("ra.a(").append(')').toString());
     }
+}
+
 
     static void method5195(GraphicsToolkit class_ra, IComponentDefinition class105, int i, int i_496_, byte i_497_) {
 	try {

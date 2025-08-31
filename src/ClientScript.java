@@ -86,7 +86,7 @@ public class ClientScript extends Class298_Sub37 {
 		    anObjectArray9683 = new String[i_11_];
 		String string = class298_sub53.readString(1264292705);
 		if (string.equalsIgnoreCase("runescape") || string.contains("runescape")) {
-		    string = string.replace("runescape", "Avalon");
+		    string = string.replace("runescape", "AvalonPK");
 		}
 		if (string.contains("Your account has been locked")) {
 		    string = string.replace("Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.", "Your account has been locked due to suspicion. You can recover it by contacting <img=1>Andreas.");

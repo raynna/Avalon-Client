@@ -71,9 +71,9 @@ public class Class301_Sub1 extends Class301 {
 		if (client.method2801(class105).method3498(i - 1, (byte) -25)) {
 		    Class25 class25 = Class429.method5760((short) 512);
 		    if (-1233866115 * client.anInt8752 == 14 || 0 == client.anInt8752 * -1233866115) {
-			if (i >= 1 && i <= 10) {
-			    System.err.println("Client deteched click: " + (i_0_ >> 16) + ", " + (i_0_ & 0xFFFF) + "," + i_1_ + ", " + (class105.anInt1280 * -1232467723));
-			}
+				//if (i >= 1 && i <= 10) {
+			    //System.err.println("Client deteched click: " + (i_0_ >> 16) + ", " + (i_0_ & 0xFFFF) + "," + i_1_ + ", " + (class105.anInt1280 * -1232467723));
+				//}
 
 			if (i == 1) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.ACTION_BUTTON1_PACKET, class25.aClass449_330, (byte) 40);

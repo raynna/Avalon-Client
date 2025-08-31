@@ -137,41 +137,82 @@ public class Class438 {
 	}
     }
 
-    final void method5825(int i, int i_8_, int i_9_, boolean bool, boolean bool_10_, int i_11_) {
-	try {
-	    if (i != method5823(1947694560)) {
-		if (-1 != i) {
-		    if (null != this.aClass391_5524 && i == (this.aClass391_5524.animationId * -1945308871)) {
-			if (0 == -1117238071 * (this.aClass391_5524.anInt4184))
-			    return;
-		    } else
-			this.aClass391_5524 = Class298_Sub2.aClass395_7165.method4903(i, (byte) 32);
-		    this.anInt5527 = 0;
-		    this.anInt5526 = i_8_ * -2070327261;
-		    this.anInt5532 = -1775084157 * i_9_;
-		    this.aBoolean5533 = bool_10_;
-		    if (bool) {
-			this.anInt5523 = ((int) (Math.random() * (this.aClass391_5524.anIntArray4172).length) * 282466343);
-			this.anInt5525 = ((int) (Math.random() * (this.aClass391_5524.anIntArray4169[(-8792169 * (this.anInt5523))])) * -993902387);
-		    } else {
-			this.anInt5523 = 0;
-			this.anInt5525 = 0;
-		    }
-		    this.anInt5529 = (-1266936279 + -64061137 * this.anInt5523);
-		    if (this.anInt5529 * -112073191 < 0 || (this.anInt5529 * -112073191 >= (this.aClass391_5524.anIntArray4172).length))
-			this.anInt5529 = 1266936279;
-		    if (0 == -1577984117 * this.anInt5526)
-			method5837(this.aClass391_5524, -8792169 * this.anInt5523, (byte) 59);
-		    this.aBoolean5530 = false;
-		} else
-		    this.aClass391_5524 = null;
-		method5844(898280732);
-	    }
+	final void method5825(int i, int i_8_, int i_9_, boolean bool, boolean bool_10_, int i_11_) {
+		try {
+			if (i != method5823(1947694560)) {
+				if (i != -1) {
+					if (this.aClass391_5524 != null && i == (this.aClass391_5524.animationId * -1945308871)) {
+						if (this.aClass391_5524.anInt4184 * -1117238071 == 0)
+							return;
+					} else {
+						this.aClass391_5524 = Class298_Sub2.aClass395_7165.method4903(i, (byte) 32);
+						if (this.aClass391_5524 == null) {
+							System.out.println("[Anim] Failed to fetch sequence definition for id=" + i);
+							return;
+						}
+					}
+
+					// Guard: missing/invalid frame data
+					if (this.aClass391_5524.anIntArray4172 == null || this.aClass391_5524.anIntArray4172.length == 0) {
+						System.out.println("[Anim] Sequence " + i + " has no frame array (anIntArray4172).");
+						return;
+					}
+					if (this.aClass391_5524.anIntArray4169 == null) {
+						System.out.println("[Anim] Sequence " + i + " has no frame length array (anIntArray4169).");
+						return;
+					}
+
+					this.anInt5527 = 0;
+					this.anInt5526 = i_8_ * -2070327261;
+					this.anInt5532 = -1775084157 * i_9_;
+					this.aBoolean5533 = bool_10_;
+
+					if (bool) {
+						this.anInt5523 = (int) (Math.random() * this.aClass391_5524.anIntArray4172.length) * 282466343;
+						if (this.anInt5523 < 0 || this.anInt5523 >= this.aClass391_5524.anIntArray4169.length) {
+							System.out.println("[Anim] Randomized frame index out of bounds for seq=" + i + ", frame=" + this.anInt5523);
+							return;
+						}
+						this.anInt5525 = (int) (Math.random() *
+								this.aClass391_5524.anIntArray4169[this.anInt5523 * -8792169]) * -993902387;
+					} else {
+						this.anInt5523 = 0;
+						this.anInt5525 = 0;
+					}
+
+					this.anInt5529 = (-1266936279 + -64061137 * this.anInt5523);
+					if (this.anInt5529 * -112073191 < 0
+							|| this.anInt5529 * -112073191 >= this.aClass391_5524.anIntArray4172.length) {
+						System.out.println("[Anim] anInt5529 out of bounds for seq=" + i + " (value=" + this.anInt5529 + ")");
+						this.anInt5529 = 1266936279;
+					}
+
+					if (this.anInt5526 * -1577984117 == 0) {
+						method5837(this.aClass391_5524, this.anInt5523 * -8792169, (byte) 59);
+					}
+
+					this.aBoolean5530 = false;
+				} else {
+					this.aClass391_5524 = null;
+					this.anInt5526 = 0;
+					this.anInt5525 = 0;
+					return;
+				}
+
+				if (this.aClass391_5524 != null) {
+					method5844(898280732);
+				} else {
+					System.out.println("[Anim] Skipping method5844 because aClass391_5524 is null (seq=" + i + ")");
+				}
+			}
+		} catch (RuntimeException runtimeexception) {
+			System.out.println("[Anim] Exception in method5825 for seq=" + i + " : " + runtimeexception.getMessage());
+			runtimeexception.printStackTrace();
+			throw Class346.method4175(runtimeexception,
+					new StringBuilder().append("sb.q(").append(')').toString());
+		}
 	}
-	catch (RuntimeException runtimeexception) {
-	    throw Class346.method4175(runtimeexception, new StringBuilder().append("sb.q(").append(')').toString());
-	}
-    }
+
 
     public final boolean method5826(int i) {
 	try {
