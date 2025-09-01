@@ -93,7 +93,7 @@ public class Class499 {
 	    String string = (String) (class403.anObjectArray5240[(class403.anInt5241 -= 969361751) * -203050393]);
 	    if (Class298_Sub6.method2863(string, class403, -1825255771) != null)
 		string = string.substring(0, string.length() - 1);
-	    class105.anObjectArray1264 = Class128_Sub2.method1441(string, class403, -2046058202);
+	    class105.scriptOnTrigger = Class128_Sub2.method1441(string, class403, -2046058202);
 	    class105.aBoolean1238 = true;
 	}
 	catch (RuntimeException runtimeexception) {

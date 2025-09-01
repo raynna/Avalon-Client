@@ -175,6 +175,7 @@ public class IncommingPacket {
     public static IncommingPacket SYSTEM_TRAY_MESSAGE_PACKET;
     public static IncommingPacket SWITCH_ITEMS_LOOK_PACKET;
     public static IncommingPacket CUSTOM_PACKET_161;
+    public static IncommingPacket FKEY_REMAPPING_PACKET;
 	public static IncommingPacket DEVELOPER_PACKET;
 
     static {

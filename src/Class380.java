@@ -100,7 +100,7 @@ public class Class380 {
 
     static String method4682(IComponentDefinition class105, int i, byte i_4_) {
 	try {
-	    if (!client.method2801(class105).method3498(i, (byte) -47) && class105.anObjectArray1264 == null)
+	    if (!client.method2801(class105).method3498(i, (byte) -47) && class105.scriptOnTrigger == null)
 		return null;
 	    if (null == class105.aStringArray1195 || class105.aStringArray1195.length <= i || null == class105.aStringArray1195[i] || class105.aStringArray1195[i].trim().length() == 0) {
 		if (client.qa_op)

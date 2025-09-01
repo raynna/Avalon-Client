@@ -96,7 +96,7 @@ public class Class422_Sub5 extends Class422 {
 	try {
 	    if (client.aBoolean8835) {
 		if (class105.anObjectArray1247 != null) {
-		    IComponentDefinition class105_2_ = Class140.method1558(Class379.anInt4099 * 1262526353, 392084321 * client.anInt8836, -156511736);
+		    IComponentDefinition class105_2_ = Class140.getInterfaceComponent(Class379.anInt4099 * 1262526353, 392084321 * client.anInt8836, -156511736);
 		    if (class105_2_ != null) {
 			ScriptEnvironment class298_sub46 = new ScriptEnvironment();
 			class298_sub46.aClass105_7525 = class105;

@@ -317,7 +317,7 @@ public class Class401 implements Interface21 {
 		}
 		if (i_34_ == 30 && client.aClass105_8652 == null) {
 		    Class117.method1280(dstY, dstX, 1723723267);
-		    client.aClass105_8652 = Class140.method1558(dstY, dstX, -156511736);
+		    client.aClass105_8652 = Class140.getInterfaceComponent(dstY, dstX, -156511736);
 		    Tradution.method6054(client.aClass105_8652, 194587581);
 		}
 		OutcommingPacket class198_36_ = null; // player option
@@ -390,7 +390,7 @@ public class Class401 implements Interface21 {
 		    client.aClass25_8711.method390(class298_sub36, (byte) -59);
 		}
 		if (58 == i_34_) {
-		    IComponentDefinition class105 = Class140.method1558(dstY, dstX, -156511736);
+		    IComponentDefinition class105 = Class140.getInterfaceComponent(dstY, dstX, -156511736);
 		    if (class105 != null)
 			Class422_Sub5.method5643(class105, 1371871585);
 		}
@@ -479,7 +479,7 @@ public class Class401 implements Interface21 {
 		    }
 		}
 		if (25 == i_34_) {
-		    IComponentDefinition class105 = Class140.method1558(dstY, dstX, -156511736);
+		    IComponentDefinition class105 = Class140.getInterfaceComponent(dstY, dstX, -156511736);
 		    if (class105 != null) {
 			Class144.method1587((byte) 4);
 			Class298_Sub38 class298_sub38 = client.method2801(class105);

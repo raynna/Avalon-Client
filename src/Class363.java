@@ -40,7 +40,7 @@ public class Class363 {
 	    if (-1 == i_1_ && i_2_ == -1)
 		class105.aClass105_1233 = null;
 	    else
-		class105.aClass105_1233 = Class140.method1558(i_1_, i_2_, -156511736);
+		class105.aClass105_1233 = Class140.getInterfaceComponent(i_1_, i_2_, -156511736);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("pc.iv(").append(')').toString());

@@ -166,7 +166,7 @@ public class IComponentDefinition {
     public Object[] anObjectArray1261;
     public int anInt1262;
     public Object[] anObjectArray1263;
-    public Object[] anObjectArray1264;
+    public Object[] scriptOnTrigger;
     public static int anInt1265;
     public static int anInt1266 = 0;
     public Object[] anObjectArray1267;
@@ -426,7 +426,7 @@ public class IComponentDefinition {
 	    anObjectArray1172 = method1111(stream, -756661481);
 	    anObjectArray1255 = method1111(stream, 1661043786);
 	    anObjectArray1209 = method1111(stream, 1194567641);
-	    anObjectArray1264 = method1111(stream, 1382442228);
+	    scriptOnTrigger = method1111(stream, 1382442228);
 	    if (i_1_ >= 0)
 		anObjectArray1247 = method1111(stream, -699098198);
 	    onMouseMoveListener = method1111(stream, 1910073926);
@@ -700,7 +700,7 @@ public class IComponentDefinition {
 	    anObjectArray1157 = null;
 	    anIntArray1260 = null;
 	    anObjectArray1209 = null;
-	    anObjectArray1264 = null;
+	    scriptOnTrigger = null;
 	    anObjectArray1247 = null;
 	    anObjectArray1229 = null;
 	    anObjectArray1267 = null;

@@ -55,20 +55,30 @@ public class Class301_Sub1 extends Class301 {
 	}
     }
 
-    public static void method3713(int i, int i_0_, int i_1_, String string, int i_2_) {
+    public static void method3713(int i, int interfaceId, int componentId, String context, int i_2_) {
 	try {
-	    IComponentDefinition class105 = Class140.method1558(i_0_, i_1_, -156511736);
-	    if (class105 != null) {
-		if (class105.anObjectArray1264 != null) {
-		    ScriptEnvironment class298_sub46 = new ScriptEnvironment();
-		    class298_sub46.aClass105_7525 = class105;
-		    class298_sub46.anInt7528 = 1654612087 * i;
-		    class298_sub46.aString7523 = string;
-		    class298_sub46.arguements = class105.anObjectArray1264;
-		    Class444.executeScript(class298_sub46);
+	    IComponentDefinition component = Class140.getInterfaceComponent(interfaceId, componentId, -156511736);
+	    if (component != null) {
+		if (component.scriptOnTrigger != null) {
+		    ScriptEnvironment script = new ScriptEnvironment();
+		    script.aClass105_7525 = component;
+		    script.anInt7528 = 1654612087 * i;
+		    script.aString7523 = context;
+		    script.arguements = component.scriptOnTrigger.clone();
+			if (script.arguements.length >= 2 && (int) script.arguements[0] == 1303) {
+				int tabId = (int) script.arguements[1];
+
+				if (tabId >= 0 && tabId < client.fkeyBindings.length) {
+					int remapped = client.fkeyBindings[tabId];
+					script.arguements[1] = remapped;
+					System.out.println("[FkeyTrigger] Replacing tab " + tabId + " with " + remapped);
+				}
+			}
+			client.logTickScript("3713", script);
+		    Class444.executeScript(script);
 		}
 
-		if (client.method2801(class105).method3498(i - 1, (byte) -25)) {
+		if (client.method2801(component).method3498(i - 1, (byte) -25)) {
 		    Class25 class25 = Class429.method5760((short) 512);
 		    if (-1233866115 * client.anInt8752 == 14 || 0 == client.anInt8752 * -1233866115) {
 				//if (i >= 1 && i <= 10) {
@@ -77,52 +87,52 @@ public class Class301_Sub1 extends Class301 {
 
 			if (i == 1) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.ACTION_BUTTON1_PACKET, class25.aClass449_330, (byte) 40);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (-1232467723 * class105.anInt1280), -1695827903);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (-1232467723 * component.anInt1280), -1695827903);
 			    class25.method390(class298_sub36, (byte) -4);
 			}
 			if (i == 2) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.ACTION_BUTTON2_PACKET, class25.aClass449_330, (byte) 73);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (class105.anInt1280 * -1232467723), 1169430348);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (component.anInt1280 * -1232467723), 1169430348);
 			    class25.method390(class298_sub36, (byte) -80);
 			}
 			if (i == 3) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_2054, class25.aClass449_330, (byte) 78);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (class105.anInt1280 * -1232467723), -1266676543);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (component.anInt1280 * -1232467723), -1266676543);
 			    class25.method390(class298_sub36, (byte) -9);
 			}
 			if (4 == i) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_2048, class25.aClass449_330, (byte) 31);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (-1232467723 * class105.anInt1280), -603023247);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (-1232467723 * component.anInt1280), -603023247);
 			    class25.method390(class298_sub36, (byte) -119);
 			}
 			if (5 == i) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_1993, class25.aClass449_330, (byte) 30);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (class105.anInt1280 * -1232467723), -120093158);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (component.anInt1280 * -1232467723), -120093158);
 			    class25.method390(class298_sub36, (byte) -43);
 			}
 			if (i == 6) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_2020, class25.aClass449_330, (byte) 65);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (-1232467723 * class105.anInt1280), -206334631);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (-1232467723 * component.anInt1280), -206334631);
 			    class25.method390(class298_sub36, (byte) -32);
 			}
 			if (i == 7) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_2083, class25.aClass449_330, (byte) 62);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (class105.anInt1280 * -1232467723), 1351893071);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (component.anInt1280 * -1232467723), 1351893071);
 			    class25.method390(class298_sub36, (byte) -81);
 			}
 			if (i == 8) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_1999, class25.aClass449_330, (byte) 74);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (class105.anInt1280 * -1232467723), 1834394135);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (component.anInt1280 * -1232467723), 1834394135);
 			    class25.method390(class298_sub36, (byte) -56);
 			}
 			if (9 == i) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_2089, class25.aClass449_330, (byte) 124);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (-1232467723 * class105.anInt1280), -1435192522);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (-1232467723 * component.anInt1280), -1435192522);
 			    class25.method390(class298_sub36, (byte) -66);
 			}
 			if (i == 10) {
 			    Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.aClass198_2025, class25.aClass449_330, (byte) 83);
-			    Class125.method1396(class298_sub36, i_0_, i_1_, (-1232467723 * class105.anInt1280), -87863525);
+			    Class125.method1396(class298_sub36, interfaceId, componentId, (-1232467723 * component.anInt1280), -87863525);
 			    class25.method390(class298_sub36, (byte) -62);
 			}
 		    }

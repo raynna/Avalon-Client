@@ -3,6 +3,7 @@
  * Visit http://jode.sourceforge.net/
  */
 import java.io.IOException;
+import java.util.Arrays;
 
 public class Class444 {
     public static Class444 aClass444_5602;
@@ -40,14 +41,37 @@ public class Class444 {
 	}
     }
 
-    public static void executeScript(ScriptEnvironment script) {
-	try {
-	    Class203.method1908(script, 200000, (short) 3156);
+	public static void executeScript(ScriptEnvironment script) {
+		try {
+			boolean shouldLog = true;
+
+			// Detect spammy one-arg scripts
+			if (script.arguements != null && script.arguements.length == 1) {
+				Object arg = script.arguements[0];
+				if (arg instanceof Integer) {
+					int opcode = (Integer) arg;
+					if (opcode == 3970 || opcode == 808) {
+						shouldLog = false; // skip printing, but still execute
+					}
+				}
+			}
+
+			/*if (shouldLog) {
+				System.out.println("[ScriptExecution] Interface="
+						+ (script.aClass105_7525 != null ? script.aClass105_7525.anInt1160 : "null")
+						+ " Component=" + (script.aClass105_7525 != null ? script.aClass105_7525.hashCode() : "null")
+						+ " Args=" + Arrays.toString(script.arguements));
+			}*/
+
+			// Always execute regardless of logging
+			Class203.method1908(script, 200000, (short) 3156);
+
+		} catch (RuntimeException runtimeexception) {
+			throw Class346.method4175(runtimeexception, "executeScript()");
+		}
 	}
-	catch (RuntimeException runtimeexception) {
-	    throw Class346.method4175(runtimeexception, new StringBuilder().append("si.b(").append(')').toString());
-	}
-    }
+
+
 
     static void method5890(byte i) {
 	try {

@@ -121,7 +121,7 @@ public class Class160 {
 	    int i_3_ = (class403.anIntArray5244[681479919 * class403.anInt5239]);
 	    int i_4_ = (class403.anIntArray5244[class403.anInt5239 * 681479919 + 1]);
 	    int i_5_ = (class403.anIntArray5244[681479919 * class403.anInt5239 + 2]);
-	    IComponentDefinition class105 = Class140.method1558(i_3_ << 16 | i_4_, i_5_, -156511736);
+	    IComponentDefinition class105 = Class140.getInterfaceComponent(i_3_ << 16 | i_4_, i_5_, -156511736);
 	    Class144.method1587((byte) 4);
 	    Class298_Sub38 class298_sub38 = client.method2801(class105);
 	    Class147.method1600(class105, class298_sub38.method3497((byte) -10), -1133219011 * class298_sub38.anInt7410, 1387537939);

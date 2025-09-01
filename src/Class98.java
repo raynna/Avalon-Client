@@ -77,7 +77,7 @@ public abstract class Class98 {
 		    }
 		    if (-1 != i_18_ && -1 != i_19_) {
 			if (client.aBoolean8835 && (-112110875 * Class298.anInt3192 & 0x40) != 0) {
-			    IComponentDefinition class105 = Class140.method1558((Class379.anInt4099 * 1262526353), (392084321 * client.anInt8836), -156511736);
+			    IComponentDefinition class105 = Class140.getInterfaceComponent((Class379.anInt4099 * 1262526353), (392084321 * client.anInt8836), -156511736);
 			    if (class105 != null)
 				Class234.method2174(client.aString8838, new StringBuilder().append(" ").append(Class26.aString351).append(" ").toString(), Class240.anInt2704 * 697885143, 59, -1, 0L, i_18_, i_19_, true, false, i_18_ << 32 | i_19_, true, -1555484950);
 			    else

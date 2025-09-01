@@ -181,6 +181,19 @@ public class PacketsDecoder {
                 class25.INCOMMING_PACKET = null;
                 return true;
             }
+            if (class25.INCOMMING_PACKET == IncommingPacket.FKEY_REMAPPING_PACKET) {
+                int count = stream.readUnsignedByte(); // number of remaps
+                for (int f = 0; f < count; f++) {
+                    int fkeyIndex = stream.readUnsignedByte();  // 0–11 (F1–F12)
+                    int tabId = stream.readUnsignedByte();      // tab mapping (your list above)
+                    if (fkeyIndex >= 0 && fkeyIndex < client.fkeyBindings.length) {
+                        client.fkeyBindings[fkeyIndex] = tabId;
+                        System.out.println("[FkeyRemap] F" + (fkeyIndex + 1) + " -> Tab " + tabId);
+                    }
+                }
+                class25.INCOMMING_PACKET = null;
+                return true;
+            }
             if (class25.INCOMMING_PACKET == IncommingPacket.DEVELOPER_PACKET) {
                 int flag = stream.readUnsignedByte();
                 boolean developerMode = (flag & 0x1) != 0;

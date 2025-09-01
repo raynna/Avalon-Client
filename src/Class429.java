@@ -119,7 +119,7 @@ public class Class429 implements Interface21 {
 	try {
 	    if (client.method2801(class105).method3492((byte) -12) && null == client.aClass105_8652) {
 		Class117.method1280(class105.ihash * -440872681, class105.anInt1154 * -1309843523, 1723723267);
-		client.aClass105_8652 = Class140.method1558(-440872681 * class105.ihash, class105.anInt1154 * -1309843523, -156511736);
+		client.aClass105_8652 = Class140.getInterfaceComponent(-440872681 * class105.ihash, class105.anInt1154 * -1309843523, -156511736);
 		Tradution.method6054(client.aClass105_8652, 1608408687);
 		//System.out.println("Client nonblocked simpleclick:" + ((class105.ihash * -440872681) >> 16) + "," + ((class105.ihash * -440872681) & 0xFFFF) + "," + class105.anInt1154 * -1309843523);
 	    } else {

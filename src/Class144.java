@@ -121,7 +121,7 @@ public class Class144 {
     public static void method1587(byte i) {
 	try {
 	    if (client.aBoolean8835) {
-		IComponentDefinition class105 = Class140.method1558(Class379.anInt4099 * 1262526353, 392084321 * client.anInt8836, -156511736);
+		IComponentDefinition class105 = Class140.getInterfaceComponent(Class379.anInt4099 * 1262526353, 392084321 * client.anInt8836, -156511736);
 		if (null != class105 && class105.anObjectArray1120 != null) {
 		    ScriptEnvironment class298_sub46 = new ScriptEnvironment();
 		    class298_sub46.aClass105_7525 = class105;

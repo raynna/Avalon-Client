@@ -15,8 +15,10 @@ public class Class441 {
     final boolean method5863(Class395 class395, Class391 class391, int i, int i_0_, int[] is, byte i_1_) {
 	try {
 	    if (!this.aBoolean5585) {
-		if (i >= is.length)
-		    return false;
+			if (is == null || i < 0 || i >= is.length) {
+				System.out.println("[AnimCrash] Frame index out of bounds: " + i + " (len=" + (is == null ? "null" : is.length) + ")");
+				return false;
+			}
 		this.anInt5584 = -1850168697 * is[i];
 		this.aClass298_Sub37_Sub4_5583 = class395.method4900((this.anInt5584 * 806878007) >> 16, -2028006412);
 		this.anInt5584 = ((this.anInt5584 * 806878007 & 0xffff) * -1850168697);

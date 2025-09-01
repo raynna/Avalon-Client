@@ -139,7 +139,7 @@ public class Class69 {
 
     static int method794(IComponentDefinition class105, int i, int i_13_) {
 	try {
-	    if (!client.method2801(class105).method3498(i, (byte) -58) && class105.anObjectArray1264 == null)
+	    if (!client.method2801(class105).method3498(i, (byte) -58) && class105.scriptOnTrigger == null)
 		return -1;
 	    return ((class105.anIntArray1231 != null && class105.anIntArray1231.length > i) ? class105.anIntArray1231[i] : -1);
 	}

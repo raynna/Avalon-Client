@@ -28,7 +28,7 @@ public class Class390 {
 
     boolean method4867(int i, int i_2_, int i_3_) {
 	try {
-	    IComponentDefinition class105 = Class140.method1558(i, i_2_, -156511736);
+	    IComponentDefinition class105 = Class140.getInterfaceComponent(i, i_2_, -156511736);
 	    if (class105 != null) {
 		this.aClass119_4167 = Class389.aClass119Array4165[i >> 16];
 		this.aClass105_4168 = class105;

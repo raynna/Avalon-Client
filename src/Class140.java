@@ -215,7 +215,7 @@ public class Class140 implements Runnable {
         }
     }
 
-    public static IComponentDefinition method1558(int i, int i_15_, int i_16_) {
+    public static IComponentDefinition getInterfaceComponent(int i, int i_15_, int i_16_) {
         try {
             IComponentDefinition class105 = Class50.getIComponentDefinitions(i, (byte) -11);
             if (-1 == i_15_)
