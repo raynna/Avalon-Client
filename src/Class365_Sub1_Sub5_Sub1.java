@@ -605,13 +605,13 @@ public class Class365_Sub1_Sub5_Sub1 extends Class365_Sub1_Sub5 implements Inter
 
     public static boolean method4525(boolean bool, int i) {
 	try {
-	    boolean bool_26_ = Class373.aClass_ra4071.method5054();
+	    boolean bool_26_ = OverlayType.activeToolkit.method5054();
 	    if (bool != bool_26_) {
 		if (bool) {
-		    if (!Class373.aClass_ra4071.method5052())
+		    if (!OverlayType.activeToolkit.method5052())
 			bool = false;
 		} else
-		    Class373.aClass_ra4071.method5053();
+		    OverlayType.activeToolkit.method5053();
 		if (bool != bool_26_) {
 		    Class422_Sub25.aClass298_Sub48_8425.method3540((Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub6_7551), bool ? 1 : 0, -1863602535);
 		    Class3.method300(656179282);

@@ -99,7 +99,7 @@ public class Class298_Sub9 extends Class298 {
 		}
 		if (null != aClass348_7223) {
 		    class387.KA(i_2_);
-		    aClass348_7223.method4194(class387, l);
+		    aClass348_7223.put(class387, l);
 		}
 	    }
 	    if (class438 == null)

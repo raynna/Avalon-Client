@@ -30,7 +30,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
     int anInt7989;
     int anInt7990;
     int anInt7991;
-    Class57 aClass57_7992;
+    Sprite aSprite_7992;
     float aFloat7993;
     boolean aBoolean7994 = false;
     float aFloat7995;
@@ -149,7 +149,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 		Class53 class53 = anInterface_ma5299.method174(i, 2098775003);
 		int i_8_ = ((class53.aBoolean518 || this.aBoolean8003) ? 64 : 1107560907 * this.anInt8002);
 		class298_sub4 = new Class298_Sub4(i, i_8_, anInterface_ma5299.method172(i, 0.7F, i_8_, i_8_, true, (byte) 2), 1 != -2138060883 * class53.anInt528);
-		this.aClass348_7975.method4194(class298_sub4, i | ~0x7fffffffffffffffL);
+		this.aClass348_7975.put(class298_sub4, i | ~0x7fffffffffffffffL);
 	    }
 	}
 	class298_sub4.aBoolean7189 = true;
@@ -817,7 +817,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
     }
 
     @Override
-    public Class57 method5108(int i, int i_175_, int i_176_, int i_177_, boolean bool) {
+    public Sprite method5108(int i, int i_175_, int i_176_, int i_177_, boolean bool) {
 	if (this.anIntArray7967 == null)
 	    throw new IllegalStateException("");
 	int[] is = new int[i_176_ * i_177_];
@@ -830,8 +830,8 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    i_178_ += i_179_;
 	}
 	if (bool)
-	    return new Class57_Sub1_Sub1(this, is, i_176_, i_177_);
-	return new Class57_Sub1_Sub2(this, is, i_176_, i_177_);
+	    return new Sprite_Sub1_Sub1(this, is, i_176_, i_177_);
+	return new Sprite_Sub1_Sub2(this, is, i_176_, i_177_);
     }
 
     @Override
@@ -1285,7 +1285,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
     }
 
     @Override
-    public Class57 method5033(int i, int i_324_, int i_325_, int i_326_, boolean bool) {
+    public Sprite method5033(int i, int i_324_, int i_325_, int i_326_, boolean bool) {
 	if (this.anIntArray7967 == null)
 	    throw new IllegalStateException("");
 	int[] is = new int[i_325_ * i_326_];
@@ -1298,8 +1298,8 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    i_327_ += i_328_;
 	}
 	if (bool)
-	    return new Class57_Sub1_Sub1(this, is, i_325_, i_326_);
-	return new Class57_Sub1_Sub2(this, is, i_325_, i_326_);
+	    return new Sprite_Sub1_Sub1(this, is, i_325_, i_326_);
+	return new Sprite_Sub1_Sub2(this, is, i_325_, i_326_);
     }
 
     @Override
@@ -1472,21 +1472,21 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    method5219(bool_378_, i, i_380_, f, i_383_, class302_sub3_sub1.anInt9792, 1);
 	else {
 	    if (i_382_ != this.anInt8006 * -815285507) {
-		Class57 class57 = (Class57) this.aClass348_7970.method4184(i_382_);
-		if (class57 == null) {
+		Sprite sprite = (Sprite) this.aClass348_7970.method4184(i_382_);
+		if (sprite == null) {
 		    int[] is = method5197(i_382_);
 		    if (is != null) {
 			int i_384_ = (method5199(i_382_) ? 64 : (1107560907 * this.anInt8002));
-			class57 = method5031(is, 0, i_384_, i_384_, i_384_, 105789167);
-			this.aClass348_7970.method4194(class57, i_382_);
+			sprite = method5031(is, 0, i_384_, i_384_, i_384_, 105789167);
+			this.aClass348_7970.put(sprite, i_382_);
 		    } else
 			return;
 		}
 		this.anInt8006 = 2116530773 * i_382_;
-		this.aClass57_7992 = class57;
+		this.aSprite_7992 = sprite;
 	    }
 	    i_381_++;
-	    ((Class57_Sub1) this.aClass57_7992).method678(bool, bool_378_, bool_379_, i - i_383_, i_380_ - i_383_, f, i_381_, i_381_, 0, class302_sub3_sub1.anInt9792, 1, 1, false);
+	    ((Sprite_Sub1) this.aSprite_7992).method678(bool, bool_378_, bool_379_, i - i_383_, i_380_ - i_383_, f, i_381_, i_381_, 0, class302_sub3_sub1.anInt9792, 1, 1, false);
 	}
     }
 
@@ -1496,19 +1496,19 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 		Class53 class53 = anInterface_ma5299.method174(i_390_, 1695034515);
 		if (!class53.aBoolean524) {
 		    if (i_390_ != this.anInt8006 * -815285507) {
-			Class57 class57 = (Class57) this.aClass348_7970.method4184(i_390_);
-			if (null == class57) {
+			Sprite sprite = (Sprite) this.aClass348_7970.method4184(i_390_);
+			if (null == sprite) {
 			    int[] is = method5197(i_390_);
 			    if (null == is)
 				return;
 			    int i_394_ = (method5199(i_390_) ? 64 : (this.anInt8002 * 1107560907));
-			    class57 = method5031(is, 0, i_394_, i_394_, i_394_, 2014032256);
-			    this.aClass348_7970.method4194(class57, i_390_);
+			    sprite = method5031(is, 0, i_394_, i_394_, i_394_, 2014032256);
+			    this.aClass348_7970.put(sprite, i_390_);
 			}
 			this.anInt8006 = i_390_ * 2116530773;
-			this.aClass57_7992 = class57;
+			this.aSprite_7992 = sprite;
 		    }
-		    ((Class57_Sub1) this.aClass57_7992).method678(bool, bool_385_, bool_386_, i - i_388_, i_387_ - i_389_, f, i_388_ << 1, i_389_ << 1, i_392_, i_391_, i_393_, 1, -2138060883 * class53.anInt528 != 2);
+		    ((Sprite_Sub1) this.aSprite_7992).method678(bool, bool_385_, bool_386_, i - i_388_, i_387_ - i_389_, f, i_388_ << 1, i_389_ << 1, i_392_, i_391_, i_393_, 1, -2138060883 * class53.anInt528 != 2);
 		    return;
 		}
 	    }
@@ -3882,14 +3882,14 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
     }
 
     @Override
-    public Class57 method5104(int i, int i_1094_, boolean bool, boolean bool_1095_) {
+    public Sprite method5104(int i, int i_1094_, boolean bool, boolean bool_1095_) {
 	if (bool)
-	    return new Class57_Sub1_Sub1(this, i, i_1094_);
-	return new Class57_Sub1_Sub2(this, i, i_1094_);
+	    return new Sprite_Sub1_Sub1(this, i, i_1094_);
+	return new Sprite_Sub1_Sub2(this, i, i_1094_);
     }
 
     @Override
-    public Class57 method5105(int[] is, int i, int i_1096_, int i_1097_, int i_1098_, boolean bool) {
+    public Sprite method5105(int[] is, int i, int i_1096_, int i_1097_, int i_1098_, boolean bool) {
 	boolean bool_1099_ = false;
 	int i_1100_ = i;
 	while_117_: for (int i_1101_ = 0; i_1101_ < i_1098_; i_1101_++) {
@@ -3902,12 +3902,12 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    }
 	}
 	if (bool_1099_)
-	    return new Class57_Sub1_Sub1(this, is, i, i_1096_, i_1097_, i_1098_, bool);
-	return new Class57_Sub1_Sub2(this, is, i, i_1096_, i_1097_, i_1098_, bool);
+	    return new Sprite_Sub1_Sub1(this, is, i, i_1096_, i_1097_, i_1098_, bool);
+	return new Sprite_Sub1_Sub2(this, is, i, i_1096_, i_1097_, i_1098_, bool);
     }
 
     @Override
-    public Class57 method5106(int[] is, int i, int i_1104_, int i_1105_, int i_1106_, boolean bool) {
+    public Sprite method5106(int[] is, int i, int i_1104_, int i_1105_, int i_1106_, boolean bool) {
 	boolean bool_1107_ = false;
 	int i_1108_ = i;
 	while_118_: for (int i_1109_ = 0; i_1109_ < i_1106_; i_1109_++) {
@@ -3920,12 +3920,12 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    }
 	}
 	if (bool_1107_)
-	    return new Class57_Sub1_Sub1(this, is, i, i_1104_, i_1105_, i_1106_, bool);
-	return new Class57_Sub1_Sub2(this, is, i, i_1104_, i_1105_, i_1106_, bool);
+	    return new Sprite_Sub1_Sub1(this, is, i, i_1104_, i_1105_, i_1106_, bool);
+	return new Sprite_Sub1_Sub2(this, is, i, i_1104_, i_1105_, i_1106_, bool);
     }
 
     @Override
-    public Class57 method5190(int[] is, int i, int i_1112_, int i_1113_, int i_1114_, boolean bool) {
+    public Sprite method5190(int[] is, int i, int i_1112_, int i_1113_, int i_1114_, boolean bool) {
 	boolean bool_1115_ = false;
 	int i_1116_ = i;
 	while_119_: for (int i_1117_ = 0; i_1117_ < i_1114_; i_1117_++) {
@@ -3938,17 +3938,17 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    }
 	}
 	if (bool_1115_)
-	    return new Class57_Sub1_Sub1(this, is, i, i_1112_, i_1113_, i_1114_, bool);
-	return new Class57_Sub1_Sub2(this, is, i, i_1112_, i_1113_, i_1114_, bool);
+	    return new Sprite_Sub1_Sub1(this, is, i, i_1112_, i_1113_, i_1114_, bool);
+	return new Sprite_Sub1_Sub2(this, is, i, i_1112_, i_1113_, i_1114_, bool);
     }
 
     @Override
-    public Class57 method5107(IndexedImage class89, boolean bool) {
+    public Sprite method5107(IndexedImage class89, boolean bool) {
 	int[] is = class89.anIntArray817;
 	byte[] is_1120_ = class89.aByteArray818;
 	int i = class89.anInt812;
 	int i_1121_ = class89.anInt816;
-	Class57_Sub1 class57_sub1;
+	Sprite_Sub1 class57_sub1;
 	if (bool && null == class89.aByteArray819) {
 	    int[] is_1122_ = new int[is.length];
 	    byte[] is_1123_ = new byte[i_1121_ * i];
@@ -3959,7 +3959,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    }
 	    for (int i_1127_ = 0; i_1127_ < is.length; i_1127_++)
 		is_1122_[i_1127_] = is[i_1127_];
-	    class57_sub1 = new Class57_Sub1_Sub3(this, is_1123_, is_1122_, i, i_1121_);
+	    class57_sub1 = new Sprite_Sub1_Sub3(this, is_1123_, is_1122_, i, i_1121_);
 	} else {
 	    int[] is_1128_ = new int[i_1121_ * i];
 	    byte[] is_1129_ = class89.aByteArray819;
@@ -3969,7 +3969,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 		    for (int i_1132_ = 0; i_1132_ < i; i_1132_++)
 			is_1128_[i_1131_ + i_1132_] = (is[is_1120_[i_1131_ + i_1132_] & 0xff] | is_1129_[i_1132_ + i_1131_] << 24);
 		}
-		class57_sub1 = new Class57_Sub1_Sub1(this, is_1128_, i, i_1121_);
+		class57_sub1 = new Sprite_Sub1_Sub1(this, is_1128_, i, i_1121_);
 	    } else {
 		for (int i_1133_ = 0; i_1133_ < i_1121_; i_1133_++) {
 		    int i_1134_ = i_1133_ * i;
@@ -3978,7 +3978,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 			is_1128_[i_1134_ + i_1135_] = 0 != i_1136_ ? ~0xffffff | i_1136_ : 0;
 		    }
 		}
-		class57_sub1 = new Class57_Sub1_Sub2(this, is_1128_, i, i_1121_);
+		class57_sub1 = new Sprite_Sub1_Sub2(this, is_1128_, i, i_1121_);
 	    }
 	}
 	class57_sub1.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
@@ -3986,12 +3986,12 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
     }
 
     @Override
-    public Class57 method5101(IndexedImage class89, boolean bool) {
+    public Sprite method5101(IndexedImage class89, boolean bool) {
 	int[] is = class89.anIntArray817;
 	byte[] is_1137_ = class89.aByteArray818;
 	int i = class89.anInt812;
 	int i_1138_ = class89.anInt816;
-	Class57_Sub1 class57_sub1;
+	Sprite_Sub1 class57_sub1;
 	if (bool && null == class89.aByteArray819) {
 	    int[] is_1139_ = new int[is.length];
 	    byte[] is_1140_ = new byte[i_1138_ * i];
@@ -4002,7 +4002,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    }
 	    for (int i_1144_ = 0; i_1144_ < is.length; i_1144_++)
 		is_1139_[i_1144_] = is[i_1144_];
-	    class57_sub1 = new Class57_Sub1_Sub3(this, is_1140_, is_1139_, i, i_1138_);
+	    class57_sub1 = new Sprite_Sub1_Sub3(this, is_1140_, is_1139_, i, i_1138_);
 	} else {
 	    int[] is_1145_ = new int[i_1138_ * i];
 	    byte[] is_1146_ = class89.aByteArray819;
@@ -4012,7 +4012,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 		    for (int i_1149_ = 0; i_1149_ < i; i_1149_++)
 			is_1145_[i_1148_ + i_1149_] = (is[is_1137_[i_1148_ + i_1149_] & 0xff] | is_1146_[i_1149_ + i_1148_] << 24);
 		}
-		class57_sub1 = new Class57_Sub1_Sub1(this, is_1145_, i, i_1138_);
+		class57_sub1 = new Sprite_Sub1_Sub1(this, is_1145_, i, i_1138_);
 	    } else {
 		for (int i_1150_ = 0; i_1150_ < i_1138_; i_1150_++) {
 		    int i_1151_ = i_1150_ * i;
@@ -4021,7 +4021,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 			is_1145_[i_1151_ + i_1152_] = 0 != i_1153_ ? ~0xffffff | i_1153_ : 0;
 		    }
 		}
-		class57_sub1 = new Class57_Sub1_Sub2(this, is_1145_, i, i_1138_);
+		class57_sub1 = new Sprite_Sub1_Sub2(this, is_1145_, i, i_1138_);
 	    }
 	}
 	class57_sub1.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
@@ -4574,7 +4574,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
     }
 
     @Override
-    public Class57 method5030(int[] is, int i, int i_1314_, int i_1315_, int i_1316_, boolean bool) {
+    public Sprite method5030(int[] is, int i, int i_1314_, int i_1315_, int i_1316_, boolean bool) {
 	boolean bool_1317_ = false;
 	int i_1318_ = i;
 	while_120_: for (int i_1319_ = 0; i_1319_ < i_1316_; i_1319_++) {
@@ -4587,8 +4587,8 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    }
 	}
 	if (bool_1317_)
-	    return new Class57_Sub1_Sub1(this, is, i, i_1314_, i_1315_, i_1316_, bool);
-	return new Class57_Sub1_Sub2(this, is, i, i_1314_, i_1315_, i_1316_, bool);
+	    return new Sprite_Sub1_Sub1(this, is, i, i_1314_, i_1315_, i_1316_, bool);
+	return new Sprite_Sub1_Sub2(this, is, i, i_1314_, i_1315_, i_1316_, bool);
     }
 
     @Override
@@ -4947,12 +4947,12 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
     }
 
     @Override
-    public Class57 method5125(IndexedImage class89, boolean bool) {
+    public Sprite convertSpriteForGame(IndexedImage class89, boolean bool) {
 	int[] is = class89.anIntArray817;
 	byte[] is_1416_ = class89.aByteArray818;
 	int i = class89.anInt812;
 	int i_1417_ = class89.anInt816;
-	Class57_Sub1 class57_sub1;
+	Sprite_Sub1 class57_sub1;
 	if (bool && null == class89.aByteArray819) {
 	    int[] is_1418_ = new int[is.length];
 	    byte[] is_1419_ = new byte[i_1417_ * i];
@@ -4963,7 +4963,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 	    }
 	    for (int i_1423_ = 0; i_1423_ < is.length; i_1423_++)
 		is_1418_[i_1423_] = is[i_1423_];
-	    class57_sub1 = new Class57_Sub1_Sub3(this, is_1419_, is_1418_, i, i_1417_);
+	    class57_sub1 = new Sprite_Sub1_Sub3(this, is_1419_, is_1418_, i, i_1417_);
 	} else {
 	    int[] is_1424_ = new int[i_1417_ * i];
 	    byte[] is_1425_ = class89.aByteArray819;
@@ -4973,7 +4973,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 		    for (int i_1428_ = 0; i_1428_ < i; i_1428_++)
 			is_1424_[i_1427_ + i_1428_] = (is[is_1416_[i_1427_ + i_1428_] & 0xff] | is_1425_[i_1428_ + i_1427_] << 24);
 		}
-		class57_sub1 = new Class57_Sub1_Sub1(this, is_1424_, i, i_1417_);
+		class57_sub1 = new Sprite_Sub1_Sub1(this, is_1424_, i, i_1417_);
 	    } else {
 		for (int i_1429_ = 0; i_1429_ < i_1417_; i_1429_++) {
 		    int i_1430_ = i_1429_ * i;
@@ -4982,7 +4982,7 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
 			is_1424_[i_1430_ + i_1431_] = 0 != i_1432_ ? ~0xffffff | i_1432_ : 0;
 		    }
 		}
-		class57_sub1 = new Class57_Sub1_Sub2(this, is_1424_, i, i_1417_);
+		class57_sub1 = new Sprite_Sub1_Sub2(this, is_1424_, i, i_1417_);
 	    }
 	}
 	class57_sub1.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
@@ -5006,10 +5006,10 @@ public class Class_ra_Sub1 extends GraphicsToolkit {
     }
 
     @Override
-    public Class57 method5029(int i, int i_1433_, boolean bool, boolean bool_1434_) {
+    public Sprite method5029(int i, int i_1433_, boolean bool, boolean bool_1434_) {
 	if (bool)
-	    return new Class57_Sub1_Sub1(this, i, i_1433_);
-	return new Class57_Sub1_Sub2(this, i, i_1433_);
+	    return new Sprite_Sub1_Sub1(this, i, i_1433_);
+	return new Sprite_Sub1_Sub2(this, i, i_1433_);
     }
 
     @Override

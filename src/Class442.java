@@ -194,7 +194,7 @@ public class Class442 {
 	    Class497.aClass197_6105.method1881(50, -1029006216);
 	    Class484.method6141(5, (byte) 24);
 	    Class264.method2496(5, 368704432);
-	    client.aClass348_8780.method4186(5, -1305461493);
+	    client.aCachingHashMap_8780.method4186(5, -1305461493);
 	    client.aClass348_8898.method4186(5, -659243138);
 	    client.aClass348_8697.method4186(5, -2138729636);
 	    Class436.aClass348_5500.method4186(5, -1070209353);

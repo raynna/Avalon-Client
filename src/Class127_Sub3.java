@@ -6,16 +6,16 @@ public class Class127_Sub3 extends Class127 {
     @Override
     void method1414(boolean bool, int i, int i_0_) {
 	int i_1_ = (method1418(-580739090) * (-944287579 * this.aClass128_6375.anInt6326) / 10000);
-	Class373.aClass_ra4071.B(i, 2 + i_0_, i_1_, this.aClass128_6375.anInt6330 * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558 * 457840037), 0);
-	Class373.aClass_ra4071.B(i + i_1_, 2 + i_0_, (this.aClass128_6375.anInt6326 * -944287579 - i_1_), this.aClass128_6375.anInt6330 * -1387457793 - 2, 0, 0);
+	OverlayType.activeToolkit.B(i, 2 + i_0_, i_1_, this.aClass128_6375.anInt6330 * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558 * 457840037), 0);
+	OverlayType.activeToolkit.B(i + i_1_, 2 + i_0_, (this.aClass128_6375.anInt6326 * -944287579 - i_1_), this.aClass128_6375.anInt6330 * -1387457793 - 2, 0, 0);
     }
 
     @Override
     void method1411(boolean bool, int i, int i_2_, int i_3_) {
 	try {
 	    int i_4_ = (method1418(-191128334) * (-944287579 * this.aClass128_6375.anInt6326) / 10000);
-	    Class373.aClass_ra4071.B(i, 2 + i_2_, i_4_, (this.aClass128_6375.anInt6330) * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558) * 457840037, 0);
-	    Class373.aClass_ra4071.B(i + i_4_, 2 + i_2_, (this.aClass128_6375.anInt6326) * -944287579 - i_4_, (this.aClass128_6375.anInt6330) * -1387457793 - 2, 0, 0);
+	    OverlayType.activeToolkit.B(i, 2 + i_2_, i_4_, (this.aClass128_6375.anInt6330) * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558) * 457840037, 0);
+	    OverlayType.activeToolkit.B(i + i_4_, 2 + i_2_, (this.aClass128_6375.anInt6326) * -944287579 - i_4_, (this.aClass128_6375.anInt6330) * -1387457793 - 2, 0, 0);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("zu.r(").append(')').toString());
@@ -29,29 +29,29 @@ public class Class127_Sub3 extends Class127 {
     @Override
     void method1413(boolean bool, int i, int i_6_) {
 	int i_7_ = (method1418(1604037601) * (-944287579 * this.aClass128_6375.anInt6326) / 10000);
-	Class373.aClass_ra4071.B(i, 2 + i_6_, i_7_, this.aClass128_6375.anInt6330 * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558 * 457840037), 0);
-	Class373.aClass_ra4071.B(i + i_7_, 2 + i_6_, (this.aClass128_6375.anInt6326 * -944287579 - i_7_), this.aClass128_6375.anInt6330 * -1387457793 - 2, 0, 0);
+	OverlayType.activeToolkit.B(i, 2 + i_6_, i_7_, this.aClass128_6375.anInt6330 * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558 * 457840037), 0);
+	OverlayType.activeToolkit.B(i + i_7_, 2 + i_6_, (this.aClass128_6375.anInt6326 * -944287579 - i_7_), this.aClass128_6375.anInt6330 * -1387457793 - 2, 0, 0);
     }
 
     @Override
     void method1415(boolean bool, int i, int i_8_) {
 	int i_9_ = (method1418(1183027095) * (-944287579 * this.aClass128_6375.anInt6326) / 10000);
-	Class373.aClass_ra4071.B(i, 2 + i_8_, i_9_, this.aClass128_6375.anInt6330 * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558 * 457840037), 0);
-	Class373.aClass_ra4071.B(i + i_9_, 2 + i_8_, (this.aClass128_6375.anInt6326 * -944287579 - i_9_), this.aClass128_6375.anInt6330 * -1387457793 - 2, 0, 0);
+	OverlayType.activeToolkit.B(i, 2 + i_8_, i_9_, this.aClass128_6375.anInt6330 * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558 * 457840037), 0);
+	OverlayType.activeToolkit.B(i + i_9_, 2 + i_8_, (this.aClass128_6375.anInt6326 * -944287579 - i_9_), this.aClass128_6375.anInt6330 * -1387457793 - 2, 0, 0);
     }
 
     @Override
     void method1416(boolean bool, int i, int i_10_) {
 	int i_11_ = (method1418(1484742879) * (-944287579 * this.aClass128_6375.anInt6326) / 10000);
-	Class373.aClass_ra4071.B(i, 2 + i_10_, i_11_, this.aClass128_6375.anInt6330 * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558 * 457840037), 0);
-	Class373.aClass_ra4071.B(i + i_11_, 2 + i_10_, (this.aClass128_6375.anInt6326 * -944287579 - i_11_), this.aClass128_6375.anInt6330 * -1387457793 - 2, 0, 0);
+	OverlayType.activeToolkit.B(i, 2 + i_10_, i_11_, this.aClass128_6375.anInt6330 * -1387457793 - 2, (((Class128_Sub2) this.aClass128_6375).anInt8558 * 457840037), 0);
+	OverlayType.activeToolkit.B(i + i_11_, 2 + i_10_, (this.aClass128_6375.anInt6326 * -944287579 - i_11_), this.aClass128_6375.anInt6330 * -1387457793 - 2, 0, 0);
     }
 
     @Override
     void method1412(boolean bool, int i, int i_12_, int i_13_) {
 	try {
-	    Class373.aClass_ra4071.method5019(i - 2, i_12_, (this.aClass128_6375.anInt6326 * -944287579 + 4), 2 + (-1387457793 * this.aClass128_6375.anInt6330), -1393292711 * (((Class128_Sub2) this.aClass128_6375).anInt8559), 0);
-	    Class373.aClass_ra4071.method5019(i - 1, 1 + i_12_, (this.aClass128_6375.anInt6326 * -944287579 + 2), -1387457793 * this.aClass128_6375.anInt6330, 0, 0);
+	    OverlayType.activeToolkit.method5019(i - 2, i_12_, (this.aClass128_6375.anInt6326 * -944287579 + 4), 2 + (-1387457793 * this.aClass128_6375.anInt6330), -1393292711 * (((Class128_Sub2) this.aClass128_6375).anInt8559), 0);
+	    OverlayType.activeToolkit.method5019(i - 1, 1 + i_12_, (this.aClass128_6375.anInt6326 * -944287579 + 2), -1387457793 * this.aClass128_6375.anInt6330, 0, 0);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("zu.x(").append(')').toString());
@@ -60,20 +60,20 @@ public class Class127_Sub3 extends Class127 {
 
     @Override
     void method1410(boolean bool, int i, int i_14_) {
-	Class373.aClass_ra4071.method5019(i - 2, i_14_, this.aClass128_6375.anInt6326 * -944287579 + 4, 2 + -1387457793 * this.aClass128_6375.anInt6330, -1393292711 * ((Class128_Sub2) this.aClass128_6375).anInt8559, 0);
-	Class373.aClass_ra4071.method5019(i - 1, 1 + i_14_, this.aClass128_6375.anInt6326 * -944287579 + 2, -1387457793 * this.aClass128_6375.anInt6330, 0, 0);
+	OverlayType.activeToolkit.method5019(i - 2, i_14_, this.aClass128_6375.anInt6326 * -944287579 + 4, 2 + -1387457793 * this.aClass128_6375.anInt6330, -1393292711 * ((Class128_Sub2) this.aClass128_6375).anInt8559, 0);
+	OverlayType.activeToolkit.method5019(i - 1, 1 + i_14_, this.aClass128_6375.anInt6326 * -944287579 + 2, -1387457793 * this.aClass128_6375.anInt6330, 0, 0);
     }
 
     @Override
     void method1409(boolean bool, int i, int i_15_) {
-	Class373.aClass_ra4071.method5019(i - 2, i_15_, this.aClass128_6375.anInt6326 * -944287579 + 4, 2 + -1387457793 * this.aClass128_6375.anInt6330, -1393292711 * ((Class128_Sub2) this.aClass128_6375).anInt8559, 0);
-	Class373.aClass_ra4071.method5019(i - 1, 1 + i_15_, this.aClass128_6375.anInt6326 * -944287579 + 2, -1387457793 * this.aClass128_6375.anInt6330, 0, 0);
+	OverlayType.activeToolkit.method5019(i - 2, i_15_, this.aClass128_6375.anInt6326 * -944287579 + 4, 2 + -1387457793 * this.aClass128_6375.anInt6330, -1393292711 * ((Class128_Sub2) this.aClass128_6375).anInt8559, 0);
+	OverlayType.activeToolkit.method5019(i - 1, 1 + i_15_, this.aClass128_6375.anInt6326 * -944287579 + 2, -1387457793 * this.aClass128_6375.anInt6330, 0, 0);
     }
 
     @Override
     void method1417(boolean bool, int i, int i_16_) {
-	Class373.aClass_ra4071.method5019(i - 2, i_16_, this.aClass128_6375.anInt6326 * -944287579 + 4, 2 + -1387457793 * this.aClass128_6375.anInt6330, -1393292711 * ((Class128_Sub2) this.aClass128_6375).anInt8559, 0);
-	Class373.aClass_ra4071.method5019(i - 1, 1 + i_16_, this.aClass128_6375.anInt6326 * -944287579 + 2, -1387457793 * this.aClass128_6375.anInt6330, 0, 0);
+	OverlayType.activeToolkit.method5019(i - 2, i_16_, this.aClass128_6375.anInt6326 * -944287579 + 4, 2 + -1387457793 * this.aClass128_6375.anInt6330, -1393292711 * ((Class128_Sub2) this.aClass128_6375).anInt8559, 0);
+	OverlayType.activeToolkit.method5019(i - 1, 1 + i_16_, this.aClass128_6375.anInt6326 * -944287579 + 2, -1387457793 * this.aClass128_6375.anInt6330, 0, 0);
     }
 
     static int method1431(RsBitsBuffer class298_sub53_sub2, int i) {

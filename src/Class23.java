@@ -67,7 +67,7 @@ public class Class23 {
 	}
     }
 
-    public static Class57 method376(GraphicsToolkit class_ra, int i, byte i_1_) {
+    public static Sprite method376(GraphicsToolkit class_ra, int i, byte i_1_) {
 	try {
 	    Class298_Sub49 class298_sub49 = ((Class298_Sub49) Class423.aClass437_5354.method5812(i));
 	    if (class298_sub49 != null) {
@@ -75,7 +75,7 @@ public class Class23 {
 		class298_sub49.aBoolean7594 = true;
 		if (class298_sub24_sub3 != null) {
 		    Class423.aClass431_5352.aClass_ra6503 = class_ra;
-		    return ((Class57) class298_sub24_sub3.method3088((Class423.aClass431_5352), -710052434));
+		    return ((Sprite) class298_sub24_sub3.method3088((Class423.aClass431_5352), -710052434));
 		}
 	    }
 	    return null;

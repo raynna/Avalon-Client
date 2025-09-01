@@ -81,7 +81,7 @@ public class Class298 {
 	    class173 = new Class173();
 	    if (null != is)
 		class173.method1817(new RsByteBuffer(is), i, (byte) -27);
-	    Class173.aClass348_1749.method4194(class173, i);
+	    Class173.aClass348_1749.put(class173, i);
 	    return class173;
 	}
 	catch (RuntimeException runtimeexception) {

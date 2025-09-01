@@ -31,7 +31,7 @@ public class Class518 {
 	    if (null != is)
 		class298_sub37_sub10.method3444(new RsByteBuffer(is), (byte) -66);
 	    synchronized (this.aClass348_6272) {
-		this.aClass348_6272.method4194(class298_sub37_sub10, i);
+		this.aClass348_6272.put(class298_sub37_sub10, i);
 	    }
 	    return class298_sub37_sub10;
 	}
@@ -119,7 +119,7 @@ public class Class518 {
     static final void method6316(Class403 class403, int i) {
 	try {
 	    int i_4_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
-	    if (!Class373.aClass_ra4071.method5050())
+	    if (!OverlayType.activeToolkit.method5050())
 		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = 3;
 	    else
 		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub6_7551.method5612(i_4_, 1352882135);

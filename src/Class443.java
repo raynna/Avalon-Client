@@ -110,9 +110,9 @@ public class Class443 {
 	}
     }
 
-    static void method5883(IComponentDefinition class105, Class_ta class_ta, int i, int i_10_, int i_11_, int i_12_, Class57 class57, byte i_13_) {
+    static void method5883(IComponentDefinition class105, Class_ta class_ta, int i, int i_10_, int i_11_, int i_12_, Sprite sprite, byte i_13_) {
 	try {
-	    if (null != class57) {
+	    if (null != sprite) {
 		int i_14_;
 		if (-863531439 * Class298_Sub1.anInt7164 == 2)
 		    i_14_ = (int) client.aFloat8949 & 0x3fff;
@@ -129,7 +129,7 @@ public class Class443 {
 		    }
 		    int i_19_ = i_12_ * i_17_ + i_11_ * i_18_ >> 14;
 		    int i_20_ = i_18_ * i_12_ - i_11_ * i_17_ >> 14;
-		    class57.method654((i_19_ + (class105.anInt1156 * -2093041337 / 2 + i) - class57.method271() / 2), (457937409 * class105.anInt1162 / 2 + i_10_ - i_20_ - class57.method626() / 2), class_ta, i, i_10_);
+		    sprite.method654((i_19_ + (class105.anInt1156 * -2093041337 / 2 + i) - sprite.method271() / 2), (457937409 * class105.anInt1162 / 2 + i_10_ - i_20_ - sprite.method626() / 2), class_ta, i, i_10_);
 		}
 	    }
 	}

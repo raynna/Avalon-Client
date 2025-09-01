@@ -65,22 +65,22 @@ public abstract class Class319 {
 	    int i_5_ = (255 - -1274801891 * Class82_Sub4.anInt6833 - Class436.anInt5498 * 1868123923);
 	    if (i_5_ < 0)
 		i_5_ = 0;
-	    if (Class313.aClass57_3299 == null || Class423.aClass57_5356 == null) {
+	    if (Class313.aSprite_3299 == null || Class423.aSprite_5356 == null) {
 		if (Class158.idx8.method2310(Class362.anInt3918 * 142643703, -457216440) && Class158.idx8.method2310(((Class422_Sub14.anInt8400) * 1757615047), -457216440)) {
-		    Class313.aClass57_3299 = (class_ra.method5125(IndexedImage.method987(Class158.idx8, Class362.anInt3918 * 142643703, 0), true));
+		    Class313.aSprite_3299 = (class_ra.convertSpriteForGame(IndexedImage.method987(Class158.idx8, Class362.anInt3918 * 142643703, 0), true));
 		    IndexedImage class89 = IndexedImage.method987(Class158.idx8, (Class422_Sub14.anInt8400 * 1757615047), 0);
-		    Class423.aClass57_5356 = class_ra.method5125(class89, true);
+		    Class423.aSprite_5356 = class_ra.convertSpriteForGame(class89, true);
 		    class89.method992();
-		    Class74.aClass57_700 = class_ra.method5125(class89, true);
+		    Class74.aSprite_700 = class_ra.convertSpriteForGame(class89, true);
 		} else
 		    class_ra.B(i, i_0_, i_1_, i_3_, i_5_ << 24 | 1018380409 * IPAddress.anInt5958, 1);
 	    }
-	    if (Class313.aClass57_3299 != null && Class423.aClass57_5356 != null) {
-		int i_6_ = ((i_1_ - Class423.aClass57_5356.method623() * 2) / Class313.aClass57_3299.method623());
+	    if (Class313.aSprite_3299 != null && Class423.aSprite_5356 != null) {
+		int i_6_ = ((i_1_ - Class423.aSprite_5356.method623() * 2) / Class313.aSprite_3299.method623());
 		for (int i_7_ = 0; i_7_ < i_6_; i_7_++)
-		    Class313.aClass57_3299.method645((i + Class423.aClass57_5356.method623() + i_7_ * Class313.aClass57_3299.method623()), i_0_);
-		Class423.aClass57_5356.method645(i, i_0_);
-		Class74.aClass57_700.method645(i_1_ + i - Class74.aClass57_700.method623(), i_0_);
+		    Class313.aSprite_3299.draw((i + Class423.aSprite_5356.method623() + i_7_ * Class313.aSprite_3299.method623()), i_0_);
+		Class423.aSprite_5356.draw(i, i_0_);
+		Class74.aSprite_700.draw(i_1_ + i - Class74.aSprite_700.method623(), i_0_);
 	    }
 	    class264.method2488(string, 3 + i, ((20 - 1110385787 * class505.anInt6202) / 2 + (i_0_ + 1110385787 * class505.anInt6202)), -1067973831 * Class343.anInt3674 | ~0xffffff, -1, 772459815);
 	    class_ra.B(i, i_3_ + i_0_, i_1_, i_2_ - i_3_, i_5_ << 24 | IPAddress.anInt5958 * 1018380409, 1);

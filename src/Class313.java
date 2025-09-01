@@ -7,7 +7,7 @@ public class Class313 {
     static int anInt3296 = 7;
     public static int anInt3297;
     public static Object[] anObjectArray3298;
-    public static Class57 aClass57_3299;
+    public static Sprite aSprite_3299;
     static Class97 aClass97_3300;
 
     Class313() throws Throwable {
@@ -39,12 +39,12 @@ public class Class313 {
 	    else if (-1 != (class298_sub37_sub15.anInt9660) * -149710173)
 		is = (Class298_Sub32_Sub14.aClass477_9400.getItemDefinitions((class298_sub37_sub15.anInt9660 * -149710173)).anIntArray5767);
 	    else if (Class302.method3716(946432351 * (class298_sub37_sub15.anInt9662), -838004269)) {
-		Class298_Sub29 class298_sub29 = ((Class298_Sub29) (client.aClass437_8696.method5812((int) (2236412381003659263L * class298_sub37_sub15.aLong9661))));
-		if (class298_sub29 != null) {
-		    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
-		    NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.aClass503_10190;
-		    if (null != class503.anIntArray6188)
-			class503 = class503.method6240(Class128.aClass148_6331, 2033982126);
+		LinkableObject linkableObject = ((LinkableObject) (client.aClass437_8696.method5812((int) (2236412381003659263L * class298_sub37_sub15.aLong9661))));
+		if (linkableObject != null) {
+		    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
+		    NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.definitions;
+		    if (null != class503.morphisms)
+			class503 = class503.morph(Class128.aClass148_6331, 2033982126);
 		    if (class503 != null)
 			is = class503.anIntArray6131;
 		}

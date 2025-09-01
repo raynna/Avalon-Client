@@ -9,7 +9,7 @@ public class Class82_Sub17 extends Class82 {
 
     @Override
     public void method868() {
-	Class94 class94 = (Class87.aClass94Array794[this.anInt6889 * -824702981]);
+	Class94 class94 = (Class87.entities[this.anInt6889 * -824702981]);
 	Class80 class80 = (Class87.aClass80Array795[this.anInt6888 * -1213610501]);
 	class80.method852(class94, this.anInt6887 * 301530619, 1628828546);
     }
@@ -17,7 +17,7 @@ public class Class82_Sub17 extends Class82 {
     @Override
     public void method866(int i) {
 	try {
-	    Class94 class94 = (Class87.aClass94Array794[this.anInt6889 * -824702981]);
+	    Class94 class94 = (Class87.entities[this.anInt6889 * -824702981]);
 	    Class80 class80 = (Class87.aClass80Array795[this.anInt6888 * -1213610501]);
 	    class80.method852(class94, this.anInt6887 * 301530619, 1628828546);
 	}
@@ -35,7 +35,7 @@ public class Class82_Sub17 extends Class82 {
 
     @Override
     public void method869() {
-	Class94 class94 = (Class87.aClass94Array794[this.anInt6889 * -824702981]);
+	Class94 class94 = (Class87.entities[this.anInt6889 * -824702981]);
 	Class80 class80 = (Class87.aClass80Array795[this.anInt6888 * -1213610501]);
 	class80.method852(class94, this.anInt6887 * 301530619, 1628828546);
     }

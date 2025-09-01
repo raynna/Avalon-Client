@@ -55,7 +55,7 @@ public class Class298_Sub37_Sub5 extends Class298_Sub37 {
 		method2839(-1460969981);
 		method3402(-1345021644);
 		Class436.anInt5479 -= -1658575779;
-		Class436.aClass348_5464.method4194(this, ((class298_sub37_sub15.aLong9666) * 6619564980435866523L));
+		Class436.aClass348_5464.put(this, ((class298_sub37_sub15.aLong9666) * 6619564980435866523L));
 		return false;
 	    }
 	    return i_1_ != method3417(-912976938);

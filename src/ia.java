@@ -28,7 +28,7 @@ public class ia extends Class264 implements Interface25 {
     @Override
     native void g(char c, int i, int i_21_, int i_22_, boolean bool);
 
-    ia(ja var_ja, ba var_ba, Class505 class505, IndexedImage[] class89s, Class57[] class57s) {
+    ia(ja var_ja, ba var_ba, Class505 class505, IndexedImage[] class89s, Sprite[] sprites) {
 	super(var_ja, class505);
 	byte[][] is = new byte[class89s.length][];
 	int[] is_23_ = new int[class89s.length];

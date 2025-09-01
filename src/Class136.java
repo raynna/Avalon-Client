@@ -3,20 +3,20 @@
  */
 
 public class Class136 implements Interface6 {
-    Class57 aClass57_6385;
+    Sprite aSprite_6385;
     Class158 aClass158_6386;
     Class243 aClass243_6387;
     public static int[] anIntArray6388;
 
     @Override
     public void method55() {
-	this.aClass57_6385 = Class422_Sub10.method5663(this.aClass243_6387, -610589451 * (this.aClass158_6386.anInt6361), (byte) -80);
+	this.aSprite_6385 = Class422_Sub10.method5663(this.aClass243_6387, -610589451 * (this.aClass158_6386.anInt6361), (byte) -80);
     }
 
     @Override
     public void method53(int i) {
 	try {
-	    this.aClass57_6385 = Class422_Sub10.method5663(this.aClass243_6387, -610589451 * (this.aClass158_6386.anInt6361), (byte) -10);
+	    this.aSprite_6385 = Class422_Sub10.method5663(this.aClass243_6387, -610589451 * (this.aClass158_6386.anInt6361), (byte) -10);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("fm.a(").append(')').toString());
@@ -27,9 +27,9 @@ public class Class136 implements Interface6 {
     public void method58(boolean bool, byte i) {
 	try {
 	    if (bool) {
-		int i_0_ = ((this.aClass158_6386.aClass139_6360.method1545(this.aClass57_6385.method271(), client.anInt8794 * 775068819, -2059315000)) + (-245579987 * this.aClass158_6386.anInt6362));
-		int i_1_ = ((this.aClass158_6386.aClass133_6363.method1482(this.aClass57_6385.method626(), client.anInt8803 * -791746413, -1363619703)) + (this.aClass158_6386.anInt6359 * -1426302101));
-		this.aClass57_6385.method645(i_0_, i_1_);
+		int i_0_ = ((this.aClass158_6386.aClass139_6360.method1545(this.aSprite_6385.method271(), client.anInt8794 * 775068819, -2059315000)) + (-245579987 * this.aClass158_6386.anInt6362));
+		int i_1_ = ((this.aClass158_6386.aClass133_6363.method1482(this.aSprite_6385.method626(), client.anInt8803 * -791746413, -1363619703)) + (this.aClass158_6386.anInt6359 * -1426302101));
+		this.aSprite_6385.draw(i_0_, i_1_);
 	    }
 	}
 	catch (RuntimeException runtimeexception) {
@@ -50,9 +50,9 @@ public class Class136 implements Interface6 {
     @Override
     public void method56(boolean bool) {
 	if (bool) {
-	    int i = ((this.aClass158_6386.aClass139_6360.method1545(this.aClass57_6385.method271(), client.anInt8794 * 775068819, -2133654536)) + -245579987 * this.aClass158_6386.anInt6362);
-	    int i_2_ = ((this.aClass158_6386.aClass133_6363.method1482(this.aClass57_6385.method626(), client.anInt8803 * -791746413, -1742244574)) + this.aClass158_6386.anInt6359 * -1426302101);
-	    this.aClass57_6385.method645(i, i_2_);
+	    int i = ((this.aClass158_6386.aClass139_6360.method1545(this.aSprite_6385.method271(), client.anInt8794 * 775068819, -2133654536)) + -245579987 * this.aClass158_6386.anInt6362);
+	    int i_2_ = ((this.aClass158_6386.aClass133_6363.method1482(this.aSprite_6385.method626(), client.anInt8803 * -791746413, -1742244574)) + this.aClass158_6386.anInt6359 * -1426302101);
+	    this.aSprite_6385.draw(i, i_2_);
 	}
     }
 

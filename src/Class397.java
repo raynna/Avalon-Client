@@ -108,9 +108,9 @@ public class Class397 {
 		}
 		int i_31_ = i_30_ * i_24_ + i_25_ * i_29_ >> 14;
 		int i_32_ = i_30_ * i_25_ - i_24_ * i_29_ >> 14;
-		Class57 class57 = Class74.aClass57Array699[i_26_];
-		int i_33_ = class57.method623();
-		int i_34_ = class57.method625();
+		Sprite sprite = Class74.aSpriteArray699[i_26_];
+		int i_33_ = sprite.method623();
+		int i_34_ = sprite.getHeight();
 		int i_35_ = i_31_ + -2093041337 * class105.anInt1156 / 2 - i_33_ / 2;
 		int i_36_ = i_35_ + i_33_;
 		int i_37_ = class105.anInt1162 * 457937409 / 2 + -i_32_ - i_34_;
@@ -121,9 +121,9 @@ public class Class397 {
 		    i_39_ -= 6;
 		    int i_40_ = (int) (Math.sin(d) * i_39_);
 		    int i_41_ = (int) (Math.cos(d) * i_39_);
-		    Class250.aClass57Array2766[i_26_].method673((-2093041337 * class105.anInt1156 / 2.0F + i + i_40_), (i_23_ + class105.anInt1162 * 457937409 / 2.0F - i_41_), 4096, (int) (-d / 6.283185307179586 * 65535.0));
+		    Class250.aSpriteArray2766[i_26_].method673((-2093041337 * class105.anInt1156 / 2.0F + i + i_40_), (i_23_ + class105.anInt1162 * 457937409 / 2.0F - i_41_), 4096, (int) (-d / 6.283185307179586 * 65535.0));
 		} else
-		    class57.method654(i_35_ + i, i_37_ + i_23_, class117.aClass_ta1397, i, i_23_);
+		    sprite.method654(i_35_ + i, i_37_ + i_23_, class117.aClass_ta1397, i, i_23_);
 	    }
 	}
 	catch (RuntimeException runtimeexception) {

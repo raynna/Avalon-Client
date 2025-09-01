@@ -28,7 +28,7 @@ public class Class126 implements Interface6 {
     @Override
     public void method55() {
 	Class505 class505 = Class255.method2439(this.aClass243_6367, 180759529 * (this.aClass151_6368.anInt6355), 1190428797);
-	this.aClass264_6370 = (Class373.aClass_ra4071.method5092(class505, IndexedImage.method981(this.aClass243_6369, (this.aClass151_6368.anInt6355 * 180759529)), true));
+	this.aClass264_6370 = (OverlayType.activeToolkit.method5092(class505, IndexedImage.method981(this.aClass243_6369, (this.aClass151_6368.anInt6355 * 180759529)), true));
     }
 
     @Override
@@ -78,7 +78,7 @@ public class Class126 implements Interface6 {
     public void method53(int i) {
 	try {
 	    Class505 class505 = Class255.method2439(this.aClass243_6367, 180759529 * (this.aClass151_6368.anInt6355), 1240803660);
-	    this.aClass264_6370 = (Class373.aClass_ra4071.method5092(class505, IndexedImage.method981(this.aClass243_6369, (this.aClass151_6368.anInt6355) * 180759529), true));
+	    this.aClass264_6370 = (OverlayType.activeToolkit.method5092(class505, IndexedImage.method981(this.aClass243_6369, (this.aClass151_6368.anInt6355) * 180759529), true));
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("fc.a(").append(')').toString());
@@ -276,24 +276,24 @@ public class Class126 implements Interface6 {
 			if ((client.aClass25_8711.anInt338 * 1237236843) > 2250)
 			    SubIncommingPacket.method1923(1705248535);
 			else {
-			    if (client.anInt8724 * 1596783995 == 3) {
+			    if (client.cutsceneStage * 1596783995 == 3) {
 				ClanSettings.method1771(921260863);
 				Class298_Sub19_Sub3.method3037(1729319705);
 			    } else if (HashTable.aClass377_5519.anInterface19_4091.method239(class298_sub50, client.anInterface16Array8688, -1625219821 * client.anInt8687, Class372.aClass323_4052, -490402318))
 				Class107.method1144(false, (short) -10206);
 			    else {
-				if (client.anInt8724 * 1596783995 == 1 && (Class298_Sub24_Sub3.method3090(577335585 * client.anInt8870, -275734557))) {
+				if (client.cutsceneStage * 1596783995 == 1 && (Class298_Sub24_Sub3.method3090(577335585 * client.anInt8870, -275734557))) {
 				    client.aClass283_8716.sendMapScene(new Class267(Class266.aClass266_2846, null), -1991819579);
-				    client.anInt8724 = -347773236;
+				    client.cutsceneStage = -347773236;
 				}
-				if (4 == 1596783995 * client.anInt8724 && 17 != client.anInt8752 * -1233866115) {
+				if (4 == 1596783995 * client.cutsceneStage && 17 != client.anInt8752 * -1233866115) {
 				    Class87.aClass437_793.method5811((byte) -51);
-				    client.anInt8724 = 0;
+				    client.cutsceneStage = 0;
 				    client.anInt8726 = -96767293 * client.ticketCycle;
 				    client.anInt8930 = 0;
 				    Interface.method3575((byte) -114);
 				}
-				if (0 == 1596783995 * client.anInt8724) {
+				if (0 == 1596783995 * client.cutsceneStage) {
 				    int i_9_ = (443738891 * client.ticketCycle - client.anInt8726 * -1846472167);
 				    while_61_: do {
 					if (1247173565 * client.anInt8930 < (Class87.aClass82Array797).length) {
@@ -306,7 +306,7 @@ public class Class126 implements Interface6 {
 						    break while_61_;
 						}
 						class82.method866(-2077694254);
-						if (0 != (1596783995 * client.anInt8724))
+						if (0 != (1596783995 * client.cutsceneStage))
 						    break while_61_;
 					    }
 					    while (((client.anInt8930 += 1259550613) * 1247173565) < (Class87.aClass82Array797).length);
@@ -315,9 +315,9 @@ public class Class126 implements Interface6 {
 					}
 				    }
 				    while (false);
-				    if (client.anInt8724 * 1596783995 == 0) {
-					for (int i_10_ = 0; (i_10_ < (Class87.aClass94Array794).length); i_10_++) {
-					    Class94 class94 = (Class87.aClass94Array794[i_10_]);
+				    if (client.cutsceneStage * 1596783995 == 0) {
+					for (int i_10_ = 0; (i_10_ < (Class87.entities).length); i_10_++) {
+					    Class94 class94 = (Class87.entities[i_10_]);
 					    if (!class94.aBoolean912) {
 						if (i <= 4)
 						    throw new IllegalStateException();

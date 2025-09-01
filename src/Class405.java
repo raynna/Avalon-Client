@@ -83,7 +83,7 @@ public class Class405 {
 
     static final void method4958(int i) {
 	try {
-	    Class152.method1652(Class373.aClass_ra4071, 443738891 * client.ticketCycle);
+	    Class152.method1652(OverlayType.activeToolkit, 443738891 * client.ticketCycle);
 	    if (-257444687 * client.WINDOW_PANE_ID != -1)
 		Class443.method5884(-257444687 * client.WINDOW_PANE_ID, 186134073);
 	    for (int i_5_ = 0; i_5_ < -112139815 * client.anInt8686; i_5_++) {
@@ -95,8 +95,8 @@ public class Class405 {
 		client.anInt8686 = 0;
 		Class104.method1104(-710389872);
 	    }
-	    Class373.aClass_ra4071.L();
-	    Class463.method6013(Class373.aClass_ra4071, (byte) 74);
+	    OverlayType.activeToolkit.L();
+	    Class463.method6013(OverlayType.activeToolkit, (byte) 74);
 	    int i_6_ = Class298_Sub17_Sub4.method2926(-185727929);
 	    if (-1 == i_6_)
 		i_6_ = client.anInt8937 * -1808468501;

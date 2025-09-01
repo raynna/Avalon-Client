@@ -30,7 +30,7 @@ public class Class445 {
 	    if (null != is)
 		class485.method6143(new RsByteBuffer(is), 905111826);
 	    synchronized (this.aClass348_5610) {
-		this.aClass348_5610.method4194(class485, i);
+		this.aClass348_5610.put(class485, i);
 	    }
 	    return class485;
 	}
@@ -92,12 +92,12 @@ public class Class445 {
 	    ScriptEnvironment.aClass264_7534.method2474("718 1", -2110394505 * Class462.anInt5683 - 25, 330, -1, -16777216, (byte) -63);
 	    class_ra.r(0, 0, Class462.anInt5683 * -2110394505, 350);
 	    class_ra.method4990(0, 350 - Class8.anInt106 * 1194411673, Class462.anInt5683 * -2110394505, -1, -2042566638);
-	    Class101.aClass264_1084.method2488(new StringBuilder().append("--> ").append(Class117.method1276(Class8.aString101, (byte) -1)).toString(), 10, (350 - Class82_Sub19_Sub1.aClass505_9111.anInt6197 * -1883958527 - 1), -1, -16777216, -10016873);
+	    Class101.aClass264_1084.method2488(new StringBuilder().append("--> ").append(Class117.method1276(Class8.aString101, (byte) -1)).toString(), 10, (350 - Class82_Sub19_Sub1.aFontSpecification_9111.anInt6197 * -1883958527 - 1), -1, -16777216, -10016873);
 	    if (Class422_Sub7.aBoolean8385) {
 		int i_10_ = -1;
 		if (443738891 * client.ticketCycle % 30 > 15)
 		    i_10_ = 16777215;
-		class_ra.method5035((10 + (Class82_Sub19_Sub1.aClass505_9111.method6264(new StringBuilder().append("--> ").append(Class117.method1276(Class8.aString101, (byte) 58).substring(0, Class8.anInt99 * -1182747927)).toString(), -949897299))), 350 - -1883958527 * (Class82_Sub19_Sub1.aClass505_9111.anInt6197) - 11, 12, i_10_, (short) 26562);
+		class_ra.method5035((10 + (Class82_Sub19_Sub1.aFontSpecification_9111.method6264(new StringBuilder().append("--> ").append(Class117.method1276(Class8.aString101, (byte) 58).substring(0, Class8.anInt99 * -1182747927)).toString(), -949897299))), 350 - -1883958527 * (Class82_Sub19_Sub1.aFontSpecification_9111.anInt6197) - 11, 12, i_10_, (short) 26562);
 	    }
 	    class_ra.L();
 	    Class98_Sub2.method1061(-1132401323);

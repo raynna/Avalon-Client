@@ -113,7 +113,7 @@ public class Class419 {
 			else
 			    Class255.method2435("FPS off", 1184714257);
 		    } else if (string.equals("renderer")) {
-			Class58 class58 = Class373.aClass_ra4071.method4987();
+			Class58 class58 = OverlayType.activeToolkit.method4987();
 			Class255.method2435(new StringBuilder().append("Toolkit ID: ").append(Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub14_7571.method5677(-481266690)).toString(), 1038434697);
 			Class255.method2435(new StringBuilder().append("Vendor: ").append(class58.anInt574 * 267107087).toString(), 212944002);
 			Class255.method2435(new StringBuilder().append("Name: ").append(class58.aString582).toString(), 723527437);

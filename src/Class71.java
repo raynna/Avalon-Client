@@ -11,8 +11,8 @@ public class Class71 {
 	try {
 	    if (!aBoolean684) {
 		if (830010277 * anInt685 > 0) {
-		    Class298_Sub29 class298_sub29 = new Class298_Sub29(interface25);
-		    aClass453_686.add(class298_sub29);
+		    LinkableObject linkableObject = new LinkableObject(interface25);
+		    aClass453_686.add(linkableObject);
 		} else
 		    interface25.ma(false);
 	    }
@@ -25,15 +25,15 @@ public class Class71 {
     static synchronized void method810(byte i) {
 	try {
 	    for (;;) {
-		Class298_Sub29 class298_sub29 = (Class298_Sub29) aClass453_686.method5936(2119725533);
-		if (null == class298_sub29) {
+		LinkableObject linkableObject = (LinkableObject) aClass453_686.method5936(2119725533);
+		if (null == linkableObject) {
 		    if (i != 3) {
 			/* empty */
 		    }
 		    break;
 		}
-		((Interface25) class298_sub29.anObject7366).ma(true);
-		class298_sub29.method2839(-1460969981);
+		((Interface25) linkableObject.anObject7366).ma(true);
+		linkableObject.method2839(-1460969981);
 	    }
 	}
 	catch (RuntimeException runtimeexception) {

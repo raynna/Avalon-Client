@@ -271,19 +271,19 @@ public class Class182 {
 
     static final void method1846(int i, int i_13_, int i_14_, int i_15_, int i_16_, int i_17_, int i_18_, int i_19_) {
 	try {
-	    if (client.anInt8724 * 1596783995 == 3) {
+	    if (client.cutsceneStage * 1596783995 == 3) {
 		int i_20_ = Class10.anInt129 * 1168366243;
 		int[] is = Class10.anIntArray135;
 		for (int i_21_ = 0; i_21_ < i_20_; i_21_++) {
-		    Player class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[is[i_21_]]);
+		    Player class365_sub1_sub1_sub2_sub2 = (client.players[is[i_21_]]);
 		    if (class365_sub1_sub1_sub2_sub2 != null)
 			class365_sub1_sub1_sub2_sub2.method4441(i, i_13_, i_14_, i_15_, i_16_, i_17_, i_18_, (byte) 12);
 		}
-		for (int i_22_ = 0; i_22_ < -1230451913 * client.anInt8703; i_22_++) {
+		for (int i_22_ = 0; i_22_ < -1230451913 * client.npcCount; i_22_++) {
 		    int i_23_ = client.anIntArray8699[i_22_];
-		    Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(i_23_));
-		    if (class298_sub29 != null)
-			((Entity) class298_sub29.anObject7366).method4441(i, i_13_, i_14_, i_15_, i_16_, i_17_, i_18_, (byte) 12);
+		    LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(i_23_));
+		    if (linkableObject != null)
+			((Entity) linkableObject.anObject7366).method4441(i, i_13_, i_14_, i_15_, i_16_, i_17_, i_18_, (byte) 12);
 		}
 	    }
 	}

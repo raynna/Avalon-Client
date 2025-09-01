@@ -454,24 +454,24 @@ public class ja extends GraphicsToolkit implements Interface25 {
     }
 
     @Override
-    public Class57 method5029(int i, int i_157_, boolean bool, boolean bool_158_) {
+    public Sprite method5029(int i, int i_157_, boolean bool, boolean bool_158_) {
 	return new fa(this, i, i_157_, bool_158_);
     }
 
     @Override
-    public Class57 method5030(int[] is, int i, int i_159_, int i_160_, int i_161_, boolean bool) {
+    public Sprite method5030(int[] is, int i, int i_159_, int i_160_, int i_161_, boolean bool) {
 	return new fa(this, is, i, i_159_, i_160_, i_161_, false);
     }
 
     @Override
-    public Class57 method5125(IndexedImage class89, boolean bool) {
+    public Sprite convertSpriteForGame(IndexedImage class89, boolean bool) {
 	fa var_fa = new fa(this, class89.anIntArray817, class89.aByteArray818, class89.aByteArray819, 0, class89.anInt812, class89.anInt812, class89.anInt816);
 	var_fa.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
 	return var_fa;
     }
 
     @Override
-    public Class57 method5033(int i, int i_162_, int i_163_, int i_164_, boolean bool) {
+    public Sprite method5033(int i, int i_162_, int i_163_, int i_164_, boolean bool) {
 	return new fa(this, i, i_162_, i_163_, i_164_, !bool);
     }
 
@@ -1127,7 +1127,7 @@ public class ja extends GraphicsToolkit implements Interface25 {
     }
 
     @Override
-    public Class57 method5104(int i, int i_361_, boolean bool, boolean bool_362_) {
+    public Sprite method5104(int i, int i_361_, boolean bool, boolean bool_362_) {
 	return new fa(this, i, i_361_, bool_362_);
     }
 
@@ -1143,12 +1143,12 @@ public class ja extends GraphicsToolkit implements Interface25 {
     }
 
     @Override
-    public Class57 method5106(int[] is, int i, int i_369_, int i_370_, int i_371_, boolean bool) {
+    public Sprite method5106(int[] is, int i, int i_369_, int i_370_, int i_371_, boolean bool) {
 	return new fa(this, is, i, i_369_, i_370_, i_371_, false);
     }
 
     @Override
-    public Class57 method5190(int[] is, int i, int i_372_, int i_373_, int i_374_, boolean bool) {
+    public Sprite method5190(int[] is, int i, int i_372_, int i_373_, int i_374_, boolean bool) {
 	return new fa(this, is, i, i_372_, i_373_, i_374_, false);
     }
 
@@ -1160,14 +1160,14 @@ public class ja extends GraphicsToolkit implements Interface25 {
     }
 
     @Override
-    public Class57 method5101(IndexedImage class89, boolean bool) {
+    public Sprite method5101(IndexedImage class89, boolean bool) {
 	fa var_fa = new fa(this, class89.anIntArray817, class89.aByteArray818, class89.aByteArray819, 0, class89.anInt812, class89.anInt812, class89.anInt816);
 	var_fa.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
 	return var_fa;
     }
 
     @Override
-    public Class57 method5108(int i, int i_378_, int i_379_, int i_380_, boolean bool) {
+    public Sprite method5108(int i, int i_378_, int i_379_, int i_380_, boolean bool) {
 	return new fa(this, i, i_378_, i_379_, i_380_, !bool);
     }
 
@@ -1356,7 +1356,7 @@ public class ja extends GraphicsToolkit implements Interface25 {
     }
 
     @Override
-    public Class57 method5105(int[] is, int i, int i_448_, int i_449_, int i_450_, boolean bool) {
+    public Sprite method5105(int[] is, int i, int i_448_, int i_449_, int i_450_, boolean bool) {
 	return new fa(this, is, i, i_448_, i_449_, i_450_, false);
     }
 
@@ -1736,7 +1736,7 @@ public class ja extends GraphicsToolkit implements Interface25 {
     }
 
     @Override
-    public Class57 method5107(IndexedImage class89, boolean bool) {
+    public Sprite method5107(IndexedImage class89, boolean bool) {
 	fa var_fa = new fa(this, class89.anIntArray817, class89.aByteArray818, class89.aByteArray819, 0, class89.anInt812, class89.anInt812, class89.anInt816);
 	var_fa.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
 	return var_fa;

@@ -97,10 +97,10 @@ public class Class431 implements Interface15 {
 	    Class447.method5905(2108312995);
 	    Class271.method2547(385051775);
 	    for (int i_15_ = 0; i_15_ < 2048; i_15_++)
-		client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_15_] = null;
+		client.players[i_15_] = null;
 	    Class287.myPlayer = null;
 	    for (int i_16_ = 0; i_16_ < 1962237353 * client.anInt8772; i_16_++) {
-		Entity class365_sub1_sub1_sub2 = ((Entity) client.aClass298_Sub29Array8816[i_16_].anObject7366);
+		Entity class365_sub1_sub1_sub2 = ((Entity) client.aLinkableObjectArray8816[i_16_].anObject7366);
 		if (class365_sub1_sub1_sub2 != null)
 		    class365_sub1_sub1_sub2.anInt10090 = -283914955;
 	    }

@@ -98,7 +98,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 
     public void method4414(int i, byte i_8_) {
 	try {
-	    Class350 class350 = method4426(654212117);
+	    Class350 class350 = getBAS(654212117);
 	    if (class350.anInt3744 * -2079528661 != 0 || 907865649 * anInt10115 != 0) {
 		aClass386_10084.method4720((byte) 67);
 		int i_9_ = i - 259411823 * aClass386_10084.anInt4144 & 0x3fff;
@@ -115,7 +115,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 
     public void method4415(int i, boolean bool, int i_10_) {
 	try {
-	    Class350 class350 = method4426(-124866780);
+	    Class350 class350 = getBAS(-124866780);
 	    if (bool || -2079528661 * class350.anInt3744 != 0 || 907865649 * anInt10115 != 0) {
 		anInt10068 = (i & 0x3fff) * 1874549911;
 		aClass386_10084.method4718(2145248039 * anInt10068, -1986657311);
@@ -153,7 +153,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 		for (int i_13_ = 0; (i_13_ < Class82_Sub18.aClass405_6892.anIntArray5267.length); i_13_++)
 		    anIntArray10085[i_13_] = -1;
 	    }
-	    Class350 class350 = method4426(-401641714);
+	    Class350 class350 = getBAS(-401641714);
 	    int i_14_ = 256;
 	    if (class350.anIntArray3742 != null && class350.anIntArray3742[i] > 0)
 		i_14_ = class350.anIntArray3742[i];
@@ -320,7 +320,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
     @Override
     public int method4363(byte i) {
 	try {
-	    Class350 class350 = method4426(219719478);
+	    Class350 class350 = getBAS(219719478);
 	    int i_47_;
 	    if (1638157075 * class350.anInt3716 != -1)
 		i_47_ = class350.anInt3716 * 1638157075;
@@ -531,7 +531,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 	}
     }
 
-    public Class350 method4426(int i) {
+    public Class350 getBAS(int i) {
 	try {
 	    int i_105_ = method4432(-40678538);
 	    if (-1 == i_105_)
@@ -642,7 +642,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
     }
 
     public int method4435() {
-	Class350 class350 = method4426(1643711288);
+	Class350 class350 = getBAS(1643711288);
 	int i;
 	if (1638157075 * class350.anInt3716 != -1)
 	    i = class350.anInt3716 * 1638157075;
@@ -662,7 +662,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
     }
 
     public int method4436() {
-	Class350 class350 = method4426(1920081667);
+	Class350 class350 = getBAS(1920081667);
 	int i;
 	if (1638157075 * class350.anInt3716 != -1)
 	    i = class350.anInt3716 * 1638157075;
@@ -893,7 +893,7 @@ public abstract class Entity extends Class365_Sub1_Sub1 {
 
     public int method4450(short i) {
 	try {
-	    Class350 class350 = method4426(80856829);
+	    Class350 class350 = getBAS(80856829);
 	    int i_140_ = 259411823 * aClass386_10084.anInt4144;
 	    boolean bool;
 	    if (class350.anInt3744 * -2079528661 != 0)

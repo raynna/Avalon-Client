@@ -97,48 +97,48 @@ public class Class358 {
 	}
     }
 
-    public Class57 method4280(GraphicsToolkit class_ra, short i) {
+    public Sprite method4280(GraphicsToolkit class_ra, short i) {
 	try {
 	    if (459224223 * this.anInt3855 < 0)
 		return null;
-	    Class57 class57 = ((Class57) (this.aClass347_3856.aClass348_3700.method4184(459224223 * this.anInt3855)));
-	    if (class57 == null) {
+	    Sprite sprite = ((Sprite) (this.aClass347_3856.aClass348_3700.method4184(459224223 * this.anInt3855)));
+	    if (sprite == null) {
 		method4283(class_ra, 370410201);
-		class57 = (Class57) (this.aClass347_3856.aClass348_3700.method4184(459224223 * this.anInt3855));
+		sprite = (Sprite) (this.aClass347_3856.aClass348_3700.method4184(459224223 * this.anInt3855));
 	    }
-	    return class57;
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("oy.p(").append(')').toString());
 	}
     }
 
-    public Class57 method4281(GraphicsToolkit class_ra, byte i) {
+    public Sprite method4281(GraphicsToolkit class_ra, byte i) {
 	try {
 	    if (this.anInt3857 * 1894403017 < 0)
 		return null;
-	    Class57 class57 = ((Class57) (this.aClass347_3856.aClass348_3700.method4184(this.anInt3857 * 1894403017)));
-	    if (class57 == null) {
+	    Sprite sprite = ((Sprite) (this.aClass347_3856.aClass348_3700.method4184(this.anInt3857 * 1894403017)));
+	    if (sprite == null) {
 		method4283(class_ra, 445358153);
-		class57 = (Class57) (this.aClass347_3856.aClass348_3700.method4184(1894403017 * this.anInt3857));
+		sprite = (Sprite) (this.aClass347_3856.aClass348_3700.method4184(1894403017 * this.anInt3857));
 	    }
-	    return class57;
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("oy.k(").append(')').toString());
 	}
     }
 
-    public Class57 method4282(GraphicsToolkit class_ra, byte i) {
+    public Sprite method4282(GraphicsToolkit class_ra, byte i) {
 	try {
 	    if (1896268847 * this.anInt3858 < 0)
 		return null;
-	    Class57 class57 = ((Class57) (this.aClass347_3856.aClass348_3700.method4184(this.anInt3858 * 1896268847)));
-	    if (class57 == null) {
+	    Sprite sprite = ((Sprite) (this.aClass347_3856.aClass348_3700.method4184(this.anInt3858 * 1896268847)));
+	    if (sprite == null) {
 		method4283(class_ra, -388591321);
-		class57 = (Class57) (this.aClass347_3856.aClass348_3700.method4184(1896268847 * this.anInt3858));
+		sprite = (Sprite) (this.aClass347_3856.aClass348_3700.method4184(1896268847 * this.anInt3858));
 	    }
-	    return class57;
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("oy.d(").append(')').toString());
@@ -150,19 +150,19 @@ public class Class358 {
 	    Class243 class243 = this.aClass347_3856.aClass243_3699;
 	    if (459224223 * this.anInt3855 >= 0 && (this.aClass347_3856.aClass348_3700.method4184(459224223 * this.anInt3855)) == null && class243.method2310(this.anInt3855 * 459224223, -457216440)) {
 		IndexedImage class89 = IndexedImage.method979(class243, (this.anInt3855 * 459224223));
-		this.aClass347_3856.aClass348_3700.method4194(class_ra.method5125(class89, true), this.anInt3855 * 459224223);
+		this.aClass347_3856.aClass348_3700.put(class_ra.convertSpriteForGame(class89, true), this.anInt3855 * 459224223);
 	    }
 	    if (this.anInt3860 * -1362963983 >= 0 && ((this.aClass347_3856.aClass348_3700.method4184(this.anInt3860 * -1362963983)) == null) && class243.method2310((-1362963983 * this.anInt3860), -457216440)) {
 		IndexedImage class89 = IndexedImage.method979(class243, (-1362963983 * this.anInt3860));
-		this.aClass347_3856.aClass348_3700.method4194(class_ra.method5125(class89, true), this.anInt3860 * -1362963983);
+		this.aClass347_3856.aClass348_3700.put(class_ra.convertSpriteForGame(class89, true), this.anInt3860 * -1362963983);
 	    }
 	    if (this.anInt3857 * 1894403017 >= 0 && ((this.aClass347_3856.aClass348_3700.method4184(this.anInt3857 * 1894403017)) == null) && class243.method2310((this.anInt3857 * 1894403017), -457216440)) {
 		IndexedImage class89 = IndexedImage.method979(class243, (this.anInt3857 * 1894403017));
-		this.aClass347_3856.aClass348_3700.method4194(class_ra.method5125(class89, true), this.anInt3857 * 1894403017);
+		this.aClass347_3856.aClass348_3700.put(class_ra.convertSpriteForGame(class89, true), this.anInt3857 * 1894403017);
 	    }
 	    if (this.anInt3858 * 1896268847 >= 0 && ((this.aClass347_3856.aClass348_3700.method4184(this.anInt3858 * 1896268847)) == null) && class243.method2310((this.anInt3858 * 1896268847), -457216440)) {
 		IndexedImage class89 = IndexedImage.method979(class243, (1896268847 * this.anInt3858));
-		this.aClass347_3856.aClass348_3700.method4194(class_ra.method5125(class89, true), 1896268847 * this.anInt3858);
+		this.aClass347_3856.aClass348_3700.put(class_ra.convertSpriteForGame(class89, true), 1896268847 * this.anInt3858);
 	    }
 	}
 	catch (RuntimeException runtimeexception) {
@@ -185,16 +185,16 @@ public class Class358 {
 	anInt3862 = 0;
     }
 
-    public Class57 method4284(GraphicsToolkit class_ra, int i) {
+    public Sprite method4284(GraphicsToolkit class_ra, int i) {
 	try {
 	    if (this.anInt3860 * -1362963983 < 0)
 		return null;
-	    Class57 class57 = ((Class57) (this.aClass347_3856.aClass348_3700.method4184(-1362963983 * this.anInt3860)));
-	    if (class57 == null) {
+	    Sprite sprite = ((Sprite) (this.aClass347_3856.aClass348_3700.method4184(-1362963983 * this.anInt3860)));
+	    if (sprite == null) {
 		method4283(class_ra, -843145755);
-		class57 = (Class57) (this.aClass347_3856.aClass348_3700.method4184(-1362963983 * this.anInt3860));
+		sprite = (Sprite) (this.aClass347_3856.aClass348_3700.method4184(-1362963983 * this.anInt3860));
 	    }
-	    return class57;
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("oy.i(").append(')').toString());

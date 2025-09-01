@@ -8,7 +8,7 @@ public class Class130_Sub2 extends Class130 {
     Class233 aClass233_6956 = new Class233();
     Class298_Sub31_Sub1 aClass298_Sub31_Sub1_6957;
     Class298_Sub31_Sub1 aClass298_Sub31_Sub1_6958;
-    public static Class57[] aClass57Array6959;
+    public static Sprite[] aSpriteArray6959;
     Class123 aClass123_6960;
 
     boolean method1464(int i) throws Exception_Sub2 {

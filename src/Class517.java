@@ -60,7 +60,7 @@ public class Class517 {
 	    if (is != null)
 		class520.method6321(new RsByteBuffer(is), -1099657695);
 	    synchronized (this.aClass348_6267) {
-		this.aClass348_6267.method4194(class520, i);
+		this.aClass348_6267.put(class520, i);
 	    }
 	    return class520;
 	}
@@ -91,7 +91,7 @@ public class Class517 {
 			Canvas canvas = new Canvas();
 			canvas.setSize(36, 32);
 			Class522.aClass_ra6285 = Class523.method6334(0, canvas, Class253.anInterface_ma2785, Class82_Sub6.aClass243_6844, 0, -753690122);
-			Class522.aClass264_6284 = (Class522.aClass_ra6285.method5092(Class322.method3931(Class173.aClass243_1758, (399302739 * Class74.anInt691), 0, (byte) 78), IndexedImage.method993(Class158.idx8, Class74.anInt691 * 399302739, 0), true));
+			Class522.aClass264_6284 = (Class522.aClass_ra6285.method5092(Class322.method3931(Class173.aClass243_1758, (399302739 * Class74.anInt691), 0, (byte) 78), IndexedImage.load(Class158.idx8, Class74.anInt691 * 399302739, 0), true));
 		    }
 		    for (Class298_Sub14 class298_sub14 = (Class298_Sub14) Class522.aClass453_6283.method5939(1766612795); null != class298_sub14; class298_sub14 = ((Class298_Sub14) Class522.aClass453_6283.method5944(49146))) {
 			Class298_Sub32_Sub14.aClass477_9400.method6086(Class522.aClass_ra6285, class_ra, (class298_sub14.anInt7264 * -1979936541), (class298_sub14.anInt7261 * -751580615), (class298_sub14.anInt7263 * 1613862267), (class298_sub14.anInt7260 * -944151257), false, false, (-1216336855 * class298_sub14.anInt7262), Class522.aClass264_6284, (class298_sub14.aBoolean7265 ? (Class287.myPlayer.aClass366_10209) : null), 1451736551);

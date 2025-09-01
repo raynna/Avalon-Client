@@ -46,7 +46,7 @@ public class Class473 {
 	    Class438 class438 = class365_sub1_sub1_sub2.aClass438_10077;
 	    if (class438.method5819((byte) -67) && class438.method5822(1, 1987990558) && class438.method5832(-1549707079)) {
 		if (class365_sub1_sub1_sub2.aBoolean10094) {
-		    class438.method5841(class365_sub1_sub1_sub2.method4426(-646688457).method4208(-2063556157), false, true, (byte) 71);
+		    class438.method5841(class365_sub1_sub1_sub2.getBAS(-646688457).method4208(-2063556157), false, true, (byte) 71);
 		    class365_sub1_sub1_sub2.aBoolean10094 = class438.method5819((byte) -43);
 		}
 		class438.method5834(-381553454);

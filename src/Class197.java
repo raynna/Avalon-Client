@@ -160,7 +160,7 @@ public class Class197 {
 		class454 = new Class454(interface10.method131(is, class505, bool_9_, -1761009560), class505);
 	    else
 		class454 = new Class454(interface10.method131(is, class505, bool_9_, -2090037397), null);
-	    this.aClass348_1989.method4194(class454, i << 1 | (bool_9_ ? 1 : 0));
+	    this.aClass348_1989.put(class454, i << 1 | (bool_9_ ? 1 : 0));
 	    return class454;
 	}
 	catch (RuntimeException runtimeexception) {

@@ -14,7 +14,7 @@ public class Class277 {
     int anInt2947;
     int anInt2948;
     Class276[] aClass276Array2949;
-    Class57 aClass57_2950;
+    Sprite aSprite_2950;
     int anInt2951;
     int anInt2952;
     Class276[] aClass276Array2953;
@@ -100,7 +100,7 @@ public class Class277 {
 		    i_5_ = 1;
 		if (i_5_ != this.anInt2946 * -1994130525) {
 		    this.anInt2946 = i_5_ * 285085707;
-		    this.aClass57_2950 = null;
+		    this.aSprite_2950 = null;
 		}
 		if (null != this.aClass276Array2949) {
 		    this.anInt2945 = 0;
@@ -229,16 +229,16 @@ public class Class277 {
 		i_43_ = i_43_ + i & 0x3fff;
 		if (this.anInt2940 * 1461948177 != -1 && this.anInt2946 * -1994130525 != 0) {
 		    Class53 class53 = anInterface_ma2955.method174(((this.anInt2940) * 1461948177), 434799685);
-		    if (null == this.aClass57_2950 && anInterface_ma2955.method170(((this.anInt2940) * 1461948177), (short) 28045)) {
+		    if (null == this.aSprite_2950 && anInterface_ma2955.method170(((this.anInt2940) * 1461948177), (short) 28045)) {
 			int[] is = (2 == -2138060883 * class53.anInt528 ? (anInterface_ma2955.method172(this.anInt2940 * 1461948177, 0.7F, -1994130525 * this.anInt2946, this.anInt2946 * -1994130525, false, (byte) 2)) : (anInterface_ma2955.method171(this.anInt2940 * 1461948177, 0.7F, -1994130525 * this.anInt2946, -1994130525 * this.anInt2946, false, 833981844)));
 			this.anInt2939 = is[0] * 1667694183;
 			this.anInt2952 = 918308719 * is[is.length - 1];
-			this.aClass57_2950 = class_ra.method5031(is, 0, (this.anInt2946 * -1994130525), (this.anInt2946 * -1994130525), (this.anInt2946 * -1994130525), 2072553439);
+			this.aSprite_2950 = class_ra.method5031(is, 0, (this.anInt2946 * -1994130525), (this.anInt2946 * -1994130525), (this.anInt2946 * -1994130525), 2072553439);
 		    }
 		    int i_50_ = (i_49_ == 255 ? class53.anInt528 * -2138060883 == 2 ? 1 : 0 : 1);
 		    if (1 == i_50_ && bool)
 			class_ra.B(i_38_, i_39_, i_40_, i_41_, i_45_, 0);
-		    if (this.aClass57_2950 != null) {
+		    if (this.aSprite_2950 != null) {
 			int i_51_ = i_42_ * i_41_ / -4096;
 			int i_52_;
 			for (i_52_ = (i_40_ - i_41_) / 2 + i_43_ * i_41_ / 4096; i_52_ > i_41_; i_52_ -= i_41_) {
@@ -249,7 +249,7 @@ public class Class277 {
 			}
 			if (this.aClass320_2944 == Class320.aClass320_6547) {
 			    for (int i_53_ = i_52_ - i_41_; i_53_ < i_40_; i_53_ += i_41_)
-				this.aClass57_2950.method634(i_38_ + i_53_, i_51_ + i_39_, i_41_, i_41_, 0, i_49_ << 24 | 0xffffff, i_50_);
+				this.aSprite_2950.method634(i_38_ + i_53_, i_51_ + i_39_, i_41_, i_41_, 0, i_49_ << 24 | 0xffffff, i_50_);
 			    if ((150420823 * this.anInt2939 & ~0xffffff) != 0)
 				class_ra.method5015(0, 0, i_40_, 1 + (i_39_ + i_51_), (150420823 * (this.anInt2939)), (byte) 7);
 			    if (0 != (this.anInt2952 * 1184429967 & ~0xffffff))
@@ -263,7 +263,7 @@ public class Class277 {
 			    }
 			    for (int i_54_ = i_52_ - i_41_; i_54_ < i_40_; i_54_ += i_41_) {
 				for (int i_55_ = i_51_ - i_41_; i_55_ < i_41_; i_55_ += i_41_)
-				    this.aClass57_2950.method634(i_38_ + i_54_, i_39_ + i_55_, i_41_, i_41_, 0, i_49_ << 24 | 0xffffff, i_50_);
+				    this.aSprite_2950.method634(i_38_ + i_54_, i_39_ + i_55_, i_41_, i_41_, 0, i_49_ << 24 | 0xffffff, i_50_);
 			    }
 			}
 		    }

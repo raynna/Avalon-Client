@@ -131,25 +131,25 @@ public class Class219 implements Runnable {
 			    this.anInterface12_2466.method160(this.aBoolean2473, 2139338781);
 			else {
 			    long l_1_ = Class122.method1319((byte) 1);
-			    if (Class373.aClass_ra4071 != null && null != this.anInterface12_2467 && this.anInterface12_2467.method151(73548607) != 0 && ((6015775630087136145L * this.aLong2468) >= l_1_ - (this.anInterface12_2467.method151(-462627527)))) {
+			    if (OverlayType.activeToolkit != null && null != this.anInterface12_2467 && this.anInterface12_2467.method151(73548607) != 0 && ((6015775630087136145L * this.aLong2468) >= l_1_ - (this.anInterface12_2467.method151(-462627527)))) {
 				int i = (int) ((l_1_ - (6015775630087136145L * (this.aLong2468))) * 255L / (this.anInterface12_2467.method151(-362403732)));
 				int i_2_ = 255 - i;
 				i = i << 24 | 0xffffff;
 				i_2_ = i_2_ << 24 | 0xffffff;
 				Class148.method1614((byte) -69);
-				Class373.aClass_ra4071.ba(1, 0);
-				Class57 class57 = (Class373.aClass_ra4071.method5046(-2110394505 * Class462.anInt5683, (-1111710645 * Class298_Sub40_Sub9.anInt9716), true, -34894995));
-				Class52_Sub1 class52_sub1 = Class373.aClass_ra4071.method5094();
-				class52_sub1.method563(0, class57.method627());
-				Class373.aClass_ra4071.method5143(class52_sub1, (byte) 28);
+				OverlayType.activeToolkit.ba(1, 0);
+				Sprite sprite = (OverlayType.activeToolkit.method5046(-2110394505 * Class462.anInt5683, (-1111710645 * Class298_Sub40_Sub9.anInt9716), true, -34894995));
+				Class52_Sub1 class52_sub1 = OverlayType.activeToolkit.method5094();
+				class52_sub1.method563(0, sprite.method627());
+				OverlayType.activeToolkit.method5143(class52_sub1, (byte) 28);
 				this.anInterface12_2467.method160(true, 2128455067);
-				Class373.aClass_ra4071.method5005(class52_sub1, (byte) 8);
-				class57.method631(0, 0, 0, i_2_, 1);
-				Class373.aClass_ra4071.method5143(class52_sub1, (byte) -59);
-				Class373.aClass_ra4071.ba(1, 0);
+				OverlayType.activeToolkit.method5005(class52_sub1, (byte) 8);
+				sprite.method631(0, 0, 0, i_2_, 1);
+				OverlayType.activeToolkit.method5143(class52_sub1, (byte) -59);
+				OverlayType.activeToolkit.ba(1, 0);
 				this.anInterface12_2466.method160(true, 2141475636);
-				Class373.aClass_ra4071.method5005(class52_sub1, (byte) -56);
-				class57.method631(0, 0, 0, i, 1);
+				OverlayType.activeToolkit.method5005(class52_sub1, (byte) -56);
+				sprite.method631(0, 0, 0, i, 1);
 			    } else {
 				if (this.anInterface12_2467 != null) {
 				    this.aBoolean2473 = true;
@@ -158,14 +158,14 @@ public class Class219 implements Runnable {
 				}
 				if (this.aBoolean2473) {
 				    Class148.method1614((byte) -56);
-				    if (Class373.aClass_ra4071 != null)
-					Class373.aClass_ra4071.ba(1, 0);
+				    if (OverlayType.activeToolkit != null)
+					OverlayType.activeToolkit.ba(1, 0);
 				}
-				this.anInterface12_2466.method160((this.aBoolean2473 || (Class373.aClass_ra4071 != null && Class373.aClass_ra4071.method5074())), 2145176958);
+				this.anInterface12_2466.method160((this.aBoolean2473 || (OverlayType.activeToolkit != null && OverlayType.activeToolkit.method5074())), 2145176958);
 			    }
 			    try {
-				if (null != Class373.aClass_ra4071 && !(this.anInterface12_2466 instanceof Class224))
-				    Class373.aClass_ra4071.method4988((byte) 101);
+				if (null != OverlayType.activeToolkit && !(this.anInterface12_2466 instanceof Class224))
+				    OverlayType.activeToolkit.method4988((byte) 101);
 			    }
 			    catch (Exception_Sub1 exception_sub1) {
 				IPAddress.method6062(new StringBuilder().append(exception_sub1.getMessage()).append(Class385.aClient4141.method2761((byte) 1)).toString(), exception_sub1, (short) 3171);
@@ -173,7 +173,7 @@ public class Class219 implements Runnable {
 			    }
 			}
 			this.aBoolean2473 = false;
-			if (null != Class373.aClass_ra4071 && !(this.anInterface12_2466 instanceof Class224) && ((this.aClass227_2465.anInt2548 * -861845079) < (-861845079 * Class227.aClass227_2545.anInt2548)))
+			if (null != OverlayType.activeToolkit && !(this.anInterface12_2466 instanceof Class224) && ((this.aClass227_2465.anInt2548 * -861845079) < (-861845079 * Class227.aClass227_2545.anInt2548)))
 			    Class229.method2124((byte) -100);
 		    }
 		    catch (Exception exception) {
@@ -215,7 +215,7 @@ public class Class219 implements Runnable {
 		if (class64.anInt630 < 13)
 		    class64.method755(2);
 		class387 = class_ra.method5037(class64, i_10_, -203714349 * Class481.anInt6035, 64, 768);
-		Class19.aClass348_264.method4194(class387, l);
+		Class19.aClass348_264.put(class387, l);
 	    }
 	    class387 = class387.method4755((byte) 6, i_10_, true);
 	    if (i != 0)

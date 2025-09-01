@@ -18,7 +18,7 @@ public class Class82_Sub6 extends Class82 {
     @Override
     public void method866(int i) {
 	try {
-	    Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6840 * -2094920785].method1015(1714980357);
+	    Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6840 * -2094920785].method1015(1714980357);
 	    if (0 == 237701933 * this.anInt6838)
 		Class431.method5768(class365_sub1_sub1_sub2, this.anIntArray6841, 0, false, (byte) 11);
 	    else
@@ -42,7 +42,7 @@ public class Class82_Sub6 extends Class82 {
 
     @Override
     public void method869() {
-	Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6840 * -2094920785].method1015(318010293);
+	Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6840 * -2094920785].method1015(318010293);
 	if (0 == 237701933 * this.anInt6838)
 	    Class431.method5768(class365_sub1_sub1_sub2, this.anIntArray6841, 0, false, (byte) -52);
 	else
@@ -51,7 +51,7 @@ public class Class82_Sub6 extends Class82 {
 
     @Override
     public void method868() {
-	Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6840 * -2094920785].method1015(1968398843);
+	Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6840 * -2094920785].method1015(1968398843);
 	if (0 == 237701933 * this.anInt6838)
 	    Class431.method5768(class365_sub1_sub1_sub2, this.anIntArray6841, 0, false, (byte) -20);
 	else

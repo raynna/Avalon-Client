@@ -329,8 +329,8 @@ public class Class264_Sub2 extends Class264 {
 		client.aClass299Array8671[i_109_] = null;
 	    Class372.method4592(590983339);
 	    for (int i_110_ = 0; i_110_ < 2048; i_110_++)
-		client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_110_] = null;
-	    client.anInt8703 = 0;
+		client.players[i_110_] = null;
+	    client.npcCount = 0;
 	    client.aClass437_8696.method5811((byte) -66);
 	    client.anInt8772 = 0;
 	    client.aClass437_8685.method5811((byte) -127);

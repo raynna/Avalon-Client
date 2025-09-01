@@ -33,11 +33,11 @@ public class Class129 implements Interface6 {
 		int i_0_ = ((this.aClass134_6378.aClass139_6336.method1545((-1635817177 * this.aClass134_6378.anInt6339), client.anInt8794 * 775068819, -2108328767)) + (-740662509 * this.aClass134_6378.anInt6333));
 		int i_1_ = ((this.aClass134_6378.aClass133_6337.method1482((-1725730589 * this.aClass134_6378.anInt6340), client.anInt8803 * -791746413, -1943367798)) + (this.aClass134_6378.anInt6335 * -1129431703));
 		if (this.aClass134_6378.aBoolean6342)
-		    Class373.aClass_ra4071.method5019(i_0_, i_1_, (-1635817177 * this.aClass134_6378.anInt6339), (this.aClass134_6378.anInt6340 * -1725730589), 80994107 * this.aClass134_6378.anInt6338, 0);
+		    OverlayType.activeToolkit.method5019(i_0_, i_1_, (-1635817177 * this.aClass134_6378.anInt6339), (this.aClass134_6378.anInt6340 * -1725730589), 80994107 * this.aClass134_6378.anInt6338, 0);
 		i_1_ += method1443(Class101.aClass264_1084, class142.aString1553, i_0_, i_1_, 5, 1663137711) * 12;
 		i_1_ += 8;
 		if (this.aClass134_6378.aBoolean6342)
-		    Class373.aClass_ra4071.method5091(i_0_, i_1_, (this.aClass134_6378.anInt6339 * -1635817177) + i_0_ - 1, i_1_, 80994107 * this.aClass134_6378.anInt6338, 0);
+		    OverlayType.activeToolkit.method5091(i_0_, i_1_, (this.aClass134_6378.anInt6339 * -1635817177) + i_0_ - 1, i_1_, 80994107 * this.aClass134_6378.anInt6338, 0);
 		i_1_ = ++i_1_ + method1443(Class101.aClass264_1084, class142.aString1554, i_0_, i_1_, 5, 1663137711) * 12;
 		i_1_ += 5;
 		i_1_ += method1443(Class101.aClass264_1084, class142.aString1552, i_0_, i_1_, 5, 1663137711) * 12;
@@ -69,11 +69,11 @@ public class Class129 implements Interface6 {
 	    int i = ((this.aClass134_6378.aClass139_6336.method1545(-1635817177 * this.aClass134_6378.anInt6339, client.anInt8794 * 775068819, -1777840883)) + -740662509 * this.aClass134_6378.anInt6333);
 	    int i_5_ = ((this.aClass134_6378.aClass133_6337.method1482(-1725730589 * this.aClass134_6378.anInt6340, client.anInt8803 * -791746413, -1715547706)) + this.aClass134_6378.anInt6335 * -1129431703);
 	    if (this.aClass134_6378.aBoolean6342)
-		Class373.aClass_ra4071.method5019(i, i_5_, -1635817177 * this.aClass134_6378.anInt6339, this.aClass134_6378.anInt6340 * -1725730589, 80994107 * this.aClass134_6378.anInt6338, 0);
+		OverlayType.activeToolkit.method5019(i, i_5_, -1635817177 * this.aClass134_6378.anInt6339, this.aClass134_6378.anInt6340 * -1725730589, 80994107 * this.aClass134_6378.anInt6338, 0);
 	    i_5_ += method1443(Class101.aClass264_1084, class142.aString1553, i, i_5_, 5, 1663137711) * 12;
 	    i_5_ += 8;
 	    if (this.aClass134_6378.aBoolean6342)
-		Class373.aClass_ra4071.method5091(i, i_5_, (this.aClass134_6378.anInt6339 * -1635817177 + i - 1), i_5_, 80994107 * this.aClass134_6378.anInt6338, 0);
+		OverlayType.activeToolkit.method5091(i, i_5_, (this.aClass134_6378.anInt6339 * -1635817177 + i - 1), i_5_, 80994107 * this.aClass134_6378.anInt6338, 0);
 	    i_5_ = ++i_5_ + method1443(Class101.aClass264_1084, class142.aString1554, i, i_5_, 5, 1663137711) * 12;
 	    i_5_ += 5;
 	    i_5_ += method1443(Class101.aClass264_1084, class142.aString1552, i, i_5_, 5, 1663137711) * 12;
@@ -172,7 +172,7 @@ public class Class129 implements Interface6 {
 		}
 		if (!bool) {
 		    Class52_Sub2_Sub1.aCanvas9079.setSize(Class462.anInt5683 * -2110394505, -1111710645 * Class298_Sub40_Sub9.anInt9716);
-		    Class373.aClass_ra4071.method5173(Class52_Sub2_Sub1.aCanvas9079, -2110394505 * Class462.anInt5683, Class298_Sub40_Sub9.anInt9716 * -1111710645, (byte) 20);
+		    OverlayType.activeToolkit.method5173(Class52_Sub2_Sub1.aCanvas9079, -2110394505 * Class462.anInt5683, Class298_Sub40_Sub9.anInt9716 * -1111710645, (byte) 20);
 		    if (Class298_Sub36.aFrame7403 == container) {
 			Insets insets = Class298_Sub36.aFrame7403.getInsets();
 			Class52_Sub2_Sub1.aCanvas9079.setLocation(1898544019 * Class291.anInt6473 + insets.left, insets.top + Class291.anInt6474 * 540368727);

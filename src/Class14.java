@@ -83,17 +83,17 @@ public class Class14 {
 		} else if (client.ticketCycle * 443738891 >= (class365_sub1_sub1_sub1.anInt10044 * 1113390887)) {
 		    class365_sub1_sub1_sub1.method4406(-36689971);
 		    if (1894383945 * class365_sub1_sub1_sub1.anInt10058 > 0) {
-			if (1596783995 * client.anInt8724 == 0) {
-			    Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[(class365_sub1_sub1_sub1.anInt10058 * 1894383945) - 1].method1015(1231902873);
+			if (1596783995 * client.cutsceneStage == 0) {
+			    Entity class365_sub1_sub1_sub2 = Class87.entities[(class365_sub1_sub1_sub1.anInt10058 * 1894383945) - 1].method1015(1231902873);
 			    if (null != class365_sub1_sub1_sub2) {
 				Class217 class217 = (class365_sub1_sub1_sub2.method4337().aClass217_2599);
 				if ((int) class217.aFloat2451 >= 0 && ((int) class217.aFloat2451 < client.aClass283_8716.method2629(-1942094391) * 512) && (int) class217.aFloat2454 >= 0 && ((int) class217.aFloat2454 < client.aClass283_8716.method2630(-1804151587) * 512))
 				    class365_sub1_sub1_sub1.method4405((int) class217.aFloat2451, (int) class217.aFloat2454, ((Class356.method4271((int) class217.aFloat2451, (int) class217.aFloat2454, class365_sub1_sub1_sub2.plane, -1503815167)) - (2134079017 * (class365_sub1_sub1_sub1.anInt10045))), 443738891 * client.ticketCycle, 1121215352);
 			    }
 			} else {
-			    Class298_Sub29 class298_sub29 = ((Class298_Sub29) (client.aClass437_8696.method5812((1894383945 * (class365_sub1_sub1_sub1.anInt10058)) - 1)));
-			    if (class298_sub29 != null) {
-				NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
+			    LinkableObject linkableObject = ((LinkableObject) (client.aClass437_8696.method5812((1894383945 * (class365_sub1_sub1_sub1.anInt10058)) - 1)));
+			    if (linkableObject != null) {
+				NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
 				Class217 class217 = (class365_sub1_sub1_sub2_sub1.method4337().aClass217_2599);
 				if ((int) class217.aFloat2451 >= 0 && ((int) class217.aFloat2451 < client.aClass283_8716.method2629(-1876273086) * 512) && (int) class217.aFloat2454 >= 0 && ((int) class217.aFloat2454 < client.aClass283_8716.method2630(-203309822) * 512))
 				    class365_sub1_sub1_sub1.method4405((int) class217.aFloat2451, (int) class217.aFloat2454, ((Class356.method4271((int) class217.aFloat2451, (int) class217.aFloat2454, class365_sub1_sub1_sub1.plane, -1366613250)) - (class365_sub1_sub1_sub1.anInt10045 * 2134079017)), client.ticketCycle * 443738891, 2031199219);
@@ -106,7 +106,7 @@ public class Class14 {
 			if (i_3_ == -442628795 * client.playerIndex)
 			    class365_sub1_sub1_sub2_sub2 = Class287.myPlayer;
 			else
-			    class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_3_]);
+			    class365_sub1_sub1_sub2_sub2 = (client.players[i_3_]);
 			if (null != class365_sub1_sub1_sub2_sub2) {
 			    Class217 class217 = (class365_sub1_sub1_sub2_sub2.method4337().aClass217_2599);
 			    if ((int) class217.aFloat2451 >= 0 && ((int) class217.aFloat2451 < client.aClass283_8716.method2629(-1981087344) * 512) && (int) class217.aFloat2454 >= 0 && ((int) class217.aFloat2454 < client.aClass283_8716.method2630(-1284142631) * 512))

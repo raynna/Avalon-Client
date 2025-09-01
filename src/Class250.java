@@ -18,7 +18,7 @@ public class Class250 {
     public static int[] anIntArray2763;
     static Class354 aClass354_2764 = new Class354(16);
     public static String aString2765;
-    static Class57[] aClass57Array2766;
+    static Sprite[] aSpriteArray2766;
 
     public static byte[] method2395(int i, byte i_0_) {
 	try {

@@ -20,15 +20,15 @@ public class Class_ta_Sub2 extends Class_ta {
 	}
     }
 
-    public static void method6001(Class57[] class57s, int i) {
+    public static void method6001(Sprite[] sprites, int i) {
 	try {
-	    Class277.anInt2964 = -1283115375 * class57s.length;
-	    Class436.aClass57Array5501 = new Class57[Class277.anInt2964 * -232961423 + 10];
+	    Class277.anInt2964 = -1283115375 * sprites.length;
+	    Class436.aSpriteArray5501 = new Sprite[Class277.anInt2964 * -232961423 + 10];
 	    Class422_Sub3.anIntArray8372 = new int[-232961423 * Class277.anInt2964 + 10];
-	    System.arraycopy(class57s, 0, Class436.aClass57Array5501, 0, -232961423 * Class277.anInt2964);
+	    System.arraycopy(sprites, 0, Class436.aSpriteArray5501, 0, -232961423 * Class277.anInt2964);
 	    for (int i_2_ = 0; i_2_ < -232961423 * Class277.anInt2964; i_2_++)
-		Class422_Sub3.anIntArray8372[i_2_] = Class436.aClass57Array5501[i_2_].method626();
-	    for (int i_3_ = Class277.anInt2964 * -232961423; i_3_ < Class436.aClass57Array5501.length; i_3_++)
+		Class422_Sub3.anIntArray8372[i_2_] = Class436.aSpriteArray5501[i_2_].method626();
+	    for (int i_3_ = Class277.anInt2964 * -232961423; i_3_ < Class436.aSpriteArray5501.length; i_3_++)
 		Class422_Sub3.anIntArray8372[i_3_] = 12;
 	}
 	catch (RuntimeException runtimeexception) {

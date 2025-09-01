@@ -51,7 +51,7 @@ public class Class51 {
 	try {
 	    class298_sub53_sub2.initBitAccess(1910675333);
 	    int myPlayerIndex = client.playerIndex * -442628795;
-	    Player player = (Class287.myPlayer = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[myPlayerIndex] = (new Player(client.aClass283_8716.method2675(-1611682495))));
+	    Player player = (Class287.myPlayer = client.players[myPlayerIndex] = (new Player(client.aClass283_8716.method2675(-1611682495))));
 	    player.anInt10064 = myPlayerIndex * 1714292119;
 	    int i_2_ = class298_sub53_sub2.readBits(30);
 	    byte i_3_ = (byte) (i_2_ >> 28);

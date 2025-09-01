@@ -62,15 +62,15 @@ public class Class372 {
 
     public static Class243 method4590(Class111 class111, boolean bool, int i, boolean bool_5_, int i_6_) {
 	try {
-	    if (null == Class373.aClass242_Sub1Array4072)
-		Class373.aClass242_Sub1Array4072 = new Class242_Sub1[Class356.method4268(1608416895)];
+	    if (null == OverlayType.aClass242_Sub1Array4072)
+		OverlayType.aClass242_Sub1Array4072 = new Class242_Sub1[Class356.method4268(1608416895)];
 	    Class329 class329 = null;
 	    int i_7_ = class111.method1233(958180062);
 	    if (null != Class291.aClass484_6476)
 		class329 = new Class329(i_7_, Class291.aClass484_6476, Class497.aClass484Array6106[i_7_], 1500000);
-	    Class373.aClass242_Sub1Array4072[i_7_] = Class203.aClass225_2337.method2095(i_7_, class329, (Class365_Sub1_Sub3_Sub2.aClass329_9933), 311001416);
-	    Class373.aClass242_Sub1Array4072[i_7_].method2278((byte) 2);
-	    return new Class243(Class373.aClass242_Sub1Array4072[i_7_], bool, i);
+	    OverlayType.aClass242_Sub1Array4072[i_7_] = Class203.aClass225_2337.method2095(i_7_, class329, (Class365_Sub1_Sub3_Sub2.aClass329_9933), 311001416);
+	    OverlayType.aClass242_Sub1Array4072[i_7_].method2278((byte) 2);
+	    return new Class243(OverlayType.aClass242_Sub1Array4072[i_7_], bool, i);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("pl.fz(").append(')').toString());
@@ -426,19 +426,19 @@ public class Class372 {
 	    ScriptEnvironment.aClass264_7534 = null;
 	    Class343.aClass264_3673 = null;
 	    Class101.aClass264_1084 = null;
-	    Class160.aClass57Array1646 = null;
-	    Class401.aClass57Array6561 = null;
-	    Class416.aClass57Array5334 = null;
-	    Class422.aClass57Array5351 = null;
-	    Class128_Sub2.aClass57Array8560 = null;
-	    Class74.aClass57Array699 = null;
-	    Class234.aClass57Array2598 = null;
-	    Class82_Sub11.aClass57Array6861 = null;
-	    SubIncommingPacket.aClass57Array2349 = null;
-	    Class130_Sub2.aClass57Array6959 = null;
-	    Class144.aClass57_1562 = null;
-	    Graphics.aClass57_573 = null;
-	    Class250.aClass57Array2766 = null;
+	    Class160.sprites = null;
+	    Class401.aSpriteArray6561 = null;
+	    Class416.aSpriteArray5334 = null;
+	    Class422.aSpriteArray5351 = null;
+	    Class128_Sub2.aSpriteArray8560 = null;
+	    Class74.aSpriteArray699 = null;
+	    Class234.aSpriteArray2598 = null;
+	    Class82_Sub11.aSpriteArray6861 = null;
+	    SubIncommingPacket.aSpriteArray2349 = null;
+	    Class130_Sub2.aSpriteArray6959 = null;
+	    Class144.aSprite_1562 = null;
+	    Graphics.aSprite_573 = null;
+	    Class250.aSpriteArray2766 = null;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("pl.u(").append(')').toString());

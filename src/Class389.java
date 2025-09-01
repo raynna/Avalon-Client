@@ -44,7 +44,7 @@ public class Class389 {
 	    if (is != null)
 		class398.method4915(new RsByteBuffer(is), (byte) -38);
 	    synchronized (this.aClass348_4161) {
-		this.aClass348_4161.method4194(class398, i);
+		this.aClass348_4161.put(class398, i);
 	    }
 	    return class398;
 	}

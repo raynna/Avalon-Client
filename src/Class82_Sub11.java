@@ -5,7 +5,7 @@
 public class Class82_Sub11 extends Class82 {
     int anInt6859;
     String aString6860;
-    static Class57[] aClass57Array6861;
+    static Sprite[] aSpriteArray6861;
 
     @Override
     public void method866(int i) {

@@ -77,7 +77,7 @@ public class Class314 {
 	    if (null != is)
 		class327.method3975(new RsByteBuffer(is), 16711680);
 	    synchronized (this.aClass348_3303) {
-		this.aClass348_3303.method4194(class327, i);
+		this.aClass348_3303.put(class327, i);
 	    }
 	    return class327;
 	}

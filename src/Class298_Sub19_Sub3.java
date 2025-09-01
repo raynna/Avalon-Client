@@ -231,11 +231,11 @@ public class Class298_Sub19_Sub3 extends Class298_Sub19 {
 
     static final void method3037(int i) {
 	try {
-	    for (int i_11_ = 0; i_11_ < -1230451913 * client.anInt8703; i_11_++) {
+	    for (int i_11_ = 0; i_11_ < -1230451913 * client.npcCount; i_11_++) {
 		int i_12_ = client.anIntArray8699[i_11_];
-		Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(i_12_));
-		if (class298_sub29 != null) {
-		    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
+		LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(i_12_));
+		if (linkableObject != null) {
+		    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
 		    Class135.method1494(class365_sub1_sub1_sub2_sub1, false, -2088974966);
 		}
 	    }

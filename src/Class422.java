@@ -8,7 +8,7 @@ public abstract class Class422 {
     protected static int anInt5348 = 1;
     public static int anInt5349 = 3;
     protected int anInt5350;
-    static Class57[] aClass57Array5351;
+    static Sprite[] aSpriteArray5351;
 
     abstract void method5610(int i);
 

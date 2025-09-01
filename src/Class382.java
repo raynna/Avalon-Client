@@ -83,14 +83,14 @@ final class Class382 implements Interface22 {
 	    Class158.idx8.method2310(Class260.anInt2820 * -684155443, -457216440);
 	    Class158.idx8.method2310(Class242.anInt2710 * -2085188617, -457216440);
 	    Class173.aClass243_1758.method2310(-2085188617 * Class242.anInt2710, -457216440);
-	    AccountCreationStage.aClass57_6062 = null;
-	    Class373.aClass57_4070 = null;
-	    Class367.aClass57_4001 = null;
-	    Class74.aClass57_700 = null;
-	    Class423.aClass57_5356 = null;
-	    Class313.aClass57_3299 = null;
-	    Class82_Sub8.aClass57_6855 = null;
-	    Class501.aClass57_6123 = null;
+	    AccountCreationStage.aSprite_6062 = null;
+	    OverlayType.aSprite_4070 = null;
+	    Class367.aSprite_4001 = null;
+	    Class74.aSprite_700 = null;
+	    Class423.aSprite_5356 = null;
+	    Class313.aSprite_3299 = null;
+	    Class82_Sub8.aSprite_6855 = null;
+	    Class501.aSprite_6123 = null;
 	    Class436.aBoolean5496 = true;
 	}
 	catch (RuntimeException runtimeexception) {

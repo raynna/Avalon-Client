@@ -165,7 +165,7 @@ public final class Class439 {
 		    }
 		}
 		if (Class358.method4287(i, 299941911) || i == 5 || 13 == i)
-		    Class373.aClass_ra4071.method5176();
+		    OverlayType.activeToolkit.method5176();
 		client.anInt8752 = -705702187 * i;
 	    }
 	}

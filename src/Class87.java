@@ -5,7 +5,7 @@
 public class Class87 {
     static short aShort792;
     public static HashTable aClass437_793;
-    public static Class94[] aClass94Array794;
+    public static Class94[] entities;
     static Class80[] aClass80Array795;
     public static Interface23 anInterface23_796;
     public static Class82[] aClass82Array797;

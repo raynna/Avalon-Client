@@ -11,7 +11,7 @@ public class Class372_Sub3 extends Class372 {
 
     static void method4599(int i) {
 	try {
-	    Class8.anInt106 = (-445162670 + (-123784141 * Class82_Sub19_Sub1.aClass505_9111.anInt6202 + (Class82_Sub19_Sub1.aClass505_9111.anInt6197 * -1877198679)));
+	    Class8.anInt106 = (-445162670 + (-123784141 * Class82_Sub19_Sub1.aFontSpecification_9111.anInt6202 + (Class82_Sub19_Sub1.aFontSpecification_9111.anInt6197 * -1877198679)));
 	    Class8.anInt110 = (524676266 + (Class422_Sub2.aClass505_8369.anInt6202 * 294342359 + 1292125525 * Class422_Sub2.aClass505_8369.anInt6197));
 	    Class8.aStringArray107 = new String[500];
 	    for (int i_0_ = 0; i_0_ < Class8.aStringArray107.length; i_0_++)

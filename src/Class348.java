@@ -220,7 +220,7 @@ public final class Class348 {
 	}
     }
 
-    public void method4194(Object object, long l) {
+    public void put(Object object, long l) {
 	try {
 	    method4185(object, l, 1, (byte) -117);
 	}

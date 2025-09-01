@@ -93,14 +93,14 @@ public class Class422_Sub10 extends Class422 {
 
     static void method5662(GraphicsToolkit class_ra, int i, int i_2_, IComponentDefinition class105, Class_ta class_ta, int i_3_, int i_4_, int i_5_) {
 	try {
-	    for (int i_6_ = 0; i_6_ < client.anInt8703 * -1230451913; i_6_++) {
-		Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(client.anIntArray8699[i_6_]));
-		if (class298_sub29 != null) {
-		    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
+	    for (int i_6_ = 0; i_6_ < client.npcCount * -1230451913; i_6_++) {
+		LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(client.anIntArray8699[i_6_]));
+		if (linkableObject != null) {
+		    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
 		    if (class365_sub1_sub1_sub2_sub1.method4457(1140952765) && ((Class287.myPlayer.plane) == class365_sub1_sub1_sub2_sub1.plane)) {
-			NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.aClass503_10190;
-			if (null != class503 && class503.anIntArray6188 != null)
-			    class503 = class503.method6240(Class128.aClass148_6331, 1665436225);
+			NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.definitions;
+			if (null != class503 && class503.morphisms != null)
+			    class503 = class503.morph(Class128.aClass148_6331, 1665436225);
 			if (null != class503 && class503.aBoolean6148 && class503.aBoolean6163) {
 			    Class217 class217 = (class365_sub1_sub1_sub2_sub1.method4337().aClass217_2599);
 			    int i_7_ = (int) class217.aFloat2451 / 128 - i / 128;
@@ -108,7 +108,7 @@ public class Class422_Sub10 extends Class422 {
 			    if (-1 != -1362115471 * class503.anInt6186)
 				Class248.method2389(class_ra, class_ta, class105, i_3_, i_4_, i_7_, i_8_, (-1362115471 * class503.anInt6186), (byte) 0);
 			    else
-				Class443.method5883(class105, class_ta, i_3_, i_4_, i_7_, i_8_, (SubIncommingPacket.aClass57Array2349[1]), (byte) -17);
+				Class443.method5883(class105, class_ta, i_3_, i_4_, i_7_, i_8_, (SubIncommingPacket.aSpriteArray2349[1]), (byte) -17);
 			}
 		    }
 		}
@@ -119,17 +119,17 @@ public class Class422_Sub10 extends Class422 {
 	}
     }
 
-    public static Class57 method5663(Class243 class243, int i, byte i_9_) {
+    public static Sprite method5663(Class243 class243, int i, byte i_9_) {
 	try {
-	    Class57 class57 = (Class57) Class229.aClass348_6452.method4184(i);
-	    if (null == class57) {
+	    Sprite sprite = (Sprite) Class229.aClass348_6452.method4184(i);
+	    if (null == sprite) {
 		if (Class230.aBoolean2567)
-		    class57 = (Class373.aClass_ra4071.method5125(IndexedImage.method979(class243, i), true));
+		    sprite = (OverlayType.activeToolkit.convertSpriteForGame(IndexedImage.method979(class243, i), true));
 		else
-		    class57 = Class223.method2081(class243.method2294(i, (byte) 15), -161656424);
-		Class229.aClass348_6452.method4194(class57, i);
+		    sprite = Class223.method2081(class243.method2294(i, (byte) 15), -161656424);
+		Class229.aClass348_6452.put(sprite, i);
 	    }
-	    return class57;
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("adl.f(").append(')').toString());

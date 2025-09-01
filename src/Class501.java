@@ -17,7 +17,7 @@ public final class Class501 {
     ReferenceQueue aReferenceQueue6120 = new ReferenceQueue();
     WeakReference_Sub1[] aWeakReference_Sub1Array6121 = new WeakReference_Sub1[16];
     public static Class395 aClass395_6122;
-    public static Class57 aClass57_6123;
+    public static Sprite aSprite_6123;
 
     public void method6222(Object object, Object object_0_, int i) {
 	try {
@@ -226,10 +226,10 @@ public final class Class501 {
 		boolean bool = class298_sub53_sub2.readBits(1) == 1;
 		if (bool)
 		    Class10.anIntArray140[(Class10.anInt139 += 867608709) * -1281683379 - 1] = i;
-		if (null != client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i])
+		if (null != client.players[i])
 		    throw new RuntimeException();
 		Class410 class410 = Class10.aClass410Array138[i];
-		Player class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i] = (new Player(client.aClass283_8716.method2675(-1611682495))));
+		Player class365_sub1_sub1_sub2_sub2 = (client.players[i] = (new Player(client.aClass283_8716.method2675(-1611682495))));
 		class365_sub1_sub1_sub2_sub2.anInt10064 = i * 1714292119;
 		if (null != Class10.aClass298_Sub53Array133[i])
 		    class365_sub1_sub1_sub2_sub2.sendAppearence(Class10.aClass298_Sub53Array133[i], (byte) 3);

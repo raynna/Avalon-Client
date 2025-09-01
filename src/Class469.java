@@ -52,7 +52,7 @@ public class Class469 {
 		class298_sub37_sub14.method3457(new RsByteBuffer(is), 1219453152);
 	    if (i >= 32768)
 		class298_sub37_sub14.method3456(-877048074);
-	    this.aClass348_5779.method4194(class298_sub37_sub14, i);
+	    this.aClass348_5779.put(class298_sub37_sub14, i);
 	    return class298_sub37_sub14;
 	}
 	catch (RuntimeException runtimeexception) {

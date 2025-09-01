@@ -923,7 +923,7 @@ public class RsByteBuffer extends Class298 {
 
     static final void method3655(Class403 class403, int i) {
 	try {
-	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub13_7549.method5674(-484902399) && Class373.aClass_ra4071.method5032()) ? 1 : 0;
+	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub13_7549.method5674(-484902399) && OverlayType.activeToolkit.method5032()) ? 1 : 0;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("acx.anb(").append(')').toString());

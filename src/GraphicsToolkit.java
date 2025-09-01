@@ -257,11 +257,11 @@ public abstract class GraphicsToolkit {
 
     public abstract Class66 method5028(int i, int i_113_, int i_114_, int i_115_, int i_116_, int i_117_);
 
-    public abstract Class57 method5029(int i, int i_118_, boolean bool, boolean bool_119_);
+    public abstract Sprite method5029(int i, int i_118_, boolean bool, boolean bool_119_);
 
-    public abstract Class57 method5030(int[] is, int i, int i_120_, int i_121_, int i_122_, boolean bool);
+    public abstract Sprite method5030(int[] is, int i, int i_120_, int i_121_, int i_122_, boolean bool);
 
-    public Class57 method5031(int[] is, int i, int i_123_, int i_124_, int i_125_, int i_126_) {
+    public Sprite method5031(int[] is, int i, int i_123_, int i_124_, int i_125_, int i_126_) {
 	try {
 	    return method5030(is, i, i_123_, i_124_, i_125_, true);
 	}
@@ -272,7 +272,7 @@ public abstract class GraphicsToolkit {
 
     public abstract boolean method5032();
 
-    public abstract Class57 method5033(int i, int i_127_, int i_128_, int i_129_, boolean bool);
+    public abstract Sprite method5033(int i, int i_127_, int i_128_, int i_129_, boolean bool);
 
     public abstract Class_ta method5034(int i, int i_130_, int[] is, int[] is_131_);
 
@@ -320,7 +320,7 @@ public abstract class GraphicsToolkit {
 
     public abstract void m(int i, float f, float f_161_, float f_162_, float f_163_, float f_164_);
 
-    public Class57 method5046(int i, int i_165_, boolean bool, int i_166_) {
+    public Sprite method5046(int i, int i_165_, boolean bool, int i_166_) {
 	try {
 	    return method5029(i, i_165_, bool, false);
 	}
@@ -502,21 +502,21 @@ public abstract class GraphicsToolkit {
 
     public abstract int method5100(int i, int i_306_, int i_307_, int i_308_, int i_309_, int i_310_);
 
-    public abstract Class57 method5101(IndexedImage class89, boolean bool);
+    public abstract Sprite method5101(IndexedImage class89, boolean bool);
 
     public abstract Class_v method5102(int i);
 
     public abstract void method5103(Class_v class_v);
 
-    public abstract Class57 method5104(int i, int i_311_, boolean bool, boolean bool_312_);
+    public abstract Sprite method5104(int i, int i_311_, boolean bool, boolean bool_312_);
 
-    public abstract Class57 method5105(int[] is, int i, int i_313_, int i_314_, int i_315_, boolean bool);
+    public abstract Sprite method5105(int[] is, int i, int i_313_, int i_314_, int i_315_, boolean bool);
 
-    public abstract Class57 method5106(int[] is, int i, int i_316_, int i_317_, int i_318_, boolean bool);
+    public abstract Sprite method5106(int[] is, int i, int i_316_, int i_317_, int i_318_, boolean bool);
 
-    public abstract Class57 method5107(IndexedImage class89, boolean bool);
+    public abstract Sprite method5107(IndexedImage class89, boolean bool);
 
-    public abstract Class57 method5108(int i, int i_319_, int i_320_, int i_321_, boolean bool);
+    public abstract Sprite method5108(int i, int i_319_, int i_320_, int i_321_, boolean bool);
 
     public abstract Class_ta method5109(int i, int i_322_, int[] is, int[] is_323_);
 
@@ -552,7 +552,7 @@ public abstract class GraphicsToolkit {
 
     public abstract Class233 method5124();
 
-    public abstract Class57 method5125(IndexedImage class89, boolean bool);
+    public abstract Sprite convertSpriteForGame(IndexedImage class89, boolean bool);
 
     public abstract int method5126(int i, int i_349_);
 
@@ -813,7 +813,7 @@ public abstract class GraphicsToolkit {
 
     public abstract void IA(float f);
 
-    public abstract Class57 method5190(int[] is, int i, int i_481_, int i_482_, int i_483_, boolean bool);
+    public abstract Sprite method5190(int[] is, int i, int i_481_, int i_482_, int i_483_, boolean bool);
 
     static void method5191(int i) {
 	try {
@@ -837,9 +837,9 @@ public abstract class GraphicsToolkit {
 	    String string = Class8.method315(class298_sub37_sub15, 1974058841);
 	    if (is != null)
 		string = new StringBuilder().append(string).append(Class216.method1999(is, (byte) 1)).toString();
-	    class264.method2480(string, 3 + i_485_, i_489_, i_490_, 0, client.aRandom8702, Class368.anInt4005 * 1401020893, Class436.aClass57Array5501, Class422_Sub3.anIntArray8372, 65280);
+	    class264.method2480(string, 3 + i_485_, i_489_, i_490_, 0, client.aRandom8702, Class368.anInt4005 * 1401020893, Class436.aSpriteArray5501, Class422_Sub3.anIntArray8372, 65280);
 	    if (class298_sub37_sub15.aBoolean9665)
-		Graphics.aClass57_573.method645(i_485_ + 5 + class505.method6264(string, 1318090489), i_489_ - 1110385787 * class505.anInt6202);
+		Graphics.aSprite_573.draw(i_485_ + 5 + class505.method6264(string, 1318090489), i_489_ - 1110385787 * class505.anInt6202);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ra.an(").append(')').toString());
@@ -904,7 +904,7 @@ static long method5194(CharSequence charsequence, byte i) {
 		class_ra.r(i, i_496_, -2093041337 * class105.anInt1156 + i, 457937409 * class105.anInt1162 + i_496_);
 		if ((-2093041337 * class105.anInt1156 != class117.anInt1393 * 1633695381) || (-60174999 * class117.anInt1394 != 457937409 * class105.anInt1162))
 		    throw new IllegalStateException("");
-		if (2 != -64305285 * Class3.anInt56 && 5 != Class3.anInt56 * -64305285 && null != Class384.aClass57_4127) {
+		if (2 != -64305285 * Class3.anInt56 && 5 != Class3.anInt56 * -64305285 && null != Class384.aSprite_4127) {
 		    Class341 class341 = client.aClass283_8716.method2628(681479919);
 		    int i_498_;
 		    int i_499_;
@@ -924,7 +924,7 @@ static long method5194(CharSequence charsequence, byte i) {
 		    }
 		    int i_502_ = i_498_ / 128 + 48;
 		    int i_503_ = (48 + client.aClass283_8716.method2630(789210081) * 4 - i_499_ / 128);
-		    Class384.aClass57_4127.method659((i + class105.anInt1156 * -2093041337 / 2.0F), (i_496_ + 457937409 * class105.anInt1162 / 2.0F), i_502_, i_503_, i_501_, i_500_ << 2, class_ta, i, i_496_);
+		    Class384.aSprite_4127.method659((i + class105.anInt1156 * -2093041337 / 2.0F), (i_496_ + 457937409 * class105.anInt1162 / 2.0F), i_502_, i_503_, i_501_, i_500_ << 2, class_ta, i, i_496_);
 		    MapKeys class296 = client.aClass283_8716.method2631(-337725639);
 		    for (Class298_Sub35 class298_sub35 = ((Class298_Sub35) Class3.aClass453_61.method5939(1766612795)); class298_sub35 != null; class298_sub35 = ((Class298_Sub35) Class3.aClass453_61.method5944(49146))) {
 			int i_504_ = class298_sub35.anInt7394 * -774922497;
@@ -957,7 +957,7 @@ static long method5194(CharSequence charsequence, byte i) {
 			    int i_514_ = ((int) ((class298_sub2.hash * 7051297995265073167L) >> 14 & 0x3fffL) - class341.gameSceneBaseY * 283514611);
 			    int i_515_ = 2 + i_513_ * 4 - i_498_ / 128;
 			    int i_516_ = 2 + i_514_ * 4 - i_499_ / 128;
-			    Class443.method5883(class105, class_ta, i, i_496_, i_515_, i_516_, SubIncommingPacket.aClass57Array2349[0], (byte) 16);
+			    Class443.method5883(class105, class_ta, i, i_496_, i_515_, i_516_, SubIncommingPacket.aSpriteArray2349[0], (byte) 16);
 			}
 		    }
 		    Class422_Sub10.method5662(class_ra, i_498_, i_499_, class105, class_ta, i, i_496_, 826111295);
@@ -967,7 +967,7 @@ static long method5194(CharSequence charsequence, byte i) {
 			if (Class3.anInt62 * 2076926079 != 0) {
 			    int i_517_ = (-282230276 * Class3.anInt62 + 2 - i_498_ / 128 + (Class287.myPlayer.getSize() - 1) * 2);
 			    int i_518_ = (2 + Class3.anInt54 * -1505214580 - i_499_ / 128 + (Class287.myPlayer.getSize() - 1) * 2);
-			    Class443.method5883(class105, class_ta, i, i_496_, i_517_, i_518_, (Class234.aClass57Array2598[Class3.aBoolean63 ? 1 : 0]), (byte) 23);
+			    Class443.method5883(class105, class_ta, i, i_496_, i_517_, i_518_, (Class234.aSpriteArray2598[Class3.aBoolean63 ? 1 : 0]), (byte) 23);
 			}
 			if (!Class287.myPlayer.hidden)
 			    class_ra.method5015(i + (-2093041337 * class105.anInt1156 / 2) - 1, (457937409 * class105.anInt1162 / 2) + i_496_ - 1, 3, 3, -1, (byte) 7);

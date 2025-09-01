@@ -101,7 +101,7 @@ public class Class107 {
 
     public static void method1144(boolean bool, short i) {
 	try {
-	    if (1596783995 * client.anInt8724 != 2 && 1596783995 * client.anInt8724 != 3) {
+	    if (1596783995 * client.cutsceneStage != 2 && 1596783995 * client.cutsceneStage != 3) {
 		if (!bool) {
 		    Class82[] class82s = Class87.aClass82Array797;
 		    for (int i_7_ = 0; i_7_ < class82s.length; i_7_++) {
@@ -109,7 +109,7 @@ public class Class107 {
 			class82.method867(-2077321818);
 		    }
 		}
-		client.anInt8724 = 1973597030;
+		client.cutsceneStage = 1973597030;
 		Class298_Sub37.anIntArrayArray7407 = null;
 		Class128_Sub1.aClass298_Sub53_8555 = null;
 		client.aBoolean8725 = false;

@@ -165,7 +165,7 @@ public abstract class Class323 {
 	    int i_11_ = (class403.anIntArray5244[class403.anInt5239 * 681479919]);
 	    int i_12_ = (class403.anIntArray5244[class403.anInt5239 * 681479919 + 1]);
 	    Class505 class505 = Class322.method3931(Class173.aClass243_1758, i_12_, 0, (byte) 49);
-	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = class505.method6259(string, i_11_, Class130_Sub2.aClass57Array6959, -1274509130);
+	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = class505.method6259(string, i_11_, Class130_Sub2.aSpriteArray6959, -1274509130);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("nl.zn(").append(')').toString());

@@ -399,7 +399,7 @@ public class Tradution {
 
     static void method6053(int i) {
 	try {
-	    if (Class373.aClass_ra4071 != null) {
+	    if (OverlayType.activeToolkit != null) {
 		client.aClass283_8716.method2646((byte) 8);
 		InputStream_Sub1.method273(1660073823);
 		Class92.method1007(1532437233);
@@ -417,22 +417,22 @@ public class Tradution {
 		    }
 		}
 		for (int i_6_ = 0; i_6_ < 2048; i_6_++) {
-		    Player class365_sub1_sub1_sub2_sub2 = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_6_];
+		    Player class365_sub1_sub1_sub2_sub2 = client.players[i_6_];
 		    if (class365_sub1_sub1_sub2_sub2 != null) {
 			for (int i_7_ = 0; i_7_ < (class365_sub1_sub1_sub2_sub2.aClass387Array10082).length; i_7_++)
 			    class365_sub1_sub1_sub2_sub2.aClass387Array10082[i_7_] = null;
 		    }
 		}
 		for (int i_8_ = 0; i_8_ < 1962237353 * client.anInt8772; i_8_++) {
-		    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) client.aClass298_Sub29Array8816[i_8_].anObject7366);
+		    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) client.aLinkableObjectArray8816[i_8_].anObject7366);
 		    if (class365_sub1_sub1_sub2_sub1 != null) {
 			for (int i_9_ = 0; i_9_ < (class365_sub1_sub1_sub2_sub1.aClass387Array10082).length; i_9_++)
 			    class365_sub1_sub1_sub2_sub1.aClass387Array10082[i_9_] = null;
 		    }
 		}
 		client.aClass437_8825.method5811((byte) -70);
-		Class373.aClass_ra4071.method5136(500005923);
-		Class373.aClass_ra4071 = null;
+		OverlayType.activeToolkit.method5136(500005923);
+		OverlayType.activeToolkit = null;
 	    }
 	}
 	catch (RuntimeException runtimeexception) {

@@ -7,9 +7,9 @@ public class Class136_Sub1 extends Class136 {
 
     @Override
     public void method56(boolean bool) {
-	int i = ((this.aClass158_6386.aClass139_6360.method1545(this.aClass57_6385.method271(), client.anInt8794 * 775068819, -2069269081)) + this.aClass158_6386.anInt6362 * -245579987);
-	int i_0_ = ((this.aClass158_6386.aClass133_6363.method1482(this.aClass57_6385.method626(), client.anInt8803 * -791746413, -936935431)) + (this.aClass158_6386.anInt6359 * -1426302101));
-	this.aClass57_6385.method673(i + this.aClass57_6385.method271() / 2, i_0_ + this.aClass57_6385.method626() / 2, 4096, this.anInt8576 * -157704951);
+	int i = ((this.aClass158_6386.aClass139_6360.method1545(this.aSprite_6385.method271(), client.anInt8794 * 775068819, -2069269081)) + this.aClass158_6386.anInt6362 * -245579987);
+	int i_0_ = ((this.aClass158_6386.aClass133_6363.method1482(this.aSprite_6385.method626(), client.anInt8803 * -791746413, -936935431)) + (this.aClass158_6386.anInt6359 * -1426302101));
+	this.aSprite_6385.method673(i + this.aSprite_6385.method271() / 2, i_0_ + this.aSprite_6385.method626() / 2, 4096, this.anInt8576 * -157704951);
 	this.anInt8576 += 315105141 * ((Class158_Sub1) this.aClass158_6386).anInt8567;
     }
 
@@ -20,9 +20,9 @@ public class Class136_Sub1 extends Class136 {
     @Override
     public void method58(boolean bool, byte i) {
 	try {
-	    int i_1_ = ((this.aClass158_6386.aClass139_6360.method1545(this.aClass57_6385.method271(), client.anInt8794 * 775068819, -2041461531)) + (this.aClass158_6386.anInt6362 * -245579987));
-	    int i_2_ = ((this.aClass158_6386.aClass133_6363.method1482(this.aClass57_6385.method626(), client.anInt8803 * -791746413, -2132177466)) + (this.aClass158_6386.anInt6359 * -1426302101));
-	    this.aClass57_6385.method673(i_1_ + (this.aClass57_6385.method271() / 2), i_2_ + (this.aClass57_6385.method626() / 2), 4096, this.anInt8576 * -157704951);
+	    int i_1_ = ((this.aClass158_6386.aClass139_6360.method1545(this.aSprite_6385.method271(), client.anInt8794 * 775068819, -2041461531)) + (this.aClass158_6386.anInt6362 * -245579987));
+	    int i_2_ = ((this.aClass158_6386.aClass133_6363.method1482(this.aSprite_6385.method626(), client.anInt8803 * -791746413, -2132177466)) + (this.aClass158_6386.anInt6359 * -1426302101));
+	    this.aSprite_6385.method673(i_1_ + (this.aSprite_6385.method271() / 2), i_2_ + (this.aSprite_6385.method626() / 2), 4096, this.anInt8576 * -157704951);
 	    this.anInt8576 += 315105141 * (((Class158_Sub1) this.aClass158_6386).anInt8567);
 	}
 	catch (RuntimeException runtimeexception) {

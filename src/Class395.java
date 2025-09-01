@@ -15,7 +15,7 @@ public class Class395 {
 		class298_sub37_sub4 = ((Class298_Sub37_Sub4) this.aClass348_5191.method4184(i));
 		if (null == class298_sub37_sub4) {
 		    class298_sub37_sub4 = new Class298_Sub37_Sub4(i);
-		    this.aClass348_5191.method4194(class298_sub37_sub4, i);
+		    this.aClass348_5191.put(class298_sub37_sub4, i);
 		}
 		if (!class298_sub37_sub4.method3412((byte) 45)) {
 		    Class298_Sub37_Sub4 class298_sub37_sub4_1_ = null;
@@ -87,7 +87,7 @@ public class Class395 {
 		class391.method4882(new RsByteBuffer(is), -795902444);
 	    class391.method4879((byte) -46);
 	    synchronized (this.aClass348_5192) {
-		this.aClass348_5192.method4194(class391, i);
+		this.aClass348_5192.put(class391, i);
 	    }
 	    return class391;
 	}

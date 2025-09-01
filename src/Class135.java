@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Class135 implements Interface6 {
     Class243 aClass243_6381;
     Class165 aClass165_6382;
-    Class57 aClass57_6383;
+    Sprite aSprite_6383;
     public static int anInt6384;
 
     @Override
@@ -27,8 +27,8 @@ public class Class135 implements Interface6 {
 	    if (bool) {
 		int i_0_ = ((Class462.anInt5683 * -2110394505 > client.anInt8794 * 775068819) ? Class462.anInt5683 * -2110394505 : 775068819 * client.anInt8794);
 		int i_1_ = ((Class298_Sub40_Sub9.anInt9716 * -1111710645 > -791746413 * client.anInt8803) ? Class298_Sub40_Sub9.anInt9716 * -1111710645 : client.anInt8803 * -791746413);
-		int i_2_ = this.aClass57_6383.method271();
-		int i_3_ = this.aClass57_6383.method626();
+		int i_2_ = this.aSprite_6383.method271();
+		int i_3_ = this.aSprite_6383.method626();
 		int i_4_ = 0;
 		int i_5_ = i_0_;
 		int i_6_ = i_0_ * i_3_ / i_2_;
@@ -39,7 +39,7 @@ public class Class135 implements Interface6 {
 		    i_5_ = i_2_ * i_1_ / i_3_;
 		    i_4_ = (i_0_ - i_5_) / 2;
 		}
-		this.aClass57_6383.method633(i_4_, i_7_, i_5_, i_6_);
+		this.aSprite_6383.method633(i_4_, i_7_, i_5_, i_6_);
 	    }
 	}
 	catch (RuntimeException runtimeexception) {
@@ -59,13 +59,13 @@ public class Class135 implements Interface6 {
 
     @Override
     public void method55() {
-	this.aClass57_6383 = Class422_Sub10.method5663(this.aClass243_6381, (this.aClass165_6382.anInt6365) * 791455531, (byte) -99);
+	this.aSprite_6383 = Class422_Sub10.method5663(this.aClass243_6381, (this.aClass165_6382.anInt6365) * 791455531, (byte) -99);
     }
 
     @Override
     public void method53(int i) {
 	try {
-	    this.aClass57_6383 = Class422_Sub10.method5663(this.aClass243_6381, (this.aClass165_6382.anInt6365) * 791455531, (byte) -105);
+	    this.aSprite_6383 = Class422_Sub10.method5663(this.aClass243_6381, (this.aClass165_6382.anInt6365) * 791455531, (byte) -105);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("fl.a(").append(')').toString());
@@ -82,8 +82,8 @@ public class Class135 implements Interface6 {
 	if (bool) {
 	    int i = ((Class462.anInt5683 * -2110394505 > client.anInt8794 * 775068819) ? Class462.anInt5683 * -2110394505 : 775068819 * client.anInt8794);
 	    int i_8_ = ((Class298_Sub40_Sub9.anInt9716 * -1111710645 > -791746413 * client.anInt8803) ? Class298_Sub40_Sub9.anInt9716 * -1111710645 : client.anInt8803 * -791746413);
-	    int i_9_ = this.aClass57_6383.method271();
-	    int i_10_ = this.aClass57_6383.method626();
+	    int i_9_ = this.aSprite_6383.method271();
+	    int i_10_ = this.aSprite_6383.method626();
 	    int i_11_ = 0;
 	    int i_12_ = i;
 	    int i_13_ = i * i_10_ / i_9_;
@@ -94,7 +94,7 @@ public class Class135 implements Interface6 {
 		i_12_ = i_9_ * i_8_ / i_10_;
 		i_11_ = (i - i_12_) / 2;
 	    }
-	    this.aClass57_6383.method633(i_11_, i_14_, i_12_, i_13_);
+	    this.aSprite_6383.method633(i_11_, i_14_, i_12_, i_13_);
 	}
     }
 

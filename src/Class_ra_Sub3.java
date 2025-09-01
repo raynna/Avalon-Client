@@ -93,7 +93,7 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     protected boolean aBoolean8277;
     protected boolean aBoolean8278;
     protected boolean aBoolean8279;
-    Class57_Sub2 aClass57_Sub2_8280;
+    Sprite_Sub2 aClass57_Sub2_8280;
     protected boolean aBoolean8281;
     protected boolean aBoolean8282;
     public float[] aFloatArray8283;
@@ -133,7 +133,7 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     int anInt8317;
     protected int anInt8318;
     Class161_Sub1_Sub2 aClass161_Sub1_Sub2_8319;
-    Class57_Sub2 aClass57_Sub2_8320;
+    Sprite_Sub2 aClass57_Sub2_8320;
     Class168 aClass168_8321;
     static int anInt8322 = 1;
     static int anInt8323 = 2;
@@ -259,8 +259,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 	method5094();
 	L();
 	method5176();
-	this.aClass57_Sub2_8320 = new Class57_Sub2(this, anInterface9_Impl2_8310);
-	this.aClass57_Sub2_8280 = new Class57_Sub2(this, this.anInterface9_Impl2_8301);
+	this.aClass57_Sub2_8320 = new Sprite_Sub2(this, anInterface9_Impl2_8310);
+	this.aClass57_Sub2_8280 = new Sprite_Sub2(this, this.anInterface9_Impl2_8301);
 	ba(3, 0);
     }
 
@@ -534,13 +534,13 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     }
 
     @Override
-    public final Class57 method5029(int i, int i_19_, boolean bool, boolean bool_20_) {
-	return new Class57_Sub2(this, i, i_19_, bool, bool_20_);
+    public final Sprite method5029(int i, int i_19_, boolean bool, boolean bool_20_) {
+	return new Sprite_Sub2(this, i, i_19_, bool, bool_20_);
     }
 
     @Override
-    public final Class57 method5125(IndexedImage class89, boolean bool) {
-	Class57 class57;
+    public final Sprite convertSpriteForGame(IndexedImage class89, boolean bool) {
+	Sprite sprite;
 	if (class89.anInt812 != 0 && class89.anInt816 != 0) {
 	    int[] is = new int[class89.anInt812 * class89.anInt816];
 	    int i = 0;
@@ -560,16 +560,16 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 		    }
 		}
 	    }
-	    class57 = method5031(is, 0, class89.anInt812, class89.anInt812, class89.anInt816, -268200852);
+	    sprite = method5031(is, 0, class89.anInt812, class89.anInt812, class89.anInt816, -268200852);
 	} else
-	    class57 = method5031(new int[] { 0 }, 0, 1, 1, 1, -938706176);
-	class57.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
-	return class57;
+	    sprite = method5031(new int[] { 0 }, 0, 1, 1, 1, -938706176);
+	sprite.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
+	return sprite;
     }
 
     @Override
-    public final Class57 method5030(int[] is, int i, int i_27_, int i_28_, int i_29_, boolean bool) {
-	return new Class57_Sub2(this, i_28_, i_29_, is, i, i_27_);
+    public final Sprite method5030(int[] is, int i, int i_27_, int i_28_, int i_29_, boolean bool) {
+	return new Sprite_Sub2(this, i_28_, i_29_, is, i, i_27_);
     }
 
     abstract void method5319(int i, Class183 class183, boolean bool, boolean bool_30_);
@@ -673,8 +673,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     }
 
     @Override
-    public final Class57 method5190(int[] is, int i, int i_69_, int i_70_, int i_71_, boolean bool) {
-	return new Class57_Sub2(this, i_70_, i_71_, is, i, i_69_);
+    public final Sprite method5190(int[] is, int i, int i_69_, int i_70_, int i_71_, boolean bool) {
+	return new Sprite_Sub2(this, i_70_, i_71_, is, i, i_69_);
     }
 
     public void method5323(Interface8 interface8) {
@@ -2015,8 +2015,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     }
 
     @Override
-    public final Class57 method5106(int[] is, int i, int i_323_, int i_324_, int i_325_, boolean bool) {
-	return new Class57_Sub2(this, i_324_, i_325_, is, i, i_323_);
+    public final Sprite method5106(int[] is, int i, int i_323_, int i_324_, int i_325_, boolean bool) {
+	return new Sprite_Sub2(this, i_324_, i_325_, is, i, i_323_);
     }
 
     abstract void method5405();
@@ -2029,8 +2029,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     }
 
     @Override
-    public final Class57 method5108(int i, int i_326_, int i_327_, int i_328_, boolean bool) {
-	Class57_Sub2 class57_sub2 = new Class57_Sub2(this, i_327_, i_328_, bool, false);
+    public final Sprite method5108(int i, int i_326_, int i_327_, int i_328_, boolean bool) {
+	Sprite_Sub2 class57_sub2 = new Sprite_Sub2(this, i_327_, i_328_, bool, false);
 	class57_sub2.method675(0, 0, i_327_, i_328_, i, i_326_);
 	return class57_sub2;
     }
@@ -2307,8 +2307,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     abstract Interface9_Impl2_Impl1 method5413(Class55 class55, Class77 class77, int i, int i_383_);
 
     @Override
-    public final Class57 method5101(IndexedImage class89, boolean bool) {
-	Class57 class57;
+    public final Sprite method5101(IndexedImage class89, boolean bool) {
+	Sprite sprite;
 	if (class89.anInt812 != 0 && class89.anInt816 != 0) {
 	    int[] is = new int[class89.anInt812 * class89.anInt816];
 	    int i = 0;
@@ -2328,11 +2328,11 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 		    }
 		}
 	    }
-	    class57 = method5031(is, 0, class89.anInt812, class89.anInt812, class89.anInt816, 2021033350);
+	    sprite = method5031(is, 0, class89.anInt812, class89.anInt812, class89.anInt816, 2021033350);
 	} else
-	    class57 = method5031(new int[] { 0 }, 0, 1, 1, 1, 739975791);
-	class57.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
-	return class57;
+	    sprite = method5031(new int[] { 0 }, 0, 1, 1, 1, 739975791);
+	sprite.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
+	return sprite;
     }
 
     @Override
@@ -2341,8 +2341,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     }
 
     @Override
-    public final Class57 method5107(IndexedImage class89, boolean bool) {
-	Class57 class57;
+    public final Sprite method5107(IndexedImage class89, boolean bool) {
+	Sprite sprite;
 	if (class89.anInt812 != 0 && class89.anInt816 != 0) {
 	    int[] is = new int[class89.anInt812 * class89.anInt816];
 	    int i = 0;
@@ -2362,11 +2362,11 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
 		    }
 		}
 	    }
-	    class57 = method5031(is, 0, class89.anInt812, class89.anInt812, class89.anInt816, -1575984249);
+	    sprite = method5031(is, 0, class89.anInt812, class89.anInt812, class89.anInt816, -1575984249);
 	} else
-	    class57 = method5031(new int[] { 0 }, 0, 1, 1, 1, 250272340);
-	class57.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
-	return class57;
+	    sprite = method5031(new int[] { 0 }, 0, 1, 1, 1, 250272340);
+	sprite.method621(class89.anInt815, class89.anInt811, class89.anInt814, class89.anInt813);
+	return sprite;
     }
 
     @Override
@@ -2892,8 +2892,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     abstract void method5448();
 
     @Override
-    public final Class57 method5033(int i, int i_529_, int i_530_, int i_531_, boolean bool) {
-	Class57_Sub2 class57_sub2 = new Class57_Sub2(this, i_530_, i_531_, bool, false);
+    public final Sprite method5033(int i, int i_529_, int i_530_, int i_531_, boolean bool) {
+	Sprite_Sub2 class57_sub2 = new Sprite_Sub2(this, i_530_, i_531_, bool, false);
 	class57_sub2.method675(0, 0, i_530_, i_531_, i, i_529_);
 	return class57_sub2;
     }
@@ -3087,8 +3087,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     abstract void method5460();
 
     @Override
-    public final Class57 method5105(int[] is, int i, int i_556_, int i_557_, int i_558_, boolean bool) {
-	return new Class57_Sub2(this, i_557_, i_558_, is, i, i_556_);
+    public final Sprite method5105(int[] is, int i, int i_556_, int i_557_, int i_558_, boolean bool) {
+	return new Sprite_Sub2(this, i_557_, i_558_, is, i, i_556_);
     }
 
     @Override
@@ -3469,8 +3469,8 @@ public abstract class Class_ra_Sub3 extends GraphicsToolkit {
     public abstract void method5520(Class233 class233, Class233 class233_650_, Class233 class233_651_);
 
     @Override
-    public final Class57 method5104(int i, int i_652_, boolean bool, boolean bool_653_) {
-	return new Class57_Sub2(this, i, i_652_, bool, bool_653_);
+    public final Sprite method5104(int i, int i_652_, boolean bool, boolean bool_653_) {
+	return new Sprite_Sub2(this, i, i_652_, bool, bool_653_);
     }
 
     public abstract void method5521(int i, Interface7_Impl1 interface7_impl1);

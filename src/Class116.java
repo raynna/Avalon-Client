@@ -149,7 +149,7 @@ public class Class116 {
 			    i_15_ = ((int) class217.aFloat2454 - (256 + ((i_18_ - 283514611 * class341.gameSceneBaseY) * 512)));
 			} else if ((i_11_ & 0x8000) != 0) {
 			    int i_19_ = i_11_ & 0x7fff;
-			    Player class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_19_]);
+			    Player class365_sub1_sub1_sub2_sub2 = (client.players[i_19_]);
 			    if (null != class365_sub1_sub1_sub2_sub2) {
 				Class217 class217_20_ = (class365_sub1_sub1_sub2_sub2.method4337().aClass217_2599);
 				i_14_ = ((int) class217.aFloat2451 - (int) class217_20_.aFloat2451);
@@ -159,9 +159,9 @@ public class Class116 {
 				continue;
 			    }
 			} else {
-			    Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(i_11_));
-			    if (null != class298_sub29) {
-				NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
+			    LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(i_11_));
+			    if (null != linkableObject) {
+				NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
 				Class217 class217_21_ = (class365_sub1_sub1_sub2_sub1.method4337().aClass217_2599);
 				i_14_ = ((int) class217.aFloat2451 - (int) class217_21_.aFloat2451);
 				i_15_ = ((int) class217.aFloat2454 - (int) class217_21_.aFloat2454);

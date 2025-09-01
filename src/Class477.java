@@ -92,7 +92,7 @@ public class Class477 {
 		}
 	    }
 	    synchronized (this.aClass348_5993) {
-		this.aClass348_5993.method4194(itemdefinition, itemId);
+		this.aClass348_5993.put(itemdefinition, itemId);
 	    }
 	    return itemdefinition;
 	}
@@ -151,7 +151,7 @@ public class Class477 {
      * StringBuilder().append("tq.a(").append(')').toString()); } }
      */
 
-    public Class57 method6085(GraphicsToolkit class_ra, int i, int i_1_, int i_2_, int i_3_, int i_4_, Class366 class366, int i_5_) {
+    public Sprite method6085(GraphicsToolkit class_ra, int i, int i_1_, int i_2_, int i_3_, int i_4_, Class366 class366, int i_5_) {
 	try {
 	    this.aClass465_5996.anInt6519 = -973477563 * class_ra.anInt5298;
 	    this.aClass465_5996.anInt6514 = i * 1541800549;
@@ -160,19 +160,19 @@ public class Class477 {
 	    this.aClass465_5996.anInt6518 = i_3_ * 1868109305;
 	    this.aClass465_5996.anInt6517 = i_4_ * 958157807;
 	    this.aClass465_5996.aBoolean6513 = null != class366;
-	    return (Class57) aClass340_5995.method4134(this.aClass465_5996);
+	    return (Sprite) aClass340_5995.method4134(this.aClass465_5996);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("tq.f(").append(')').toString());
 	}
     }
 
-    public Class57 method6086(GraphicsToolkit class_ra, GraphicsToolkit class_ra_6_, int i, int i_7_, int i_8_, int i_9_, boolean bool, boolean bool_10_, int i_11_, Class264 class264, Class366 class366, int i_12_) {
+    public Sprite method6086(GraphicsToolkit class_ra, GraphicsToolkit class_ra_6_, int i, int i_7_, int i_8_, int i_9_, boolean bool, boolean bool_10_, int i_11_, Class264 class264, Class366 class366, int i_12_) {
 	try {
 	    if (!bool_10_) {
-		Class57 class57 = method6085(class_ra_6_, i, i_7_, i_8_, i_9_, i_11_, class366, 467134725);
-		if (null != class57)
-		    return class57;
+		Sprite sprite = method6085(class_ra_6_, i, i_7_, i_8_, i_9_, i_11_, class366, 467134725);
+		if (null != sprite)
+		    return sprite;
 	    }
 	    ItemDefinitions class468 = getItemDefinitions(i);
 	    if (i_7_ > 1 && class468.anIntArray5752 != null) {
@@ -187,11 +187,11 @@ public class Class477 {
 	    int[] is = class468.method6031(class_ra, class_ra_6_, i_7_, i_8_, i_9_, bool, i_11_, class264, class366, 1026825677);
 	    if (null == is)
 		return null;
-	    Class57 class57;
+	    Sprite sprite;
 	    if (bool_10_)
-		class57 = class_ra.method5031(is, 0, 36, 36, 32, 533151798);
+		sprite = class_ra.method5031(is, 0, 36, 36, 32, 533151798);
 	    else
-		class57 = class_ra_6_.method5031(is, 0, 36, 36, 32, 1367777589);
+		sprite = class_ra_6_.method5031(is, 0, 36, 36, 32, 1367777589);
 	    if (!bool_10_) {
 		Class465 class465 = new Class465();
 		class465.anInt6519 = -973477563 * class_ra_6_.anInt5298;
@@ -201,9 +201,9 @@ public class Class477 {
 		class465.anInt6518 = i_9_ * 1868109305;
 		class465.anInt6517 = 958157807 * i_11_;
 		class465.aBoolean6513 = null != class366;
-		aClass340_5995.method4127(class57, class465);
+		aClass340_5995.method4127(sprite, class465);
 	    }
-	    return class57;
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("tq.b(").append(')').toString());

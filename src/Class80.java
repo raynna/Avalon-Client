@@ -77,7 +77,7 @@ public class Class80 {
 		Class152.method1655(class302_sub5, -1638035740);
 	    int i_14_ = 0;
 	    int i_15_ = 3;
-	    if (0 == client.anInt8724 * 1596783995) {
+	    if (0 == client.cutsceneStage * 1596783995) {
 		for (int i_16_ = i_14_; i_16_ <= i_15_; i_16_++)
 		    client.method2797(i_16_);
 		client.method2799();

@@ -25,7 +25,7 @@ public class Class256 {
 		class298_sub37_sub8.method3430(new RsByteBuffer(is), 754160666);
 	    if (i >= 32768)
 		class298_sub37_sub8.method3432(-1787095576);
-	    this.aClass348_2798.method4194(class298_sub37_sub8, i);
+	    this.aClass348_2798.put(class298_sub37_sub8, i);
 	    return class298_sub37_sub8;
 	}
 	catch (RuntimeException runtimeexception) {
@@ -85,7 +85,7 @@ public class Class256 {
 	    int i_4_ = (class403.anIntArray5244[class403.anInt5239 * 681479919]);
 	    int i_5_ = (class403.anIntArray5244[1 + class403.anInt5239 * 681479919]);
 	    Class505 class505 = Class322.method3931(Class173.aClass243_1758, i_5_, 0, (byte) 57);
-	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = class505.method6262(string, i_4_, Class130_Sub2.aClass57Array6959, 1970071925);
+	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = class505.method6262(string, i_4_, Class130_Sub2.aSpriteArray6959, 1970071925);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ks.zf(").append(')').toString());

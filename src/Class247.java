@@ -323,28 +323,28 @@ public abstract class Class247 {
 
     static void method2372(GraphicsToolkit class_ra, int i, int i_11_, int i_12_, int i_13_, int i_14_, int i_15_) {
 	try {
-	    if ((null == AccountCreationStage.aClass57_6062 || null == Class501.aClass57_6123 || Class367.aClass57_4001 == null) && Class158.idx8.method2310(ClanSettings.anInt1680 * 1049272911, -457216440) && Class158.idx8.method2310(Class361.anInt3914 * -745532315, -457216440) && Class158.idx8.method2310((-684155443 * Class260.anInt2820), -457216440)) {
+	    if ((null == AccountCreationStage.aSprite_6062 || null == Class501.aSprite_6123 || Class367.aSprite_4001 == null) && Class158.idx8.method2310(ClanSettings.anInt1680 * 1049272911, -457216440) && Class158.idx8.method2310(Class361.anInt3914 * -745532315, -457216440) && Class158.idx8.method2310((-684155443 * Class260.anInt2820), -457216440)) {
 		IndexedImage class89 = IndexedImage.method987(Class158.idx8, -745532315 * Class361.anInt3914, 0);
-		Class501.aClass57_6123 = class_ra.method5125(class89, true);
+		Class501.aSprite_6123 = class_ra.convertSpriteForGame(class89, true);
 		class89.method992();
-		Class82_Sub8.aClass57_6855 = class_ra.method5125(class89, true);
-		AccountCreationStage.aClass57_6062 = (class_ra.method5125(IndexedImage.method987(Class158.idx8, 1049272911 * ClanSettings.anInt1680, 0), true));
+		Class82_Sub8.aSprite_6855 = class_ra.convertSpriteForGame(class89, true);
+		AccountCreationStage.aSprite_6062 = (class_ra.convertSpriteForGame(IndexedImage.method987(Class158.idx8, 1049272911 * ClanSettings.anInt1680, 0), true));
 		IndexedImage class89_16_ = IndexedImage.method987(Class158.idx8, Class260.anInt2820 * -684155443, 0);
-		Class367.aClass57_4001 = class_ra.method5125(class89_16_, true);
+		Class367.aSprite_4001 = class_ra.convertSpriteForGame(class89_16_, true);
 		class89_16_.method992();
-		Class373.aClass57_4070 = class_ra.method5125(class89_16_, true);
+		OverlayType.aSprite_4070 = class_ra.convertSpriteForGame(class89_16_, true);
 	    }
-	    if (null != AccountCreationStage.aClass57_6062 && Class501.aClass57_6123 != null && Class367.aClass57_4001 != null) {
-		int i_17_ = ((i_12_ - Class367.aClass57_4001.method623() * 2) / AccountCreationStage.aClass57_6062.method623());
+	    if (null != AccountCreationStage.aSprite_6062 && Class501.aSprite_6123 != null && Class367.aSprite_4001 != null) {
+		int i_17_ = ((i_12_ - Class367.aSprite_4001.method623() * 2) / AccountCreationStage.aSprite_6062.method623());
 		for (int i_18_ = 0; i_18_ < i_17_; i_18_++)
-		    AccountCreationStage.aClass57_6062.method645((i + Class367.aClass57_4001.method623() + i_18_ * AccountCreationStage.aClass57_6062.method623()), i_11_ + i_13_ - AccountCreationStage.aClass57_6062.method625());
-		int i_19_ = ((i_13_ - i_14_ - Class367.aClass57_4001.method625()) / Class501.aClass57_6123.method625());
+		    AccountCreationStage.aSprite_6062.draw((i + Class367.aSprite_4001.method623() + i_18_ * AccountCreationStage.aSprite_6062.method623()), i_11_ + i_13_ - AccountCreationStage.aSprite_6062.getHeight());
+		int i_19_ = ((i_13_ - i_14_ - Class367.aSprite_4001.getHeight()) / Class501.aSprite_6123.getHeight());
 		for (int i_20_ = 0; i_20_ < i_19_; i_20_++) {
-		    Class501.aClass57_6123.method645(i, (i_14_ + i_11_ + i_20_ * Class501.aClass57_6123.method625()));
-		    Class82_Sub8.aClass57_6855.method645(i_12_ + i - Class82_Sub8.aClass57_6855.method623(), (i_14_ + i_11_ + i_20_ * Class501.aClass57_6123.method625()));
+		    Class501.aSprite_6123.draw(i, (i_14_ + i_11_ + i_20_ * Class501.aSprite_6123.getHeight()));
+		    Class82_Sub8.aSprite_6855.draw(i_12_ + i - Class82_Sub8.aSprite_6855.method623(), (i_14_ + i_11_ + i_20_ * Class501.aSprite_6123.getHeight()));
 		}
-		Class367.aClass57_4001.method645(i, (i_13_ + i_11_ - Class367.aClass57_4001.method625()));
-		Class373.aClass57_4070.method645(i_12_ + i - Class367.aClass57_4001.method623(), i_11_ + i_13_ - Class367.aClass57_4001.method625());
+		Class367.aSprite_4001.draw(i, (i_13_ + i_11_ - Class367.aSprite_4001.getHeight()));
+		OverlayType.aSprite_4070.draw(i_12_ + i - Class367.aSprite_4001.method623(), i_11_ + i_13_ - Class367.aSprite_4001.getHeight());
 	    }
 	}
 	catch (RuntimeException runtimeexception) {

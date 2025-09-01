@@ -10,8 +10,8 @@ public class Player extends Entity {
     public boolean hidden;
     String aString10199;
     public String aString10200;
-    public int anInt10201;
-    public int anInt10202;
+    public int overheadIcon;
+    public int skullIcon;
     public boolean aBoolean10203;
     public int anInt10204;
     public int anInt10205;
@@ -36,8 +36,8 @@ public class Player extends Entity {
 
     public Player(Class331 class331, int i) {
 	super(class331, i);
-	anInt10202 = -1944760989;
-	anInt10201 = -218110545;
+	skullIcon = -1944760989;
+	overheadIcon = -218110545;
 	anInt10206 = 0;
 	anInt10213 = 0;
 	anInt10204 = 1031683529;
@@ -84,8 +84,8 @@ public class Player extends Entity {
 		this.aString10197 = stream.readJagString(681479919);
 	    else
 		this.aString10197 = null;
-	    anInt10202 = stream.readByte(-12558881) * 1944760989;
-	    anInt10201 = stream.readByte(-12558881) * 218110545;
+	    skullIcon = stream.readByte(-12558881) * 1944760989;
+	    overheadIcon = stream.readByte(-12558881) * 218110545;
 	    hidden = stream.readByte(-12558881) == 1;
 
 	    if (Class242.aClass401_2708 == Class401.aClass401_6557 && 1806357379 * client.playerRights >= 2)
@@ -203,7 +203,7 @@ public class Player extends Entity {
 	    if (this.aClass351_10067 != null)
 		this.aClass351_10067.method4220();
 	    if (aClass438_10077.method5819((byte) -68) && aBoolean10094) {
-		Class350 class350 = method4426(-244281365);
+		Class350 class350 = getBAS(-244281365);
 		if (!class350.method4209(aClass438_10077.method5823(1971304294), (byte) -15)) {
 		    aClass438_10077.method5821(-1, -2110667700);
 		    aBoolean10094 = false;
@@ -245,7 +245,7 @@ public class Player extends Entity {
 	    Class335 class335 = null;
 	    this.aBoolean10129 = false;
 	    if (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub18_7561.method5693(-591782935) == 1) {
-		Class350 class350 = method4426(-97958061);
+		Class350 class350 = getBAS(-97958061);
 		if (class350.aBoolean3756 && (164936249 * aClass366_10209.anInt3974 == -1 || (Class15.aClass507_224.method6269(aClass366_10209.anInt3974 * 164936249, -465726953).aBoolean6165))) {
 		    Class438 class438 = ((aClass438_10078.method5819((byte) -70) && aClass438_10078.method5826(-65534)) ? aClass438_10078 : null);
 		    Class438 class438_29_ = ((aClass438_10077.method5819((byte) -61) && (!aBoolean10094 || class438 == null)) ? aClass438_10077 : null);
@@ -266,9 +266,9 @@ public class Player extends Entity {
 		    Class19 class19 = client.aClass19Array8869[i_30_];
 		    if (null != class19 && class19.anInt263 * 408071539 != -1) {
 			if (958933333 * class19.anInt266 == 1) {
-			    Class298_Sub29 class298_sub29 = ((Class298_Sub29) (client.aClass437_8696.method5812(-841622081 * class19.anInt256)));
-			    if (null != class298_sub29) {
-				NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
+			    LinkableObject linkableObject = ((LinkableObject) (client.aClass437_8696.method5812(-841622081 * class19.anInt256)));
+			    if (null != linkableObject) {
+				NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
 				Class217 class217 = (Class217.method2011(class365_sub1_sub1_sub2_sub1.method4337().aClass217_2599, Class287.myPlayer.method4337().aClass217_2599));
 				int i_31_ = (int) class217.aFloat2451;
 				int i_32_ = (int) class217.aFloat2454;
@@ -283,8 +283,8 @@ public class Player extends Entity {
 			    l_34_ *= l_34_;
 			    method4468(class_ra, class222, aClass387Array10082[0], l, l_33_, 408071539 * class19.anInt263, l_34_);
 			}
-			if (10 == class19.anInt266 * 958933333 && -841622081 * class19.anInt256 >= 0 && (-841622081 * class19.anInt256 < (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805).length)) {
-			    Player class365_sub1_sub1_sub2_sub2_35_ = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[class19.anInt256 * -841622081]);
+			if (10 == class19.anInt266 * 958933333 && -841622081 * class19.anInt256 >= 0 && (-841622081 * class19.anInt256 < (client.players).length)) {
+			    Player class365_sub1_sub1_sub2_sub2_35_ = (client.players[class19.anInt256 * -841622081]);
 			    if (class365_sub1_sub1_sub2_sub2_35_ != null) {
 				Class217 class217 = (Class217.method2011(class365_sub1_sub1_sub2_sub2_35_.method4337().aClass217_2599, Class287.myPlayer.method4337().aClass217_2599));
 				int i_36_ = (int) class217.aFloat2451;
@@ -349,7 +349,7 @@ public class Player extends Entity {
     boolean method4469(GraphicsToolkit class_ra, int i, byte i_45_) {
 	try {
 	    int i_46_ = i;
-	    Class350 class350 = method4426(1841046440);
+	    Class350 class350 = getBAS(1841046440);
 	    Class438 class438 = ((aClass438_10078.method5819((byte) -54) && !aClass438_10078.method5826(-65534)) ? aClass438_10078 : null);
 	    Class438 class438_47_ = ((aClass438_10077.method5819((byte) -28) && !aBoolean10207 && (!aBoolean10094 || class438 == null)) ? aClass438_10077 : null);
 	    int i_48_ = class350.anInt3735 * 250567115;
@@ -630,7 +630,7 @@ public class Player extends Entity {
 	Class335 class335 = null;
 	this.aBoolean10129 = false;
 	if (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub18_7561.method5693(-1650118723) == 1) {
-	    Class350 class350 = method4426(-231420914);
+	    Class350 class350 = getBAS(-231420914);
 	    if (class350.aBoolean3756 && (164936249 * aClass366_10209.anInt3974 == -1 || (Class15.aClass507_224.method6269(aClass366_10209.anInt3974 * 164936249, -824172978).aBoolean6165))) {
 		Class438 class438 = ((aClass438_10078.method5819((byte) -76) && aClass438_10078.method5826(-65534)) ? aClass438_10078 : null);
 		Class438 class438_76_ = ((aClass438_10077.method5819((byte) -39) && (!aBoolean10094 || class438 == null)) ? aClass438_10077 : null);
@@ -651,9 +651,9 @@ public class Player extends Entity {
 		Class19 class19 = client.aClass19Array8869[i_77_];
 		if (null != class19 && class19.anInt263 * 408071539 != -1) {
 		    if (958933333 * class19.anInt266 == 1) {
-			Class298_Sub29 class298_sub29 = ((Class298_Sub29) (client.aClass437_8696.method5812(-841622081 * class19.anInt256)));
-			if (null != class298_sub29) {
-			    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
+			LinkableObject linkableObject = ((LinkableObject) (client.aClass437_8696.method5812(-841622081 * class19.anInt256)));
+			if (null != linkableObject) {
+			    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
 			    Class217 class217 = (Class217.method2011((class365_sub1_sub1_sub2_sub1.method4337().aClass217_2599), Class287.myPlayer.method4337().aClass217_2599));
 			    int i_78_ = (int) class217.aFloat2451;
 			    int i_79_ = (int) class217.aFloat2454;
@@ -668,8 +668,8 @@ public class Player extends Entity {
 			l_81_ *= l_81_;
 			method4468(class_ra, class222, aClass387Array10082[0], l, l_80_, 408071539 * class19.anInt263, l_81_);
 		    }
-		    if (10 == class19.anInt266 * 958933333 && -841622081 * class19.anInt256 >= 0 && (-841622081 * class19.anInt256 < (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805).length)) {
-			Player class365_sub1_sub1_sub2_sub2_82_ = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[class19.anInt256 * -841622081]);
+		    if (10 == class19.anInt266 * 958933333 && -841622081 * class19.anInt256 >= 0 && (-841622081 * class19.anInt256 < (client.players).length)) {
+			Player class365_sub1_sub1_sub2_sub2_82_ = (client.players[class19.anInt256 * -841622081]);
 			if (class365_sub1_sub1_sub2_sub2_82_ != null) {
 			    Class217 class217 = (Class217.method2011(class365_sub1_sub1_sub2_sub2_82_.method4337().aClass217_2599, Class287.myPlayer.method4337().aClass217_2599));
 			    int i_83_ = (int) class217.aFloat2451;
@@ -734,8 +734,8 @@ public class Player extends Entity {
 
     public Player(Class331 class331) {
 	super(class331);
-	anInt10202 = -1944760989;
-	anInt10201 = -218110545;
+	skullIcon = -1944760989;
+	overheadIcon = -218110545;
 	anInt10206 = 0;
 	anInt10213 = 0;
 	anInt10204 = 1031683529;

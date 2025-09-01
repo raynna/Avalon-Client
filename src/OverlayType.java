@@ -4,7 +4,7 @@
  */
 import java.io.File;
 
-public class Class373 {
+public class OverlayType {
     int anInt4053;
     public int anInt4054;
     public int anInt4055;
@@ -22,11 +22,11 @@ public class Class373 {
     public int anInt4067;
     public int anInt4068;
     public int anInt4069;
-    public static Class57 aClass57_4070;
-    public static GraphicsToolkit aClass_ra4071;
+    public static Sprite aSprite_4070;
+    public static GraphicsToolkit activeToolkit;
     public static Class242_Sub1[] aClass242_Sub1Array4072;
 
-    Class373() {
+    OverlayType() {
 	anInt4059 = 1749423345;
 	anInt4060 = 99235328;
 	aBoolean4061 = true;
@@ -201,7 +201,7 @@ public class Class373 {
 	    Class497.aClass197_6105.method1884(-1647804880);
 	    Class502.method6234(-962878443);
 	    Class132.method1480((byte) -41);
-	    client.aClass348_8780.method4189();
+	    client.aCachingHashMap_8780.method4189();
 	    client.aClass348_8898.method4189();
 	    client.aClass348_8697.method4189();
 	    Class436.aClass348_5500.method4189();

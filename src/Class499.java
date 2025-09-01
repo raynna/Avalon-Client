@@ -50,7 +50,7 @@ public class Class499 {
 	    if (null != is)
 		class493.method6186(new RsByteBuffer(is), -420636240);
 	    synchronized (this.aClass348_6111) {
-		this.aClass348_6111.method4194(class493, i);
+		this.aClass348_6111.put(class493, i);
 	    }
 	    return class493;
 	}

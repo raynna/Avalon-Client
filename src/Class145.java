@@ -89,7 +89,7 @@ public class Class145 implements Interface5 {
 	    Class390 class390 = (class403.aBoolean5261 ? class403.aClass390_5247 : class403.aClass390_5246);
 	    IComponentDefinition class105 = class390.aClass105_4168;
 	    Class119 class119 = class390.aClass119_4167;
-	    Class373.method4606(class105, class119, class403, -919451749);
+	    OverlayType.method4606(class105, class119, class403, -919451749);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("fw.ej(").append(')').toString());
@@ -159,9 +159,9 @@ public class Class145 implements Interface5 {
 	    int i_15_ = 0;
 	    int i_16_ = 0;
 	    if (Class3.aBoolean55) {
-		Class384.aClass57_4127 = class_ra.method5029(i_13_, i_13_, false, true);
+		Class384.aSprite_4127 = class_ra.method5029(i_13_, i_13_, false, true);
 		class52_sub1 = class_ra.method5094();
-		class52_sub1.method563(0, Class384.aClass57_4127.method627());
+		class52_sub1.method563(0, Class384.aSprite_4127.method627());
 		Interface8_Impl1_Impl2 interface8_impl1_impl2 = class_ra.method5186(i_13_, i_13_);
 		class52_sub1.method558(interface8_impl1_impl2);
 		class_ra.method5143(class52_sub1, (byte) 38);
@@ -170,7 +170,7 @@ public class Class145 implements Interface5 {
 		i_16_ = 48;
 		class_ra.ba(1, 0);
 	    } else
-		Class384.aClass57_4127 = class_ra.method5031(is, 0, i_13_, i_13_, i_13_, -1797507809);
+		Class384.aSprite_4127 = class_ra.method5031(is, 0, i_13_, i_13_, i_13_, -1797507809);
 	    client.aClass283_8716.method2640((byte) 105).method4326((byte) -128);
 	    int i_17_ = ~0xffffff | ((238 + (int) (Math.random() * 20.0) - 10 << 16) + (238 + (int) (Math.random() * 20.0) - 10 << 8) + (238 + (int) (Math.random() * 20.0) - 10));
 	    int i_18_ = ~0xffffff | 238 + (int) (Math.random() * 20.0) - 10 << 16;
@@ -248,9 +248,9 @@ public class Class145 implements Interface5 {
 		    }
 		    class_ra.B(i_22_, i_23_, i_6_ * 4, 4 * i_6_, i_19_, 2);
 		    if (!Class3.aBoolean55) {
-			Class384.aClass57_4127.method675((i_20_ - i_7_) * 4 + 48, 4 * i_5_ + 48 - (i_21_ - i_8_) * 4 - i_6_ * 4, i_6_ * 4, 4 * i_6_, i_22_, i_23_);
+			Class384.aSprite_4127.method675((i_20_ - i_7_) * 4 + 48, 4 * i_5_ + 48 - (i_21_ - i_8_) * 4 - i_6_ * 4, i_6_ * 4, 4 * i_6_, i_22_, i_23_);
 			if (Class3.aBoolean64) {
-			    Class384.aClass57_4127.method645(256, 0);
+			    Class384.aSprite_4127.draw(256, 0);
 			    try {
 				class_ra.method4988((byte) -97);
 				IPAddress.method6060(2000L);
@@ -265,7 +265,7 @@ public class Class145 implements Interface5 {
 	    if (Class3.aBoolean55) {
 		class_ra.method5005(class52_sub1, (byte) 29);
 		if (Class3.aBoolean64) {
-		    Class384.aClass57_4127.method645(256, 0);
+		    Class384.aSprite_4127.draw(256, 0);
 		    try {
 			class_ra.method4988((byte) 39);
 			IPAddress.method6060(2000L);

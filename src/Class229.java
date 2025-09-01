@@ -32,8 +32,8 @@ public class Class229 implements Interface12 {
     @Override
     public void method150(int i) {
 	try {
-	    if (this.aClass_ra6456 != Class373.aClass_ra4071) {
-		this.aClass_ra6456 = Class373.aClass_ra4071;
+	    if (this.aClass_ra6456 != OverlayType.activeToolkit) {
+		this.aClass_ra6456 = OverlayType.activeToolkit;
 		this.aBoolean6450 = true;
 	    }
 	    this.aClass_ra6456.ba(3, 0);
@@ -136,8 +136,8 @@ public class Class229 implements Interface12 {
 
     @Override
     public void method163() {
-	if (this.aClass_ra6456 != Class373.aClass_ra4071) {
-	    this.aClass_ra6456 = Class373.aClass_ra4071;
+	if (this.aClass_ra6456 != OverlayType.activeToolkit) {
+	    this.aClass_ra6456 = OverlayType.activeToolkit;
 	    this.aBoolean6450 = true;
 	}
 	this.aClass_ra6456.ba(3, 0);
@@ -268,8 +268,8 @@ public class Class229 implements Interface12 {
 			    /* empty */
 			}
 			Class52_Sub2_Sub1.aCanvas9079.setSize(-2110394505 * Class462.anInt5683, -1111710645 * Class298_Sub40_Sub9.anInt9716);
-			if (null != Class373.aClass_ra4071)
-			    Class373.aClass_ra4071.method5173(Class52_Sub2_Sub1.aCanvas9079, Class462.anInt5683 * -2110394505, -1111710645 * Class298_Sub40_Sub9.anInt9716, (byte) 20);
+			if (null != OverlayType.activeToolkit)
+			    OverlayType.activeToolkit.method5173(Class52_Sub2_Sub1.aCanvas9079, Class462.anInt5683 * -2110394505, -1111710645 * Class298_Sub40_Sub9.anInt9716, (byte) 20);
 			if (container == Class298_Sub36.aFrame7403) {
 			    Insets insets = Class298_Sub36.aFrame7403.getInsets();
 			    Class52_Sub2_Sub1.aCanvas9079.setLocation(insets.left + Class291.anInt6473 * 1898544019, Class291.anInt6474 * 540368727 + insets.top);

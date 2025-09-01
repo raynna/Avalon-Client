@@ -42,24 +42,24 @@ public abstract class Class82 {
 		    i &= 0x3;
 		} else
 		    i = 0;
-		Class57 class57 = class496.method6198(class_ra, i, class432.aBoolean5440, (byte) -63);
-		if (class57 != null) {
+		Sprite sprite = class496.method6198(class_ra, i, class432.aBoolean5440, (byte) -63);
+		if (sprite != null) {
 		    int i_3_ = -1125834887 * class432.sizeX;
 		    int i_4_ = -565161399 * class432.sizeY;
 		    if ((i & 0x1) == 1) {
 			i_3_ = -565161399 * class432.sizeY;
 			i_4_ = class432.sizeX * -1125834887;
 		    }
-		    int i_5_ = class57.method271();
-		    int i_6_ = class57.method626();
+		    int i_5_ = sprite.method271();
+		    int i_6_ = sprite.method626();
 		    if (class496.aBoolean6098) {
 			i_5_ = i_3_ * 4;
 			i_6_ = 4 * i_4_;
 		    }
 		    if (0 != class496.anInt6096 * -2012904123)
-			class57.method634(i_0_, i_1_ - (i_4_ - 1) * 4, i_5_, i_6_, 0, (~0xffffff | class496.anInt6096 * -2012904123), 1);
+			sprite.method634(i_0_, i_1_ - (i_4_ - 1) * 4, i_5_, i_6_, 0, (~0xffffff | class496.anInt6096 * -2012904123), 1);
 		    else
-			class57.method633(i_0_, i_1_ - 4 * (i_4_ - 1), i_5_, i_6_);
+			sprite.method633(i_0_, i_1_ - 4 * (i_4_ - 1), i_5_, i_6_);
 		}
 	    }
 	}

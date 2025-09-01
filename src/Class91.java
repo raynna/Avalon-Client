@@ -129,7 +129,7 @@ public class Class91 {
 	try {
 	    if (class365_sub1_sub1_sub2 instanceof NPC) {
 		NPC class365_sub1_sub1_sub2_sub1 = (NPC) class365_sub1_sub1_sub2;
-		if (class365_sub1_sub1_sub2_sub1.aClass503_10190 != null)
+		if (class365_sub1_sub1_sub2_sub1.definitions != null)
 		    Class140.method1555(class365_sub1_sub1_sub2_sub1, (class365_sub1_sub1_sub2_sub1.plane != (Class287.myPlayer.plane)), (byte) -64);
 	    } else if (class365_sub1_sub1_sub2 instanceof Player) {
 		Player class365_sub1_sub1_sub2_sub2 = (Player) class365_sub1_sub1_sub2;

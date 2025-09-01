@@ -515,7 +515,7 @@ public class Class505 {
 		try {
 		    i_82_ = ItemDefinitions.method6043(3, 1000, -2071277019);
 		    if (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub14_7571.method5677(-491668376) == 3) {
-			Class58 class58 = Class373.aClass_ra4071.method4987();
+			Class58 class58 = OverlayType.activeToolkit.method4987();
 			long l = (class58.aLong583 * 703334160035735425L & 0xffffffffffffL);
 			switch (class58.anInt574 * 267107087) {
 			    case 4318:

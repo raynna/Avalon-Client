@@ -36,7 +36,7 @@ public class m extends Class264 implements Interface25 {
     @Override
     public native void z(boolean bool);
 
-    m(ja var_ja, ba var_ba, Class505 class505, IndexedImage[] class89s, Class57[] class57s) {
+    m(ja var_ja, ba var_ba, Class505 class505, IndexedImage[] class89s, Sprite[] sprites) {
 	super(var_ja, class505);
 	byte[][] is = new byte[class89s.length][];
 	int[] is_26_ = new int[class89s.length];

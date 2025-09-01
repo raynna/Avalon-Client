@@ -345,7 +345,7 @@ public class ObjectDefinitions {
 		    int i_26_ = stream.read24BitUnsignedInteger((byte) 44);
 		    Class298 class298;
 		    if (bool)
-			class298 = new Class298_Sub29(stream.readString(-2143557829));
+			class298 = new LinkableObject(stream.readString(-2143557829));
 		    else
 			class298 = new Class298_Sub35(stream.readInt((byte) -68));
 		    this.aClass437_5435.method5817(class298, i_26_);
@@ -361,10 +361,10 @@ public class ObjectDefinitions {
 	try {
 	    if (this.aClass437_5435 == null)
 		return string;
-	    Class298_Sub29 class298_sub29 = ((Class298_Sub29) this.aClass437_5435.method5812(i));
-	    if (class298_sub29 == null)
+	    LinkableObject linkableObject = ((LinkableObject) this.aClass437_5435.method5812(i));
+	    if (linkableObject == null)
 		return string;
-	    return (String) class298_sub29.anObject7366;
+	    return (String) linkableObject.anObject7366;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("rw.q(").append(')').toString());
@@ -460,7 +460,7 @@ public class ObjectDefinitions {
 		if (null == class387)
 		    return null;
 		synchronized (this.aClass433_5403.aClass348_5451) {
-		    this.aClass433_5403.aClass348_5451.method4194(class387, l);
+		    this.aClass433_5403.aClass348_5451.put(class387, l);
 		}
 	    }
 	    boolean bool = false;
@@ -572,7 +572,7 @@ public class ObjectDefinitions {
 			}
 			class387 = class_ra.method5037(class64, i_53_, ((this.aClass433_5403).anInt5453) * -914670477, i_46_, i_47_);
 			synchronized (this.aClass433_5403.aClass348_5450) {
-			    this.aClass433_5403.aClass348_5450.method4194(class387, l);
+			    this.aClass433_5403.aClass348_5450.put(class387, l);
 			}
 		    }
 		}
@@ -878,7 +878,7 @@ public class ObjectDefinitions {
 		    class387.KA(i_76_);
 		    class454 = new Class454(class387, class_na);
 		    synchronized (this.aClass433_5403.aClass348_5452) {
-			this.aClass433_5403.aClass348_5452.method4194(class454, l);
+			this.aClass433_5403.aClass348_5452.put(class454, l);
 			break;
 		    }
 		}

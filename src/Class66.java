@@ -16,7 +16,7 @@ public abstract class Class66 {
 	    if (i > i_1_ && i < i_3_ + i_1_ && i_0_ > i_5_ - 1110385787 * class505.anInt6202 - 1 && i_0_ < -1883958527 * class505.anInt6197 + i_5_)
 		i_6_ = i_7_;
 	    String string = Class346.method4174(class298_sub37_sub5, (byte) -2);
-	    class264.method2480(string, 3 + i_1_, i_5_, i_6_, 0, client.aRandom8702, 1401020893 * Class368.anInt4005, Class436.aClass57Array5501, Class422_Sub3.anIntArray8372, 65280);
+	    class264.method2480(string, 3 + i_1_, i_5_, i_6_, 0, client.aRandom8702, 1401020893 * Class368.anInt4005, Class436.aSpriteArray5501, Class422_Sub3.anIntArray8372, 65280);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("cr.au(").append(')').toString());

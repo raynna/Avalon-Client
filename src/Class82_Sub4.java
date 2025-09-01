@@ -14,13 +14,13 @@ public class Class82_Sub4 extends Class82 {
 
     @Override
     public void method869() {
-	Class87.aClass94Array794[this.anInt6831 * 1062834473].method1015(1706684616).method4420(this.anInt6827 * 537594387, this.anInt6830 * -1750222503, -172156501 * this.anInt6828, this.anInt6826 * 376713895, client.ticketCycle * 443738891, 0, -1529152547 * this.anInt6829, (byte) 4);
+	Class87.entities[this.anInt6831 * 1062834473].method1015(1706684616).method4420(this.anInt6827 * 537594387, this.anInt6830 * -1750222503, -172156501 * this.anInt6828, this.anInt6826 * 376713895, client.ticketCycle * 443738891, 0, -1529152547 * this.anInt6829, (byte) 4);
     }
 
     @Override
     public void method866(int i) {
 	try {
-	    Class87.aClass94Array794[this.anInt6831 * 1062834473].method1015(500322216).method4420(this.anInt6827 * 537594387, this.anInt6830 * -1750222503, -172156501 * this.anInt6828, this.anInt6826 * 376713895, client.ticketCycle * 443738891, 0, -1529152547 * this.anInt6829, (byte) 73);
+	    Class87.entities[this.anInt6831 * 1062834473].method1015(500322216).method4420(this.anInt6827 * 537594387, this.anInt6830 * -1750222503, -172156501 * this.anInt6828, this.anInt6826 * 376713895, client.ticketCycle * 443738891, 0, -1529152547 * this.anInt6829, (byte) 73);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("xe.f(").append(')').toString());
@@ -29,7 +29,7 @@ public class Class82_Sub4 extends Class82 {
 
     @Override
     public void method868() {
-	Class87.aClass94Array794[this.anInt6831 * 1062834473].method1015(951667947).method4420(this.anInt6827 * 537594387, this.anInt6830 * -1750222503, -172156501 * this.anInt6828, this.anInt6826 * 376713895, client.ticketCycle * 443738891, 0, -1529152547 * this.anInt6829, (byte) 9);
+	Class87.entities[this.anInt6831 * 1062834473].method1015(951667947).method4420(this.anInt6827 * 537594387, this.anInt6830 * -1750222503, -172156501 * this.anInt6828, this.anInt6826 * 376713895, client.ticketCycle * 443738891, 0, -1529152547 * this.anInt6829, (byte) 9);
     }
 
     Class82_Sub4(RsByteBuffer class298_sub53) {

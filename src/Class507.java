@@ -34,7 +34,7 @@ public class Class507 {
 		class503.method6235(new RsByteBuffer(is), -975728899);
 	    class503.method6243(1323410423);
 	    synchronized (this.aClass348_6206) {
-		this.aClass348_6206.method4194(class503, i);
+		this.aClass348_6206.put(class503, i);
 	    }
 	    return class503;
 	}

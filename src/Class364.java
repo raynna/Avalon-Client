@@ -219,7 +219,7 @@ public class Class364 {
 	    Class277 class277 = (Class277) this.aClass348_3955.method4184(l);
 	    if (null == class277) {
 		class277 = ConfigDefinitions.aClass317_3472.method3845(i, i_13_, i_14_, i_15_, (Class138_Sub1.aClass131_7010), (byte) -51);
-		this.aClass348_3955.method4194(class277, l);
+		this.aClass348_3955.put(class277, l);
 	    }
 	    return class277;
 	}
@@ -235,7 +235,7 @@ public class Class364 {
 	    if (null != class66)
 		return class66;
 	    class66 = this.aClass_ra3943.method5028(i, i_17_, i_18_, i_19_, i_20_, i_21_);
-	    this.aClass348_3953.method4194(class66, l);
+	    this.aClass348_3953.put(class66, l);
 	    return class66;
 	}
 	catch (RuntimeException runtimeexception) {

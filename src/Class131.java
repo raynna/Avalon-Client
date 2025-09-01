@@ -34,7 +34,7 @@ public class Class131 {
 	    if (is != null)
 		class125.method1390(new RsByteBuffer(is), (byte) -59);
 	    synchronized (this.aClass348_1496) {
-		this.aClass348_1496.method4194(class125, i);
+		this.aClass348_1496.put(class125, i);
 	    }
 	    return class125;
 	}

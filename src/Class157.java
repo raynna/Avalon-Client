@@ -35,7 +35,7 @@ public class Class157 {
 	    interface9_impl2 = this.aClass_ra_Sub3_1615.method5352(Class55.aClass55_557, i_0_, i_0_, true, fs);
 	}
 	interface9_impl2.method80(class53.aBoolean540, class53.aBoolean541);
-	this.aClass348_1616.method4194(interface9_impl2, l);
+	this.aClass348_1616.put(interface9_impl2, l);
 	return interface9_impl2;
     }
 

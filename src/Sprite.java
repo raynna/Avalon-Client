@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public abstract class Class57 implements Interface28 {
+public abstract class Sprite implements Interface28 {
     final void method620(float f, float f_0_, float f_1_, float f_2_, float f_3_, float f_4_, Class_ta class_ta, int i, int i_5_) {
 	method644(f, f_0_, f_1_, f_2_, f_3_, f_4_, 1, class_ta, i, i_5_);
     }
@@ -15,7 +15,7 @@ public abstract class Class57 implements Interface28 {
 
     public abstract void method624(int i, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_);
 
-    public abstract int method625();
+    public abstract int getHeight();
 
     public abstract int method626();
 
@@ -83,7 +83,7 @@ public abstract class Class57 implements Interface28 {
 
     abstract void method644(float f, float f_92_, float f_93_, float f_94_, float f_95_, float f_96_, int i, Class_ta class_ta, int i_97_, int i_98_);
 
-    public final void method645(int i, int i_99_) {
+    public final void draw(int i, int i_99_) {
 	method631(i, i_99_, 1, 0, 1);
     }
 
@@ -139,7 +139,7 @@ public abstract class Class57 implements Interface28 {
 
     abstract void method663(float f, float f_171_, float f_172_, float f_173_, float f_174_, float f_175_, int i, int i_176_, int i_177_, int i_178_);
 
-    Class57() {
+    Sprite() {
 	/* empty */
     }
 

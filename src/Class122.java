@@ -62,13 +62,13 @@ public class Class122 {
 	    int i_18_ = class365_sub1_sub1_sub2_10_.method4427((byte) 1);
 	    if (i_18_ != -1) {
 		Object object = null;
-		Class57 class57 = (Class57) client.aClass348_8697.method4184(i_18_);
-		if (null == class57) {
-		    IndexedImage[] class89s = IndexedImage.method993(Class158.idx8, i_18_, 0);
+		Sprite sprite = (Sprite) client.aClass348_8697.method4184(i_18_);
+		if (null == sprite) {
+		    IndexedImage[] class89s = IndexedImage.load(Class158.idx8, i_18_, 0);
 		    if (null == class89s)
 			return;
-		    class57 = Class373.aClass_ra4071.method5125(class89s[0], true);
-		    client.aClass348_8697.method4194(class57, i_18_);
+		    sprite = OverlayType.activeToolkit.convertSpriteForGame(class89s[0], true);
+		    client.aClass348_8697.put(sprite, i_18_);
 		}
 		Class217 class217 = class365_sub1_sub1_sub2.method4337().aClass217_2599;
 		Class125.method1400(class365_sub1_sub1_sub2.plane, (int) class217.aFloat2451, (int) class217.aFloat2454, class365_sub1_sub1_sub2.getSize() * 256, 0, false, 2131920659);
@@ -76,9 +76,9 @@ public class Class122 {
 		int i_20_ = (int) (i_12_ + client.aFloatArray8891[1] - 16.0F - 54.0F);
 		i_19_ += i / 4 * 18;
 		i_20_ += 18 * (i % 4);
-		class57.method645(i_19_, i_20_);
+		sprite.draw(i_19_, i_20_);
 		if (class365_sub1_sub1_sub2 == class365_sub1_sub1_sub2_10_)
-		    Class373.aClass_ra4071.method5014(i_19_ - 1, i_20_ - 1, 18, 18, -256, -769094548);
+		    OverlayType.activeToolkit.method5014(i_19_ - 1, i_20_ - 1, 18, 18, -256, -769094548);
 		Class302_Sub5 class302_sub5 = Class229.method2122((byte) 60);
 		class302_sub5.aClass365_Sub1_Sub1_Sub2_7660 = class365_sub1_sub1_sub2_10_;
 		class302_sub5.anInt7659 = i_19_ * 514092373;

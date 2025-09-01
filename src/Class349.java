@@ -58,7 +58,7 @@ public class Class349 {
 	    if (null != is)
 		class350.method4211(new RsByteBuffer(is), 162499609);
 	    synchronized (this.aClass348_3706) {
-		this.aClass348_3706.method4194(class350, i);
+		this.aClass348_3706.put(class350, i);
 	    }
 	    return class350;
 	}

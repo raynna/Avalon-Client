@@ -43,19 +43,19 @@ public class Class508 {
 		    break;
 		}
 		boolean bool_4_ = false;
-		Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(i_3_));
-		if (class298_sub29 == null) {
+		LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(i_3_));
+		if (linkableObject == null) {
 		    NPC class365_sub1_sub1_sub2_sub1 = (new NPC(client.aClass283_8716.method2675(-1611682495)));
 		    class365_sub1_sub1_sub2_sub1.anInt10064 = 1714292119 * i_3_;
-		    class298_sub29 = new Class298_Sub29(class365_sub1_sub1_sub2_sub1);
-		    client.aClass437_8696.method5817(class298_sub29, i_3_);
-		    client.aClass298_Sub29Array8816[(client.anInt8772 += -118843751) * 1962237353 - 1] = class298_sub29;
+		    linkableObject = new LinkableObject(class365_sub1_sub1_sub2_sub1);
+		    client.aClass437_8696.method5817(linkableObject, i_3_);
+		    client.aLinkableObjectArray8816[(client.anInt8772 += -118843751) * 1962237353 - 1] = linkableObject;
 		    bool_4_ = true;
 		}
-		NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
-		client.anIntArray8699[(client.anInt8703 += -409937273) * -1230451913 - 1] = i_3_;
+		NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
+		client.anIntArray8699[(client.npcCount += -409937273) * -1230451913 - 1] = i_3_;
 		class365_sub1_sub1_sub2_sub1.anInt10075 = -3704423 * client.anInt8707;
-		if (null != class365_sub1_sub1_sub2_sub1.aClass503_10190 && class365_sub1_sub1_sub2_sub1.aClass503_10190.method6242((byte) 88))
+		if (null != class365_sub1_sub1_sub2_sub1.definitions && class365_sub1_sub1_sub2_sub1.definitions.method6242((byte) 88))
 		    Class244.method2330(class365_sub1_sub1_sub2_sub1, (byte) 40);
 		int i_5_ = (stream.readBits(3) + 4 << 11 & 0x3fff);
 		int i_6_;
@@ -84,12 +84,12 @@ public class Class508 {
 		if (i_9_ == 1)
 		    client.anIntArray8706[(client.anInt8808 += -386992021) * -976358333 - 1] = i_3_;
 		int i_10_ = stream.readBits(1);
-		class365_sub1_sub1_sub2_sub1.method4421(-2095128707 * (class365_sub1_sub1_sub2_sub1.aClass503_10190.size), -1253182390);
-		class365_sub1_sub1_sub2_sub1.anInt10115 = (-1186616623 * (-1927065533 * (class365_sub1_sub1_sub2_sub1.aClass503_10190.anInt6181) << 3));
+		class365_sub1_sub1_sub2_sub1.method4421(-2095128707 * (class365_sub1_sub1_sub2_sub1.definitions.size), -1253182390);
+		class365_sub1_sub1_sub2_sub1.anInt10115 = (-1186616623 * (-1927065533 * (class365_sub1_sub1_sub2_sub1.definitions.anInt6181) << 3));
 		if (bool_4_)
 		    class365_sub1_sub1_sub2_sub1.method4415(i_5_, true, -2079607043);
 		class365_sub1_sub1_sub2_sub1.method4456(i_8_, i_7_ + (Class287.myPlayer.scenePositionXQueue[0]), i_6_ + (Class287.myPlayer.scenePositionYQueue[0]), 1 == i_10_, class365_sub1_sub1_sub2_sub1.getSize(), (byte) 58);
-		if (class365_sub1_sub1_sub2_sub1.aClass503_10190.method6242((byte) -9))
+		if (class365_sub1_sub1_sub2_sub1.definitions.method6242((byte) -9))
 		    Class391.method4884(class365_sub1_sub1_sub2_sub1.plane, (class365_sub1_sub1_sub2_sub1.scenePositionXQueue[0]), (class365_sub1_sub1_sub2_sub1.scenePositionYQueue[0]), 0, null, class365_sub1_sub1_sub2_sub1, null, (byte) -66);
 	    }
 	    stream.finishBitAccess((byte) 38);

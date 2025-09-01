@@ -6,7 +6,7 @@ public class Class298_Sub51_Sub1 extends Interface {
     int anInt9776;
 
     public boolean method3577() {
-	Player class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[-517743867 * this.anInt9776]);
+	Player class365_sub1_sub1_sub2_sub2 = (client.players[-517743867 * this.anInt9776]);
 	if (class365_sub1_sub1_sub2_sub2 != null) {
 	    Class62.method729(Class502.aClass502_6719, -1617025021 * interfaceId, -1, class365_sub1_sub1_sub2_sub2, (-517743867 * this.anInt9776), (byte) -119);
 	    return true;
@@ -17,7 +17,7 @@ public class Class298_Sub51_Sub1 extends Interface {
     @Override
     public boolean method3573(int i) {
 	try {
-	    Player class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[-517743867 * this.anInt9776]);
+	    Player class365_sub1_sub1_sub2_sub2 = (client.players[-517743867 * this.anInt9776]);
 	    if (class365_sub1_sub1_sub2_sub2 != null) {
 		Class62.method729(Class502.aClass502_6719, -1617025021 * interfaceId, -1, class365_sub1_sub1_sub2_sub2, (-517743867 * this.anInt9776), (byte) -83);
 		return true;

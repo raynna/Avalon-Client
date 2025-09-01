@@ -86,7 +86,7 @@ public abstract class Class127 implements Interface6 {
     @Override
     public void method55() {
 	Class505 class505 = Class255.method2439(this.aClass243_6374, 955568089 * (this.aClass128_6375.anInt6329), 325683529);
-	this.aClass264_6373 = (Class373.aClass_ra4071.method5092(class505, IndexedImage.method981(this.aClass243_6372, 955568089 * (this.aClass128_6375.anInt6329)), true));
+	this.aClass264_6373 = (OverlayType.activeToolkit.method5092(class505, IndexedImage.method981(this.aClass243_6372, 955568089 * (this.aClass128_6375.anInt6329)), true));
     }
 
     @Override
@@ -117,7 +117,7 @@ public abstract class Class127 implements Interface6 {
     public void method53(int i) {
 	try {
 	    Class505 class505 = Class255.method2439(this.aClass243_6374, 955568089 * (this.aClass128_6375.anInt6329), 1681337882);
-	    this.aClass264_6373 = (Class373.aClass_ra4071.method5092(class505, IndexedImage.method981(this.aClass243_6372, 955568089 * (this.aClass128_6375.anInt6329)), true));
+	    this.aClass264_6373 = (OverlayType.activeToolkit.method5092(class505, IndexedImage.method981(this.aClass243_6372, 955568089 * (this.aClass128_6375.anInt6329)), true));
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("fd.a(").append(')').toString());

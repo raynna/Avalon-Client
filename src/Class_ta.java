@@ -18,7 +18,7 @@ public abstract class Class_ta {
 
     static final void method5995(Class403 class403, int i) {
 	try {
-	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = (-407713023 * (((NPC) class403.aClass365_Sub1_Sub1_Sub2_5242).aClass503_10190.anInt6126));
+	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = (-407713023 * (((NPC) class403.aClass365_Sub1_Sub1_Sub2_5242).definitions.anInt6126));
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ta.apx(").append(')').toString());

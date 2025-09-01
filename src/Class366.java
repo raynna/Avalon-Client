@@ -182,7 +182,7 @@ public class Class366 {
 		}
 		class387.KA(i_16_);
 		synchronized (aClass348_3980) {
-		    aClass348_3980.method4194(class387, (this.aLong3975 * 5093099708756449067L));
+		    aClass348_3980.put(class387, (this.aLong3975 * 5093099708756449067L));
 		}
 	    }
 	    if (null == class438)
@@ -232,7 +232,7 @@ public class Class366 {
 			}
 			class387.KA(i_30_);
 			synchronized (aClass348_3980) {
-			    aClass348_3980.method4194(class387, l);
+			    aClass348_3980.put(class387, l);
 			    break;
 			}
 		    }
@@ -434,7 +434,7 @@ public class Class366 {
 		    if (bool) {
 			class387.KA(i_38_);
 			synchronized (aClass348_3979) {
-			    aClass348_3979.method4194(class387, l);
+			    aClass348_3979.put(class387, l);
 			}
 			this.aLong3966 = l * -2813682692256545769L;
 		    }

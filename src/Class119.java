@@ -124,7 +124,7 @@ public class Class119 {
     static final void method1304(int i) {
 	try {
 	    client.anInt8870 = -221729505;
-	    client.anInt8724 = -1334571751;
+	    client.cutsceneStage = -1334571751;
 	    Class298_Sub37.anIntArrayArray7407 = null;
 	    Class128_Sub1.aClass298_Sub53_8555 = null;
 	    Class228.method2117(416919128);

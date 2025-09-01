@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public class Class57_Sub2 extends Class57 {
+public class Sprite_Sub2 extends Sprite {
     int anInt9023;
     Interface9_Impl2 anInterface9_Impl2_9024;
     Interface8_Impl1_Impl1 anInterface8_Impl1_Impl1_9025;
@@ -23,7 +23,7 @@ public class Class57_Sub2 extends Class57 {
 	return this.anInt9023;
     }
 
-    Class57_Sub2(Class_ra_Sub3 class_ra_sub3, int i, int i_0_, int[] is, int i_1_, int i_2_) {
+    Sprite_Sub2(Class_ra_Sub3 class_ra_sub3, int i, int i_0_, int[] is, int i_1_, int i_2_) {
 	this.anInt9026 = 0;
 	this.anInt9031 = 0;
 	this.anInt9032 = 0;
@@ -191,7 +191,7 @@ public class Class57_Sub2 extends Class57 {
     }
 
     @Override
-    public int method625() {
+    public int getHeight() {
 	return this.anInt9030;
     }
 
@@ -433,7 +433,7 @@ public class Class57_Sub2 extends Class57 {
 	class138.method1528();
     }
 
-    Class57_Sub2(Class_ra_Sub3 class_ra_sub3, Interface9_Impl2 interface9_impl2, int i, int i_132_) {
+    Sprite_Sub2(Class_ra_Sub3 class_ra_sub3, Interface9_Impl2 interface9_impl2, int i, int i_132_) {
 	this.anInt9026 = 0;
 	this.anInt9031 = 0;
 	this.anInt9032 = 0;
@@ -686,7 +686,7 @@ public class Class57_Sub2 extends Class57 {
 	is[3] = this.anInt9031;
     }
 
-    Class57_Sub2(Class_ra_Sub3 class_ra_sub3, Interface9_Impl2 interface9_impl2) {
+    Sprite_Sub2(Class_ra_Sub3 class_ra_sub3, Interface9_Impl2 interface9_impl2) {
 	this(class_ra_sub3, interface9_impl2, interface9_impl2.method92(), interface9_impl2.method76());
     }
 
@@ -700,7 +700,7 @@ public class Class57_Sub2 extends Class57 {
 	return this.anInt9023;
     }
 
-    Class57_Sub2(Class_ra_Sub3 class_ra_sub3, int i, int i_205_, boolean bool, boolean bool_206_) {
+    Sprite_Sub2(Class_ra_Sub3 class_ra_sub3, int i, int i_205_, boolean bool, boolean bool_206_) {
 	this.anInt9026 = 0;
 	this.anInt9031 = 0;
 	this.anInt9032 = 0;

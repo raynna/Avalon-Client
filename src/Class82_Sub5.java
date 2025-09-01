@@ -10,13 +10,13 @@ public class Class82_Sub5 extends Class82 {
 
     @Override
     public void method868() {
-	Class87.aClass94Array794[796511923 * this.anInt6836].method1015(1745967363).method4430(this.aString6834, 1847855163 * this.anInt6835, 0, -1158638155 * this.anInt6837, (byte) -93);
+	Class87.entities[796511923 * this.anInt6836].method1015(1745967363).method4430(this.aString6834, 1847855163 * this.anInt6835, 0, -1158638155 * this.anInt6837, (byte) -93);
     }
 
     @Override
     public void method866(int i) {
 	try {
-	    Class87.aClass94Array794[796511923 * this.anInt6836].method1015(1923584032).method4430(this.aString6834, 1847855163 * this.anInt6835, 0, -1158638155 * this.anInt6837, (byte) -32);
+	    Class87.entities[796511923 * this.anInt6836].method1015(1923584032).method4430(this.aString6834, 1847855163 * this.anInt6835, 0, -1158638155 * this.anInt6837, (byte) -32);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("xj.f(").append(')').toString());
@@ -33,7 +33,7 @@ public class Class82_Sub5 extends Class82 {
 
     @Override
     public void method869() {
-	Class87.aClass94Array794[796511923 * this.anInt6836].method1015(946944575).method4430(this.aString6834, 1847855163 * this.anInt6835, 0, -1158638155 * this.anInt6837, (byte) -33);
+	Class87.entities[796511923 * this.anInt6836].method1015(946944575).method4430(this.aString6834, 1847855163 * this.anInt6835, 0, -1158638155 * this.anInt6837, (byte) -33);
     }
 
     public static int method882(int i, boolean bool, byte i_0_) {

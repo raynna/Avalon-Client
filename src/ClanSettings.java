@@ -147,9 +147,9 @@ public class ClanSettings {
 	    if (null == this.configurations)
 		return null;
 	    Class298 class298 = this.configurations.method5812(i);
-	    if (class298 == null || !(class298 instanceof Class298_Sub29))
+	    if (class298 == null || !(class298 instanceof LinkableObject))
 		return null;
-	    return (String) ((Class298_Sub29) class298).anObject7366;
+	    return (String) ((LinkableObject) class298).anObject7366;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("gp.u(").append(')').toString());
@@ -262,14 +262,14 @@ public class ClanSettings {
 	    if (this.configurations != null) {
 		Class298 class298 = this.configurations.method5812(i);
 		if (class298 != null) {
-		    if (class298 instanceof Class298_Sub29) {
-			Class298_Sub29 class298_sub29 = (Class298_Sub29) class298;
-			if (class298_sub29.anObject7366 instanceof String) {
-			    if (string.equals(class298_sub29.anObject7366))
+		    if (class298 instanceof LinkableObject) {
+			LinkableObject linkableObject = (LinkableObject) class298;
+			if (linkableObject.anObject7366 instanceof String) {
+			    if (string.equals(linkableObject.anObject7366))
 				return false;
-			    class298_sub29.method2839(-1460969981);
-			    class298_sub29.method2839(-1460969981);
-			    this.configurations.method5817(new Class298_Sub29(string), (7051297995265073167L * class298_sub29.hash));
+			    linkableObject.method2839(-1460969981);
+			    linkableObject.method2839(-1460969981);
+			    this.configurations.method5817(new LinkableObject(string), (7051297995265073167L * linkableObject.hash));
 			    return true;
 			}
 		    }
@@ -277,7 +277,7 @@ public class ClanSettings {
 		}
 	    } else
 		this.configurations = new HashTable(4);
-	    this.configurations.method5817(new Class298_Sub29(string), i);
+	    this.configurations.method5817(new LinkableObject(string), i);
 	    return true;
 	}
 	catch (RuntimeException runtimeexception) {
@@ -455,7 +455,7 @@ public class ClanSettings {
 			    this.configurations.method5817(new Class298_Sub33(data), configID);
 			} else if (type == 2) {
 			    String data = stream.readString(478616247);
-			    this.configurations.method5817(new Class298_Sub29(data), configID);
+			    this.configurations.method5817(new LinkableObject(data), configID);
 			}
 		    }
 		}
@@ -586,7 +586,7 @@ public class ClanSettings {
 	    int i_52_ = Class10.anInt129 * 1168366243;
 	    int[] is = Class10.anIntArray135;
 	    for (int i_53_ = 0; i_53_ < i_52_; i_53_++) {
-		Player class365_sub1_sub1_sub2_sub2 = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[is[i_53_]];
+		Player class365_sub1_sub1_sub2_sub2 = client.players[is[i_53_]];
 		if (null != class365_sub1_sub1_sub2_sub2)
 		    Class135.method1494(class365_sub1_sub1_sub2_sub2, false, -1941477240);
 	    }

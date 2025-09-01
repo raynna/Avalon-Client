@@ -31,16 +31,16 @@ public abstract class Class264 {
 	}
     }
 
-    public int method2475(String string, int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, Class57[] class57s, int[] is, Class_ta class_ta, int i_12_, int i_13_, int i_14_) {
+    public int method2475(String string, int i, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_, int i_11_, Sprite[] sprites, int[] is, Class_ta class_ta, int i_12_, int i_13_, int i_14_) {
 	try {
-	    return method2476(string, i, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_, i_10_, i_11_, 0, class57s, is, class_ta, i_12_, i_13_, -1416794725);
+	    return method2476(string, i, i_4_, i_5_, i_6_, i_7_, i_8_, i_9_, i_10_, i_11_, 0, sprites, is, class_ta, i_12_, i_13_, -1416794725);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("l.p(").append(')').toString());
 	}
     }
 
-    public int method2476(String string, int i, int i_15_, int i_16_, int i_17_, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_, Class57[] class57s, int[] is, Class_ta class_ta, int i_24_, int i_25_, int i_26_) {
+    public int method2476(String string, int i, int i_15_, int i_16_, int i_17_, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_, int i_23_, Sprite[] sprites, int[] is, Class_ta class_ta, int i_24_, int i_25_, int i_26_) {
 	try {
 	    if (null == string)
 		return 0;
@@ -52,14 +52,14 @@ public abstract class Class264 {
 		is_27_ = null;
 	    else
 		is_27_ = new int[] { i_16_ };
-	    int i_28_ = this.aClass505_2833.method6257(string, is_27_, aStringArray2838, class57s, (byte) 12);
+	    int i_28_ = this.aClass505_2833.method6257(string, is_27_, aStringArray2838, sprites, (byte) 12);
 	    if (-1 == i_23_) {
 		i_23_ = i_17_ / i_22_;
 		if (i_23_ <= 0)
 		    i_23_ = 1;
 	    }
 	    if (i_23_ > 0 && i_28_ >= i_23_) {
-		aStringArray2838[i_23_ - 1] = (this.aClass505_2833.method6256(aStringArray2838[i_23_ - 1], i_16_, class57s, (byte) -89));
+		aStringArray2838[i_23_ - 1] = (this.aClass505_2833.method6256(aStringArray2838[i_23_ - 1], i_16_, sprites, (byte) -89));
 		i_28_ = i_23_;
 	    }
 	    if (3 == i_21_ && 1 == i_28_)
@@ -80,16 +80,16 @@ public abstract class Class264 {
 	    }
 	    for (int i_31_ = 0; i_31_ < i_28_; i_31_++) {
 		if (0 == i_20_)
-		    method2484(aStringArray2838[i_31_], i, i_29_, class57s, is, class_ta, i_24_, i_25_, 1522801503);
+		    method2484(aStringArray2838[i_31_], i, i_29_, sprites, is, class_ta, i_24_, i_25_, 1522801503);
 		else if (i_20_ == 1)
-		    method2484(aStringArray2838[i_31_], i + (i_16_ - (this.aClass505_2833.method6264(aStringArray2838[i_31_], 1710279265))) / 2, i_29_, class57s, is, class_ta, i_24_, i_25_, 1985167681);
+		    method2484(aStringArray2838[i_31_], i + (i_16_ - (this.aClass505_2833.method6264(aStringArray2838[i_31_], 1710279265))) / 2, i_29_, sprites, is, class_ta, i_24_, i_25_, 1985167681);
 		else if (2 == i_20_)
-		    method2484(aStringArray2838[i_31_], (i + i_16_ - (this.aClass505_2833.method6264(aStringArray2838[i_31_], -760283198))), i_29_, class57s, is, class_ta, i_24_, i_25_, 1845200281);
+		    method2484(aStringArray2838[i_31_], (i + i_16_ - (this.aClass505_2833.method6264(aStringArray2838[i_31_], -760283198))), i_29_, sprites, is, class_ta, i_24_, i_25_, 1845200281);
 		else if (i_28_ - 1 == i_31_)
-		    method2484(aStringArray2838[i_31_], i, i_29_, class57s, is, class_ta, i_24_, i_25_, 2147018921);
+		    method2484(aStringArray2838[i_31_], i, i_29_, sprites, is, class_ta, i_24_, i_25_, 2147018921);
 		else {
 		    method2483(aStringArray2838[i_31_], i_16_, (byte) -88);
-		    method2484(aStringArray2838[i_31_], i, i_29_, class57s, is, class_ta, i_24_, i_25_, 1805619681);
+		    method2484(aStringArray2838[i_31_], i, i_29_, sprites, is, class_ta, i_24_, i_25_, 1805619681);
 		    anInt2836 = 0;
 		}
 		i_29_ += i_22_;
@@ -155,7 +155,7 @@ public abstract class Class264 {
 	}
     }
 
-    public int method2480(String string, int i, int i_55_, int i_56_, int i_57_, Random random, int i_58_, Class57[] class57s, int[] is, int i_59_) {
+    public int method2480(String string, int i, int i_55_, int i_56_, int i_57_, Random random, int i_58_, Sprite[] sprites, int[] is, int i_59_) {
 	try {
 	    if (null == string)
 		return 0;
@@ -170,7 +170,7 @@ public abstract class Class264 {
 		if ((random.nextInt() & 0x3) == 0)
 		    i_63_++;
 	    }
-	    method2487(string, i, i_55_, class57s, is, is_62_, null, 1335811057);
+	    method2487(string, i, i_55_, sprites, is, is_62_, null, 1335811057);
 	    return i_63_;
 	}
 	catch (RuntimeException runtimeexception) {
@@ -258,7 +258,7 @@ public abstract class Class264 {
 	}
     }
 
-    void method2484(String string, int i, int i_70_, Class57[] class57s, int[] is, Class_ta class_ta, int i_71_, int i_72_, int i_73_) {
+    void method2484(String string, int i, int i_70_, Sprite[] sprites, int[] is, Class_ta class_ta, int i_71_, int i_72_, int i_73_) {
 	try {
 	    i_70_ -= this.aClass505_2833.anInt6200 * -2028004825;
 	    int i_74_ = -1;
@@ -292,13 +292,13 @@ public abstract class Class264 {
 			    if (string_78_.startsWith("img=")) {
 				try {
 				    int i_79_ = (Class216.method1998(string_78_.substring(4), (short) -9602));
-				    Class57 class57 = class57s[i_79_];
-				    int i_80_ = (is != null ? is[i_79_] : class57.method626());
+				    Sprite sprite = sprites[i_79_];
+				    int i_80_ = (is != null ? is[i_79_] : sprite.method626());
 				    if ((anInt2828 * -882366071 & ~0xffffff) == -16777216)
-					class57.method631(i, (i_70_ + ((this.aClass505_2833.anInt6200) * -2028004825) - i_80_), 1, 0, 1);
+					sprite.method631(i, (i_70_ + ((this.aClass505_2833.anInt6200) * -2028004825) - i_80_), 1, 0, 1);
 				    else
-					class57.method631(i, (((this.aClass505_2833.anInt6200) * -2028004825) + i_70_ - i_80_), 0, (((-882366071 * anInt2828) & ~0xffffff) | 0xffffff), 1);
-				    i += class57s[i_79_].method271();
+					sprite.method631(i, (((this.aClass505_2833.anInt6200) * -2028004825) + i_70_ - i_80_), 0, (((-882366071 * anInt2828) & ~0xffffff) | 0xffffff), 1);
+				    i += sprites[i_79_].method271();
 				    i_75_ = -1;
 				}
 				catch (Exception exception) {
@@ -343,7 +343,7 @@ public abstract class Class264 {
 	}
     }
 
-    public int method2485(String string, int i, int i_82_, int i_83_, int i_84_, int i_85_, int i_86_, int i_87_, int i_88_, Random random, int i_89_, int[] is, Class57[] class57s, int[] is_90_, int i_91_) {
+    public int method2485(String string, int i, int i_82_, int i_83_, int i_84_, int i_85_, int i_86_, int i_87_, int i_88_, Random random, int i_89_, int[] is, Sprite[] sprites, int[] is_90_, int i_91_) {
 	try {
 	    if (null == string)
 		return 0;
@@ -372,7 +372,7 @@ public abstract class Class264 {
 		i_99_ = (this.aClass505_2833.method6264(string, 366396585) + i_95_);
 		i_97_ += i_83_ - i_99_;
 	    }
-	    method2487(string, i_97_, i_98_, class57s, is_90_, is_94_, null, 2007858452);
+	    method2487(string, i_97_, i_98_, sprites, is_90_, is_94_, null, 2007858452);
 	    if (is != null) {
 		if (-1 == i_99_)
 		    i_99_ = this.aClass505_2833.method6264(string, -1885906966) + i_95_;
@@ -399,7 +399,7 @@ public abstract class Class264 {
 
     abstract void e(char c, int i, int i_106_, int i_107_, boolean bool);
 
-    void method2487(String string, int i, int i_108_, Class57[] class57s, int[] is, int[] is_109_, int[] is_110_, int i_111_) {
+    void method2487(String string, int i, int i_108_, Sprite[] sprites, int[] is, int[] is_109_, int[] is_110_, int i_111_) {
 	try {
 	    i_108_ -= -2028004825 * this.aClass505_2833.anInt6200;
 	    int i_112_ = -1;
@@ -445,10 +445,10 @@ public abstract class Class264 {
 					i_119_ = 0;
 				    i_114_++;
 				    int i_120_ = (Class216.method1998(string_117_.substring(4), (short) 7054));
-				    Class57 class57 = class57s[i_120_];
-				    int i_121_ = (null != is ? is[i_120_] : class57.method626());
-				    class57.method631(i + i_118_, (i_108_ + ((this.aClass505_2833.anInt6200) * -2028004825) - i_121_ + i_119_), 1, 0, 1);
-				    i += class57s[i_120_].method271();
+				    Sprite sprite = sprites[i_120_];
+				    int i_121_ = (null != is ? is[i_120_] : sprite.method626());
+				    sprite.method631(i + i_118_, (i_108_ + ((this.aClass505_2833.anInt6200) * -2028004825) - i_121_ + i_119_), 1, 0, 1);
+				    i += sprites[i_120_].method271();
 				    i_113_ = -1;
 				}
 				catch (Exception exception) {

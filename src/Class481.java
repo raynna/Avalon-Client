@@ -32,7 +32,7 @@ public abstract class Class481 {
 	    RsBitsBuffer stream = client.aClass25_8711.aClass298_Sub53_Sub2_333;
 	    for (int i_0_ = 0; i_0_ < client.anInt8808 * -976358333; i_0_++) {
 		int npcIndex = client.anIntArray8706[i_0_];
-		NPC npc = ((NPC) (((Class298_Sub29) client.aClass437_8696.method5812(npcIndex)).anObject7366));
+		NPC npc = ((NPC) (((LinkableObject) client.aClass437_8696.method5812(npcIndex)).anObject7366));
 
 		int mask = stream.readUnsignedByte();
 		if (0 != (mask & 0x2)) {
@@ -121,13 +121,13 @@ public abstract class Class481 {
 		    }
 		}
 		if ((mask & 0x1000) != 0) {// ordinal 8
-		    int i_18_ = (npc.aClass503_10190.anIntArray6129).length;
+		    int i_18_ = (npc.definitions.anIntArray6129).length;
 		    int i_19_ = 0;
-		    if (null != (npc.aClass503_10190.aShortArray6134))
-			i_19_ = (npc.aClass503_10190.aShortArray6134).length;
+		    if (null != (npc.definitions.aShortArray6134))
+			i_19_ = (npc.definitions.aShortArray6134).length;
 		    int i_20_ = 0;
-		    if ((npc.aClass503_10190.aShortArray6154) != null)
-			i_20_ = (npc.aClass503_10190.aShortArray6154).length;
+		    if ((npc.definitions.aShortArray6154) != null)
+			i_20_ = (npc.definitions.aShortArray6154).length;
 		    int i_21_ = stream.readUnsignedByte();
 		    if (1 == (i_21_ & 0x1))
 			npc.aClass498_10181 = null;
@@ -269,8 +269,8 @@ public abstract class Class481 {
 		}
 		if ((mask & 0x800000) != 0) { // Rename - ordinal 18
 		    npc.aString10186 = stream.readString(1858696307);
-		    if ("".equals(npc.aString10186) || (npc.aString10186.equals(npc.aClass503_10190.aString6127)))
-			npc.aString10186 = (npc.aClass503_10190.aString6127);
+		    if ("".equals(npc.aString10186) || (npc.aString10186.equals(npc.definitions.aString6127)))
+			npc.aString10186 = (npc.definitions.aString6127);
 		}
 		if ((mask & 0x20000) != 0) {// ordinal 19
 		    int i_62_ = ((stream.buffer[(stream.index += 116413311) * 385051775 - 1]) & 0xff);
@@ -281,14 +281,14 @@ public abstract class Class481 {
 		    }
 		}
 		if ((mask & 0x200000) != 0) {// ordinal 20
-		    int i_66_ = (npc.aClass503_10190.anIntArray6130).length;
+		    int i_66_ = (npc.definitions.anIntArray6130).length;
 		    int i_67_ = 0;
-		    if (null != (npc.aClass503_10190.aShortArray6134)) {
-			i_67_ = (npc.aClass503_10190.aShortArray6134).length;
+		    if (null != (npc.definitions.aShortArray6134)) {
+			i_67_ = (npc.definitions.aShortArray6134).length;
 		    }
 		    int i_68_ = 0;
-		    if ((npc.aClass503_10190.aShortArray6154) != null) {
-			i_67_ = (npc.aClass503_10190.aShortArray6154).length;
+		    if ((npc.definitions.aShortArray6154) != null) {
+			i_67_ = (npc.definitions.aShortArray6154).length;
 		    }
 		    int i_69_ = stream.readUnsignedByte();
 		    if ((i_69_ & 0x1) == 1) {
@@ -321,17 +321,17 @@ public abstract class Class481 {
 		if ((mask & 0x40000) != 0) {// Change combat level - ordinal 21
 		    npc.anInt10189 = (stream.readUnsignedShortLE((byte) 16) * 933118661);
 		    if (npc.anInt10189 * 1817570317 == 65535) {
-			npc.anInt10189 = (npc.aClass503_10190.anInt6149) * 1520279523;
+			npc.anInt10189 = (npc.definitions.anInt6149) * 1520279523;
 		    }
 		}
 		if ((mask & 0x1) != 0) {// Transform NPC id - ordinal 22
-		    if (npc.aClass503_10190.method6242((byte) 32)) {
+		    if (npc.definitions.method6242((byte) 32)) {
 			Class244.method2330(npc, (byte) 7);
 		    }
 		    npc.method4464((Class15.aClass507_224.method6269(stream.readBigSmart(1235052657), 384117949)), 1598792788);
-		    npc.method4421((npc.aClass503_10190.size) * -2095128707, -2141370583);
-		    npc.anInt10115 = -1186616623 * (((npc.aClass503_10190.anInt6181) * -1927065533) << 3);
-		    if (npc.aClass503_10190.method6242((byte) 23)) {
+		    npc.method4421((npc.definitions.size) * -2095128707, -2141370583);
+		    npc.anInt10115 = -1186616623 * (((npc.definitions.anInt6181) * -1927065533) << 3);
+		    if (npc.definitions.method6242((byte) 23)) {
 			Class391.method4884(npc.plane, npc.scenePositionXQueue[0], npc.scenePositionYQueue[0], 0, null, npc, null, (byte) 68);
 		    }
 		}

@@ -116,16 +116,16 @@ public class Class216 implements Interface24 {
 		    if (i != 1)
 			throw new IllegalStateException();
 		} else {
-		    Class57 class57 = ((Class57) (Class436.aClass348_5500.method4184(347977109 * class369.anInt4028)));
-		    if (class57 == null) {
+		    Sprite sprite = ((Sprite) (Class436.aClass348_5500.method4184(347977109 * class369.anInt4028)));
+		    if (sprite == null) {
 			IndexedImage class89 = IndexedImage.method987(Class158.idx8, class369.anInt4028 * 347977109, 0);
 			if (class89 != null) {
-			    class57 = Class373.aClass_ra4071.method5125(class89, true);
-			    Class436.aClass348_5500.method4194(class57, class369.anInt4028 * 347977109);
+			    sprite = OverlayType.activeToolkit.convertSpriteForGame(class89, true);
+			    Class436.aClass348_5500.put(sprite, class369.anInt4028 * 347977109);
 			}
 		    }
-		    if (null != class57) {
-			Class436.aClass57Array5501[i_2_] = class57;
+		    if (null != sprite) {
+			Class436.aSpriteArray5501[i_2_] = sprite;
 			stringbuilder.append(" <img=").append(i_2_).append(">");
 			i_2_++;
 		    }

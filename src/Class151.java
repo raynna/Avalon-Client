@@ -64,7 +64,7 @@ public class Class151 implements Interface5 {
 	    if (null != is)
 		class182.method1843(new RsByteBuffer(is), (byte) 20);
 	    class182.method1845(-721593745);
-	    Class182.aClass348_1815.method4194(class182, i);
+	    Class182.aClass348_1815.put(class182, i);
 	    return class182;
 	}
 	catch (RuntimeException runtimeexception) {

@@ -161,7 +161,7 @@ public abstract class Class_xa {
 
     static final void method6363(Class403 class403, int i) {
 	try {
-	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub6_7551.method5646((byte) -74) && Class373.aClass_ra4071.method5050()) ? 1 : 0;
+	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub6_7551.method5646((byte) -74) && OverlayType.activeToolkit.method5050()) ? 1 : 0;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("xa.anp(").append(')').toString());

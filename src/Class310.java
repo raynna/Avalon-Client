@@ -61,7 +61,7 @@ public class Class310 implements Interface17 {
 		int i_9_ = 0;
 		for (Class298_Sub37_Sub15 class298_sub37_sub15 = ((Class298_Sub37_Sub15) Class436.aClass453_5480.method5939(1766612795)); class298_sub37_sub15 != null; class298_sub37_sub15 = ((Class298_Sub37_Sub15) Class436.aClass453_5480.method5944(49146))) {
 		    int i_10_ = (31 + 1089948687 * Class302_Sub4.anInt7658 + (-411680299 * Class436.anInt5467 * (-278777595 * Class436.anInt5506 - 1 - i_9_)));
-		    GraphicsToolkit.method5192(i_7_, i_8_, -1347746885 * Class88.anInt806, 1089948687 * Class302_Sub4.anInt7658, 608683427 * Class134.anInt6343, 1396607435 * Class448.anInt5619, i_10_, class298_sub37_sub15, Class101.aClass264_1084, Class82_Sub19_Sub1.aClass505_9111, -1, -256, 247690373);
+		    GraphicsToolkit.method5192(i_7_, i_8_, -1347746885 * Class88.anInt806, 1089948687 * Class302_Sub4.anInt7658, 608683427 * Class134.anInt6343, 1396607435 * Class448.anInt5619, i_10_, class298_sub37_sub15, Class101.aClass264_1084, Class82_Sub19_Sub1.aFontSpecification_9111, -1, -256, 247690373);
 		    i_9_++;
 		}
 	    } else {
@@ -69,9 +69,9 @@ public class Class310 implements Interface17 {
 		for (Class298_Sub37_Sub5 class298_sub37_sub5 = ((Class298_Sub37_Sub5) Class436.aClass461_5482.method5984(198728515)); null != class298_sub37_sub5; class298_sub37_sub5 = ((Class298_Sub37_Sub5) Class436.aClass461_5482.method5985(30142288))) {
 		    int i_12_ = (Class302_Sub4.anInt7658 * 1089948687 + 31 + i_11_ * (-411680299 * Class436.anInt5467));
 		    if (1 == (class298_sub37_sub5.anInt9583) * -628325139)
-			GraphicsToolkit.method5192(i_7_, i_8_, -1347746885 * Class88.anInt806, Class302_Sub4.anInt7658 * 1089948687, 608683427 * Class134.anInt6343, Class448.anInt5619 * 1396607435, i_12_, ((Class298_Sub37_Sub15) (class298_sub37_sub5.aClass461_9584.aClass298_Sub37_5679.aClass298_Sub37_7405)), Class101.aClass264_1084, Class82_Sub19_Sub1.aClass505_9111, -1, -256, 1821923505);
+			GraphicsToolkit.method5192(i_7_, i_8_, -1347746885 * Class88.anInt806, Class302_Sub4.anInt7658 * 1089948687, 608683427 * Class134.anInt6343, Class448.anInt5619 * 1396607435, i_12_, ((Class298_Sub37_Sub15) (class298_sub37_sub5.aClass461_9584.aClass298_Sub37_5679.aClass298_Sub37_7405)), Class101.aClass264_1084, Class82_Sub19_Sub1.aFontSpecification_9111, -1, -256, 1821923505);
 		    else
-			Class66.method763(i_7_, i_8_, Class88.anInt806 * -1347746885, 1089948687 * Class302_Sub4.anInt7658, Class134.anInt6343 * 608683427, Class448.anInt5619 * 1396607435, i_12_, class298_sub37_sub5, Class101.aClass264_1084, Class82_Sub19_Sub1.aClass505_9111, -1, -256, (byte) -19);
+			Class66.method763(i_7_, i_8_, Class88.anInt806 * -1347746885, 1089948687 * Class302_Sub4.anInt7658, Class134.anInt6343 * 608683427, Class448.anInt5619 * 1396607435, i_12_, class298_sub37_sub5, Class101.aClass264_1084, Class82_Sub19_Sub1.aFontSpecification_9111, -1, -256, (byte) -19);
 		    i_11_++;
 		}
 		if (null != Class436.aClass298_Sub37_Sub5_5472) {
@@ -80,7 +80,7 @@ public class Class310 implements Interface17 {
 		    i_11_ = 0;
 		    for (Class298_Sub37_Sub15 class298_sub37_sub15 = ((Class298_Sub37_Sub15) Class436.aClass298_Sub37_Sub5_5472.aClass461_9584.method5984(-783790871)); null != class298_sub37_sub15; class298_sub37_sub15 = ((Class298_Sub37_Sub15) Class436.aClass298_Sub37_Sub5_5472.aClass461_9584.method5985(505275870))) {
 			int i_13_ = (i_11_ * (-411680299 * Class436.anInt5467) + (Class501.anInt6119 * -1370784315 + 31));
-			GraphicsToolkit.method5192(i_7_, i_8_, 805710735 * Class461.anInt5681, -1370784315 * Class501.anInt6119, 2054409059 * Class420.anInt5345, Class389.anInt4166 * -1855216229, i_13_, class298_sub37_sub15, Class101.aClass264_1084, Class82_Sub19_Sub1.aClass505_9111, -1, -256, 916241136);
+			GraphicsToolkit.method5192(i_7_, i_8_, 805710735 * Class461.anInt5681, -1370784315 * Class501.anInt6119, 2054409059 * Class420.anInt5345, Class389.anInt4166 * -1855216229, i_13_, class298_sub37_sub15, Class101.aClass264_1084, Class82_Sub19_Sub1.aFontSpecification_9111, -1, -256, 916241136);
 			i_11_++;
 		    }
 		}

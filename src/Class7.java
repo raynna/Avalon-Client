@@ -86,7 +86,7 @@ public class Class7 {
 		    Class264 class264 = (Class436.aClass105_5486.method1112(Class497.aClass197_6105, client.anInterface10_8700, 2046154242));
 		    if (null == class264)
 			class264 = Class101.aClass264_1084;
-		    class264.method2485(string, -828992241 * Class436.anInt5487, 1604938967 * Class436.anInt5502, -2093041337 * Class436.aClass105_5486.anInt1156, Class436.aClass105_5486.anInt1162 * 457937409, 1045422783 * Class436.aClass105_5486.anInt1170, -2065110161 * Class436.aClass105_5486.anInt1251, 872550387 * Class436.aClass105_5486.anInt1214, -1594110459 * Class436.aClass105_5486.anInt1124, client.aRandom8702, 1401020893 * Class368.anInt4005, client.anIntArray8899, Class436.aClass57Array5501, Class422_Sub3.anIntArray8372, -1153250817);
+		    class264.method2485(string, -828992241 * Class436.anInt5487, 1604938967 * Class436.anInt5502, -2093041337 * Class436.aClass105_5486.anInt1156, Class436.aClass105_5486.anInt1162 * 457937409, 1045422783 * Class436.aClass105_5486.anInt1170, -2065110161 * Class436.aClass105_5486.anInt1251, 872550387 * Class436.aClass105_5486.anInt1214, -1594110459 * Class436.aClass105_5486.anInt1124, client.aRandom8702, 1401020893 * Class368.anInt4005, client.anIntArray8899, Class436.aSpriteArray5501, Class422_Sub3.anIntArray8372, -1153250817);
 		    Class227.method2112(client.anIntArray8899[0], client.anIntArray8899[1], client.anIntArray8899[2], client.anIntArray8899[3], (byte) 2);
 		}
 	    }

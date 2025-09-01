@@ -53,9 +53,9 @@ public class Class298_Sub36 extends Class298 {
 		    int i_7_ = i_2_ * i_5_ * 512 / (i_6_ * 334);
 		    int i_8_ = (i_1_ - i_7_) / 2;
 		    if (bool) {
-			Class373.aClass_ra4071.L();
-			Class373.aClass_ra4071.method5015(i, i_0_, i_8_, i_2_, -16777216, (byte) 7);
-			Class373.aClass_ra4071.method5015(i_1_ + i - i_8_, i_0_, i_8_, i_2_, -16777216, (byte) 7);
+			OverlayType.activeToolkit.L();
+			OverlayType.activeToolkit.method5015(i, i_0_, i_8_, i_2_, -16777216, (byte) 7);
+			OverlayType.activeToolkit.method5015(i_1_ + i - i_8_, i_0_, i_8_, i_2_, -16777216, (byte) 7);
 		    }
 		    i += i_8_;
 		    i_1_ -= i_8_ * 2;
@@ -68,9 +68,9 @@ public class Class298_Sub36 extends Class298 {
 		    int i_9_ = i_1_ * i_6_ * 334 / (i_5_ * 512);
 		    int i_10_ = (i_2_ - i_9_) / 2;
 		    if (bool) {
-			Class373.aClass_ra4071.L();
-			Class373.aClass_ra4071.method5015(i, i_0_, i_1_, i_10_, -16777216, (byte) 7);
-			Class373.aClass_ra4071.method5015(i, i_0_ + i_2_ - i_10_, i_1_, i_10_, -16777216, (byte) 7);
+			OverlayType.activeToolkit.L();
+			OverlayType.activeToolkit.method5015(i, i_0_, i_1_, i_10_, -16777216, (byte) 7);
+			OverlayType.activeToolkit.method5015(i, i_0_ + i_2_ - i_10_, i_1_, i_10_, -16777216, (byte) 7);
 		    }
 		    i_0_ += i_10_;
 		    i_2_ -= i_10_ * 2;

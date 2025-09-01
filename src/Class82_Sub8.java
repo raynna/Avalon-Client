@@ -5,7 +5,7 @@
 public class Class82_Sub8 extends Class82 {
     long aLong6853;
     int anInt6854;
-    public static Class57 aClass57_6855;
+    public static Sprite aSprite_6855;
     public static String aString6856;
 
     @Override

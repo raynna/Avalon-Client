@@ -46,12 +46,12 @@ public class Class335 {
 
     static void method4086(int i) {
 	try {
-	    if (Class373.aClass_ra4071.method5051()) {
-		Class373.aClass_ra4071.method5002(Class52_Sub2_Sub1.aCanvas9079, 1231237984);
+	    if (OverlayType.activeToolkit.method5051()) {
+		OverlayType.activeToolkit.method5002(Class52_Sub2_Sub1.aCanvas9079, 1231237984);
 		Class267.method2528(600492820);
 		Dimension dimension = Class52_Sub2_Sub1.aCanvas9079.getSize();
-		Class373.aClass_ra4071.method5163((Class52_Sub2_Sub1.aCanvas9079), dimension.width, dimension.height, 900330778);
-		Class373.aClass_ra4071.method5003(Class52_Sub2_Sub1.aCanvas9079, (byte) -92);
+		OverlayType.activeToolkit.method5163((Class52_Sub2_Sub1.aCanvas9079), dimension.width, dimension.height, 900330778);
+		OverlayType.activeToolkit.method5003(Class52_Sub2_Sub1.aCanvas9079, (byte) -92);
 	    } else
 		Class370.method4578(Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub14_7571.method5677(-644336063), false, 622850291);
 	    Class360.method4301(-103765582);

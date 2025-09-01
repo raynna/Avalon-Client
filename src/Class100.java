@@ -300,7 +300,7 @@ public class Class100 {
     static final void method1076(Class403 class403, int i) {
 	try {
 	    int i_2_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
-	    if (!Class373.aClass_ra4071.method5032())
+	    if (!OverlayType.activeToolkit.method5032())
 		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = 3;
 	    else
 		class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919) - 1] = Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub13_7549.method5612(i_2_, 1352882135);

@@ -9,13 +9,13 @@ public class Class82_Sub19_Sub2 extends Class82_Sub19 {
 
     @Override
     public void method869() {
-	Class87.aClass94Array794[1417242443 * this.anInt9116].method1015(1602235695).sendGraphics(this.anInt6895 * 720810617, this.anInt6893 * 1369196329 << 16, 87600989 * this.anInt6894, this.anInt9115 * -921351243, false, -1879057895 * this.anInt9117, 313723785);
+	Class87.entities[1417242443 * this.anInt9116].method1015(1602235695).sendGraphics(this.anInt6895 * 720810617, this.anInt6893 * 1369196329 << 16, 87600989 * this.anInt6894, this.anInt9115 * -921351243, false, -1879057895 * this.anInt9117, 313723785);
     }
 
     @Override
     public void method866(int i) {
 	try {
-	    Class87.aClass94Array794[1417242443 * this.anInt9116].method1015(456356673).sendGraphics(this.anInt6895 * 720810617, this.anInt6893 * 1369196329 << 16, 87600989 * this.anInt6894, this.anInt9115 * -921351243, false, -1879057895 * this.anInt9117, -428895124);
+	    Class87.entities[1417242443 * this.anInt9116].method1015(456356673).sendGraphics(this.anInt6895 * 720810617, this.anInt6893 * 1369196329 << 16, 87600989 * this.anInt6894, this.anInt9115 * -921351243, false, -1879057895 * this.anInt9117, -428895124);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("afo.f(").append(')').toString());
@@ -24,7 +24,7 @@ public class Class82_Sub19_Sub2 extends Class82_Sub19 {
 
     @Override
     public void method868() {
-	Class87.aClass94Array794[1417242443 * this.anInt9116].method1015(1255556998).sendGraphics(this.anInt6895 * 720810617, this.anInt6893 * 1369196329 << 16, 87600989 * this.anInt6894, this.anInt9115 * -921351243, false, -1879057895 * this.anInt9117, -1194808341);
+	Class87.entities[1417242443 * this.anInt9116].method1015(1255556998).sendGraphics(this.anInt6895 * 720810617, this.anInt6893 * 1369196329 << 16, 87600989 * this.anInt6894, this.anInt9115 * -921351243, false, -1879057895 * this.anInt9117, -1194808341);
     }
 
     Class82_Sub19_Sub2(RsByteBuffer class298_sub53) {

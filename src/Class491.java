@@ -40,7 +40,7 @@ public class Class491 {
 	    if (is != null)
 		class492.method6180(new RsByteBuffer(is), 1638036980);
 	    synchronized (this.aClass348_6079) {
-		this.aClass348_6079.method4194(class492, i);
+		this.aClass348_6079.put(class492, i);
 	    }
 	    return class492;
 	}

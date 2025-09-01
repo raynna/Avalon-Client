@@ -21,7 +21,7 @@ public class Class302_Sub4 extends Class302 {
 	    String string = (String) (class403.anObjectArray5240[(class403.anInt5241 -= 969361751) * -203050393]);
 	    int i_0_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
 	    Class505 class505 = Class322.method3931(Class173.aClass243_1758, i_0_, 0, (byte) 11);
-	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = class505.method6254(string, Class130_Sub2.aClass57Array6959, 1319235613);
+	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = class505.method6254(string, Class130_Sub2.aSpriteArray6959, 1319235613);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("aav.aap(").append(')').toString());

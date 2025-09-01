@@ -59,7 +59,7 @@ public class Class322 {
 		else if (Class298_Sub1.anInt7164 * -863531439 == 2)
 		    Class403.method4944(l);
 	    }
-	    Class152.method1652(Class373.aClass_ra4071, 443738891 * client.ticketCycle);
+	    Class152.method1652(OverlayType.activeToolkit, 443738891 * client.ticketCycle);
 	    if (-1 != -257444687 * client.WINDOW_PANE_ID)
 		Class443.method5884(-257444687 * client.WINDOW_PANE_ID, -333860368);
 	    for (int i = 0; i < -112139815 * client.anInt8686; i++) {
@@ -72,8 +72,8 @@ public class Class322 {
 		client.anInt8686 = 0;
 		Class104.method1104(1847385357);
 	    }
-	    Class373.aClass_ra4071.L();
-	    Class463.method6013(Class373.aClass_ra4071, (byte) 38);
+	    OverlayType.activeToolkit.L();
+	    Class463.method6013(OverlayType.activeToolkit, (byte) 38);
 	    int i = Class298_Sub17_Sub4.method2926(695848123);
 	    if (-1 == i)
 		i = client.anInt8937 * -1808468501;

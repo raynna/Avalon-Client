@@ -227,7 +227,7 @@ public class OutcommingPacket {
 	    int i_1_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
 	    IComponentDefinition class105 = Class50.getIComponentDefinitions(i_1_, (byte) 0);
 	    Class119 class119 = Class389.aClass119Array4165[i_1_ >> 16];
-	    Class373.method4606(class105, class119, class403, -1722505013);
+	    OverlayType.method4606(class105, class119, class403, -1722505013);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ij.ei(").append(')').toString());

@@ -35,12 +35,12 @@ public class Class496 {
 	}
     }
 
-    public Class57 method6198(GraphicsToolkit class_ra, int i, boolean bool, byte i_1_) {
+    public Sprite method6198(GraphicsToolkit class_ra, int i, boolean bool, byte i_1_) {
 	try {
 	    long l = anInt6097 * 1690480405 | i << 16 | (bool ? 262144 : 0) | class_ra.anInt5298 * 580915349 << 19;
-	    Class57 class57 = (Class57) this.aClass487_6095.aClass348_6065.method4184(l);
-	    if (class57 != null)
-		return class57;
+	    Sprite sprite = (Sprite) this.aClass487_6095.aClass348_6065.method4184(l);
+	    if (sprite != null)
+		return sprite;
 	    if (!this.aClass487_6095.aClass243_6068.method2310(anInt6097 * 1690480405, -457216440))
 		return null;
 	    IndexedImage class89 = IndexedImage.method987(((this.aClass487_6095).aClass243_6068), 1690480405 * anInt6097, 0);
@@ -57,10 +57,10 @@ public class Class496 {
 		for (int i_5_ = 0; i_5_ < i; i_5_++)
 		    class89.method989();
 	    }
-	    class57 = class_ra.method5125(class89, true);
-	    if (class57 != null)
-		this.aClass487_6095.aClass348_6065.method4194(class57, l);
-	    return class57;
+	    sprite = class_ra.convertSpriteForGame(class89, true);
+	    if (sprite != null)
+		this.aClass487_6095.aClass348_6065.put(sprite, l);
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ul.b(").append(')').toString());

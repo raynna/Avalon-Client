@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public class Class57_Sub1_Sub1 extends Class57_Sub1 {
+public class Sprite_Sub1_Sub1 extends Sprite_Sub1 {
     int[] anIntArray9965;
 
     @Override
@@ -470,7 +470,7 @@ public class Class57_Sub1_Sub1 extends Class57_Sub1 {
 	}
     }
 
-    Class57_Sub1_Sub1(Class_ra_Sub1 class_ra_sub1, int[] is, int i, int i_132_, int i_133_, int i_134_, boolean bool) {
+    Sprite_Sub1_Sub1(Class_ra_Sub1 class_ra_sub1, int[] is, int i, int i_132_, int i_133_, int i_134_, boolean bool) {
 	super(class_ra_sub1, i_133_, i_134_);
 	if (bool)
 	    this.anIntArray9965 = new int[i_133_ * i_134_];
@@ -485,7 +485,7 @@ public class Class57_Sub1_Sub1 extends Class57_Sub1 {
 	}
     }
 
-    Class57_Sub1_Sub1(Class_ra_Sub1 class_ra_sub1, int[] is, int i, int i_138_) {
+    Sprite_Sub1_Sub1(Class_ra_Sub1 class_ra_sub1, int[] is, int i, int i_138_) {
 	super(class_ra_sub1, i, i_138_);
 	this.anIntArray9965 = is;
     }
@@ -2111,7 +2111,7 @@ public class Class57_Sub1_Sub1 extends Class57_Sub1 {
 	}
     }
 
-    Class57_Sub1_Sub1(Class_ra_Sub1 class_ra_sub1, int i, int i_734_) {
+    Sprite_Sub1_Sub1(Class_ra_Sub1 class_ra_sub1, int i, int i_734_) {
 	super(class_ra_sub1, i, i_734_);
 	this.anIntArray9965 = new int[i * i_734_];
     }

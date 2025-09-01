@@ -168,7 +168,7 @@ public class Class433 {
 		class432.anIntArray5370 = null;
 	    }
 	    synchronized (this.aClass348_5449) {
-		this.aClass348_5449.method4194(class432, objectId);
+		this.aClass348_5449.put(class432, objectId);
 	    }
 	    return class432;
 	}

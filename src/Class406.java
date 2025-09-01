@@ -52,15 +52,15 @@ public final class Class406 {
 	    boolean bool_3_ = false;
 	    for (int i_4_ = 0; i_4_ < client.anInt8708 * -1508392173; i_4_++) {
 		int i_5_ = client.anIntArray8709[i_4_];
-		Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(i_5_));
-		NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
+		LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(i_5_));
+		NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
 		if (-1402769421 * class365_sub1_sub1_sub2_sub1.anInt10075 != client.anInt8707 * 440189755) {
 		    if (Class436.aBoolean5478 && Class518.method6313(i_5_, 351851633))
 			Class194.method1868(2025307040);
-		    if (class365_sub1_sub1_sub2_sub1.aClass503_10190.method6242((byte) 32))
+		    if (class365_sub1_sub1_sub2_sub1.definitions.method6242((byte) 32))
 			Class244.method2330(class365_sub1_sub1_sub2_sub1, (byte) 35);
 		    class365_sub1_sub1_sub2_sub1.method4464(null, 1734282756);
-		    class298_sub29.method2839(-1460969981);
+		    linkableObject.method2839(-1460969981);
 		    bool_3_ = true;
 		}
 	    }
@@ -70,11 +70,11 @@ public final class Class406 {
 		int i_7_ = 0;
 		Iterator iterator = client.aClass437_8696.iterator();
 		while (iterator.hasNext()) {
-		    Class298_Sub29 class298_sub29 = (Class298_Sub29) iterator.next();
-		    client.aClass298_Sub29Array8816[i_7_++] = class298_sub29;
+		    LinkableObject linkableObject = (LinkableObject) iterator.next();
+		    client.aLinkableObjectArray8816[i_7_++] = linkableObject;
 		}
 		for (int i_8_ = client.anInt8772 * 1962237353; i_8_ < i_6_; i_8_++)
-		    client.aClass298_Sub29Array8816[i_8_] = null;
+		    client.aLinkableObjectArray8816[i_8_] = null;
 	    }
 	    if (385051775 * (client.aClass25_8711.aClass298_Sub53_Sub2_333.index) != client.aClass25_8711.anInt336 * -866602563) {
 		/*
@@ -85,7 +85,7 @@ public final class Class406 {
 		 * client.aClass25_8711).anInt336) .toString());
 		 */
 	    }
-	    for (int i_9_ = 0; i_9_ < -1230451913 * client.anInt8703; i_9_++) {
+	    for (int i_9_ = 0; i_9_ < -1230451913 * client.npcCount; i_9_++) {
 		if (client.aClass437_8696.method5812(client.anIntArray8699[i_9_]) == null) {
 		    /*
 		     * throw new RuntimeException(new
@@ -95,7 +95,7 @@ public final class Class406 {
 		     */
 		}
 	    }
-	    if (0 != (client.anInt8772 * 1962237353 - -1230451913 * client.anInt8703)) {
+	    if (0 != (client.anInt8772 * 1962237353 - -1230451913 * client.npcCount)) {
 		/*
 		 * throw new RuntimeException(new StringBuilder().append("")
 		 * .append( client.anInt8772 * 1962237353 - (-1230451913 *
@@ -103,7 +103,7 @@ public final class Class406 {
 		 */
 	    }
 	    for (int i_10_ = 0; i_10_ < client.anInt8772 * 1962237353; i_10_++) {
-		if (-1402769421 * ((Entity) (client.aClass298_Sub29Array8816[i_10_].anObject7366)).anInt10075 != 440189755 * client.anInt8707) {
+		if (-1402769421 * ((Entity) (client.aLinkableObjectArray8816[i_10_].anObject7366)).anInt10075 != 440189755 * client.anInt8707) {
 		    /*
 		     * throw new RuntimeException( new StringBuilder()
 		     * .append("") .append( ((Entity)

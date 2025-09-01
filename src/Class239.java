@@ -147,7 +147,7 @@ public class Class239 {
 	try {
 	    Class505 class505 = class105.method1113(Class497.aClass197_6105, client.anInterface10_8700, (byte) -46);
 	    int i_12_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
-	    Point point = class505.method6263(class105.aString1212, class105.anInt1156 * -2093041337, class105.anInt1191 * 418216501, i_12_, Class130_Sub2.aClass57Array6959, 946663112);
+	    Point point = class505.method6263(class105.aString1212, class105.anInt1156 * -2093041337, class105.anInt1191 * 418216501, i_12_, Class130_Sub2.aSpriteArray6959, 946663112);
 	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = point.x;
 	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = point.y;
 	}

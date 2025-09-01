@@ -89,7 +89,7 @@ public final class Class92 {
     public static void method1007(int i) {
 	try {
 	    Class365_Sub1_Sub3_Sub2.method4512(1137952217);
-	    Class436.aClass57Array5501 = null;
+	    Class436.aSpriteArray5501 = null;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("dt.ae(").append(')').toString());

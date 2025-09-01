@@ -376,21 +376,21 @@ public class Class321 {
 		else if (i == 22)
 		    client.aClass442_8650.method5869(355993737);
 		else if (16 == i) {
-		    Class373.method4610(-851414705);
+		    OverlayType.method4610(-851414705);
 		    for (int i_40_ = 0; i_40_ < 10; i_40_++)
 			System.gc();
 		    Runtime runtime = Runtime.getRuntime();
 		    int i_41_ = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);
 		    Class255.method2435(new StringBuilder().append("").append(i_41_).toString(), 1598262745);
 		} else if (10 == i) {
-		    Class373.method4610(1839277481);
+		    OverlayType.method4610(1839277481);
 		    for (int i_42_ = 0; i_42_ < 10; i_42_++)
 			System.gc();
 		    Runtime runtime = Runtime.getRuntime();
 		    int i_43_ = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);
 		    Class255.method2435(new StringBuilder().append("").append(i_43_).toString(), 840220855);
 		    Class234.method2183(-792495658);
-		    Class373.method4610(-1340221001);
+		    OverlayType.method4610(-1340221001);
 		    for (int i_44_ = 0; i_44_ < 10; i_44_++)
 			System.gc();
 		    i_43_ = (int) ((runtime.totalMemory() - runtime.freeMemory()) / 1024L);
@@ -427,7 +427,7 @@ public class Class321 {
 		    Class223.method2082(false, -1663847334);
 		else if (i == 17) {
 		    client.aBoolean8668 = !client.aBoolean8668;
-		    Class373.aClass_ra4071.method5061(client.aBoolean8668);
+		    OverlayType.activeToolkit.method5061(client.aBoolean8668);
 		    Class422_Sub1.method5626(-1727592457);
 		} else if (11 == i) {
 		    client.anInt8814 = 0;

@@ -150,7 +150,7 @@ public class Class98_Sub2 extends Class98 {
 	    for (Class298_Sub37_Sub5 class298_sub37_sub5 = ((Class298_Sub37_Sub5) Class436.aClass461_5482.method5984(-431286975)); null != class298_sub37_sub5; class298_sub37_sub5 = ((Class298_Sub37_Sub5) Class436.aClass461_5482.method5985(-2120194897))) {
 		if ((-628325139 * class298_sub37_sub5.anInt9583) > 1) {
 		    class298_sub37_sub5.anInt9583 = 0;
-		    Class436.aClass348_5464.method4194(class298_sub37_sub5, (6619564980435866523L * ((Class298_Sub37_Sub15) (class298_sub37_sub5.aClass461_9584.aClass298_Sub37_5679.aClass298_Sub37_7405)).aLong9666));
+		    Class436.aClass348_5464.put(class298_sub37_sub5, (6619564980435866523L * ((Class298_Sub37_Sub15) (class298_sub37_sub5.aClass461_9584.aClass298_Sub37_5679.aClass298_Sub37_7405)).aLong9666));
 		    class298_sub37_sub5.aClass461_9584.method5988(2132471610);
 		}
 	    }

@@ -86,7 +86,7 @@ public class Class82_Sub22 extends Class82 {
 	    i_3_ = 256 + this.anInt6907 * 869603840;
 	    i_4_ = this.anInt6910 * -356438957;
 	} else {
-	    Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6905 * -153670819].method1015(1193612238);
+	    Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6905 * -153670819].method1015(1193612238);
 	    Class217 class217 = class365_sub1_sub1_sub2.method4337().aClass217_2599;
 	    i = (int) class217.aFloat2451;
 	    i_3_ = (int) class217.aFloat2454;
@@ -98,7 +98,7 @@ public class Class82_Sub22 extends Class82 {
 	    i_5_ = this.anInt6913 * -679925248 + 256;
 	    i_6_ = 1149122048 * this.anInt6911 + 256;
 	} else {
-	    Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6909 * -1629854861].method1015(143521447);
+	    Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6909 * -1629854861].method1015(143521447);
 	    Class217 class217 = class365_sub1_sub1_sub2.method4337().aClass217_2599;
 	    i_5_ = (int) class217.aFloat2451;
 	    i_6_ = (int) class217.aFloat2454;
@@ -121,7 +121,7 @@ public class Class82_Sub22 extends Class82 {
 	    i_8_ = 256 + this.anInt6907 * 869603840;
 	    i_9_ = this.anInt6910 * -356438957;
 	} else {
-	    Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6905 * -153670819].method1015(1656183484);
+	    Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6905 * -153670819].method1015(1656183484);
 	    Class217 class217 = class365_sub1_sub1_sub2.method4337().aClass217_2599;
 	    i = (int) class217.aFloat2451;
 	    i_8_ = (int) class217.aFloat2454;
@@ -133,7 +133,7 @@ public class Class82_Sub22 extends Class82 {
 	    i_10_ = this.anInt6913 * -679925248 + 256;
 	    i_11_ = 1149122048 * this.anInt6911 + 256;
 	} else {
-	    Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6909 * -1629854861].method1015(43837883);
+	    Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6909 * -1629854861].method1015(43837883);
 	    Class217 class217 = class365_sub1_sub1_sub2.method4337().aClass217_2599;
 	    i_10_ = (int) class217.aFloat2451;
 	    i_11_ = (int) class217.aFloat2454;
@@ -157,7 +157,7 @@ public class Class82_Sub22 extends Class82 {
 		i_14_ = 256 + this.anInt6907 * 869603840;
 		i_15_ = this.anInt6910 * -356438957;
 	    } else {
-		Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6905 * -153670819].method1015(1024446891);
+		Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6905 * -153670819].method1015(1024446891);
 		Class217 class217 = class365_sub1_sub1_sub2.method4337().aClass217_2599;
 		i_13_ = (int) class217.aFloat2451;
 		i_14_ = (int) class217.aFloat2454;
@@ -169,7 +169,7 @@ public class Class82_Sub22 extends Class82 {
 		i_16_ = this.anInt6913 * -679925248 + 256;
 		i_17_ = 1149122048 * this.anInt6911 + 256;
 	    } else {
-		Entity class365_sub1_sub1_sub2 = Class87.aClass94Array794[this.anInt6909 * -1629854861].method1015(1821624579);
+		Entity class365_sub1_sub1_sub2 = Class87.entities[this.anInt6909 * -1629854861].method1015(1821624579);
 		Class217 class217 = class365_sub1_sub1_sub2.method4337().aClass217_2599;
 		i_16_ = (int) class217.aFloat2451;
 		i_17_ = (int) class217.aFloat2454;

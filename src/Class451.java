@@ -56,7 +56,7 @@ public class Class451 {
 	    if (is != null)
 		class443.method5882(new RsByteBuffer(is), (byte) -31);
 	    synchronized (this.aClass348_5640) {
-		this.aClass348_5640.method4194(class443, i);
+		this.aClass348_5640.put(class443, i);
 	    }
 	    return class443;
 	}

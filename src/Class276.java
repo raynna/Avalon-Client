@@ -17,10 +17,10 @@ public class Class276 {
     int anInt2919;
     int anInt2920;
     int anInt2921;
-    static Class57 aClass57_2922;
+    static Sprite aSprite_2922;
     int anInt2923;
     static int anInt2924 = 512;
-    Class57 aClass57_2925;
+    Sprite aSprite_2925;
     int anInt2926;
     int anInt2927;
     int anInt2928;
@@ -32,16 +32,16 @@ public class Class276 {
     static int anInt2934 = 16;
     int anInt2935;
     static Class387 aClass387_2936;
-    static Class57 aClass57_2937;
+    static Sprite aSprite_2937;
     static int[] anIntArray2938 = new int[4];
 
     static void method2574() {
 	aClass387_2936 = null;
-	aClass57_2937 = null;
+	aSprite_2937 = null;
     }
 
     boolean method2575(GraphicsToolkit class_ra, Class276 class276_0_) {
-	return (this.aClass57_2925 != null || method2578(class_ra, class276_0_));
+	return (this.aSprite_2925 != null || method2578(class_ra, class276_0_));
     }
 
     static void method2576(GraphicsToolkit class_ra) {
@@ -85,7 +85,7 @@ public class Class276 {
     }
 
     void method2577(GraphicsToolkit class_ra, int i, int i_14_, int i_15_, int i_16_, int i_17_, int i_18_, int i_19_, int i_20_, int i_21_, int i_22_) {
-	if (this.aClass57_2925 != null) {
+	if (this.aSprite_2925 != null) {
 	    float[] fs = new float[3];
 	    float f = -(this.anInt2914 - i_19_ << 16);
 	    float f_23_ = this.anInt2909 - i_20_ << 15;
@@ -100,24 +100,24 @@ public class Class276 {
 		int i_26_ = (int) (fs[0] - this.anInt2920 / 2);
 		int i_27_ = (int) (fs[1] - this.anInt2920 / 2);
 		if (i_27_ < i_16_ && i_27_ + this.anInt2920 > 0 && i_26_ < i_15_ && i_26_ + this.anInt2920 > 0)
-		    this.aClass57_2925.method634(i_26_, i_27_, this.anInt2920, this.anInt2920, 0, i_22_ << 24 | 0xffffff, 1);
+		    this.aSprite_2925.method634(i_26_, i_27_, this.anInt2920, this.anInt2920, 0, i_22_ << 24 | 0xffffff, 1);
 	    }
 	}
     }
 
     boolean method2578(GraphicsToolkit class_ra, Class276 class276_28_) {
-	if (this.aClass57_2925 == null) {
+	if (this.aSprite_2925 == null) {
 	    if (this.anInt2928 == 0) {
 		if (Class277.anInterface_ma2955.method170((this.anInt2918), (short) 14716)) {
 		    int[] is = (Class277.anInterface_ma2955.method172(this.anInt2918, 0.7F, this.anInt2923, this.anInt2923, false, (byte) 2));
-		    this.aClass57_2925 = class_ra.method5031(is, 0, this.anInt2923, this.anInt2923, this.anInt2923, -1518966523);
+		    this.aSprite_2925 = class_ra.method5031(is, 0, this.anInt2923, this.anInt2923, this.anInt2923, -1518966523);
 		}
 	    } else if (this.anInt2928 == 2)
 		method2582(class_ra, class276_28_);
 	    else if (this.anInt2928 == 1)
 		method2580(class_ra, class276_28_);
 	}
-	return this.aClass57_2925 != null;
+	return this.aSprite_2925 != null;
     }
 
     boolean method2579(int i, int i_29_, int i_30_, int i_31_) {
@@ -149,7 +149,7 @@ public class Class276 {
 	} else
 	    this.anInt2920 = 0;
 	if (this.anInt2920 < 8) {
-	    this.aClass57_2925 = null;
+	    this.aSprite_2925 = null;
 	    return false;
 	}
 	int i_36_ = Class416.method5590(this.anInt2920, (byte) 16);
@@ -161,7 +161,7 @@ public class Class276 {
 	    this.anInt2923 = i_36_;
 	this.anInt2927 = (int) (Math.asin(i_33_ / 256.0F) * 2607.5945876176133) & 0x3fff;
 	this.anInt2921 = (int) (Math.atan2(i_32_, -i_34_) * 2607.5945876176133) & 0x3fff;
-	this.aClass57_2925 = null;
+	this.aSprite_2925 = null;
 	return true;
     }
 
@@ -217,18 +217,18 @@ public class Class276 {
 	class387.method4739(class222, null, 1);
 	int i_48_ = this.anInt2923 * 13 / 16;
 	int i_49_ = (this.anInt2923 - i_48_) / 2;
-	aClass57_2922.method634(i_49_, i_49_, i_48_, i_48_, 0, ~0xffffff | this.anInt2935, 1);
-	this.aClass57_2925 = class_ra.method5033(0, 0, this.anInt2923, this.anInt2923, true);
+	aSprite_2922.method634(i_49_, i_49_, i_48_, i_48_, 0, ~0xffffff | this.anInt2935, 1);
+	this.aSprite_2925 = class_ra.method5033(0, 0, this.anInt2923, this.anInt2923, true);
 	class_ra.ba(2, 0);
 	class_ra.B(0, 0, this.anInt2923, this.anInt2923, 0, 0);
-	aClass57_2937.method634(0, 0, this.anInt2923, this.anInt2923, 1, 0, 0);
-	this.aClass57_2925.method632(0, 0, 3);
+	aSprite_2937.method634(0, 0, this.anInt2923, this.anInt2923, 1, 0, 0);
+	this.aSprite_2925.method632(0, 0, 3);
 	class_ra.method5182(class233);
 	class_ra.r(anIntArray2938[0], anIntArray2938[1], anIntArray2938[2], anIntArray2938[3]);
     }
 
     static void method2581(GraphicsToolkit class_ra) {
-	if (aClass57_2937 == null) {
+	if (aSprite_2937 == null) {
 	    int[] is = new int[16384];
 	    int[] is_50_ = new int[16384];
 	    for (int i = 0; i < 64; i++) {
@@ -252,8 +252,8 @@ public class Class276 {
 		    is[i_53_ + i_55_] = is[i_53_ + i_57_] = is[i_54_ + i_55_] = is[i_54_ + i_57_] = 127 - i_59_ << 24 | 0xffffff;
 		}
 	    }
-	    aClass57_2937 = class_ra.method5031(is_50_, 0, 128, 128, 128, -529255066);
-	    aClass57_2922 = class_ra.method5031(is, 0, 128, 128, 128, -965635972);
+	    aSprite_2937 = class_ra.method5031(is_50_, 0, 128, 128, 128, -529255066);
+	    aSprite_2922 = class_ra.method5031(is, 0, 128, 128, 128, -965635972);
 	}
     }
 
@@ -311,8 +311,8 @@ public class Class276 {
 	    Class222 class222_76_ = class_ra.method5178();
 	    class222_76_.method2062(0.0F, 0.0F, 50 - class387.AA());
 	    class387.method4739(class222_76_, null, 1);
-	    this.aClass57_2925 = class_ra.method5033(0, 0, this.anInt2923, this.anInt2923, true);
-	    this.aClass57_2925.method632(0, 0, 3);
+	    this.aSprite_2925 = class_ra.method5033(0, 0, this.anInt2923, this.anInt2923, true);
+	    this.aSprite_2925.method632(0, 0, 3);
 	    class_ra.method5182(class233);
 	    class_ra.r(anIntArray2938[0], anIntArray2938[1], anIntArray2938[2], anIntArray2938[3]);
 	}

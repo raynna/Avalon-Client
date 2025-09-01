@@ -15,7 +15,7 @@ public class NPC extends Entity {
     public Class73 aClass73_10187;
     int anInt10188;
     public int anInt10189;
-    public NPCDefinitions aClass503_10190;
+    public NPCDefinitions definitions;
     int anInt10191;
     int anInt10192;
     int anInt10193;
@@ -42,7 +42,7 @@ public class NPC extends Entity {
 
     @Override
     void method4373(GraphicsToolkit class_ra) {
-	if (aClass503_10190 != null && (this.aBoolean10128 || method4454(class_ra, 0, 498700808))) {
+	if (definitions != null && (this.aBoolean10128 || method4454(class_ra, 0, 498700808))) {
 	    Class222 class222 = class_ra.method5178();
 	    class222.method2070(method4347());
 	    class222.method2064(0.0F, -5.0F, 0.0F);
@@ -65,7 +65,7 @@ public class NPC extends Entity {
     @Override
     Class335 method4394(GraphicsToolkit class_ra, int i) {
 	try {
-	    if (aClass503_10190 == null || !method4454(class_ra, 526336, -1241441124))
+	    if (definitions == null || !method4454(class_ra, 526336, -1241441124))
 		return null;
 	    Class222 class222 = method4347();
 	    Class235 class235 = method4337();
@@ -79,14 +79,14 @@ public class NPC extends Entity {
 		this.anInt10122 = (int) (-661498661 * (this.anInt10122) - (this.anInt10122) * -661498661 / 10.0F) * 1394444115;
 	    class222_2_.method2070(class222);
 	    class222_2_.method2064(0.0F, -20 - this.anInt10122 * -661498661, 0.0F);
-	    Class350 class350 = method4426(1744135386);
-	    NPCDefinitions class503 = (aClass503_10190.anIntArray6188 != null ? aClass503_10190.method6240(Class128.aClass148_6331, 1631739764) : aClass503_10190);
+	    Class350 class350 = getBAS(1744135386);
+	    NPCDefinitions class503 = (definitions.morphisms != null ? definitions.morph(Class128.aClass148_6331, 1631739764) : definitions);
 	    this.aBoolean10129 = false;
 	    Class335 class335 = null;
 	    if (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub18_7561.method5693(-1104068428) == 1 && class503.aBoolean6165 && class350.aBoolean3756) {
 		Class438 class438 = ((aClass438_10078.method5819((byte) -29) && aClass438_10078.method5826(-65534)) ? aClass438_10078 : null);
 		Class438 class438_5_ = ((aClass438_10077.method5819((byte) -63) && (!aBoolean10094 || class438 == null)) ? aClass438_10077 : null);
-		Class387 class387 = (Class283.method2678(class_ra, i_3_, (this.anInt10097 * -155466425), (-197572281 * this.anInt10073), (-104151209 * this.anInt10074), -2095128707 * aClass503_10190.size, aClass387Array10082[0], aClass503_10190.aShort6191 & 0xffff, aClass503_10190.aShort6153 & 0xffff, aClass503_10190.aByte6168 & 0xff, aClass503_10190.aByte6152 & 0xff, null != class438_5_ ? class438_5_ : class438, 1812843484));
+		Class387 class387 = (Class283.method2678(class_ra, i_3_, (this.anInt10097 * -155466425), (-197572281 * this.anInt10073), (-104151209 * this.anInt10074), -2095128707 * definitions.size, aClass387Array10082[0], definitions.aShort6191 & 0xffff, definitions.aShort6153 & 0xffff, definitions.aByte6168 & 0xff, definitions.aByte6152 & 0xff, null != class438_5_ ? class438_5_ : class438, 1812843484));
 		if (null != class387) {
 		    if (null == aClass302_Sub1Array7726 || (aClass302_Sub1Array7726.length < aClass387Array10082.length + 1))
 			method4362(aClass387Array10082.length + 1, 1538315389);
@@ -104,7 +104,7 @@ public class NPC extends Entity {
 	    method4445(class_ra, aClass387Array10082, class222_2_, false, 879327846);
 	    for (int i_6_ = 0; i_6_ < aClass387Array10082.length; i_6_++) {
 		if (aClass387Array10082[i_6_] != null) {
-		    if (aClass503_10190.aBoolean6193)
+		    if (definitions.aBoolean6193)
 			aClass387Array10082[i_6_].PA((this.anInt10188 * 1611045847), 1427249763 * this.anInt10191, (this.anInt10192 * 376465581), (this.anInt10193 * 332650083));
 		    aClass387Array10082[i_6_].method4739(class222_2_, aClass302_Sub1Array7726[i_6_], 0);
 		}
@@ -129,7 +129,7 @@ public class NPC extends Entity {
     boolean method4454(GraphicsToolkit class_ra, int i, int i_8_) {
 	try {
 	    int i_9_ = i;
-	    Class350 class350 = method4426(979705538);
+	    Class350 class350 = getBAS(979705538);
 	    Class438 class438 = ((aClass438_10078.method5819((byte) -97) && !aClass438_10078.method5826(-65534)) ? aClass438_10078 : null);
 	    Class438 class438_10_ = ((aClass438_10077.method5819((byte) -121) && (!aBoolean10094 || null == class438)) ? aClass438_10077 : null);
 	    int i_11_ = 250567115 * class350.anInt3735;
@@ -140,7 +140,7 @@ public class NPC extends Entity {
 	    if (bool)
 		i |= 0x80000;
 	    int i_13_ = aClass386_10084.method4719((byte) 0);
-	    Class387 class387 = (aClass387Array10082[0] = aClass503_10190.method6236(class_ra, i, Class94.aClass349_913, Class128.aClass148_6331, class438, class438_10_, aClass438_Sub2_Sub1Array10112, anIntArray10085, i_13_, aClass498_10181, method4432(-1491129226), false, -679459424));
+	    Class387 class387 = (aClass387Array10082[0] = definitions.method6236(class_ra, i, Class94.aClass349_913, Class128.aClass148_6331, class438, class438_10_, aClass438_Sub2_Sub1Array10112, anIntArray10085, i_13_, aClass498_10181, method4432(-1491129226), false, -679459424));
 	    if (null == class387)
 		return false;
 	    this.anInt10089 = class387.YA() * -49760597;
@@ -169,7 +169,7 @@ public class NPC extends Entity {
     @Override
     void method4357(GraphicsToolkit class_ra, int i) {
 	try {
-	    if (aClass503_10190 != null && (this.aBoolean10128 || method4454(class_ra, 0, -1205291751))) {
+	    if (definitions != null && (this.aBoolean10128 || method4454(class_ra, 0, -1205291751))) {
 		Class222 class222 = class_ra.method5178();
 		class222.method2070(method4347());
 		class222.method2064(0.0F, -5.0F, 0.0F);
@@ -301,7 +301,7 @@ public class NPC extends Entity {
 
     public final boolean method4457(int i) {
 	try {
-	    if (null == aClass503_10190)
+	    if (null == definitions)
 		return false;
 	    return true;
 	}
@@ -315,12 +315,12 @@ public class NPC extends Entity {
 	try {
 	    if (-1 != -1317338937 * anInt10184)
 		return anInt10184 * -1317338937;
-	    if (null != aClass503_10190.anIntArray6188) {
-		NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1794284929);
+	    if (null != definitions.morphisms) {
+		NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1794284929);
 		if (class503 != null && 525312939 * class503.anInt6132 != -1)
 		    return 525312939 * class503.anInt6132;
 	    }
-	    return aClass503_10190.anInt6132 * 525312939;
+	    return definitions.anInt6132 * 525312939;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ake.t(").append(')').toString());
@@ -330,12 +330,12 @@ public class NPC extends Entity {
     @Override
     public int method4427(byte i) {
 	try {
-	    if (null != aClass503_10190.anIntArray6188) {
-		NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1605369279);
+	    if (null != definitions.morphisms) {
+		NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1605369279);
 		if (class503 != null && -1 != 363729791 * class503.anInt6178)
 		    return 363729791 * class503.anInt6178;
 	    }
-	    return 363729791 * aClass503_10190.anInt6178;
+	    return 363729791 * definitions.anInt6178;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ake.h(").append(')').toString());
@@ -343,14 +343,14 @@ public class NPC extends Entity {
     }
 
     int method4458() {
-	if (aClass503_10190 == null)
+	if (definitions == null)
 	    return 0;
-	return aClass503_10190.anInt6192 * -226722581;
+	return definitions.anInt6192 * -226722581;
     }
 
     boolean method4459(int i) {
 	try {
-	    return aClass503_10190.aBoolean6163;
+	    return definitions.aBoolean6163;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ake.gu(").append(')').toString());
@@ -360,9 +360,9 @@ public class NPC extends Entity {
     @Override
     int method4356(byte i) {
 	try {
-	    if (aClass503_10190 == null)
+	    if (definitions == null)
 		return 0;
-	    return aClass503_10190.anInt6192 * -226722581;
+	    return definitions.anInt6192 * -226722581;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ake.dh(").append(')').toString());
@@ -372,7 +372,7 @@ public class NPC extends Entity {
     @Override
     boolean method4350(GraphicsToolkit class_ra, int i, int i_28_, byte i_29_) {
 	try {
-	    if (aClass503_10190 == null || !method4454(class_ra, 131072, -1046532898))
+	    if (definitions == null || !method4454(class_ra, 131072, -1046532898))
 		return false;
 	    Class222 class222 = method4347();
 	    boolean bool = false;
@@ -381,13 +381,13 @@ public class NPC extends Entity {
 		    boolean bool_31_;
 		    while_55_: do {
 			do {
-			    if (-226722581 * aClass503_10190.anInt6192 <= 0) {
-				if (286060383 * aClass503_10190.anInt6189 == -1) {
-				    if (1 != (aClass503_10190.size * -2095128707))
+			    if (-226722581 * definitions.anInt6192 <= 0) {
+				if (286060383 * definitions.anInt6189 == -1) {
+				    if (1 != (definitions.size * -2095128707))
 					break;
 				    if (i_29_ != 1)
 					throw new IllegalStateException();
-				} else if (1 != (aClass503_10190.anInt6189 * 286060383))
+				} else if (1 != (definitions.anInt6189 * 286060383))
 				    break;
 			    }
 			    bool_31_ = true;
@@ -398,7 +398,7 @@ public class NPC extends Entity {
 		    }
 		    while (false);
 		    boolean bool_32_ = bool_31_;
-		    boolean bool_33_ = (aClass387Array10082[i_30_].method4787(i, i_28_, class222, bool_32_, aClass503_10190.anInt6192 * -226722581));
+		    boolean bool_33_ = (aClass387Array10082[i_30_].method4787(i, i_28_, class222, bool_32_, definitions.anInt6192 * -226722581));
 		    if (bool_33_) {
 			bool = true;
 			break;
@@ -478,27 +478,27 @@ public class NPC extends Entity {
 
     @Override
     public int method4435() {
-	if (aClass503_10190.anIntArray6188 != null) {
-	    NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1815832117);
+	if (definitions.morphisms != null) {
+	    NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1815832117);
 	    if (null != class503 && class503.anInt6143 * -1575020259 != -1)
 		return class503.anInt6143 * -1575020259;
 	}
-	return (-1575020259 * aClass503_10190.anInt6143 != -1 ? -1575020259 * aClass503_10190.anInt6143 : super.method4363((byte) -104));
+	return (-1575020259 * definitions.anInt6143 != -1 ? -1575020259 * definitions.anInt6143 : super.method4363((byte) -104));
     }
 
     @Override
     public int method4436() {
-	if (aClass503_10190.anIntArray6188 != null) {
-	    NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1928445532);
+	if (definitions.morphisms != null) {
+	    NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1928445532);
 	    if (null != class503 && class503.anInt6143 * -1575020259 != -1)
 		return class503.anInt6143 * -1575020259;
 	}
-	return (-1575020259 * aClass503_10190.anInt6143 != -1 ? -1575020259 * aClass503_10190.anInt6143 : super.method4363((byte) -11));
+	return (-1575020259 * definitions.anInt6143 != -1 ? -1575020259 * definitions.anInt6143 : super.method4363((byte) -11));
     }
 
     @Override
     Class335 method4370(GraphicsToolkit class_ra) {
-	if (aClass503_10190 == null || !method4454(class_ra, 526336, -1153791486))
+	if (definitions == null || !method4454(class_ra, 526336, -1153791486))
 	    return null;
 	Class222 class222 = method4347();
 	Class235 class235 = method4337();
@@ -512,14 +512,14 @@ public class NPC extends Entity {
 	    this.anInt10122 = (int) (-661498661 * (this.anInt10122) - (this.anInt10122) * -661498661 / 10.0F) * 1394444115;
 	class222_41_.method2070(class222);
 	class222_41_.method2064(0.0F, -20 - this.anInt10122 * -661498661, 0.0F);
-	Class350 class350 = method4426(1676580874);
-	NPCDefinitions class503 = (aClass503_10190.anIntArray6188 != null ? aClass503_10190.method6240(Class128.aClass148_6331, 1779938932) : aClass503_10190);
+	Class350 class350 = getBAS(1676580874);
+	NPCDefinitions class503 = (definitions.morphisms != null ? definitions.morph(Class128.aClass148_6331, 1779938932) : definitions);
 	this.aBoolean10129 = false;
 	Class335 class335 = null;
 	if (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub18_7561.method5693(-1718454976) == 1 && class503.aBoolean6165 && class350.aBoolean3756) {
 	    Class438 class438 = ((aClass438_10078.method5819((byte) -38) && aClass438_10078.method5826(-65534)) ? aClass438_10078 : null);
 	    Class438 class438_43_ = ((aClass438_10077.method5819((byte) -86) && (!aBoolean10094 || class438 == null)) ? aClass438_10077 : null);
-	    Class387 class387 = (Class283.method2678(class_ra, i, (this.anInt10097 * -155466425), (-197572281 * this.anInt10073), (-104151209 * this.anInt10074), -2095128707 * aClass503_10190.size, aClass387Array10082[0], aClass503_10190.aShort6191 & 0xffff, aClass503_10190.aShort6153 & 0xffff, aClass503_10190.aByte6168 & 0xff, aClass503_10190.aByte6152 & 0xff, null != class438_43_ ? class438_43_ : class438, 1812843484));
+	    Class387 class387 = (Class283.method2678(class_ra, i, (this.anInt10097 * -155466425), (-197572281 * this.anInt10073), (-104151209 * this.anInt10074), -2095128707 * definitions.size, aClass387Array10082[0], definitions.aShort6191 & 0xffff, definitions.aShort6153 & 0xffff, definitions.aByte6168 & 0xff, definitions.aByte6152 & 0xff, null != class438_43_ ? class438_43_ : class438, 1812843484));
 	    if (null != class387) {
 		if (null == aClass302_Sub1Array7726 || (aClass302_Sub1Array7726.length < aClass387Array10082.length + 1))
 		    method4362(aClass387Array10082.length + 1, -565315916);
@@ -537,7 +537,7 @@ public class NPC extends Entity {
 	method4445(class_ra, aClass387Array10082, class222_41_, false, 969483486);
 	for (int i_44_ = 0; i_44_ < aClass387Array10082.length; i_44_++) {
 	    if (aClass387Array10082[i_44_] != null) {
-		if (aClass503_10190.aBoolean6193)
+		if (definitions.aBoolean6193)
 		    aClass387Array10082[i_44_].PA((this.anInt10188 * 1611045847), (1427249763 * this.anInt10191), (this.anInt10192 * 376465581), (this.anInt10193 * 332650083));
 		aClass387Array10082[i_44_].method4739(class222_41_, (aClass302_Sub1Array7726[i_44_]), 0);
 	    }
@@ -557,7 +557,7 @@ public class NPC extends Entity {
 
     @Override
     void method4371(GraphicsToolkit class_ra) {
-	if (aClass503_10190 != null && (this.aBoolean10128 || method4454(class_ra, 0, -1590633829))) {
+	if (definitions != null && (this.aBoolean10128 || method4454(class_ra, 0, -1590633829))) {
 	    Class222 class222 = class_ra.method5178();
 	    class222.method2070(method4347());
 	    class222.method2064(0.0F, -5.0F, 0.0F);
@@ -574,7 +574,7 @@ public class NPC extends Entity {
 
     @Override
     boolean method4372(GraphicsToolkit class_ra, int i, int i_46_) {
-	if (aClass503_10190 == null || !method4454(class_ra, 131072, 1720809223))
+	if (definitions == null || !method4454(class_ra, 131072, 1720809223))
 	    return false;
 	Class222 class222 = method4347();
 	boolean bool = false;
@@ -583,11 +583,11 @@ public class NPC extends Entity {
 		boolean bool_48_;
 		while_56_: do {
 		    do {
-			if (-226722581 * aClass503_10190.anInt6192 <= 0) {
-			    if (286060383 * aClass503_10190.anInt6189 == -1) {
-				if (1 != aClass503_10190.size * -2095128707)
+			if (-226722581 * definitions.anInt6192 <= 0) {
+			    if (286060383 * definitions.anInt6189 == -1) {
+				if (1 != definitions.size * -2095128707)
 				    break;
-			    } else if (1 != (aClass503_10190.anInt6189 * 286060383))
+			    } else if (1 != (definitions.anInt6189 * 286060383))
 				break;
 			}
 			bool_48_ = true;
@@ -598,7 +598,7 @@ public class NPC extends Entity {
 		}
 		while (false);
 		boolean bool_49_ = bool_48_;
-		boolean bool_50_ = aClass387Array10082[i_47_].method4787(i, i_46_, class222, bool_49_, ((aClass503_10190.anInt6192) * -226722581));
+		boolean bool_50_ = aClass387Array10082[i_47_].method4787(i, i_46_, class222, bool_49_, ((definitions.anInt6192) * -226722581));
 		if (bool_50_) {
 		    bool = true;
 		    break;
@@ -612,7 +612,7 @@ public class NPC extends Entity {
 
     @Override
     boolean method4385(GraphicsToolkit class_ra, int i, int i_52_) {
-	if (aClass503_10190 == null || !method4454(class_ra, 131072, -1030471484))
+	if (definitions == null || !method4454(class_ra, 131072, -1030471484))
 	    return false;
 	Class222 class222 = method4347();
 	boolean bool = false;
@@ -621,11 +621,11 @@ public class NPC extends Entity {
 		boolean bool_54_;
 		while_57_: do {
 		    do {
-			if (-226722581 * aClass503_10190.anInt6192 <= 0) {
-			    if (286060383 * aClass503_10190.anInt6189 == -1) {
-				if (1 != aClass503_10190.size * -2095128707)
+			if (-226722581 * definitions.anInt6192 <= 0) {
+			    if (286060383 * definitions.anInt6189 == -1) {
+				if (1 != definitions.size * -2095128707)
 				    break;
-			    } else if (1 != (aClass503_10190.anInt6189 * 286060383))
+			    } else if (1 != (definitions.anInt6189 * 286060383))
 				break;
 			}
 			bool_54_ = true;
@@ -636,7 +636,7 @@ public class NPC extends Entity {
 		}
 		while (false);
 		boolean bool_55_ = bool_54_;
-		boolean bool_56_ = aClass387Array10082[i_53_].method4787(i, i_52_, class222, bool_55_, ((aClass503_10190.anInt6192) * -226722581));
+		boolean bool_56_ = aClass387Array10082[i_53_].method4787(i, i_52_, class222, bool_55_, ((definitions.anInt6192) * -226722581));
 		if (bool_56_) {
 		    bool = true;
 		    break;
@@ -661,12 +661,12 @@ public class NPC extends Entity {
     int method4447() {
 	if (-1 != -1317338937 * anInt10184)
 	    return anInt10184 * -1317338937;
-	if (null != aClass503_10190.anIntArray6188) {
-	    NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1618298715);
+	if (null != definitions.morphisms) {
+	    NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1618298715);
 	    if (class503 != null && 525312939 * class503.anInt6132 != -1)
 		return 525312939 * class503.anInt6132;
 	}
-	return aClass503_10190.anInt6132 * 525312939;
+	return definitions.anInt6132 * 525312939;
     }
 
     @Override
@@ -683,12 +683,12 @@ public class NPC extends Entity {
     int method4446() {
 	if (-1 != -1317338937 * anInt10184)
 	    return anInt10184 * -1317338937;
-	if (null != aClass503_10190.anIntArray6188) {
-	    NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1807692721);
+	if (null != definitions.morphisms) {
+	    NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1807692721);
 	    if (class503 != null && 525312939 * class503.anInt6132 != -1)
 		return 525312939 * class503.anInt6132;
 	}
-	return aClass503_10190.anInt6132 * 525312939;
+	return definitions.anInt6132 * 525312939;
     }
 
     @Override
@@ -705,34 +705,34 @@ public class NPC extends Entity {
     int method4438() {
 	if (-1 != -1317338937 * anInt10184)
 	    return anInt10184 * -1317338937;
-	if (null != aClass503_10190.anIntArray6188) {
-	    NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1685758496);
+	if (null != definitions.morphisms) {
+	    NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1685758496);
 	    if (class503 != null && 525312939 * class503.anInt6132 != -1)
 		return 525312939 * class503.anInt6132;
 	}
-	return aClass503_10190.anInt6132 * 525312939;
+	return definitions.anInt6132 * 525312939;
     }
 
     @Override
     int method4448() {
 	if (-1 != -1317338937 * anInt10184)
 	    return anInt10184 * -1317338937;
-	if (null != aClass503_10190.anIntArray6188) {
-	    NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1859138308);
+	if (null != definitions.morphisms) {
+	    NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1859138308);
 	    if (class503 != null && 525312939 * class503.anInt6132 != -1)
 		return 525312939 * class503.anInt6132;
 	}
-	return aClass503_10190.anInt6132 * 525312939;
+	return definitions.anInt6132 * 525312939;
     }
 
     @Override
     public int method4449() {
-	if (null != aClass503_10190.anIntArray6188) {
-	    NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1923690826);
+	if (null != definitions.morphisms) {
+	    NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1923690826);
 	    if (class503 != null && -1 != 363729791 * class503.anInt6178)
 		return 363729791 * class503.anInt6178;
 	}
-	return 363729791 * aClass503_10190.anInt6178;
+	return 363729791 * definitions.anInt6178;
     }
 
     @Override
@@ -768,12 +768,12 @@ public class NPC extends Entity {
     @Override
     public int method4363(byte i) {
 	try {
-	    if (aClass503_10190.anIntArray6188 != null) {
-		NPCDefinitions class503 = aClass503_10190.method6240(Class128.aClass148_6331, 1652651645);
+	    if (definitions.morphisms != null) {
+		NPCDefinitions class503 = definitions.morph(Class128.aClass148_6331, 1652651645);
 		if (null != class503 && class503.anInt6143 * -1575020259 != -1)
 		    return class503.anInt6143 * -1575020259;
 	    }
-	    return (-1575020259 * aClass503_10190.anInt6143 != -1 ? -1575020259 * aClass503_10190.anInt6143 : super.method4363((byte) 61));
+	    return (-1575020259 * definitions.anInt6143 != -1 ? -1575020259 * definitions.anInt6143 : super.method4363((byte) 61));
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ake.bx(").append(')').toString());
@@ -781,19 +781,19 @@ public class NPC extends Entity {
     }
 
     int method4463() {
-	if (aClass503_10190 == null)
+	if (definitions == null)
 	    return 0;
-	return aClass503_10190.anInt6192 * -226722581;
+	return definitions.anInt6192 * -226722581;
     }
 
     public void method4464(NPCDefinitions class503, int i) {
 	try {
-	    if (class503 != aClass503_10190 && Class436.aBoolean5478 && Class518.method6313(anInt10064 * 1888274983, 351851633))
+	    if (class503 != definitions && Class436.aBoolean5478 && Class518.method6313(anInt10064 * 1888274983, 351851633))
 		Class194.method1868(2025307040);
-	    aClass503_10190 = class503;
-	    if (aClass503_10190 != null) {
-		aString10186 = aClass503_10190.aString6127;
-		anInt10189 = aClass503_10190.anInt6149 * 1520279523;
+	    definitions = class503;
+	    if (definitions != null) {
+		aString10186 = definitions.aString6127;
+		anInt10189 = definitions.anInt6149 * 1520279523;
 	    }
 	    if (this.aClass351_10067 != null)
 		this.aClass351_10067.method4220();
@@ -819,9 +819,9 @@ public class NPC extends Entity {
     }
 
     int method4465() {
-	if (aClass503_10190 == null)
+	if (definitions == null)
 	    return 0;
-	return aClass503_10190.anInt6192 * -226722581;
+	return definitions.anInt6192 * -226722581;
     }
 
     public NPC(Class331 class331) {
@@ -853,7 +853,7 @@ public class NPC extends Entity {
 
     @Override
     boolean method4352(GraphicsToolkit class_ra, int i, int i_65_) {
-	if (aClass503_10190 == null || !method4454(class_ra, 131072, 76578294))
+	if (definitions == null || !method4454(class_ra, 131072, 76578294))
 	    return false;
 	Class222 class222 = method4347();
 	boolean bool = false;
@@ -862,11 +862,11 @@ public class NPC extends Entity {
 		boolean bool_67_;
 		while_58_: do {
 		    do {
-			if (-226722581 * aClass503_10190.anInt6192 <= 0) {
-			    if (286060383 * aClass503_10190.anInt6189 == -1) {
-				if (1 != aClass503_10190.size * -2095128707)
+			if (-226722581 * definitions.anInt6192 <= 0) {
+			    if (286060383 * definitions.anInt6189 == -1) {
+				if (1 != definitions.size * -2095128707)
 				    break;
-			    } else if (1 != (aClass503_10190.anInt6189 * 286060383))
+			    } else if (1 != (definitions.anInt6189 * 286060383))
 				break;
 			}
 			bool_67_ = true;
@@ -877,7 +877,7 @@ public class NPC extends Entity {
 		}
 		while (false);
 		boolean bool_68_ = bool_67_;
-		boolean bool_69_ = aClass387Array10082[i_66_].method4787(i, i_65_, class222, bool_68_, ((aClass503_10190.anInt6192) * -226722581));
+		boolean bool_69_ = aClass387Array10082[i_66_].method4787(i, i_65_, class222, bool_68_, ((definitions.anInt6192) * -226722581));
 		if (bool_69_) {
 		    bool = true;
 		    break;

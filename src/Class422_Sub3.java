@@ -104,22 +104,22 @@ public class Class422_Sub3 extends Class422 {
 	try {
 	    int[] is = Class10.anIntArray135;
 	    for (int i_2_ = 0; i_2_ < Class10.anInt129 * 1168366243; i_2_++) {
-		Player class365_sub1_sub1_sub2_sub2 = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[is[i_2_]];
+		Player class365_sub1_sub1_sub2_sub2 = client.players[is[i_2_]];
 		if (class365_sub1_sub1_sub2_sub2 != null)
 		    class365_sub1_sub1_sub2_sub2.method4428(-586581534);
 	    }
-	    for (int i_3_ = 0; i_3_ < -1230451913 * client.anInt8703; i_3_++) {
+	    for (int i_3_ = 0; i_3_ < -1230451913 * client.npcCount; i_3_++) {
 		long l = client.anIntArray8699[i_3_];
-		Class298_Sub29 class298_sub29 = (Class298_Sub29) client.aClass437_8696.method5812(l);
-		if (null == class298_sub29) {
+		LinkableObject linkableObject = (LinkableObject) client.aClass437_8696.method5812(l);
+		if (null == linkableObject) {
 		    if (i == -1062447355)
 			throw new IllegalStateException();
 		} else
-		    ((Entity) class298_sub29.anObject7366).method4428(1089221669);
+		    ((Entity) linkableObject.anObject7366).method4428(1089221669);
 	    }
-	    if (0 == 1596783995 * client.anInt8724) {
-		for (int i_4_ = 0; i_4_ < Class87.aClass94Array794.length; i_4_++) {
-		    Class94 class94 = Class87.aClass94Array794[i_4_];
+	    if (0 == 1596783995 * client.cutsceneStage) {
+		for (int i_4_ = 0; i_4_ < Class87.entities.length; i_4_++) {
+		    Class94 class94 = Class87.entities[i_4_];
 		    if (!class94.aBoolean912) {
 			if (i == -1062447355) {
 			    /* empty */

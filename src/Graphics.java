@@ -11,7 +11,7 @@ public class Graphics {
     public int id = -1313669563;
     public int anInt571;
     public int height;
-    static Class57 aClass57_573;
+    static Sprite aSprite_573;
 
     Graphics(Entity class365_sub1_sub1_sub2) {
 	aClass438_569 = new Class438_Sub2(class365_sub1_sub1_sub2, false);

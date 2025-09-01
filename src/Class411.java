@@ -86,7 +86,7 @@ public class Class411 {
     static void method5577(IComponentDefinition class105, int i) {
 	try {
 	    if (5 == -1215239439 * class105.type && -1 != class105.anInt1280 * -1232467723)
-		Class230.method2125(Class373.aClass_ra4071, class105, -1423422969);
+		Class230.method2125(OverlayType.activeToolkit, class105, -1423422969);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("rb.lz(").append(')').toString());
@@ -153,9 +153,9 @@ public class Class411 {
 	    client.aFloat8949 = (int) (Math.random() * 160.0) - 80 & 0x3fff;
 	    Class21.method369(1944021119);
 	    for (int i_13_ = 0; i_13_ < 2048; i_13_++)
-		client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_13_] = null;
+		client.players[i_13_] = null;
 	    Class287.myPlayer = null;
-	    client.anInt8703 = 0;
+	    client.npcCount = 0;
 	    client.anInt8772 = 0;
 	    client.aClass437_8696.method5811((byte) -7);
 	    client.aClass453_8824.method5943((byte) 1);

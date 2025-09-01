@@ -15,7 +15,7 @@ public class Class82_Sub9 extends Class82 {
     @Override
     public void method866(int i) {
 	try {
-	    Class87.aClass94Array794[this.anInt6858 * -712456741].method1015(975748334).method4415(1246957463 * this.anInt6857, true, -2120305810);
+	    Class87.entities[this.anInt6858 * -712456741].method1015(975748334).method4415(1246957463 * this.anInt6857, true, -2120305810);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("xt.f(").append(')').toString());
@@ -24,12 +24,12 @@ public class Class82_Sub9 extends Class82 {
 
     @Override
     public void method868() {
-	Class87.aClass94Array794[this.anInt6858 * -712456741].method1015(1870651680).method4415(1246957463 * this.anInt6857, true, -841249302);
+	Class87.entities[this.anInt6858 * -712456741].method1015(1870651680).method4415(1246957463 * this.anInt6857, true, -841249302);
     }
 
     @Override
     public void method869() {
-	Class87.aClass94Array794[this.anInt6858 * -712456741].method1015(1351902307).method4415(1246957463 * this.anInt6857, true, -384852587);
+	Class87.entities[this.anInt6858 * -712456741].method1015(1351902307).method4415(1246957463 * this.anInt6857, true, -384852587);
     }
 
     static final void method898(Class403 class403, int i) {
@@ -60,16 +60,16 @@ public class Class82_Sub9 extends Class82 {
 	}
     }
 
-    static final int method901(GraphicsToolkit class_ra, Class373 class373, byte i) {
+    static final int method901(GraphicsToolkit class_ra, OverlayType overlayType, byte i) {
 	try {
-	    if (1728947183 * class373.anInt4059 != -1)
-		return 1728947183 * class373.anInt4059;
-	    if (class373.anInt4057 * 324071475 != -1) {
-		Class53 class53 = class_ra.anInterface_ma5299.method174((class373.anInt4057 * 324071475), 1590345714);
+	    if (1728947183 * overlayType.anInt4059 != -1)
+		return 1728947183 * overlayType.anInt4059;
+	    if (overlayType.anInt4057 * 324071475 != -1) {
+		Class53 class53 = class_ra.anInterface_ma5299.method174((overlayType.anInt4057 * 324071475), 1590345714);
 		if (!class53.aBoolean524)
 		    return class53.aShort532;
 	    }
-	    return -45966925 * class373.anInt4056;
+	    return -45966925 * overlayType.anInt4056;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("xt.e(").append(')').toString());

@@ -58,12 +58,12 @@ public class Class16 {
 		    i_13_ = (int) (i_11_ / f);
 		i += (i_10_ - i_13_) / 2;
 		i_9_ += (i_11_ - i_14_) / 2;
-		if (Class274.aClass57_6539 == null || Class274.aClass57_6539.method623() != i_10_ || Class274.aClass57_6539.method625() != i_11_) {
+		if (Class274.aSprite_6539 == null || Class274.aSprite_6539.method623() != i_10_ || Class274.aSprite_6539.getHeight() != i_11_) {
 		    Class301.method3709(Class301.anInt3245, (Class301.anInt3238 + Class301.anInt3240), (Class301.anInt3245 + Class301.anInt3239), Class301.anInt3238, i, i_9_, i_13_ + i, i_14_ + i_9_);
 		    Class301.method3698(class_ra);
-		    Class274.aClass57_6539 = class_ra.method5033(i, i_9_, i_13_, i_14_, false);
+		    Class274.aSprite_6539 = class_ra.method5033(i, i_9_, i_13_, i_14_, false);
 		}
-		Class274.aClass57_6539.method645(i, i_9_);
+		Class274.aSprite_6539.draw(i, i_9_);
 		int i_15_ = (i_13_ * (1484045541 * Class301_Sub1.anInt7625) / Class301.anInt3239);
 		int i_16_ = (1464638883 * Class413.anInt6590 * i_14_ / Class301.anInt3240);
 		int i_17_ = i + (i_13_ * (Class402.anInt5232 * 331474003) / Class301.anInt3239);

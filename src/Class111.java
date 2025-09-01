@@ -111,7 +111,7 @@ public class Class111 {
 	    Class505 class505 = class105.method1113(Class497.aClass197_6105, client.anInterface10_8700, (byte) 88);
 	    int i_2_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
 	    int i_3_ = (class403.anIntArray5244[((class403.anInt5239 -= -391880689) * 681479919)]);
-	    int i_4_ = class505.method6261(class105.aString1212, class105.anInt1156 * -2093041337, class105.anInt1191 * 418216501, i_3_, i_2_, Class130_Sub2.aClass57Array6959, (byte) -62);
+	    int i_4_ = class505.method6261(class105.aString1212, class105.anInt1156 * -2093041337, class105.anInt1191 * 418216501, i_3_, i_2_, Class130_Sub2.aSpriteArray6959, (byte) -62);
 	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = i_4_;
 	}
 	catch (RuntimeException runtimeexception) {

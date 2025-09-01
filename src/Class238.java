@@ -6,7 +6,7 @@ final class Class238 implements Interface10 {
     @Override
     public Object method131(byte[] is, Class505 class505, boolean bool, int i) {
 	try {
-	    return Class373.aClass_ra4071.method5092(class505, IndexedImage.method982(is), bool);
+	    return OverlayType.activeToolkit.method5092(class505, IndexedImage.method982(is), bool);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("k.a(").append(')').toString());
@@ -15,12 +15,12 @@ final class Class238 implements Interface10 {
 
     @Override
     public Object method130(byte[] is, Class505 class505, boolean bool) {
-	return Class373.aClass_ra4071.method5092(class505, IndexedImage.method982(is), bool);
+	return OverlayType.activeToolkit.method5092(class505, IndexedImage.method982(is), bool);
     }
 
     @Override
     public Object method132(byte[] is, Class505 class505, boolean bool) {
-	return Class373.aClass_ra4071.method5092(class505, IndexedImage.method982(is), bool);
+	return OverlayType.activeToolkit.method5092(class505, IndexedImage.method982(is), bool);
     }
 
     static Class322 method2199(Class365_Sub1_Sub1 class365_sub1_sub1, byte i) {

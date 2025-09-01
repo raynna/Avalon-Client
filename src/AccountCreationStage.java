@@ -5,7 +5,7 @@
 public class AccountCreationStage {
     static AccountCreationStage aClass486_6060 = new AccountCreationStage();
     static AccountCreationStage aClass486_6061 = new AccountCreationStage();
-    public static Class57 aClass57_6062;
+    public static Sprite aSprite_6062;
     static String aString6063;
 
     AccountCreationStage() {

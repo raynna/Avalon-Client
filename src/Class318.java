@@ -94,7 +94,7 @@ public abstract class Class318 {
 	    Class223.method2082(true, -1663847334);
 	    Class117.method1278((byte) 27);
 	    System.gc();
-	    Class373.aClass_ra4071.ba(2, 0);
+	    OverlayType.activeToolkit.ba(2, 0);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("ng.lk(").append(')').toString());

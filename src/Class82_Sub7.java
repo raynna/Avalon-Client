@@ -88,7 +88,7 @@ public class Class82_Sub7 extends Class82 {
 	try {
 	    for (int i_7_ = 0; i_7_ < -1281683379 * Class10.anInt139; i_7_++) {
 		int playerIndex = Class10.anIntArray140[i_7_];
-		Player player = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[playerIndex];
+		Player player = client.players[playerIndex];
 		int mask = stream.readUnsignedByte();
 		if ((mask & 0x2) != 0)
 		    mask += stream.readUnsignedByte() << 8;

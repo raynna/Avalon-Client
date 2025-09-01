@@ -75,8 +75,8 @@ public final class Class94 {
 		    this.aClass365_Sub1_Sub1_Sub2_Sub1_910.anInt10064 = this.anInt906 * 302956801;
 		    this.aClass365_Sub1_Sub1_Sub2_Sub1_910.anInt10075 = client.ticketCycle * -128551287;
 		    this.aClass365_Sub1_Sub1_Sub2_Sub1_910.method4464(Class15.aClass507_224.method6269(anInt909 * 1762367763, 1863267717), 2139515630);
-		    this.aClass365_Sub1_Sub1_Sub2_Sub1_910.method4421(-2095128707 * (this.aClass365_Sub1_Sub1_Sub2_Sub1_910.aClass503_10190.size), -1254496694);
-		    this.aClass365_Sub1_Sub1_Sub2_Sub1_910.anInt10115 = -1186616623 * (((this.aClass365_Sub1_Sub1_Sub2_Sub1_910.aClass503_10190.anInt6181) * -1927065533) << 3);
+		    this.aClass365_Sub1_Sub1_Sub2_Sub1_910.method4421(-2095128707 * (this.aClass365_Sub1_Sub1_Sub2_Sub1_910.definitions.size), -1254496694);
+		    this.aClass365_Sub1_Sub1_Sub2_Sub1_910.anInt10115 = -1186616623 * (((this.aClass365_Sub1_Sub1_Sub2_Sub1_910.definitions.anInt6181) * -1927065533) << 3);
 		    this.aClass365_Sub1_Sub1_Sub2_Sub1_910.anInt10071 = (((Class87.anInt803 += 2029434363) * -132903629 - 1) * -689024993);
 		} else {
 		    this.aClass365_Sub1_Sub1_Sub2_Sub2_911 = (new Player(client.aClass283_8716.method2675(-1611682495), 25));

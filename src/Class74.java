@@ -12,8 +12,8 @@ public class Class74 {
     static int anInt696;
     static int anInt697;
     static int anInt698;
-    static Class57[] aClass57Array699;
-    public static Class57 aClass57_700;
+    static Sprite[] aSpriteArray699;
+    public static Sprite aSprite_700;
 
     Class74() throws Throwable {
 	throw new Error();
@@ -148,9 +148,9 @@ public class Class74 {
 		Class19 class19 = class19s[i_15_];
 		if (class19 != null && 0 != class19.anInt266 * 958933333 && client.ticketCycle * 443738891 % 20 < 10) {
 		    if (1 == 958933333 * class19.anInt266) {
-			Class298_Sub29 class298_sub29 = ((Class298_Sub29) (client.aClass437_8696.method5812(-841622081 * class19.anInt256)));
-			if (null != class298_sub29) {
-			    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class298_sub29.anObject7366);
+			LinkableObject linkableObject = ((LinkableObject) (client.aClass437_8696.method5812(-841622081 * class19.anInt256)));
+			if (null != linkableObject) {
+			    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) linkableObject.anObject7366);
 			    Class217 class217 = (class365_sub1_sub1_sub2_sub1.method4337().aClass217_2599);
 			    int i_16_ = (int) class217.aFloat2451 / 128 - i / 128;
 			    int i_17_ = ((int) class217.aFloat2454 / 128 - i_11_ / 128);
@@ -164,8 +164,8 @@ public class Class74 {
 			l *= l;
 			Class397.method4914(class105, class117, i_12_, i_13_, i_18_, i_19_, (class19.anInt258 * -92466201), l);
 		    }
-		    if (10 == 958933333 * class19.anInt266 && -841622081 * class19.anInt256 >= 0 && (class19.anInt256 * -841622081 < (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805).length)) {
-			Player class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[-841622081 * class19.anInt256]);
+		    if (10 == 958933333 * class19.anInt266 && -841622081 * class19.anInt256 >= 0 && (class19.anInt256 * -841622081 < (client.players).length)) {
+			Player class365_sub1_sub1_sub2_sub2 = (client.players[-841622081 * class19.anInt256]);
 			if (null != class365_sub1_sub1_sub2_sub2) {
 			    Class217 class217 = (class365_sub1_sub1_sub2_sub2.method4337().aClass217_2599);
 			    int i_20_ = (int) class217.aFloat2451 / 128 - i / 128;

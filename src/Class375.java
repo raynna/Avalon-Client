@@ -10,28 +10,28 @@ public class Class375 {
     static int basePlane;
     public static ClanChannel aClass298_Sub25_4084;
 
-    public Class373 method4645(int i, int i_0_) {
+    public OverlayType method4645(int i, int i_0_) {
 	try {
-	    Class373 class373;
+	    OverlayType overlayType;
 	    synchronized (this.aClass348_4079) {
-		class373 = (Class373) this.aClass348_4079.method4184(i);
+		overlayType = (OverlayType) this.aClass348_4079.method4184(i);
 	    }
-	    if (null != class373)
-		return class373;
+	    if (null != overlayType)
+		return overlayType;
 	    byte[] is;
 	    synchronized (this.idx2) {
 		is = (this.idx2.getFile(Class120.aClass120_1439.anInt1460 * -1006924897, i));
 	    }
-	    class373 = new Class373();
-	    class373.aClass375_4065 = this;
-	    class373.anInt4053 = 1723715693 * i;
+	    overlayType = new OverlayType();
+	    overlayType.aClass375_4065 = this;
+	    overlayType.anInt4053 = 1723715693 * i;
 	    if (is != null)
-		class373.method4605(new RsByteBuffer(is), 690302848);
-	    class373.method4603((byte) 75);
+		overlayType.method4605(new RsByteBuffer(is), 690302848);
+	    overlayType.method4603((byte) 75);
 	    synchronized (this.aClass348_4079) {
-		this.aClass348_4079.method4194(class373, i);
+		this.aClass348_4079.put(overlayType, i);
 	    }
-	    return class373;
+	    return overlayType;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("pp.a(").append(')').toString());
@@ -126,7 +126,7 @@ public class Class375 {
     static int method4652(Player class365_sub1_sub1_sub2_sub2, int i) {
 	try {
 	    int i_6_ = 1899133595 * class365_sub1_sub1_sub2_sub2.anInt10211;
-	    Class350 class350 = class365_sub1_sub1_sub2_sub2.method4426(657972326);
+	    Class350 class350 = class365_sub1_sub1_sub2_sub2.getBAS(657972326);
 	    int i_7_ = class365_sub1_sub1_sub2_sub2.aClass438_10077.method5823(1741170329);
 	    if (-1 == i_7_ || class365_sub1_sub1_sub2_sub2.aBoolean10094)
 		i_6_ = 1728220219 * class365_sub1_sub1_sub2_sub2.anInt10194;

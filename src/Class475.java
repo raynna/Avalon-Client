@@ -29,7 +29,7 @@ public class Class475 {
 		class483.method6123(new RsByteBuffer(is), 592135620);
 
 	    synchronized (this.aClass348_5982) {
-		this.aClass348_5982.method4194(class483, id);
+		this.aClass348_5982.put(class483, id);
 	    }
 	    return class483;
 	}

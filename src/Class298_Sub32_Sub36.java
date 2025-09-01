@@ -154,7 +154,7 @@ public class Class298_Sub32_Sub36 extends Class298_Sub32 {
 
     static void method3373(Entity class365_sub1_sub1_sub2, int i, int i_35_, int i_36_, int i_37_) {
 	try {
-	    Class350 class350 = class365_sub1_sub1_sub2.method4426(-1083725964);
+	    Class350 class350 = class365_sub1_sub1_sub2.getBAS(-1083725964);
 	    Class438 class438 = class365_sub1_sub1_sub2.aClass438_10077;
 	    int i_38_ = ((2145248039 * class365_sub1_sub1_sub2.anInt10068 - 259411823 * (class365_sub1_sub1_sub2.aClass386_10084.anInt4144)) & 0x3fff);
 	    if (i == Class282.aClass282_6543.aByte6542) {

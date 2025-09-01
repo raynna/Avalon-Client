@@ -335,9 +335,9 @@ public class Class298_Sub24_Sub3 extends Class298_Sub24 {
 		for (int i_7_ = 0; i_7_ < i_6_; i_7_++)
 		    Class87.aClass75Array805[i_7_] = new Class75(class298_sub53);
 		int i_8_ = class298_sub53.readUnsignedSmart(1723054621);
-		Class87.aClass94Array794 = new Class94[i_8_];
+		Class87.entities = new Class94[i_8_];
 		for (int i_9_ = 0; i_9_ < i_8_; i_9_++)
-		    Class87.aClass94Array794[i_9_] = new Class94(class298_sub53, i_9_);
+		    Class87.entities[i_9_] = new Class94(class298_sub53, i_9_);
 		int i_10_ = class298_sub53.readUnsignedSmart(1723054621);
 		Class87.aClass86Array798 = new Class86[i_10_];
 		for (int i_11_ = 0; i_11_ < i_10_; i_11_++)
@@ -354,7 +354,7 @@ public class Class298_Sub24_Sub3 extends Class298_Sub24 {
 	    }
 	    if (Class118.aClass88_1402 == Class88.aClass88_809) {
 		boolean bool = true;
-		Class94[] class94s = Class87.aClass94Array794;
+		Class94[] class94s = Class87.entities;
 		for (int i_16_ = 0; i_16_ < class94s.length; i_16_++) {
 		    Class94 class94 = class94s[i_16_];
 		    if (!class94.method1019(1510757465))

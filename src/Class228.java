@@ -51,7 +51,7 @@ public class Class228 {
 	    Class87.aClass437_793.method5811((byte) -54);
 	    Class87.aClass453_799.method5943((byte) 1);
 	    Class87.aClass75Array805 = null;
-	    Class87.aClass94Array794 = null;
+	    Class87.entities = null;
 	    Class87.aClass86Array798 = null;
 	    Class87.aClass80Array795 = null;
 	    Class87.aClass82Array797 = null;

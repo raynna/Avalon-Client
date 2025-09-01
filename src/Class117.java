@@ -134,15 +134,15 @@ public class Class117 {
 		int i_15_ = Class10.anInt129 * 1168366243;
 		int[] is = Class10.anIntArray135;
 		for (int i_16_ = 0; i_16_ < i_15_; i_16_++) {
-		    Player class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[is[i_16_]]);
+		    Player class365_sub1_sub1_sub2_sub2 = (client.players[is[i_16_]]);
 		    if (class365_sub1_sub1_sub2_sub2 != null)
 			class365_sub1_sub1_sub2_sub2.method4442(i_13_, i_14_, bool, 1554634008);
 		}
-		for (int i_17_ = 0; i_17_ < client.anInt8703 * -1230451913; i_17_++) {
+		for (int i_17_ = 0; i_17_ < client.npcCount * -1230451913; i_17_++) {
 		    int i_18_ = client.anIntArray8699[i_17_];
-		    Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(i_18_));
-		    if (null != class298_sub29)
-			((Entity) class298_sub29.anObject7366).method4442(i_13_, i_14_, bool, 1554634008);
+		    LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(i_18_));
+		    if (null != linkableObject)
+			((Entity) linkableObject.anObject7366).method4442(i_13_, i_14_, bool, 1554634008);
 		}
 	    }
 	}

@@ -80,11 +80,11 @@ public class Class266 {
 	    if (class365_sub1_sub1_sub2.anInt10090 * 1433412323 != -1) {
 		Entity class365_sub1_sub1_sub2_7_ = null;
 		if (class365_sub1_sub1_sub2.anInt10090 * 1433412323 < 32768) {
-		    Class298_Sub29 class298_sub29 = ((Class298_Sub29) (client.aClass437_8696.method5812(1433412323 * class365_sub1_sub1_sub2.anInt10090)));
-		    if (class298_sub29 != null)
-			class365_sub1_sub1_sub2_7_ = ((Entity) class298_sub29.anObject7366);
+		    LinkableObject linkableObject = ((LinkableObject) (client.aClass437_8696.method5812(1433412323 * class365_sub1_sub1_sub2.anInt10090)));
+		    if (linkableObject != null)
+			class365_sub1_sub1_sub2_7_ = ((Entity) linkableObject.anObject7366);
 		} else if (class365_sub1_sub1_sub2.anInt10090 * 1433412323 >= 32768)
-		    class365_sub1_sub1_sub2_7_ = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[(1433412323 * class365_sub1_sub1_sub2.anInt10090 - 32768)]);
+		    class365_sub1_sub1_sub2_7_ = (client.players[(1433412323 * class365_sub1_sub1_sub2.anInt10090 - 32768)]);
 		if (class365_sub1_sub1_sub2_7_ != null) {
 		    Class217 class217 = Class217.method2011(class365_sub1_sub1_sub2.method4337().aClass217_2599, (class365_sub1_sub1_sub2_7_.method4337().aClass217_2599));
 		    int i_8_ = (int) class217.aFloat2451;

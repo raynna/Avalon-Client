@@ -4,7 +4,7 @@
  */
 import jaggl.OpenGL;
 
-public class Class57_Sub3 extends Class57 {
+public class Sprite_Sub3 extends Sprite {
     int anInt9037;
     Class30_Sub2_Sub1 aClass30_Sub2_Sub1_9038;
     boolean aBoolean9039;
@@ -74,7 +74,7 @@ public class Class57_Sub3 extends Class57 {
 	this.aClass_ra_Sub2_9041.method5255(0);
     }
 
-    Class57_Sub3(Class_ra_Sub2 class_ra_sub2, int i, int i_25_, int i_26_, int i_27_) {
+    Sprite_Sub3(Class_ra_Sub2 class_ra_sub2, int i, int i_25_, int i_26_, int i_27_) {
 	this.aBoolean9039 = false;
 	this.anInt9042 = 0;
 	this.anInt9037 = 0;
@@ -84,7 +84,7 @@ public class Class57_Sub3 extends Class57 {
 	this.aClass30_Sub2_Sub1_9043 = Class30_Sub2_Sub1.method427(class_ra_sub2, i, i_25_, i_26_, i_27_);
     }
 
-    Class57_Sub3(Class_ra_Sub2 class_ra_sub2, int i, int i_28_, int[] is, int i_29_, int i_30_) {
+    Sprite_Sub3(Class_ra_Sub2 class_ra_sub2, int i, int i_28_, int[] is, int i_29_, int i_30_) {
 	this.aBoolean9039 = false;
 	this.anInt9042 = 0;
 	this.anInt9037 = 0;
@@ -122,7 +122,7 @@ public class Class57_Sub3 extends Class57 {
     }
 
     @Override
-    public int method625() {
+    public int getHeight() {
 	return (this.aClass30_Sub2_Sub1_9043.anInt9047);
     }
 
@@ -206,7 +206,7 @@ public class Class57_Sub3 extends Class57 {
 	OpenGL.glPixelTransferf(3355, 0.0F);
     }
 
-    Class57_Sub3(Class_ra_Sub2 class_ra_sub2, int i, int i_66_, boolean bool) {
+    Sprite_Sub3(Class_ra_Sub2 class_ra_sub2, int i, int i_66_, boolean bool) {
 	this.aBoolean9039 = false;
 	this.anInt9042 = 0;
 	this.anInt9037 = 0;

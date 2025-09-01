@@ -468,7 +468,7 @@ public class IndexedImage {
 	/* empty */
     }
 
-    public static IndexedImage[] method993(Class243 class243, int i, int i_128_) {
+    public static IndexedImage[] load(Class243 class243, int i, int i_128_) {
 	byte[] is = class243.getFile(i, i_128_);
 	if (is == null)
 	    return null;

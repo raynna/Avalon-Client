@@ -74,7 +74,7 @@ public class Class356 {
 	    IComponentDefinition class105 = class390.aClass105_4168;
 	    int i_2_ = -1;
 	    int i_3_ = -1;
-	    Class117 class117 = class105.method1116(Class373.aClass_ra4071, 193353438);
+	    Class117 class117 = class105.method1116(OverlayType.activeToolkit, 193353438);
 	    if (class117 != null) {
 		i_2_ = class117.anInt1393 * 1633695381;
 		i_3_ = class117.anInt1394 * -60174999;

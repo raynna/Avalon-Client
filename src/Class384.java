@@ -3,7 +3,7 @@
  */
 
 public class Class384 {
-    static Class57 aClass57_4127;
+    static Sprite aSprite_4127;
     public static int anInt4128;
 
     Class384() throws Throwable {

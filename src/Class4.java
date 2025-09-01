@@ -15,7 +15,7 @@ public class Class4 {
     static int anInt70 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7".length();
     static int[] anIntArray71 = new int[256];
     boolean aBoolean72 = false;
-    Class57[] aClass57Array73;
+    Sprite[] aSpriteArray73;
     int anInt74;
     static String aString75 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"\u00a3$%^&*()-_=+[{]};:'@#~,<.>/?\\| \u00c4\u00cb\u00cf\u00d6\u00dc\u00e4\u00eb\u00ef\u00f6\u00fc\u00ff\u00df\u00c1\u00c0\u00c9\u00c8\u00cd\u00cc\u00d3\u00d2\u00da\u00d9\u00e1\u00e0\u00e9\u00e8\u00ed\u00ec\u00f3\u00f2\u00fa\u00f9\u00c2\u00ca\u00ce\u00d4\u00db\u00e2\u00ea\u00ee\u00f4\u00fb\u00c6\u00e6\u00e3\u00c3\u00f5\u00d5\u00e7\u00c7";
     int anInt76;
@@ -28,8 +28,8 @@ public class Class4 {
 	for (int i_2_ = 0; i_2_ < string.length(); i_2_++) {
 	    int i_3_ = anIntArray71[string.charAt(i_2_)];
 	    if (bool)
-		this.aClass57Array73[i_3_].method631(i + 1, i_0_ + 1, 0, -16777216, 1);
-	    this.aClass57Array73[i_3_].method631(i, i_0_, 0, i_1_, 1);
+		this.aSpriteArray73[i_3_].method631(i + 1, i_0_ + 1, 0, -16777216, 1);
+	    this.aSpriteArray73[i_3_].method631(i, i_0_, 0, i_1_, 1);
 	    i += this.anIntArray69[i_3_];
 	}
     }
@@ -87,7 +87,7 @@ public class Class4 {
 	this.anInt76 = i_6_ - i_9_;
 	this.anInt74 = i_8_;
 	this.anIntArray69[i] = i_5_;
-	this.aClass57Array73[i] = class_ra.method5031(is, 0, i_4_, i_4_, i_7_, -939201391);
+	this.aSpriteArray73[i] = class_ra.method5031(is, 0, i_4_, i_4_, i_7_, -939201391);
     }
 
     int method306() {
@@ -105,7 +105,7 @@ public class Class4 {
 
     Class4(GraphicsToolkit class_ra, int i, boolean bool, Component component) {
 	this.aBoolean72 = false;
-	this.aClass57Array73 = new Class57[256];
+	this.aSpriteArray73 = new Sprite[256];
 	this.anIntArray69 = new int[256];
 	Font font = new Font("Helvetica", bool ? 1 : 0, i);
 	FontMetrics fontmetrics = component.getFontMetrics(font);

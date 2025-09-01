@@ -7,13 +7,13 @@ public class Class82_Sub1 extends Class82 {
 
     @Override
     public void method869() {
-	Class87.aClass94Array794[812968099 * this.anInt6816].method1016((byte) 46);
+	Class87.entities[812968099 * this.anInt6816].method1016((byte) 46);
     }
 
     @Override
     public void method866(int i) {
 	try {
-	    Class87.aClass94Array794[812968099 * this.anInt6816].method1016((byte) 15);
+	    Class87.entities[812968099 * this.anInt6816].method1016((byte) 15);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("xb.f(").append(')').toString());
@@ -27,7 +27,7 @@ public class Class82_Sub1 extends Class82 {
 
     @Override
     public void method868() {
-	Class87.aClass94Array794[812968099 * this.anInt6816].method1016((byte) 66);
+	Class87.entities[812968099 * this.anInt6816].method1016((byte) 66);
     }
 
     public static void method877(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_) {

@@ -2,10 +2,10 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public class Class298_Sub29 extends Class298 {
+public class LinkableObject extends Class298 {
     public Object anObject7366;
 
-    public Class298_Sub29(Object object) {
+    public LinkableObject(Object object) {
 	anObject7366 = object;
     }
 

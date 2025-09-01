@@ -483,13 +483,13 @@ public class Class365_Sub1_Sub5_Sub2 extends Class365_Sub1_Sub5 implements Inter
 	try {
 	    while_108_: do {
 		if (i == 0) {
-		    Class373.aClass_ra4071 = Class523.method6334(0, Class52_Sub2_Sub1.aCanvas9079, Class253.anInterface_ma2785, Class82_Sub6.aClass243_6844, Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub13_7550.method5675(-497177413) * 2, -659449737);
+		    OverlayType.activeToolkit = Class523.method6334(0, Class52_Sub2_Sub1.aCanvas9079, Class253.anInterface_ma2785, Class82_Sub6.aClass243_6844, Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub13_7550.method5675(-497177413) * 2, -659449737);
 		    if (null != string) {
-			Class373.aClass_ra4071.ba(1, 0);
+			OverlayType.activeToolkit.ba(1, 0);
 			Class505 class505 = Class322.method3931(Class173.aClass243_1758, (Class74.anInt690 * 1178461027), 0, (byte) 84);
-			Class264 class264 = (Class373.aClass_ra4071.method5092(class505, IndexedImage.method993(Class158.idx8, (1178461027 * Class74.anInt690), 0), true));
+			Class264 class264 = (OverlayType.activeToolkit.method5092(class505, IndexedImage.load(Class158.idx8, (1178461027 * Class74.anInt690), 0), true));
 			Class148.method1614((byte) 42);
-			Class139.method1548(string, true, Class373.aClass_ra4071, class264, class505, (byte) -38);
+			Class139.method1548(string, true, OverlayType.activeToolkit, class264, class505, (byte) -38);
 		    }
 		} else {
 		    GraphicsToolkit class_ra = null;
@@ -497,22 +497,22 @@ public class Class365_Sub1_Sub5_Sub2 extends Class365_Sub1_Sub5 implements Inter
 			class_ra = Class523.method6334(0, (Class52_Sub2_Sub1.aCanvas9079), Class253.anInterface_ma2785, Class82_Sub6.aClass243_6844, 0, -199455021);
 			class_ra.ba(1, 0);
 			Class505 class505 = Class322.method3931(Class173.aClass243_1758, (Class74.anInt690 * 1178461027), 0, (byte) 29);
-			Class264 class264 = (class_ra.method5092(class505, IndexedImage.method993(Class158.idx8, (Class74.anInt690 * 1178461027), 0), true));
+			Class264 class264 = (class_ra.method5092(class505, IndexedImage.load(Class158.idx8, (Class74.anInt690 * 1178461027), 0), true));
 			Class148.method1614((byte) 9);
 			Class139.method1548(string, true, class_ra, class264, class505, (byte) 53);
 		    }
 		    do {
 			try {
 			    try {
-				Class373.aClass_ra4071 = (Class523.method6334(i, Class52_Sub2_Sub1.aCanvas9079, Class253.anInterface_ma2785, Class82_Sub6.aClass243_6844, Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub13_7550.method5675(-1644099824) * 2, 1353555803));
+				OverlayType.activeToolkit = (Class523.method6334(i, Class52_Sub2_Sub1.aCanvas9079, Class253.anInterface_ma2785, Class82_Sub6.aClass243_6844, Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub13_7550.method5675(-1644099824) * 2, 1353555803));
 				if (string != null) {
 				    class_ra.ba(1, 0);
 				    Class505 class505 = (Class322.method3931(Class173.aClass243_1758, Class74.anInt690 * 1178461027, 0, (byte) 32));
-				    Class264 class264 = (class_ra.method5092(class505, (IndexedImage.method993(Class158.idx8, Class74.anInt690 * 1178461027, 0)), true));
+				    Class264 class264 = (class_ra.method5092(class505, (IndexedImage.load(Class158.idx8, Class74.anInt690 * 1178461027, 0)), true));
 				    Class148.method1614((byte) 0);
 				    Class139.method1548(string, true, class_ra, class264, class505, (byte) -21);
 				}
-				if (Class373.aClass_ra4071.method5001()) {
+				if (OverlayType.activeToolkit.method5001()) {
 				    boolean bool_27_ = true;
 				    try {
 					bool_27_ = (Class12.aClass298_Sub44_9946.cpuClockSpeed) * 399637415 > 256;
@@ -522,10 +522,10 @@ public class Class365_Sub1_Sub5_Sub2 extends Class365_Sub1_Sub5 implements Inter
 				    }
 				    Class_v class_v;
 				    if (bool_27_)
-					class_v = Class373.aClass_ra4071.method5026(146800640);
+					class_v = OverlayType.activeToolkit.method5026(146800640);
 				    else
-					class_v = Class373.aClass_ra4071.method5026(104857600);
-				    Class373.aClass_ra4071.method5027(class_v);
+					class_v = OverlayType.activeToolkit.method5026(104857600);
+				    OverlayType.activeToolkit.method5027(class_v);
 				}
 			    }
 			    catch (Throwable throwable) {
@@ -577,18 +577,18 @@ public class Class365_Sub1_Sub5_Sub2 extends Class365_Sub1_Sub5 implements Inter
 	    if (!bool)
 		Class422_Sub25.aClass298_Sub48_8425.method3539(Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub14_7571, !bool, -1748771368);
 	    Class513.method6293(-707841245);
-	    Class373.aClass_ra4071.method5169(10000);
-	    Class373.aClass_ra4071.J(32);
+	    OverlayType.activeToolkit.method5169(10000);
+	    OverlayType.activeToolkit.J(32);
 	    client.aClass283_8716.method2648(-818859939);
-	    Class373.aClass_ra4071.method5047(false);
-	    if (Class373.aClass_ra4071.method5050())
+	    OverlayType.activeToolkit.method5047(false);
+	    if (OverlayType.activeToolkit.method5050())
 		Class365_Sub1_Sub5_Sub1.method4525(Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub6_7551.method5647(-1411340111) == 1, -1054485931);
 	    client.aClass283_8716.method2647(526823496);
 	    client.aClass283_8716.method2640((byte) 64).method4324(-1897479103);
 	    client.aBoolean8666 = false;
 	    client.aBoolean8676 = true;
 	    Class100.aClass456Array1080 = null;
-	    Class373.aClass_ra4071.GA(0.0F, 1.0F);
+	    OverlayType.activeToolkit.GA(0.0F, 1.0F);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("wr.fe(").append(')').toString());
@@ -697,7 +697,7 @@ public class Class365_Sub1_Sub5_Sub2 extends Class365_Sub1_Sub5 implements Inter
 	    Class10.anInt130 = 0;
 	    for (int i_43_ = 1; i_43_ < 2048; i_43_++) {
 		// Class10.slotFlags[i_43_] >>= 1;
-		Player class365_sub1_sub1_sub2_sub2 = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_43_];
+		Player class365_sub1_sub1_sub2_sub2 = client.players[i_43_];
 		if (null != class365_sub1_sub1_sub2_sub2)
 		    Class10.anIntArray135[(Class10.anInt129 += -656365301) * 1168366243 - 1] = i_43_;
 		else

@@ -22,7 +22,7 @@ public class Class367 {
     public int anInt3998;
     public static Class367 aClass367_3999 = new Class367(1, 2, 2, 0);
     public static int anInt4000;
-    public static Class57 aClass57_4001;
+    public static Sprite aSprite_4001;
 
     Class367(int i, int i_0_, int i_1_, int i_2_) {
 	anInt3996 = i * 1137854245;
@@ -75,16 +75,16 @@ public class Class367 {
 
     static void method4551(IComponentDefinition class105, int i, int i_5_, int i_6_) {
 	try {
-	    Class117 class117 = class105.method1116(Class373.aClass_ra4071, 1629882987);
+	    Class117 class117 = class105.method1116(OverlayType.activeToolkit, 1629882987);
 	    if (null != class117) {
-		Class373.aClass_ra4071.r(i, i_5_, -2093041337 * class105.anInt1156 + i, (i_5_ + class105.anInt1162 * 457937409));
+		OverlayType.activeToolkit.r(i, i_5_, -2093041337 * class105.anInt1156 + i, (i_5_ + class105.anInt1162 * 457937409));
 		if (Class3.anInt56 * -64305285 < 3) {
 		    int i_7_ = (int) -client.aFloat8949;
 		    i_7_ = i_7_ + -1840255270 * client.anInt8801 & 0x3fff;
 		    i_7_ <<= 2;
-		    Class144.aClass57_1562.method639((i + class105.anInt1156 * -2093041337 / 2.0F), (i_5_ + class105.anInt1162 * 457937409 / 2.0F), 4135, i_7_, class117.aClass_ta1397, i, i_5_);
+		    Class144.aSprite_1562.method639((i + class105.anInt1156 * -2093041337 / 2.0F), (i_5_ + class105.anInt1162 * 457937409 / 2.0F), 4135, i_7_, class117.aClass_ta1397, i, i_5_);
 		} else
-		    Class373.aClass_ra4071.DA(-16777216, class117.aClass_ta1397, i, i_5_);
+		    OverlayType.activeToolkit.DA(-16777216, class117.aClass_ta1397, i, i_5_);
 	    }
 	}
 	catch (RuntimeException runtimeexception) {

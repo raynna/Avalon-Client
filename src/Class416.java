@@ -10,7 +10,7 @@ public class Class416 {
     public static int[] anIntArray5331;
     static byte[][] aByteArrayArray5332;
     static byte[][] aByteArrayArray5333;
-    static Class57[] aClass57Array5334;
+    static Sprite[] aSpriteArray5334;
 
     public static synchronized byte[] method5589(int i, short i_0_) {
 	try {

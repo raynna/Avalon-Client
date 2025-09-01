@@ -172,15 +172,15 @@ public final class HashTable implements Iterable {
 		    if (i_23_ == -442628795 * client.playerIndex)
 			class365_sub1_sub1_sub2 = Class287.myPlayer;
 		    else
-			class365_sub1_sub1_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_23_]);
+			class365_sub1_sub1_sub2 = (client.players[i_23_]);
 		} else {
 		    int i_24_ = i_9_ - 1;
-		    Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(i_24_));
-		    if (class298_sub29 != null)
-			class365_sub1_sub1_sub2 = ((Entity) class298_sub29.anObject7366);
+		    LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(i_24_));
+		    if (linkableObject != null)
+			class365_sub1_sub1_sub2 = ((Entity) linkableObject.anObject7366);
 		}
 		if (class365_sub1_sub1_sub2 != null) {
-		    Class350 class350 = class365_sub1_sub1_sub2.method4426(95049522);
+		    Class350 class350 = class365_sub1_sub1_sub2.getBAS(95049522);
 		    if (null != class350.anIntArrayArray3710 && null != class350.anIntArrayArray3710[i_11_])
 			i_12_ -= class350.anIntArrayArray3710[i_11_][1];
 		    if (class350.anIntArrayArray3753 != null && null != class350.anIntArrayArray3753[i_11_])

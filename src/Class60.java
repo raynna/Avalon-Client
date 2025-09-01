@@ -57,7 +57,7 @@ public class Class60 {
 	try {
 	    ObjectDefinitions class432 = (this.aClass433_585.getObjectDefinitions(1686561661 * this.anInt601));
 	    if (class432.anIntArray5366 != null)
-		class432 = class432.method5777((0 == 1596783995 * client.anInt8724 ? (Interface23) (Class87.anInterface23_796) : Class128.aClass148_6331), 1333630702);
+		class432 = class432.method5777((0 == 1596783995 * client.cutsceneStage ? (Interface23) (Class87.anInterface23_796) : Class128.aClass148_6331), 1333630702);
 	    if (class432 == null) {
 		method707(class_ra, -475225909);
 		this.anInt595 = -1646192771;
@@ -145,7 +145,7 @@ public class Class60 {
 	    if ((this.aClass351_602 == null || this.aClass351_602.aBoolean3772) && (null != class85s || class68s != null)) {
 		ObjectDefinitions class432 = (this.aClass433_585.getObjectDefinitions(1686561661 * this.anInt601));
 		if (class432.anIntArray5366 != null)
-		    class432 = (class432.method5777((client.anInt8724 * 1596783995 == 0 ? (Interface23) Class87.anInterface23_796 : Class128.aClass148_6331), 1897177328));
+		    class432 = (class432.method5777((client.cutsceneStage * 1596783995 == 0 ? (Interface23) Class87.anInterface23_796 : Class128.aClass148_6331), 1897177328));
 		if (null != class432)
 		    this.aClass351_602 = Class351.method4232(client.ticketCycle * 443738891, true);
 	    }
@@ -219,7 +219,7 @@ public class Class60 {
 		ObjectDefinitions class432 = (this.aClass433_585.getObjectDefinitions(this.anInt601 * 1686561661));
 		ObjectDefinitions class432_16_ = class432;
 		if (class432.anIntArray5366 != null)
-		    class432 = (class432.method5777((1596783995 * client.anInt8724 == 0 ? (Interface23) Class87.anInterface23_796 : Class128.aClass148_6331), 1802349433));
+		    class432 = (class432.method5777((1596783995 * client.cutsceneStage == 0 ? (Interface23) Class87.anInterface23_796 : Class128.aClass148_6331), 1802349433));
 		if (class432 == null)
 		    return;
 		if (class432 == class432_16_)

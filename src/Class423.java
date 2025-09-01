@@ -9,7 +9,7 @@ public class Class423 {
     static int anInt5353 = 4096;
     static HashTable aClass437_5354 = new HashTable(4);
     static Socket aSocket5355;
-    public static Class57 aClass57_5356;
+    public static Sprite aSprite_5356;
 
     static {
 	aClass431_5352 = new Class431();
@@ -32,7 +32,7 @@ public class Class423 {
 	    Class301.method3691();
 	    Class301.aClass453_3236.method5943((byte) 1);
 	    Class301.aClass296_3235 = null;
-	    Class274.aClass57_6539 = null;
+	    Class274.aSprite_6539 = null;
 	    Class301_Sub1.anInt7632 = 433609607;
 	    Class301_Sub1.anInt7627 = 789877945;
 	    Class381.aClass4_4119 = null;

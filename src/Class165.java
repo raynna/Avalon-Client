@@ -107,7 +107,7 @@ public class Class165 implements Interface5 {
 	    IComponentDefinition class105 = Class50.getIComponentDefinitions(i_12_, (byte) -27);
 	    int i_13_ = -1;
 	    int i_14_ = -1;
-	    Class117 class117 = class105.method1116(Class373.aClass_ra4071, 1559428350);
+	    Class117 class117 = class105.method1116(OverlayType.activeToolkit, 1559428350);
 	    if (null != class117) {
 		i_13_ = class117.anInt1393 * 1633695381;
 		i_14_ = -60174999 * class117.anInt1394;

@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public class Class57_Sub1_Sub3 extends Class57_Sub1 {
+public class Sprite_Sub1_Sub3 extends Sprite_Sub1 {
     byte[] aByteArray9967;
     int[] anIntArray9968;
 
@@ -9872,7 +9872,7 @@ public class Class57_Sub1_Sub3 extends Class57_Sub1 {
 	}
     }
 
-    Class57_Sub1_Sub3(Class_ra_Sub1 class_ra_sub1, byte[] is, int[] is_3735_, int i, int i_3736_) {
+    Sprite_Sub1_Sub3(Class_ra_Sub1 class_ra_sub1, byte[] is, int[] is_3735_, int i, int i_3736_) {
 	super(class_ra_sub1, i, i_3736_);
 	this.aByteArray9967 = is;
 	this.anIntArray9968 = is_3735_;

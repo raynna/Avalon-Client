@@ -242,16 +242,16 @@ public class Class248 implements Runnable {
 			class_ra.method5022(is[is.length - 2], is[is.length - 1], is[0], is[1], (class352.anIntArray3814[(class352.aByteArray3777[(class352.aByteArray3777.length - 1)]) & 0xff]), 1, class_ta, i, i_6_);
 		    }
 		}
-		Class57 class57 = null;
+		Sprite sprite = null;
 		if (-1 != class352.anInt3785 * 715019623) {
-		    class57 = class352.method4238(class_ra, false, -98402151);
-		    if (null != class57)
-			Class443.method5883(class105, class_ta, i, i_6_, i_7_, i_8_, class57, (byte) -86);
+		    sprite = class352.method4238(class_ra, false, -98402151);
+		    if (null != sprite)
+			Class443.method5883(class105, class_ta, i, i_6_, i_7_, i_8_, sprite, (byte) -86);
 		}
 		if (class352.aString3792 != null) {
 		    int i_31_ = 0;
-		    if (null != class57)
-			i_31_ = class57.method625();
+		    if (null != sprite)
+			i_31_ = sprite.getHeight();
 		    Class264 class264 = ScriptEnvironment.aClass264_7534;
 		    Class505 class505 = Class74.aClass505_695;
 		    if (class352.anInt3783 * 1023000389 == 1) {
@@ -260,7 +260,7 @@ public class Class248 implements Runnable {
 		    }
 		    if (class352.anInt3783 * 1023000389 == 2) {
 			class264 = Class101.aClass264_1084;
-			class505 = Class82_Sub19_Sub1.aClass505_9111;
+			class505 = Class82_Sub19_Sub1.aFontSpecification_9111;
 		    }
 		    Class358.method4290(class105, class_ta, i, i_6_, i_7_, i_8_, i_31_, class352.aString3792, class264, class505, -1836991893 * class352.anInt3781, 1768300509);
 		}

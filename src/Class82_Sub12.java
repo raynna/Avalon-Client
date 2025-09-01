@@ -13,7 +13,7 @@ public class Class82_Sub12 extends Class82 {
     @Override
     public void method866(int i) {
 	try {
-	    Class87.aClass94Array794[this.anInt6862 * -2006974637].method1018(this.anInt6863 * -101561809, 381156897 * this.anInt6867, this.anInt6865 * -371026667, this.anInt6866 * -1672595375, -1330038095);
+	    Class87.entities[this.anInt6862 * -2006974637].method1018(this.anInt6863 * -101561809, 381156897 * this.anInt6867, this.anInt6865 * -371026667, this.anInt6866 * -1672595375, -1330038095);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("xy.f(").append(')').toString());
@@ -22,7 +22,7 @@ public class Class82_Sub12 extends Class82 {
 
     @Override
     public void method869() {
-	Class87.aClass94Array794[this.anInt6862 * -2006974637].method1018(this.anInt6863 * -101561809, 381156897 * this.anInt6867, this.anInt6865 * -371026667, this.anInt6866 * -1672595375, -755082394);
+	Class87.entities[this.anInt6862 * -2006974637].method1018(this.anInt6863 * -101561809, 381156897 * this.anInt6867, this.anInt6865 * -371026667, this.anInt6866 * -1672595375, -755082394);
     }
 
     Class82_Sub12(RsByteBuffer class298_sub53) {
@@ -37,7 +37,7 @@ public class Class82_Sub12 extends Class82 {
 
     @Override
     public void method868() {
-	Class87.aClass94Array794[this.anInt6862 * -2006974637].method1018(this.anInt6863 * -101561809, 381156897 * this.anInt6867, this.anInt6865 * -371026667, this.anInt6866 * -1672595375, -2023756610);
+	Class87.entities[this.anInt6862 * -2006974637].method1018(this.anInt6863 * -101561809, 381156897 * this.anInt6867, this.anInt6865 * -371026667, this.anInt6866 * -1672595375, -2023756610);
     }
 
     public static void method909(String string, int i) {
@@ -47,7 +47,7 @@ public class Class82_Sub12 extends Class82 {
 		int i_0_ = 1168366243 * Class10.anInt129;
 		int[] is = Class10.anIntArray135;
 		for (int i_1_ = 0; i_1_ < i_0_; i_1_++) {
-		    Player class365_sub1_sub1_sub2_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[is[i_1_]]);
+		    Player class365_sub1_sub1_sub2_sub2 = (client.players[is[i_1_]]);
 		    if (class365_sub1_sub1_sub2_sub2.aString10195 != null && class365_sub1_sub1_sub2_sub2.aString10195.equalsIgnoreCase(string) && (((class365_sub1_sub1_sub2_sub2 == Class287.myPlayer) && 0 != (Class298.anInt3192 * -112110875 & 0x10)) || 0 != (-112110875 * Class298.anInt3192 & 0x8))) {
 			Class298_Sub36 class298_sub36 = Class18.method359(OutcommingPacket.INTERFACE_ON_PLAYER, (client.aClass25_8711.aClass449_330), (byte) 25);
 			class298_sub36.out.writeShort(client.anInt8906 * 1408085039, 16711935);

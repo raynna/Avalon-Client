@@ -33,7 +33,7 @@ public class Class61 {
 	    class30_sub2 = new Class30_Sub2(this.aClass_ra_Sub2_606, 3553, Class55.aClass55_557, Class77.aClass77_714, i_0_, i_0_, class53.aByte537 != 0, fs, Class55.aClass55_557);
 	}
 	class30_sub2.method420(class53.aBoolean540, class53.aBoolean541);
-	this.aClass348_605.method4194(class30_sub2, i);
+	this.aClass348_605.put(class30_sub2, i);
 	return class30_sub2;
     }
 

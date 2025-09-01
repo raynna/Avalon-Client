@@ -123,12 +123,12 @@ public class Class251 {
 	    int i_8_ = -933698717 * client.anInt8784;
 	    int i_9_ = 1036219865 * client.anInt8785;
 	    if (1 == client.anInt8748 * -392325587) {
-		Class57 class57 = (Class82_Sub11.aClass57Array6861[client.anInt8786 * 1347929875 / 100]);
-		class57.method645(i_8_ - 8, i_9_ - 8);
+		Sprite sprite = (Class82_Sub11.aSpriteArray6861[client.anInt8786 * 1347929875 / 100]);
+		sprite.draw(i_8_ - 8, i_9_ - 8);
 	    }
 	    if (2 == client.anInt8748 * -392325587) {
-		Class57 class57 = (Class82_Sub11.aClass57Array6861[4 + client.anInt8786 * 1347929875 / 100]);
-		class57.method645(i_8_ - 8, i_9_ - 8);
+		Sprite sprite = (Class82_Sub11.aSpriteArray6861[4 + client.anInt8786 * 1347929875 / 100]);
+		sprite.draw(i_8_ - 8, i_9_ - 8);
 	    }
 	}
 	catch (RuntimeException runtimeexception) {

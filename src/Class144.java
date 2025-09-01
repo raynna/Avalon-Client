@@ -6,7 +6,7 @@ public class Class144 {
     Class243 idx2;
     Class243 aClass243_1560;
     Class348 aClass348_1561 = new Class348(64);
-    static Class57 aClass57_1562;
+    static Sprite aSprite_1562;
     public static Class381 aClass381_1563;
 
     public Class132 method1579(int i, int i_0_) {
@@ -26,7 +26,7 @@ public class Class144 {
 	    if (is != null)
 		class132.method1472(new RsByteBuffer(is), 1546025245);
 	    synchronized (this.aClass348_1561) {
-		this.aClass348_1561.method4194(class132, i);
+		this.aClass348_1561.put(class132, i);
 	    }
 	    return class132;
 	}
@@ -108,9 +108,9 @@ public class Class144 {
     static final void method1586(Class403 class403, int i) {
 	try {
 	    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class403.aClass365_Sub1_Sub1_Sub2_5242);
-	    NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.aClass503_10190;
-	    if (class503.anIntArray6188 != null)
-		class503 = class503.method6240(Class128.aClass148_6331, 1999627505);
+	    NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.definitions;
+	    if (class503.morphisms != null)
+		class503 = class503.morph(Class128.aClass148_6331, 1999627505);
 	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = class503 != null ? 1 : 0;
 	}
 	catch (RuntimeException runtimeexception) {

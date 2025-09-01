@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public class fa extends Class57 implements Interface25, Interface8_Impl1_Impl1 {
+public class fa extends Sprite implements Interface25, Interface8_Impl1_Impl1 {
     boolean aBoolean8978 = false;
     long nativeid;
 
@@ -78,7 +78,7 @@ public class fa extends Class57 implements Interface25, Interface8_Impl1_Impl1 {
     }
 
     @Override
-    public int method625() {
+    public int getHeight() {
 	return GA(this.nativeid);
     }
 

@@ -712,7 +712,7 @@ public class Class249 implements Interface_ma {
 		    Class_v.method3671(class403, 629926500);
 		    break;
 		case 444:
-		    Class373.method4609(class403, -2139639407);
+		    OverlayType.method4609(class403, -2139639407);
 		    break;
 		case 553:
 		    Class360.method4298(class403, (byte) 24);
@@ -1063,7 +1063,7 @@ public class Class249 implements Interface_ma {
 		    Class62.method726(class403, 583840352);
 		    break;
 		case 149:
-		    Class373.method4607(class403, (byte) -28);
+		    OverlayType.method4607(class403, (byte) -28);
 		    break;
 		case 576:
 		    Class53.method600(class403, (byte) -100);
@@ -1498,7 +1498,7 @@ public class Class249 implements Interface_ma {
 		    Class100.method1076(class403, 256135967);
 		    break;
 		case 44:
-		    Class373.method4611(class403, -1861936891);
+		    OverlayType.method4611(class403, -1861936891);
 		    break;
 		case 547:
 		    Class256.method2442(class403, 1279201719);
@@ -1726,7 +1726,7 @@ public class Class249 implements Interface_ma {
 		    Class515.method6298(class403, 1657034884);
 		    break;
 		case 740:
-		    Class373.method4608(class403, -1666187924);
+		    OverlayType.method4608(class403, -1666187924);
 		    break;
 		case 715:
 		    Class496.method6203(class403, 1254374330);
@@ -2296,7 +2296,7 @@ public class Class249 implements Interface_ma {
 		    Class19.method363(class403, (byte) 25);
 		    break;
 		case 375:
-		    Class298_Sub29.method3111(class403, (byte) 0);
+		    LinkableObject.method3111(class403, (byte) 0);
 		    break;
 		case 904:
 		    Class221.method2051(class403, 1844978034);

@@ -61,11 +61,11 @@ public class Class368 {
 
     static void method4556(GraphicsToolkit class_ra, Class298_Sub52 class298_sub52, Class352 class352, int i) {
 	try {
-	    Class57 class57 = class352.method4240(class_ra, 774929674);
-	    if (class57 != null) {
-		int i_5_ = class57.method623();
-		if (class57.method625() > i_5_)
-		    i_5_ = class57.method625();
+	    Sprite sprite = class352.method4240(class_ra, 774929674);
+	    if (sprite != null) {
+		int i_5_ = sprite.method623();
+		if (sprite.getHeight() > i_5_)
+		    i_5_ = sprite.getHeight();
 		int i_6_ = 10;
 		int i_7_ = 1333098669 * class298_sub52.anInt7609;
 		int i_8_ = class298_sub52.anInt7606 * -685779893;
@@ -101,7 +101,7 @@ public class Class368 {
 		    i_15_ = Class301.anInt3257 - i_5_ / 2 - i_6_ - i_11_;
 		}
 		int i_16_ = ((int) (Math.atan2(i_7_ - (1333098669 * (class298_sub52.anInt7609)), i_8_ - (class298_sub52.anInt7606 * -685779893)) / 3.141592653589793 * 32767.0) & 0xffff);
-		class57.method673(i_7_ + i_5_ / 2.0F, i_5_ / 2.0F + i_8_, 4096, i_16_);
+		sprite.method673(i_7_ + i_5_ / 2.0F, i_5_ / 2.0F + i_8_, 4096, i_16_);
 		int i_17_ = -2;
 		int i_18_ = -2;
 		int i_19_ = -2;

@@ -56,7 +56,7 @@ public class Class492 {
 		return class89;
 	    class89 = IndexedImage.method987((this.aClass491_6082.aClass243_6077), 1338052859 * this.anInt6083, 0);
 	    if (class89 != null)
-		this.aClass491_6082.aClass348_6078.method4194(class89, 1338052859 * this.anInt6083);
+		this.aClass491_6082.aClass348_6078.put(class89, 1338052859 * this.anInt6083);
 	    return class89;
 	}
 	catch (RuntimeException runtimeexception) {
@@ -80,10 +80,10 @@ public class Class492 {
 		    } else {
 			Class139.method1549((class19.anInt259 * -458864019), -1338192389 * class19.anInt260, 1018128075 * class19.anInt261, (class19.anInt262 * 143254950), -549885479);
 			if (client.aFloatArray8891[0] > -1.0F && 443738891 * client.ticketCycle % 20 < 10) {
-			    Class57 class57 = (Class128_Sub2.aClass57Array8560[-92466201 * class19.anInt258]);
+			    Sprite sprite = (Class128_Sub2.aSpriteArray8560[-92466201 * class19.anInt258]);
 			    int i_9_ = (int) (i + client.aFloatArray8891[0] - 12.0F);
 			    int i_10_ = (int) (i_2_ + client.aFloatArray8891[1] - 28.0F);
-			    class57.method645(i_9_, i_10_);
+			    sprite.draw(i_9_, i_10_);
 			}
 		    }
 		}

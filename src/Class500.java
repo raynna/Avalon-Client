@@ -57,7 +57,7 @@ public class Class500 {
 	    if (bool)
 		Class10.anIntArray140[(Class10.anInt139 += 867608709) * -1281683379 - 1] = i;
 	    int i_2_ = class298_sub53_sub2.readBits(2);
-	    Player class365_sub1_sub1_sub2_sub2 = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i];
+	    Player class365_sub1_sub1_sub2_sub2 = client.players[i];
 	    if (0 == i_2_) {
 		if (bool)
 		    class365_sub1_sub1_sub2_sub2.aBoolean10217 = false;
@@ -75,7 +75,7 @@ public class Class500 {
 		    class410.aBoolean5289 = class365_sub1_sub1_sub2_sub2.aBoolean10222;
 		    if (class365_sub1_sub1_sub2_sub2.anInt10214 * 780357347 > 0)
 			Class_v.method3670(class365_sub1_sub1_sub2_sub2, (byte) -66);
-		    client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i] = null;
+		    client.players[i] = null;
 		    if (class298_sub53_sub2.readBits(1) != 0)
 			Class501.method6229(class298_sub53_sub2, i, 2107350837);
 		}

@@ -100,7 +100,7 @@ public class Class62 {
     static int method728(Class298_Sub37_Sub5 class298_sub37_sub5, Class505 class505, int i) {
 	try {
 	    String string = Class346.method4174(class298_sub37_sub5, (byte) 66);
-	    return class505.method6254(string, Class436.aClass57Array5501, 1319235613);
+	    return class505.method6254(string, Class436.aSpriteArray5501, 1319235613);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("cn.by(").append(')').toString());

@@ -19,7 +19,7 @@ public class Class160 {
     long aLong1643;
     static int anInt1644 = 9;
     static int anInt1645 = 13;
-    static Class57[] aClass57Array1646;
+    static Sprite[] sprites;
     public static Class243 aClass243_1647;
 
     public void method1707(ClanSettings class162, byte i) {

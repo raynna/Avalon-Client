@@ -69,7 +69,7 @@ public class NPCDefinitions {
     public int anInt6185;
     public int anInt6186;
     public int size = -1690840619;
-    public int[] anIntArray6188;
+    public int[] morphisms;
     public int anInt6189;
     public int anInt6190;
     public short aShort6191;
@@ -99,8 +99,8 @@ public class NPCDefinitions {
 
     public final Class387 method6236(GraphicsToolkit class_ra, int i, Class349 class349, Interface23 interface23, Class438 class438, Class438 class438_1_, Class438[] class438s, int[] is, int i_2_, Class498 class498, int i_3_, boolean bool, int i_4_) {
 	try {
-	    if (null != anIntArray6188) {
-		NPCDefinitions class503_5_ = method6240(interface23, 1886245346);
+	    if (null != morphisms) {
+		NPCDefinitions class503_5_ = morph(interface23, 1886245346);
 		if (null == class503_5_)
 		    return null;
 		return class503_5_.method6236(class_ra, i, class349, interface23, class438, class438_1_, class438s, is, i_2_, class498, i_3_, bool, -679459424);
@@ -239,7 +239,7 @@ public class NPCDefinitions {
 		    class387.PA(this.aByte6138, this.aByte6139, this.aByte6157, this.aByte6141 & 0xff);
 		class387.KA(i_6_);
 		synchronized (this.aClass507_6125.aClass348_6204) {
-		    this.aClass507_6125.aClass348_6204.method4194(class387, l);
+		    this.aClass507_6125.aClass348_6204.put(class387, l);
 		}
 	    }
 	    Class387 class387_26_ = class387.method4755((byte) 4, i_6_, true);
@@ -312,8 +312,8 @@ public class NPCDefinitions {
 
     public final Class387 method6237(GraphicsToolkit class_ra, int i, Interface23 interface23, Class438 class438, Class498 class498, int i_32_) {
 	try {
-	    if (anIntArray6188 != null) {
-		NPCDefinitions class503_33_ = method6240(interface23, 1912809157);
+	    if (morphisms != null) {
+		NPCDefinitions class503_33_ = morph(interface23, 1912809157);
 		if (null == class503_33_)
 		    return null;
 		return class503_33_.method6237(class_ra, i, interface23, class438, class498, -1500196036);
@@ -391,7 +391,7 @@ public class NPCDefinitions {
 		    class387.PA(this.aByte6138, this.aByte6139, this.aByte6157, this.aByte6141 & 0xff);
 		class387.KA(i_34_);
 		synchronized (this.aClass507_6125.aClass348_6211) {
-		    this.aClass507_6125.aClass348_6211.method4194(class387, l);
+		    this.aClass507_6125.aClass348_6211.put(class387, l);
 		}
 	    }
 	    if (class438 != null) {
@@ -438,20 +438,20 @@ public class NPCDefinitions {
 	}
     }
 
-    public final NPCDefinitions method6240(Interface23 interface23, int i) {
+    public final NPCDefinitions morph(Interface23 interface23, int i) {
 	try {
 	    int i_47_ = -1;
 	    if (this.anInt6171 * 677538211 != -1)
 		i_47_ = interface23.method250((677538211 * this.anInt6171), (byte) 122);
 	    else if (this.anInt6162 * -1248679093 != -1)
 		i_47_ = interface23.method252((this.anInt6162 * -1248679093), (byte) 49);
-	    if (i_47_ < 0 || i_47_ >= anIntArray6188.length - 1 || -1 == anIntArray6188[i_47_]) {
-		int i_48_ = anIntArray6188[anIntArray6188.length - 1];
+	    if (i_47_ < 0 || i_47_ >= morphisms.length - 1 || -1 == morphisms[i_47_]) {
+		int i_48_ = morphisms[morphisms.length - 1];
 		if (i_48_ != -1)
 		    return this.aClass507_6125.method6269(i_48_, 749174826);
 		return null;
 	    }
-	    return this.aClass507_6125.method6269(anIntArray6188[i_47_], 541835254);
+	    return this.aClass507_6125.method6269(morphisms[i_47_], 541835254);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("uu.r(").append(')').toString());
@@ -510,15 +510,15 @@ public class NPCDefinitions {
 
     public boolean method6241(Interface23 interface23, int i) {
 	try {
-	    if (null == anIntArray6188)
+	    if (null == morphisms)
 		return true;
 	    int i_49_ = -1;
 	    if (-1 != this.anInt6171 * 677538211)
 		i_49_ = interface23.method250((677538211 * this.anInt6171), (byte) 4);
 	    else if (-1248679093 * this.anInt6162 != -1)
 		i_49_ = interface23.method252((-1248679093 * this.anInt6162), (byte) 94);
-	    if (i_49_ < 0 || i_49_ >= anIntArray6188.length - 1 || anIntArray6188[i_49_] == -1) {
-		int i_50_ = anIntArray6188[anIntArray6188.length - 1];
+	    if (i_49_ < 0 || i_49_ >= morphisms.length - 1 || morphisms[i_49_] == -1) {
+		int i_50_ = morphisms[morphisms.length - 1];
 		if (-1 != i_50_)
 		    return true;
 		return false;
@@ -532,11 +532,11 @@ public class NPCDefinitions {
 
     public boolean method6242(byte i) {
 	try {
-	    if (anIntArray6188 == null)
+	    if (morphisms == null)
 		return (-1 != anInt6151 * 1945943361 || -1 != 1105496999 * anInt6169 || -1390399277 * anInt6176 != -1);
-	    for (int i_51_ = 0; i_51_ < anIntArray6188.length; i_51_++) {
-		if (-1 != anIntArray6188[i_51_]) {
-		    NPCDefinitions class503_52_ = this.aClass507_6125.method6269(anIntArray6188[i_51_], -1960092896);
+	    for (int i_51_ = 0; i_51_ < morphisms.length; i_51_++) {
+		if (-1 != morphisms[i_51_]) {
+		    NPCDefinitions class503_52_ = this.aClass507_6125.method6269(morphisms[i_51_], -1960092896);
 		    if (1945943361 * class503_52_.anInt6151 != -1 || -1 != class503_52_.anInt6169 * 1105496999 || class503_52_.anInt6176 * -1390399277 != -1)
 			return true;
 		}
@@ -663,13 +663,13 @@ public class NPCDefinitions {
 			i_64_ = -1;
 		}
 		int i_65_ = stream.readUnsignedByte();
-		anIntArray6188 = new int[2 + i_65_];
+		morphisms = new int[2 + i_65_];
 		for (int i_66_ = 0; i_66_ <= i_65_; i_66_++) {
-		    anIntArray6188[i_66_] = stream.readUnsignedShort();
-		    if (65535 == anIntArray6188[i_66_])
-			anIntArray6188[i_66_] = -1;
+		    morphisms[i_66_] = stream.readUnsignedShort();
+		    if (65535 == morphisms[i_66_])
+			morphisms[i_66_] = -1;
 		}
-		anIntArray6188[i_65_ + 1] = i_64_;
+		morphisms[i_65_ + 1] = i_64_;
 	    } else if (i == 107)
 		aBoolean6163 = false;
 	    else if (i == 109)
@@ -784,7 +784,7 @@ public class NPCDefinitions {
 		    int i_75_ = stream.read24BitUnsignedInteger((byte) -8);
 		    Class298 class298;
 		    if (bool)
-			class298 = new Class298_Sub29(stream.readString(1107258472));
+			class298 = new LinkableObject(stream.readString(1107258472));
 		    else
 			class298 = new Class298_Sub35(stream.readInt((byte) -18));
 		    this.aClass437_6159.method5817(class298, i_75_);
@@ -800,10 +800,10 @@ public class NPCDefinitions {
 	try {
 	    if (null == this.aClass437_6159)
 		return string;
-	    Class298_Sub29 class298_sub29 = ((Class298_Sub29) this.aClass437_6159.method5812(i));
-	    if (null == class298_sub29)
+	    LinkableObject linkableObject = ((LinkableObject) this.aClass437_6159.method5812(i));
+	    if (null == linkableObject)
 		return string;
-	    return (String) class298_sub29.anObject7366;
+	    return (String) linkableObject.anObject7366;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("uu.x(").append(')').toString());

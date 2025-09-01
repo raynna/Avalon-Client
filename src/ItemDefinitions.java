@@ -305,7 +305,7 @@ public class ItemDefinitions {
 		}
 		class387.KA(i_18_);
 		synchronized (this.aClass477_5751.aClass348_5994) {
-		    this.aClass477_5751.aClass348_5994.method4194(class387, this.anInt5740 * 1027112447 | class_ra.anInt5298 * 580915349 << 29);
+		    this.aClass477_5751.aClass348_5994.put(class387, this.anInt5740 * 1027112447 | class_ra.anInt5298 * 580915349 << 29);
 		}
 	    }
 	    if (null != class438 || 0 != i_14_) {
@@ -380,18 +380,18 @@ public class ItemDefinitions {
 		return null;
 	    if (bool_37_)
 		class387.oa(-1773084507 * this.anInt5758, 902366341 * this.anInt5702, this.anInt5739 * -230848851);
-	    Class57 class57 = null;
+	    Sprite sprite = null;
 	    if (-1 != -1673957995 * anInt5755) {
-		class57 = (this.aClass477_5751.method6086(class_ra, class_ra_27_, 809765849 * anInt5709, 10, 1, 0, true, true, 0, class264, class366, -1795675060));
-		if (null == class57)
+		sprite = (this.aClass477_5751.method6086(class_ra, class_ra_27_, 809765849 * anInt5709, 10, 1, 0, true, true, 0, class264, class366, -1795675060));
+		if (null == sprite)
 		    return null;
 	    } else if (465190555 * anInt5719 != -1) {
-		class57 = (this.aClass477_5751.method6086(class_ra, class_ra_27_, this.anInt5756 * -783380935, i, i_28_, i_29_, false, true, 0, class264, class366, 1124646536));
-		if (null == class57)
+		sprite = (this.aClass477_5751.method6086(class_ra, class_ra_27_, this.anInt5756 * -783380935, i, i_28_, i_29_, false, true, 0, class264, class366, 1124646536));
+		if (null == sprite)
 		    return null;
 	    } else if (-1 != anInt5770 * 2083650097) {
-		class57 = (this.aClass477_5751.method6086(class_ra, class_ra_27_, 1981372535 * this.anInt5769, i, i_28_, i_29_, false, true, 0, class264, class366, 311548691));
-		if (null == class57)
+		sprite = (this.aClass477_5751.method6086(class_ra, class_ra_27_, 1981372535 * this.anInt5769, i, i_28_, i_29_, false, true, 0, class264, class366, 311548691));
+		if (null == sprite)
 		    return null;
 	    }
 	    int i_38_;
@@ -429,12 +429,12 @@ public class ItemDefinitions {
 	    if (0 != i_29_)
 		method6033(is, i_29_, 1738452390);
 	    if (-1 != 465190555 * anInt5719)
-		class57.method645(0, 0);
+		sprite.draw(0, 0);
 	    else if (-1 != anInt5770 * 2083650097)
-		class57.method645(0, 0);
-	    class_ra.method5031(is, 0, 36, 36, 32, -1432690829).method645(0, 0);
+		sprite.draw(0, 0);
+	    class_ra.method5031(is, 0, 36, 36, 32, -1432690829).draw(0, 0);
 	    if (-1 != anInt5755 * -1673957995)
-		class57.method645(0, 0);
+		sprite.draw(0, 0);
 	    if (1 == i_30_ || 2 == i_30_ && (anInt5704 * 789409129 == 1 || 1 != i) && i != -1)
 		class264.method2488(Class108.AmountValues(i, ((this.aClass477_5751).aClass429_5997), -2134002342), 0, 9, -256, -16777215, 1072909030);
 	    is = class_ra.aq(0, 0, 36, 32);
@@ -845,7 +845,7 @@ public class ItemDefinitions {
 		    int i_76_ = stream.read24BitUnsignedInteger((byte) 15);
 		    Class298 class298;
 		    if (bool)
-			class298 = new Class298_Sub29(stream.readString(-1208778402));
+			class298 = new LinkableObject(stream.readString(-1208778402));
 		    else
 			class298 = new Class298_Sub35(stream.readInt((byte) 69));
 		    this.aClass437_5766.method5817(class298, i_76_);
@@ -968,10 +968,10 @@ public class ItemDefinitions {
 	try {
 	    if (this.aClass437_5766 == null)
 		return string;
-	    Class298_Sub29 class298_sub29 = ((Class298_Sub29) this.aClass437_5766.method5812(i));
-	    if (class298_sub29 == null)
+	    LinkableObject linkableObject = ((LinkableObject) this.aClass437_5766.method5812(i));
+	    if (linkableObject == null)
 		return string;
-	    return (String) class298_sub29.anObject7366;
+	    return (String) linkableObject.anObject7366;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("th.v(").append(')').toString());
@@ -1125,21 +1125,21 @@ public class ItemDefinitions {
 	    int i_92_;
 	    try {
 		Dimension dimension = Class52_Sub2_Sub1.aCanvas9079.getSize();
-		Class139.method1548(Tradution.aClass470_5789.method6049(Class321.aClass429_3357, -875414210), true, Class373.aClass_ra4071, Class343.aClass264_3673, Class422_Sub2.aClass505_8369, (byte) 5);
+		Class139.method1548(Tradution.aClass470_5789.method6049(Class321.aClass429_3357, -875414210), true, OverlayType.activeToolkit, Class343.aClass264_3673, Class422_Sub2.aClass505_8369, (byte) 5);
 		Model class64 = Model.method751(Class341.aClass243_3646, (-1919698893 * HashTable.aClass371_5520.anInt4035), 0);
 		long l = Class122.method1319((byte) 1);
-		Class373.aClass_ra4071.L();
+		OverlayType.activeToolkit.L();
 		client.aClass222_8871.method2062(0.0F, 256.0F, 0.0F);
-		Class373.aClass_ra4071.method5043(client.aClass222_8871);
-		Class233 class233 = Class373.aClass_ra4071.method5036();
+		OverlayType.activeToolkit.method5043(client.aClass222_8871);
+		Class233 class233 = OverlayType.activeToolkit.method5036();
 		class233.method2152(dimension.width / 2, dimension.height / 2, 512.0F, 512.0F, client.aClass283_8716.method2634((byte) -121), client.aClass283_8716.method2635(1789119116), dimension.width, dimension.height);
-		Class373.aClass_ra4071.method5182(class233);
-		Class373.aClass_ra4071.IA(1.0F);
-		Class373.aClass_ra4071.m(16777215, 0.5F, 0.5F, 20.0F, -50.0F, 30.0F);
-		Class387 class387 = Class373.aClass_ra4071.method5037(class64, 2048, 64, 64, 768);
+		OverlayType.activeToolkit.method5182(class233);
+		OverlayType.activeToolkit.IA(1.0F);
+		OverlayType.activeToolkit.m(16777215, 0.5F, 0.5F, 20.0F, -50.0F, 30.0F);
+		Class387 class387 = OverlayType.activeToolkit.method5037(class64, 2048, 64, 64, 768);
 		int i_93_ = 0;
 		while_107_: for (int i_94_ = 0; i_94_ < 500; i_94_++) {
-		    Class373.aClass_ra4071.ba(3, 0);
+		    OverlayType.activeToolkit.ba(3, 0);
 		    for (int i_95_ = 15; i_95_ >= 0; i_95_--) {
 			for (int i_96_ = 0; i_96_ <= i_95_; i_96_++) {
 			    client.aClass222_8968.method2062((int) (512.0F * (i_96_ - i_95_ / 2.0F)), 0.0F, (1 + i_95_) * 512);
@@ -1153,9 +1153,9 @@ public class ItemDefinitions {
 			}
 		    }
 		}
-		Class373.aClass_ra4071.method5075();
+		OverlayType.activeToolkit.method5075();
 		long l_97_ = (i_93_ * 1000 / (Class122.method1319((byte) 1) - l));
-		Class373.aClass_ra4071.ba(3, 0);
+		OverlayType.activeToolkit.ba(3, 0);
 		i_92_ = (int) l_97_;
 	    }
 	    catch (Throwable throwable) {

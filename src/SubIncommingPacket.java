@@ -12,7 +12,7 @@ public class SubIncommingPacket {
     public static SubIncommingPacket aClass206_2346;
     public static SubIncommingPacket aClass206_2347 = new SubIncommingPacket(6);
     public static SubIncommingPacket aClass206_2348;
-    static Class57[] aClass57Array2349;
+    static Sprite[] aSpriteArray2349;
     public static SubIncommingPacket SPAWN_OBJECT_PACKET;
     public static SubIncommingPacket SEND_GROUND_ITEM_PACKET;
     public static SubIncommingPacket TILE_MESSAGE_PACKET;
@@ -84,7 +84,7 @@ public class SubIncommingPacket {
 
     static final void method1921(byte i) {
 	try {
-	    Class365_Sub1_Sub1_Sub6.method4494(Class373.aClass_ra4071, 556951212);
+	    Class365_Sub1_Sub1_Sub6.method4494(OverlayType.activeToolkit, 556951212);
 	    if (1855729883 * Class99.anInt952 != 191260743 * client.anInt8792)
 		Class475.method6075((short) -2730);
 	}

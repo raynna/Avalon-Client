@@ -5,7 +5,7 @@
 public class Class128_Sub2 extends Class128 {
     public int anInt8558;
     public int anInt8559;
-    static Class57[] aClass57Array8560;
+    static Sprite[] aSpriteArray8560;
 
     @Override
     public Class146 method49(int i) {

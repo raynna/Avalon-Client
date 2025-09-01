@@ -24,7 +24,7 @@ public class Class205 {
 	    if (null != is)
 		class207.method1927(new RsByteBuffer(is), 27685189);
 	    synchronized (this.aClass348_2340) {
-		this.aClass348_2340.method4194(class207, i);
+		this.aClass348_2340.put(class207, i);
 	    }
 	    return class207;
 	}

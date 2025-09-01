@@ -15,7 +15,7 @@ import java.lang.reflect.Method;
 public class Class234 {
     static int anInt2596 = 0;
     static int anInt2597 = 0;
-    static Class57[] aClass57Array2598;
+    static Sprite[] aSpriteArray2598;
 
     Class234() throws Throwable {
 	throw new Error();

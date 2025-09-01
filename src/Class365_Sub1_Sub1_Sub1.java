@@ -87,25 +87,25 @@ public class Class365_Sub1_Sub1_Sub1 extends Class365_Sub1_Sub1 {
 	    if (!this.aBoolean10052) {
 		if (0 != (this.anInt10043 * 132125965)) {
 		    Entity class365_sub1_sub1_sub2 = null;
-		    if (client.anInt8724 * 1596783995 == 0)
-			class365_sub1_sub1_sub2 = Class87.aClass94Array794[(this.anInt10043 * 132125965) - 1].method1015(1781553547);
+		    if (client.cutsceneStage * 1596783995 == 0)
+			class365_sub1_sub1_sub2 = Class87.entities[(this.anInt10043 * 132125965) - 1].method1015(1781553547);
 		    else if ((this.anInt10043 * 132125965) < 0) {
 			int i_6_ = (-(this.anInt10043 * 132125965) - 1);
 			if (-442628795 * client.playerIndex == i_6_)
 			    class365_sub1_sub1_sub2 = Class287.myPlayer;
 			else
-			    class365_sub1_sub1_sub2 = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[i_6_]);
+			    class365_sub1_sub1_sub2 = (client.players[i_6_]);
 		    } else {
 			int i_7_ = ((132125965 * this.anInt10043) - 1);
-			Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(i_7_));
-			if (null != class298_sub29)
-			    class365_sub1_sub1_sub2 = ((Entity) class298_sub29.anObject7366);
+			LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(i_7_));
+			if (null != linkableObject)
+			    class365_sub1_sub1_sub2 = ((Entity) linkableObject.anObject7366);
 		    }
 		    if (class365_sub1_sub1_sub2 != null) {
 			Class217 class217 = (class365_sub1_sub1_sub2.method4337().aClass217_2599);
 			method4341(class217.aFloat2451, (Class356.method4271((int) class217.aFloat2451, (int) class217.aFloat2454, plane, -1098231500)) - (1403412253 * this.anInt10042), class217.aFloat2454);
 			if ((this.anInt10041 * -1955698847) >= 0) {
-			    Class350 class350 = class365_sub1_sub1_sub2.method4426(399670605);
+			    Class350 class350 = class365_sub1_sub1_sub2.getBAS(399670605);
 			    int i_8_ = 0;
 			    int i_9_ = 0;
 			    if (null != class350.anIntArrayArray3710 && null != (class350.anIntArrayArray3710[(this.anInt10041) * -1955698847])) {

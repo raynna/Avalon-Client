@@ -13,7 +13,7 @@ public class Class401 implements Interface21 {
     String aString6558;
     static int anInt6559;
     public static Class401 aClass401_6560 = new Class401("WTWIP", "", 3);
-    static Class57[] aClass57Array6561;
+    static Sprite[] aSpriteArray6561;
     static int anInt6562;
 
     Class401(String string, String string_0_, int i) {
@@ -342,7 +342,7 @@ public class Class401 implements Interface21 {
 		else if (i_34_ == 53)
 		    class198_36_ = OutcommingPacket.aClass198_2000;
 		if (class198_36_ != null) {
-		    Player player = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[walktype];
+		    Player player = client.players[walktype];
 		    if (null != player) {
 			Routes.findRoute(player.scenePositionXQueue[0], player.scenePositionYQueue[0], true, Routes.createEntityStrategy((player.scenePositionXQueue[0]), (player.scenePositionYQueue[0]), player.getSize(), player.getSize(), 0));
 			Routes.sendLastWalkPathAsStdwalk();
@@ -408,9 +408,9 @@ public class Class401 implements Interface21 {
 		else if (i_34_ == 1003)
 		    class198_37_ = OutcommingPacket.NPC_EXAMINE_PACKET;
 		if (null != class198_37_) {
-		    Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(walktype));
-		    if (null != class298_sub29) {
-			NPC npc = ((NPC) class298_sub29.anObject7366);
+		    LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(walktype));
+		    if (null != linkableObject) {
+			NPC npc = ((NPC) linkableObject.anObject7366);
 			Routes.findRoute(npc.scenePositionXQueue[0], npc.scenePositionYQueue[0], true, Routes.createEntityStrategy((npc.scenePositionXQueue[0]), (npc.scenePositionYQueue[0]), npc.getSize(), npc.getSize(), 0));
 			if (class198_37_ != OutcommingPacket.NPC_EXAMINE_PACKET) {
 			    Routes.sendLastWalkPathAsStdwalk();
@@ -458,9 +458,9 @@ public class Class401 implements Interface21 {
 		    client.aClass25_8711.method390(class298_sub36, (byte) -13);
 		}
 		if (8 == i_34_) { // widget on npc
-		    Class298_Sub29 class298_sub29 = ((Class298_Sub29) client.aClass437_8696.method5812(walktype));
-		    if (class298_sub29 != null) {
-			NPC npc = ((NPC) class298_sub29.anObject7366);
+		    LinkableObject linkableObject = ((LinkableObject) client.aClass437_8696.method5812(walktype));
+		    if (linkableObject != null) {
+			NPC npc = ((NPC) linkableObject.anObject7366);
 			Routes.findRoute(npc.scenePositionXQueue[0], npc.scenePositionYQueue[0], true, Routes.createEntityStrategy((npc.scenePositionXQueue[0]), (npc.scenePositionYQueue[0]), npc.getSize(), npc.getSize(), 0));
 			Routes.sendLastWalkPathAsStdwalk();
 
@@ -491,7 +491,7 @@ public class Class401 implements Interface21 {
 		    }
 		} else {
 		    if (15 == i_34_) { // widget on nonself player
-			Player player = (client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[walktype]);
+			Player player = (client.players[walktype]);
 			if (null != player) {
 			    Routes.findRoute((player.scenePositionXQueue[0]), (player.scenePositionYQueue[0]), true, (Routes.createEntityStrategy((player.scenePositionXQueue[0]), (player.scenePositionYQueue[0]), player.getSize(), player.getSize(), 0)));
 			    Routes.sendLastWalkPathAsStdwalk();

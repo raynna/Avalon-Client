@@ -36,9 +36,9 @@ public class Class133 {
 	try {
 	    NPC class365_sub1_sub1_sub2_sub1 = ((NPC) class403.aClass365_Sub1_Sub1_Sub2_5242);
 	    boolean bool = false;
-	    NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.aClass503_10190;
-	    if (class503.anIntArray6188 != null)
-		class503 = class503.method6240(Class128.aClass148_6331, 1885989341);
+	    NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.definitions;
+	    if (class503.morphisms != null)
+		class503 = class503.morph(Class128.aClass148_6331, 1885989341);
 	    if (null != class503)
 		bool = class503.aBoolean6163;
 	    class403.anIntArray5244[((class403.anInt5239 += -391880689) * 681479919 - 1)] = bool ? 1 : 0;

@@ -31,10 +31,10 @@ public class Class391 {
 	try {
 	    if (this.aClass437_4191 == null)
 		return string;
-	    Class298_Sub29 class298_sub29 = ((Class298_Sub29) this.aClass437_4191.method5812(i));
-	    if (class298_sub29 == null)
+	    LinkableObject linkableObject = ((LinkableObject) this.aClass437_4191.method5812(i));
+	    if (linkableObject == null)
 		return string;
-	    return (String) class298_sub29.anObject7366;
+	    return (String) linkableObject.anObject7366;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("qe.k(").append(')').toString());
@@ -141,7 +141,7 @@ public class Class391 {
 		    int i_21_ = class298_sub53.read24BitUnsignedInteger((byte) -17);
 		    Class298 class298;
 		    if (bool)
-			class298 = new Class298_Sub29(class298_sub53.readString(102394051));
+			class298 = new LinkableObject(class298_sub53.readString(102394051));
 		    else
 			class298 = new Class298_Sub35(class298_sub53.readInt((byte) 14));
 		    this.aClass437_4191.method5817(class298, i_21_);
@@ -275,10 +275,10 @@ public class Class391 {
 		Class298_Sub41.aClass453_7421.add(class298_sub41);
 	    } else if (class365_sub1_sub1_sub2_sub1 != null) {
 		class298_sub41.aClass365_Sub1_Sub1_Sub2_Sub1_7433 = class365_sub1_sub1_sub2_sub1;
-		NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.aClass503_10190;
-		if (null != class503.anIntArray6188) {
+		NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.definitions;
+		if (null != class503.morphisms) {
 		    class298_sub41.aBoolean7437 = true;
-		    class503 = class503.method6240(Class128.aClass148_6331, 1825815932);
+		    class503 = class503.morph(Class128.aClass148_6331, 1825815932);
 		}
 		if (class503 != null) {
 		    class298_sub41.anInt7427 = 305826635 * (class503.size * -2095128707 + i_27_ << 9);

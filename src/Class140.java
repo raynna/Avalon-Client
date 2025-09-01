@@ -84,7 +84,7 @@ public class Class140 implements Runnable {
                 Class190.aClass437_1928.method5817(new Class298_Sub35(Class190.anInt1932 * 1105746915), i);
                 Class190.aClass190Array1926[(Class190.anInt1932 += -34356789) * 1105746915 - 1] = class190;
             }
-            Class190.aClass348_1929.method4194(class190, i);
+            Class190.aClass348_1929.put(class190, i);
             return class190;
         } catch (RuntimeException runtimeexception) {
             throw Class346.method4175(runtimeexception, new StringBuilder().append("fr.f(").append(')').toString());
@@ -94,10 +94,10 @@ public class Class140 implements Runnable {
     static void method1555(NPC class365_sub1_sub1_sub2_sub1, boolean bool, byte i) {
         try {
             if (Class436.anInt5506 * -278777595 < 410) {
-                NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.aClass503_10190;
+                NPCDefinitions class503 = class365_sub1_sub1_sub2_sub1.definitions;
                 String string = class365_sub1_sub1_sub2_sub1.aString10186;
-                if (null != class503.anIntArray6188) {
-                    class503 = class503.method6240(Class128.aClass148_6331, 1662486316);
+                if (null != class503.morphisms) {
+                    class503 = class503.morph(Class128.aClass148_6331, 1662486316);
                     if (null == class503)
                         return;
                     string = class503.aString6127;

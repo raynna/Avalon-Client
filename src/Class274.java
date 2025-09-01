@@ -13,7 +13,7 @@ public class Class274 implements Interface21 {
     static Class274 aClass274_6536 = new Class274(7, 0);
     static Class274 aClass274_6537;
     int anInt6538;
-    static Class57 aClass57_6539;
+    static Sprite aSprite_6539;
 
     @Override
     public int method244() {

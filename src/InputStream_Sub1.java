@@ -22,7 +22,7 @@ public class InputStream_Sub1 extends InputStream {
 
     public static void method273(int i) {
 	try {
-	    Class384.aClass57_4127 = null;
+	    Class384.aSprite_4127 = null;
 	    Class3.anInt57 = 955770805;
 	}
 	catch (RuntimeException runtimeexception) {

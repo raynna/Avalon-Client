@@ -46,7 +46,7 @@ public class Class298_Sub41 extends Class298 {
 	    int i_0_ = 391847895 * this.anInt7443;
 	    boolean bool = this.aBoolean7444;
 	    if (null != this.aClass432_7435) {
-		ObjectDefinitions class432 = (this.aClass432_7435.method5777((client.anInt8724 * 1596783995 == 0 ? (Interface23) Class87.anInterface23_796 : Class128.aClass148_6331), 2115683030));
+		ObjectDefinitions class432 = (this.aClass432_7435.method5777((client.cutsceneStage * 1596783995 == 0 ? (Interface23) Class87.anInterface23_796 : Class128.aClass148_6331), 2115683030));
 		if (null != class432) {
 		    this.anInt7443 = class432.anInt5422 * 128561991;
 		    this.aBoolean7444 = class432.aBoolean5426;
@@ -75,9 +75,9 @@ public class Class298_Sub41 extends Class298 {
 		int i_1_ = (Class125.method1398((this.aClass365_Sub1_Sub1_Sub2_Sub1_7433), 2054416095));
 		if (i_1_ != i_0_) {
 		    this.anInt7443 = i_1_ * 502744039;
-		    NPCDefinitions class503 = (this.aClass365_Sub1_Sub1_Sub2_Sub1_7433.aClass503_10190);
-		    if (class503.anIntArray6188 != null)
-			class503 = class503.method6240(Class128.aClass148_6331, 1733144869);
+		    NPCDefinitions class503 = (this.aClass365_Sub1_Sub1_Sub2_Sub1_7433.definitions);
+		    if (class503.morphisms != null)
+			class503 = class503.morph(Class128.aClass148_6331, 1733144869);
 		    if (class503 != null) {
 			this.anInt7430 = ((1525111487 * class503.anInt6140 << 9) * 1644605369);
 			this.anInt7429 = 406226903 * (-1422618341 * class503.anInt6175 << 9);
@@ -89,7 +89,7 @@ public class Class298_Sub41 extends Class298 {
 			this.anInt7429 = 0;
 			this.anInt7430 = 0;
 			this.anInt7449 = 0;
-			this.aBoolean7444 = (this.aClass365_Sub1_Sub1_Sub2_Sub1_7433.aClass503_10190.aBoolean6180);
+			this.aBoolean7444 = (this.aClass365_Sub1_Sub1_Sub2_Sub1_7433.definitions.aBoolean6180);
 			this.anInt7452 = -1197363456;
 			this.anInt7441 = -900102912;
 		    }

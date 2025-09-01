@@ -37,7 +37,7 @@ public class Class357 {
 	    int i_7_ = Class190.method1859((byte) -125);
 	    if (3 == i || i_7_ == 3)
 		bool = true;
-	    if (!Class373.aClass_ra4071.method4995())
+	    if (!OverlayType.activeToolkit.method4995())
 		bool = true;
 	    Class129.method1446(i_7_, i, i_4_, i_5_, bool, (byte) 24);
 	}

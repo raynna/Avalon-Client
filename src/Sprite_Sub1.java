@@ -2,7 +2,7 @@
  * Visit http://jode.sourceforge.net/
  */
 
-public abstract class Class57_Sub1 extends Class57 {
+public abstract class Sprite_Sub1 extends Sprite {
     static int anInt8987;
     static int anInt8988;
     int anInt8989;
@@ -40,7 +40,7 @@ public abstract class Class57_Sub1 extends Class57 {
     static int anInt9021;
     static int anInt9022;
 
-    Class57_Sub1(Class_ra_Sub1 class_ra_sub1, int i, int i_0_) {
+    Sprite_Sub1(Class_ra_Sub1 class_ra_sub1, int i, int i_0_) {
 	this.aClass_ra_Sub1_9006 = class_ra_sub1;
 	this.anInt9010 = i;
 	this.anInt8989 = i_0_;
@@ -63,7 +63,7 @@ public abstract class Class57_Sub1 extends Class57 {
     }
 
     @Override
-    public int method625() {
+    public int getHeight() {
 	return this.anInt8989;
     }
 

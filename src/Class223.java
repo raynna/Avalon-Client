@@ -3,11 +3,7 @@
  * Visit http://jode.sourceforge.net/
  */
 import javax.imageio.ImageIO;
-import java.awt.Image;
-import java.awt.MediaTracker;
-import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
-import java.awt.image.PixelGrabber;
 import java.io.IOException;
 
 public class Class223 implements Interface24 {
@@ -95,11 +91,11 @@ public class Class223 implements Interface24 {
 	}
     }
 
-	static Class57 method2081(byte[] is, int i) {
+	static Sprite method2081(byte[] is, int i) {
 		try {
 			if (is == null)
 				throw new RuntimeException("");
-			Class57 class57;
+			Sprite sprite;
 			try {
 				java.io.ByteArrayInputStream bais = new java.io.ByteArrayInputStream(is);
 				BufferedImage bufferedImage = ImageIO.read(bais);
@@ -109,11 +105,11 @@ public class Class223 implements Interface24 {
 				int i_3_ = bufferedImage.getHeight();
 				int[] is_4_ = new int[i_3_ * i_2_];
 				bufferedImage.getRGB(0, 0, i_2_, i_3_, is_4_, 0, i_2_);
-				class57 = Class373.aClass_ra4071.method5031(is_4_, 0, i_2_, i_2_, i_3_, 708696378);
+				sprite = OverlayType.activeToolkit.method5031(is_4_, 0, i_2_, i_2_, i_3_, 708696378);
 			} catch (IOException e) {
 				throw new RuntimeException(e);
 			}
-			return class57;
+			return sprite;
 		} catch (RuntimeException runtimeexception) {
 			throw Class346.method4175(runtimeexception, new StringBuilder().append("jl.i(").append(')').toString());
 		}
@@ -161,7 +157,7 @@ public class Class223 implements Interface24 {
 		Class330.method4005(-1407310804);
 		Class143.method1578((byte) -26);
 		Class388.aClass348_4153.method4187();
-		client.aClass348_8780.method4187();
+		client.aCachingHashMap_8780.method4187();
 		client.aClass348_8898.method4187();
 		client.aClass348_8697.method4187();
 		Class436.aClass348_5500.method4187();

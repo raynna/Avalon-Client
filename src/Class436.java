@@ -40,7 +40,7 @@ public class Class436 {
     static int anInt5498;
     public static int anInt5499;
     static Class348 aClass348_5500;
-    static Class57[] aClass57Array5501;
+    static Sprite[] aSpriteArray5501;
     static int anInt5502;
     static int anInt5503 = 8;
     static int anInt5504 = 1;

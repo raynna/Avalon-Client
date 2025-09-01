@@ -75,7 +75,7 @@ public class Class385 {
     public void method4706(RsByteBuffer class298_sub53, Class364 class364, short i) {
 	try {
 	    int i_3_ = class298_sub53.readUnsignedByte();
-	    if (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub15_7560.method5684(-1934130167) == 1 && Class373.aClass_ra4071.method5048() > 0) {
+	    if (Class422_Sub25.aClass298_Sub48_8425.aClass422_Sub15_7560.method5684(-1934130167) == 1 && OverlayType.activeToolkit.method5048() > 0) {
 		if (0 != (i_3_ & 0x1))
 		    this.anInt4133 = class298_sub53.readInt((byte) 33) * 743535251;
 		else

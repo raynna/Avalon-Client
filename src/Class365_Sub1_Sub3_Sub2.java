@@ -503,14 +503,14 @@ public class Class365_Sub1_Sub3_Sub2 extends Class365_Sub1_Sub3 implements Inter
 
     public static void method4512(int i) {
 	try {
-	    Class423.aClass57_5356 = null;
-	    Class74.aClass57_700 = null;
-	    Class313.aClass57_3299 = null;
-	    Class501.aClass57_6123 = null;
-	    Class82_Sub8.aClass57_6855 = null;
-	    AccountCreationStage.aClass57_6062 = null;
-	    Class367.aClass57_4001 = null;
-	    Class373.aClass57_4070 = null;
+	    Class423.aSprite_5356 = null;
+	    Class74.aSprite_700 = null;
+	    Class313.aSprite_3299 = null;
+	    Class501.aSprite_6123 = null;
+	    Class82_Sub8.aSprite_6855 = null;
+	    AccountCreationStage.aSprite_6062 = null;
+	    Class367.aSprite_4001 = null;
+	    OverlayType.aSprite_4070 = null;
 	    Class65.aClass264_664 = null;
 	    HandshakePacket.aClass505_2420 = null;
 	}

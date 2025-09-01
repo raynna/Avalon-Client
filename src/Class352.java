@@ -150,7 +150,7 @@ public class Class352 {
 		    int i_11_ = class298_sub53.read24BitUnsignedInteger((byte) -26);
 		    Class298 class298;
 		    if (bool)
-			class298 = new Class298_Sub29(class298_sub53.readString(-826702559));
+			class298 = new LinkableObject(class298_sub53.readString(-826702559));
 		    else
 			class298 = new Class298_Sub35(class298_sub53.readInt((byte) 97));
 		    this.aClass437_3811.method5817(class298, i_11_);
@@ -210,21 +210,21 @@ public class Class352 {
 	}
     }
 
-    public Class57 method4238(GraphicsToolkit class_ra, boolean bool, int i) {
+    public Sprite method4238(GraphicsToolkit class_ra, boolean bool, int i) {
 	try {
 	    int i_15_ = bool ? anInt3779 * -1413078901 : anInt3785 * 715019623;
 	    int i_16_ = i_15_ | 580915349 * class_ra.anInt5298 << 29;
-	    Class57 class57 = (Class57) this.aClass339_3776.aClass348_3635.method4184(i_16_);
-	    if (class57 != null)
-		return class57;
+	    Sprite sprite = (Sprite) this.aClass339_3776.aClass348_3635.method4184(i_16_);
+	    if (sprite != null)
+		return sprite;
 	    if (!this.aClass339_3776.aClass243_3638.method2310(i_15_, -457216440))
 		return null;
 	    IndexedImage class89 = IndexedImage.method987(((this.aClass339_3776).aClass243_3638), i_15_, 0);
 	    if (class89 != null) {
-		class57 = class_ra.method5125(class89, true);
-		this.aClass339_3776.aClass348_3635.method4194(class57, i_16_);
+		sprite = class_ra.convertSpriteForGame(class89, true);
+		this.aClass339_3776.aClass348_3635.put(sprite, i_16_);
 	    }
-	    return class57;
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("or.i(").append(')').toString());
@@ -259,28 +259,28 @@ public class Class352 {
 	try {
 	    if (null == this.aClass437_3811)
 		return string;
-	    Class298_Sub29 class298_sub29 = ((Class298_Sub29) this.aClass437_3811.method5812(i));
-	    if (null == class298_sub29)
+	    LinkableObject linkableObject = ((LinkableObject) this.aClass437_3811.method5812(i));
+	    if (null == linkableObject)
 		return string;
-	    return (String) class298_sub29.anObject7366;
+	    return (String) linkableObject.anObject7366;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("or.u(").append(')').toString());
 	}
     }
 
-    public Class57 method4240(GraphicsToolkit class_ra, int i) {
+    public Sprite method4240(GraphicsToolkit class_ra, int i) {
 	try {
-	    Class57 class57 = ((Class57) (this.aClass339_3776.aClass348_3635.method4184(this.anInt3794 * 1027948663 | 0x20000 | class_ra.anInt5298 * 580915349 << 29)));
-	    if (null != class57)
-		return class57;
+	    Sprite sprite = ((Sprite) (this.aClass339_3776.aClass348_3635.method4184(this.anInt3794 * 1027948663 | 0x20000 | class_ra.anInt5298 * 580915349 << 29)));
+	    if (null != sprite)
+		return sprite;
 	    this.aClass339_3776.aClass243_3638.method2310(1027948663 * this.anInt3794, -457216440);
 	    IndexedImage class89 = IndexedImage.method987((this.aClass339_3776.aClass243_3638), this.anInt3794 * 1027948663, 0);
 	    if (class89 != null) {
-		class57 = class_ra.method5125(class89, true);
-		this.aClass339_3776.aClass348_3635.method4194(class57, this.anInt3794 * 1027948663 | 0x20000 | class_ra.anInt5298 * 580915349 << 29);
+		sprite = class_ra.convertSpriteForGame(class89, true);
+		this.aClass339_3776.aClass348_3635.put(sprite, this.anInt3794 * 1027948663 | 0x20000 | class_ra.anInt5298 * 580915349 << 29);
 	    }
-	    return class57;
+	    return sprite;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("or.k(").append(')').toString());

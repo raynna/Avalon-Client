@@ -3,7 +3,7 @@
  */
 
 public class Class82_Sub19_Sub1 extends Class82_Sub19 {
-    static Class505 aClass505_9111;
+    static Class505 aFontSpecification_9111;
     int anInt9112;
     int anInt9113;
     int anInt9114;

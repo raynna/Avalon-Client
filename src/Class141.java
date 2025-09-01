@@ -35,7 +35,7 @@ public class Class141 implements Interface6 {
     public void method58(boolean bool, byte i) {
 	try {
 	    if (bool)
-		Class373.aClass_ra4071.B(0, 0, Class462.anInt5683 * -2110394505, -1111710645 * Class298_Sub40_Sub9.anInt9716, 1751631615 * this.aClass145_6389.anInt6344, 0);
+		OverlayType.activeToolkit.B(0, 0, Class462.anInt5683 * -2110394505, -1111710645 * Class298_Sub40_Sub9.anInt9716, 1751631615 * this.aClass145_6389.anInt6344, 0);
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("fs.f(").append(')').toString());
@@ -50,7 +50,7 @@ public class Class141 implements Interface6 {
     @Override
     public void method56(boolean bool) {
 	if (bool)
-	    Class373.aClass_ra4071.B(0, 0, Class462.anInt5683 * -2110394505, (-1111710645 * Class298_Sub40_Sub9.anInt9716), 1751631615 * (this.aClass145_6389.anInt6344), 0);
+	    OverlayType.activeToolkit.B(0, 0, Class462.anInt5683 * -2110394505, (-1111710645 * Class298_Sub40_Sub9.anInt9716), 1751631615 * (this.aClass145_6389.anInt6344), 0);
     }
 
     @Override

@@ -54,7 +54,7 @@ public class Class298_Sub37_Sub7 extends Class298_Sub37 {
 		    int i_7_ = class298_sub53.read24BitUnsignedInteger((byte) -75);
 		    Class298 class298;
 		    if (bool)
-			class298 = new Class298_Sub29(class298_sub53.readString(281550837));
+			class298 = new LinkableObject(class298_sub53.readString(281550837));
 		    else
 			class298 = new Class298_Sub35(class298_sub53.readInt((byte) -72));
 		    this.aClass437_9594.method5817(class298, i_7_);
@@ -70,10 +70,10 @@ public class Class298_Sub37_Sub7 extends Class298_Sub37 {
 	try {
 	    if (this.aClass437_9594 == null)
 		return string;
-	    Class298_Sub29 class298_sub29 = (Class298_Sub29) this.aClass437_9594.method5812(i);
-	    if (class298_sub29 == null)
+	    LinkableObject linkableObject = (LinkableObject) this.aClass437_9594.method5812(i);
+	    if (linkableObject == null)
 		return string;
-	    return (String) class298_sub29.anObject7366;
+	    return (String) linkableObject.anObject7366;
 	}
 	catch (RuntimeException runtimeexception) {
 	    throw Class346.method4175(runtimeexception, new StringBuilder().append("aim.p(").append(')').toString());

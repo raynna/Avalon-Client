@@ -104,7 +104,7 @@ public class Class69 {
 	    int[] is = Class10.anIntArray135;
 	    boolean bool = false;
 	    for (int i_12_ = 0; i_12_ < i_11_; i_12_++) {
-		Player class365_sub1_sub1_sub2_sub2 = client.aClass365_Sub1_Sub1_Sub2_Sub2Array8805[is[i_12_]];
+		Player class365_sub1_sub1_sub2_sub2 = client.players[is[i_12_]];
 		if (null != class365_sub1_sub1_sub2_sub2 && (Class287.myPlayer != class365_sub1_sub1_sub2_sub2) && class365_sub1_sub1_sub2_sub2.aString10195 != null && class365_sub1_sub1_sub2_sub2.aString10195.equalsIgnoreCase(string)) {
 		    OutcommingPacket class198 = null;
 		    if (i == 1)
