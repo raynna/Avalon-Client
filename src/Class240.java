@@ -1704,7 +1704,7 @@ public class Class240 {
                                 Sprite sprite = Class416.aSpriteArray5334[skullIndex];
 
                                 int extraOffsetY = 0;
-                                if (skullIndex >= 3 && skullIndex <= 6) { //draw bounty hunter skulls higher up
+                                if (skullIndex >= 2 && skullIndex <= 6) { //draw bounty hunter skulls higher up
                                     extraOffsetY = 10;
                                 }
 
